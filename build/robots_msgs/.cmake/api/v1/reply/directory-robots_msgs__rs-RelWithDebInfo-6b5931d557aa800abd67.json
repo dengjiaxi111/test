@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "robots_msgs__rs",
+		"source" : "/home/dengjiaxi/simulation_seu/test/build/robots_msgs/robots_msgs__rs"
+	}
+}

@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robots_msgs/msg/auto_detect/EnemyPose.msg
+// generated code does not contain a copyright notice
+
+
+module robots_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "enemy pose")
+    struct EnemyPose {
+      float enemy_dist;
+
+      float enemy_ori;
+
+      int8 enemy_num;
+
+      float enemy_x;
+
+      float enemy_y;
+    };
+  };
+};

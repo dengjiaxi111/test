@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from nav_interfaces/msg/HoleStraight.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Vector3.idl"
+
+module nav_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "当前最终路径上需要保持直线的区间；嵌套在 HoleTraversal.straight_segments。" "\n"
+      "对应交接文档5.2：严格模式S—T；free模式S—E和X—T。" "\n"
+      "方向是地图中的运动切线，不是机身yaw对准要求。")
+    struct HoleStraight {
+      @verbatim (language="comment", text=
+        "直线区间起点的路径累计弧长，单位m，相对当前NavigationPlan.path起点。")
+      double s_begin;
+
+      @verbatim (language="comment", text=
+        "直线区间终点的路径累计弧长，单位m，应不小于s_begin。")
+      double s_end;
+
+      @verbatim (language="comment", text=
+        "地图坐标系的运动方向向量，草稿使用二维切向x/y；不是机身朝向角，也不是速度大小。")
+      geometry_msgs::msg::Vector3 direction;
+
+      @verbatim (language="comment", text=
+        "true表示当前只能声明剩余直线片段；false声明完整区间，不等于该段已经走完。")
+      boolean remaining;
+    };
+  };
+};

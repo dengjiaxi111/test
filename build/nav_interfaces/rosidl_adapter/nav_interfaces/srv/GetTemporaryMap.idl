@@ -1,0 +1,34 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from nav_interfaces/srv/GetTemporaryMap.srv
+// generated code does not contain a copyright notice
+
+#include "nav_msgs/msg/OccupancyGrid.idl"
+
+module nav_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "查询本次导航的原始地图及已应用人工笔迹，不包含动态障碍或洞口清障结果。")
+    struct GetTemporaryMap_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetTemporaryMap_Response {
+      boolean success;
+
+      string reason;
+
+      string map_path;
+
+      string session_id;
+
+      string source_id;
+
+      uint64 map_revision;
+
+      nav_msgs::msg::OccupancyGrid source_map;
+
+      sequence<uint32> indices;
+
+      sequence<int8> values;
+    };
+  };
+};

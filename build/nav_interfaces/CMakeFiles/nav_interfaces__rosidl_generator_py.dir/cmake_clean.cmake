@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/action/_navigate_s.c.o"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/action/_navigate_s.c.o.d"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_event_s.c.o"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_event_s.c.o.d"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_speed_region_s.c.o"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_speed_region_s.c.o.d"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_straight_s.c.o"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_straight_s.c.o.d"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_structure_feedback_s.c.o"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_structure_feedback_s.c.o.d"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_structure_request_s.c.o"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_structure_request_s.c.o.d"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_traversal_event_s.c.o"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_traversal_event_s.c.o.d"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_traversal_s.c.o"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_traversal_s.c.o.d"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_traversal_state_s.c.o"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_traversal_state_s.c.o.d"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_navigation_plan_s.c.o"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_navigation_plan_s.c.o.d"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/srv/_apply_hole_passage_config_s.c.o"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/srv/_apply_hole_passage_config_s.c.o.d"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/srv/_apply_temporary_map_s.c.o"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/srv/_apply_temporary_map_s.c.o.d"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/srv/_get_hole_passage_config_s.c.o"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/srv/_get_hole_passage_config_s.c.o.d"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/srv/_get_temporary_map_s.c.o"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/srv/_get_temporary_map_s.c.o.d"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/srv/_reload_terrain_s.c.o"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/srv/_reload_terrain_s.c.o.d"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/srv/_save_hole_passage_config_s.c.o"
+  "CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/srv/_save_hole_passage_config_s.c.o.d"
+  "libnav_interfaces__rosidl_generator_py.pdb"
+  "libnav_interfaces__rosidl_generator_py.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/nav_interfaces__rosidl_generator_py.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

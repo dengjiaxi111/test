@@ -1,0 +1,479 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found geometry_msgs: 5.3.8 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+-- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+-- Found PythonExtra: /usr/bin/python3  
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Configuring done (2.6s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    ACADOS_SOURCE_DIR
+
+
+-- Build files have been written to: /home/dengjiaxi/simulation_seu/test/build/robots_msgs
+[  1%] Generating Rust code for ROS interfaces
+[  1%] Built target robots_msgs__rs
+[  2%] Generating type hashes for ROS interfaces
+[  2%] Built target robots_msgs__rosidl_generator_type_description
+[  3%] Generating C code for ROS interfaces
+[  4%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/enemy_pose__description.c.o
+[  5%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/enemy_pose__functions.c.o
+[  6%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/enemy_pose__type_support.c.o
+[  7%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/game_status__description.c.o
+[  8%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/game_status__functions.c.o
+[  9%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/game_status__type_support.c.o
+[ 10%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/robot_status__description.c.o
+[ 11%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/robot_status__functions.c.o
+[ 12%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/robot_status__type_support.c.o
+[ 13%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/gimb_cmd_fram__description.c.o
+[ 14%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/gimb_cmd_fram__functions.c.o
+[ 15%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/gimb_cmd_fram__type_support.c.o
+[ 16%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/gimbal_data__description.c.o
+[ 17%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/gimbal_data__functions.c.o
+[ 18%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/gimbal_data__type_support.c.o
+[ 19%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/mode_cmd__description.c.o
+[ 20%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/mode_cmd__functions.c.o
+[ 21%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/mode_cmd__type_support.c.o
+[ 21%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/my_path__description.c.o
+[ 22%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/my_path__functions.c.o
+[ 23%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/my_path__type_support.c.o
+[ 24%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/chassis_odom__description.c.o
+[ 25%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/chassis_odom__functions.c.o
+[ 26%] Building C object CMakeFiles/robots_msgs__rosidl_generator_c.dir/rosidl_generator_c/robots_msgs/msg/detail/chassis_odom__type_support.c.o
+[ 27%] Linking C shared library librobots_msgs__rosidl_generator_c.so
+[ 27%] Built target robots_msgs__rosidl_generator_c
+[ 28%] Generating C type support for eProsima Fast-RTPS
+[ 29%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robots_msgs/msg/detail/enemy_pose__type_support_c.cpp.o
+[ 30%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robots_msgs/msg/detail/game_status__type_support_c.cpp.o
+[ 31%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robots_msgs/msg/detail/robot_status__type_support_c.cpp.o
+[ 32%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robots_msgs/msg/detail/gimb_cmd_fram__type_support_c.cpp.o
+[ 32%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robots_msgs/msg/detail/gimbal_data__type_support_c.cpp.o
+[ 33%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robots_msgs/msg/detail/mode_cmd__type_support_c.cpp.o
+[ 34%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robots_msgs/msg/detail/my_path__type_support_c.cpp.o
+[ 35%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robots_msgs/msg/detail/chassis_odom__type_support_c.cpp.o
+[ 36%] Linking CXX shared library librobots_msgs__rosidl_typesupport_fastrtps_c.so
+[ 36%] Built target robots_msgs__rosidl_typesupport_fastrtps_c
+[ 36%] Generating C++ code for ROS interfaces
+[ 36%] Built target robots_msgs__cpp
+[ 37%] Generating C++ type support for eProsima Fast-RTPS
+[ 38%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/enemy_pose__type_support.cpp.o
+[ 39%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/game_status__type_support.cpp.o
+[ 40%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/robot_status__type_support.cpp.o
+[ 41%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/gimb_cmd_fram__type_support.cpp.o
+[ 42%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/gimbal_data__type_support.cpp.o
+[ 43%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/mode_cmd__type_support.cpp.o
+[ 44%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/my_path__type_support.cpp.o
+[ 45%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/chassis_odom__type_support.cpp.o
+[ 46%] Linking CXX shared library librobots_msgs__rosidl_typesupport_fastrtps_cpp.so
+[ 46%] Built target robots_msgs__rosidl_typesupport_fastrtps_cpp
+[ 47%] Generating C introspection for ROS interfaces
+[ 48%] Building C object CMakeFiles/robots_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robots_msgs/msg/detail/enemy_pose__type_support.c.o
+[ 49%] Building C object CMakeFiles/robots_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robots_msgs/msg/detail/game_status__type_support.c.o
+[ 50%] Building C object CMakeFiles/robots_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robots_msgs/msg/detail/robot_status__type_support.c.o
+[ 51%] Building C object CMakeFiles/robots_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robots_msgs/msg/detail/gimb_cmd_fram__type_support.c.o
+[ 52%] Building C object CMakeFiles/robots_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robots_msgs/msg/detail/gimbal_data__type_support.c.o
+[ 52%] Building C object CMakeFiles/robots_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robots_msgs/msg/detail/mode_cmd__type_support.c.o
+[ 53%] Building C object CMakeFiles/robots_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robots_msgs/msg/detail/my_path__type_support.c.o
+[ 54%] Building C object CMakeFiles/robots_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robots_msgs/msg/detail/chassis_odom__type_support.c.o
+[ 55%] Linking C shared library librobots_msgs__rosidl_typesupport_introspection_c.so
+[ 55%] Built target robots_msgs__rosidl_typesupport_introspection_c
+[ 56%] Generating C type support dispatch for ROS interfaces
+[ 57%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robots_msgs/msg/enemy_pose__type_support.cpp.o
+[ 58%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robots_msgs/msg/game_status__type_support.cpp.o
+[ 59%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robots_msgs/msg/robot_status__type_support.cpp.o
+[ 59%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robots_msgs/msg/gimb_cmd_fram__type_support.cpp.o
+[ 60%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robots_msgs/msg/gimbal_data__type_support.cpp.o
+[ 61%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robots_msgs/msg/mode_cmd__type_support.cpp.o
+[ 62%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robots_msgs/msg/my_path__type_support.cpp.o
+[ 63%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robots_msgs/msg/chassis_odom__type_support.cpp.o
+[ 64%] Linking CXX shared library librobots_msgs__rosidl_typesupport_c.so
+[ 64%] Built target robots_msgs__rosidl_typesupport_c
+[ 65%] Generating C++ introspection for ROS interfaces
+[ 66%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robots_msgs/msg/detail/enemy_pose__type_support.cpp.o
+[ 67%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robots_msgs/msg/detail/game_status__type_support.cpp.o
+[ 68%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robots_msgs/msg/detail/robot_status__type_support.cpp.o
+[ 69%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robots_msgs/msg/detail/gimb_cmd_fram__type_support.cpp.o
+[ 70%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robots_msgs/msg/detail/gimbal_data__type_support.cpp.o
+[ 71%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robots_msgs/msg/detail/mode_cmd__type_support.cpp.o
+[ 72%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robots_msgs/msg/detail/my_path__type_support.cpp.o
+[ 73%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robots_msgs/msg/detail/chassis_odom__type_support.cpp.o
+[ 74%] Linking CXX shared library librobots_msgs__rosidl_typesupport_introspection_cpp.so
+[ 74%] Built target robots_msgs__rosidl_typesupport_introspection_cpp
+[ 75%] Generating C++ type support dispatch for ROS interfaces
+[ 76%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robots_msgs/msg/enemy_pose__type_support.cpp.o
+[ 77%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robots_msgs/msg/game_status__type_support.cpp.o
+[ 78%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robots_msgs/msg/robot_status__type_support.cpp.o
+[ 79%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robots_msgs/msg/gimb_cmd_fram__type_support.cpp.o
+[ 80%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robots_msgs/msg/gimbal_data__type_support.cpp.o
+[ 81%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robots_msgs/msg/mode_cmd__type_support.cpp.o
+[ 82%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robots_msgs/msg/my_path__type_support.cpp.o
+[ 83%] Building CXX object CMakeFiles/robots_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robots_msgs/msg/chassis_odom__type_support.cpp.o
+[ 84%] Linking CXX shared library librobots_msgs__rosidl_typesupport_cpp.so
+[ 84%] Built target robots_msgs__rosidl_typesupport_cpp
+[ 84%] Built target robots_msgs
+[ 84%] Built target ament_cmake_python_copy_robots_msgs
+running egg_info
+creating robots_msgs.egg-info
+writing robots_msgs.egg-info/PKG-INFO
+writing dependency_links to robots_msgs.egg-info/dependency_links.txt
+writing top-level names to robots_msgs.egg-info/top_level.txt
+writing manifest file 'robots_msgs.egg-info/SOURCES.txt'
+reading manifest file 'robots_msgs.egg-info/SOURCES.txt'
+writing manifest file 'robots_msgs.egg-info/SOURCES.txt'
+[ 84%] Built target ament_cmake_python_build_robots_msgs_egg
+[ 85%] Generating Python code for ROS interfaces
+[ 85%] Built target robots_msgs__py
+[ 86%] Building C object CMakeFiles/robots_msgs__rosidl_generator_py.dir/rosidl_generator_py/robots_msgs/msg/_enemy_pose_s.c.o
+[ 87%] Building C object CMakeFiles/robots_msgs__rosidl_generator_py.dir/rosidl_generator_py/robots_msgs/msg/_game_status_s.c.o
+[ 88%] Building C object CMakeFiles/robots_msgs__rosidl_generator_py.dir/rosidl_generator_py/robots_msgs/msg/_robot_status_s.c.o
+[ 89%] Building C object CMakeFiles/robots_msgs__rosidl_generator_py.dir/rosidl_generator_py/robots_msgs/msg/_gimb_cmd_fram_s.c.o
+[ 90%] Building C object CMakeFiles/robots_msgs__rosidl_generator_py.dir/rosidl_generator_py/robots_msgs/msg/_gimbal_data_s.c.o
+[ 91%] Building C object CMakeFiles/robots_msgs__rosidl_generator_py.dir/rosidl_generator_py/robots_msgs/msg/_mode_cmd_s.c.o
+[ 92%] Building C object CMakeFiles/robots_msgs__rosidl_generator_py.dir/rosidl_generator_py/robots_msgs/msg/_my_path_s.c.o
+[ 93%] Building C object CMakeFiles/robots_msgs__rosidl_generator_py.dir/rosidl_generator_py/robots_msgs/msg/_chassis_odom_s.c.o
+[ 94%] Linking C shared library librobots_msgs__rosidl_generator_py.so
+[ 94%] Built target robots_msgs__rosidl_generator_py
+[ 95%] Building C object CMakeFiles/robots_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/robots_msgs/_robots_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[ 96%] Linking C shared module rosidl_generator_py/robots_msgs/robots_msgs_s__rosidl_typesupport_fastrtps_c.so
+[ 96%] Built target robots_msgs_s__rosidl_typesupport_fastrtps_c
+[ 97%] Building C object CMakeFiles/robots_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/robots_msgs/_robots_msgs_s.ep.rosidl_typesupport_introspection_c.c.o
+[ 98%] Linking C shared module rosidl_generator_py/robots_msgs/robots_msgs_s__rosidl_typesupport_introspection_c.so
+[ 98%] Built target robots_msgs_s__rosidl_typesupport_introspection_c
+[ 99%] Building C object CMakeFiles/robots_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/robots_msgs/_robots_msgs_s.ep.rosidl_typesupport_c.c.o
+[100%] Linking C shared module rosidl_generator_py/robots_msgs/robots_msgs_s__rosidl_typesupport_c.so
+[100%] Built target robots_msgs_s__rosidl_typesupport_c
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/ament_index/resource_index/rosidl_interfaces/robots_msgs
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/msg/EnemyPose.json
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/msg/GameStatus.json
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/msg/RobotStatus.json
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/msg/GimbCmdFram.json
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/msg/GimbalData.json
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/msg/ModeCmd.json
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/msg/MyPath.json
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/msg/ChassisOdom.json
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/gimb_cmd_fram.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/gimbal_data.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/robot_status.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/mode_cmd__struct.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/mode_cmd__type_support.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/game_status__struct.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/chassis_odom__type_support.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimbal_data__struct.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimb_cmd_fram__type_support.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimb_cmd_fram__struct.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/robot_status__description.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/game_status__functions.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimbal_data__type_support.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/robot_status__type_support.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/mode_cmd__description.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/chassis_odom__functions.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimbal_data__type_support.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/my_path__description.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/chassis_odom__functions.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/my_path__type_support.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/enemy_pose__functions.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimbal_data__description.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/game_status__functions.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimb_cmd_fram__functions.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/robot_status__type_support.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/mode_cmd__type_support.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimbal_data__functions.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/enemy_pose__functions.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/chassis_odom__struct.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/mode_cmd__functions.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/robot_status__struct.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimbal_data__functions.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/game_status__type_support.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/enemy_pose__type_support.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/enemy_pose__description.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/mode_cmd__functions.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/game_status__type_support.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimb_cmd_fram__description.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/robot_status__functions.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimb_cmd_fram__functions.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/robot_status__functions.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/enemy_pose__struct.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/my_path__functions.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/my_path__functions.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/chassis_odom__description.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/game_status__description.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/my_path__type_support.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/my_path__struct.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/enemy_pose__type_support.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/chassis_odom__type_support.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimb_cmd_fram__type_support.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/my_path.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/chassis_odom.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/mode_cmd.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/game_status.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/enemy_pose.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/environment/library_path.sh
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/environment/library_path.dsv
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/librobots_msgs__rosidl_generator_c.so
+-- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/librobots_msgs__rosidl_generator_c.so" to ""
+-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs
+-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimb_cmd_fram__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/mode_cmd__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/robot_status__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/game_status__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimbal_data__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/my_path__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/chassis_odom__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/enemy_pose__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/librobots_msgs__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/librobots_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs
+-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/enemy_pose.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/my_path.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/mode_cmd.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/chassis_odom.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/game_status.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/gimbal_data.hpp
+-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimb_cmd_fram__type_support.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/robot_status__type_support.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimb_cmd_fram__struct.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/robot_status__struct.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/enemy_pose__type_support.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/game_status__struct.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimbal_data__struct.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/chassis_odom__struct.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/chassis_odom__builder.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/robot_status__traits.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/robot_status__builder.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/game_status__type_support.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/my_path__traits.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/chassis_odom__type_support.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/my_path__type_support.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimb_cmd_fram__builder.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimbal_data__builder.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/mode_cmd__struct.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimb_cmd_fram__traits.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/chassis_odom__traits.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimbal_data__type_support.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/my_path__struct.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/mode_cmd__builder.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/game_status__traits.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/enemy_pose__struct.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/my_path__builder.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/enemy_pose__traits.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/mode_cmd__type_support.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/enemy_pose__builder.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/mode_cmd__traits.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimbal_data__traits.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/game_status__builder.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/robot_status.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/gimb_cmd_fram.hpp
+-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs
+-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg
+-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/my_path__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/chassis_odom__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/robot_status__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/enemy_pose__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/game_status__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/mode_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimbal_data__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimb_cmd_fram__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/dds_fastrtps
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/librobots_msgs__rosidl_typesupport_fastrtps_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/librobots_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs
+-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg
+-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/mode_cmd__type_support.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/game_status__rosidl_typesupport_introspection_c.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/robot_status__type_support.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimbal_data__type_support.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/my_path__rosidl_typesupport_introspection_c.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/my_path__type_support.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/chassis_odom__rosidl_typesupport_introspection_c.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/game_status__type_support.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/mode_cmd__rosidl_typesupport_introspection_c.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/enemy_pose__type_support.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimbal_data__rosidl_typesupport_introspection_c.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/enemy_pose__rosidl_typesupport_introspection_c.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimb_cmd_fram__rosidl_typesupport_introspection_c.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/robot_status__rosidl_typesupport_introspection_c.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/chassis_odom__type_support.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimb_cmd_fram__type_support.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/librobots_msgs__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/librobots_msgs__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/librobots_msgs__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/librobots_msgs__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs
+-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg
+-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/robot_status__type_support.cpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/game_status__type_support.cpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimb_cmd_fram__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimbal_data__type_support.cpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/my_path__type_support.cpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/chassis_odom__type_support.cpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/game_status__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimb_cmd_fram__type_support.cpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/enemy_pose__type_support.cpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/my_path__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/mode_cmd__type_support.cpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/robot_status__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/mode_cmd__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/enemy_pose__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/gimbal_data__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/include/robots_msgs/robots_msgs/msg/detail/chassis_odom__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/librobots_msgs__rosidl_typesupport_introspection_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/librobots_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/librobots_msgs__rosidl_typesupport_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/librobots_msgs__rosidl_typesupport_cpp.so" to ""
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/environment/pythonpath.sh
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/environment/pythonpath.dsv
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs-1.0.0-py3.12.egg-info
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs-1.0.0-py3.12.egg-info/top_level.txt
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs-1.0.0-py3.12.egg-info/SOURCES.txt
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs-1.0.0-py3.12.egg-info/dependency_links.txt
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs-1.0.0-py3.12.egg-info/PKG-INFO
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/_robots_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/robots_msgs_s__rosidl_typesupport_fastrtps_c.so
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/_robots_msgs_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/__init__.py
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/robots_msgs_s__rosidl_typesupport_c.so
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/robots_msgs_s__rosidl_typesupport_introspection_c.so
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_gimbal_data_s.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_chassis_odom_s.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_mode_cmd_s.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_enemy_pose_s.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/__init__.py
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_robot_status_s.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_game_status.py
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_gimb_cmd_fram.py
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_gimbal_data.py
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_game_status_s.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_my_path.py
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_chassis_odom.py
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_gimb_cmd_fram_s.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_enemy_pose.py
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_robot_status.py
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_mode_cmd.py
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_my_path_s.c
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/_robots_msgs_s.ep.rosidl_typesupport_c.c
+Listing '/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs'...
+Compiling '/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/__init__.py'...
+Listing '/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg'...
+Compiling '/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/__init__.py'...
+Compiling '/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_chassis_odom.py'...
+Compiling '/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_enemy_pose.py'...
+Compiling '/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_game_status.py'...
+Compiling '/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_gimb_cmd_fram.py'...
+Compiling '/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_gimbal_data.py'...
+Compiling '/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_mode_cmd.py'...
+Compiling '/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_my_path.py'...
+Compiling '/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/msg/_robot_status.py'...
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/robots_msgs_s__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/robots_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/robots_msgs_s__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/robots_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/robots_msgs_s__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages/robots_msgs/robots_msgs_s__rosidl_typesupport_c.so" to ""
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/librobots_msgs__rosidl_generator_py.so
+-- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/librobots_msgs__rosidl_generator_py.so" to ""
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/rust
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/rust/src
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/rust/src/msg.rs
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/rust/src/msg
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/rust/src/msg/rmw.rs
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/rust/src/lib.rs
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/rust/Cargo.toml
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/rust/build.rs
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/msg/EnemyPose.idl
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/msg/GameStatus.idl
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/msg/RobotStatus.idl
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/msg/GimbCmdFram.idl
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/msg/GimbalData.idl
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/msg/ModeCmd.idl
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/msg/MyPath.idl
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/msg/ChassisOdom.idl
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/auto_detect/EnemyPose.msg
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/referee_system/GameStatus.msg
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/referee_system/RobotStatus.msg
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/slave_computer/GimbCmdFram.msg
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/slave_computer/GimbalData.msg
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/slave_computer/ModeCmd.msg
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/slave_computer/MyPath.msg
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/slave_computer/ChassisOdom.msg
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/ament_index/resource_index/package_run_dependencies/robots_msgs
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/ament_index/resource_index/parent_prefix_path/robots_msgs
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/environment/ament_prefix_path.sh
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/environment/ament_prefix_path.dsv
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/environment/path.sh
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/environment/path.dsv
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/local_setup.bash
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/local_setup.sh
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/local_setup.zsh
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/local_setup.dsv
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/package.dsv
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/ament_index/resource_index/packages/robots_msgs
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/export_robots_msgs__rosidl_generator_cExport.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/export_robots_msgs__rosidl_generator_cExport-relwithdebinfo.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/export_robots_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/export_robots_msgs__rosidl_typesupport_fastrtps_cExport-relwithdebinfo.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/export_robots_msgs__rosidl_generator_cppExport.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/export_robots_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/export_robots_msgs__rosidl_typesupport_fastrtps_cppExport-relwithdebinfo.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/robots_msgs__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/robots_msgs__rosidl_typesupport_introspection_cExport-relwithdebinfo.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/robots_msgs__rosidl_typesupport_cExport.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/robots_msgs__rosidl_typesupport_cExport-relwithdebinfo.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/robots_msgs__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/robots_msgs__rosidl_typesupport_introspection_cppExport-relwithdebinfo.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/robots_msgs__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/robots_msgs__rosidl_typesupport_cppExport-relwithdebinfo.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/export_robots_msgs__rosidl_generator_pyExport.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/export_robots_msgs__rosidl_generator_pyExport-relwithdebinfo.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/rosidl_cmake-extras.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/robots_msgsConfig.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake/robots_msgsConfig-version.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/package.xml

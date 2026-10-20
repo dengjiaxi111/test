@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.9">
+  <world name="default">
+    <physics name="physics" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+    </physics>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics" />
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands" />
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster" />
+    <model name="floor">
+      <static>true</static>
+      <link name="floor">
+        <visual name="floor_visual">
+          <pose>0 0 -.05 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>40 30 .1</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.65 0.65 0.65 1</diffuse>
+          </material>
+        </visual>
+        <collision name="floor_collision">
+          <pose>0 0 -.05 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>40 30 .1</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <include>
+      <uri>/home/dengjiaxi/simulation_seu/test/sim/robot.sdf</uri>
+      <pose>0 0 .30 0 0 0</pose>
+    </include>
+    <light name="sun" type="directional">
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>1 1 1 1</diffuse>
+      <direction>0 0 -1</direction>
+    </light>
+  </world>
+</sdf>

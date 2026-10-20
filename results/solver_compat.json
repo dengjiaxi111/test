@@ -1,0 +1,7 @@
+{
+  "rebuilt_sources": 22,
+  "casadi_mathematical_sources_unchanged": true,
+  "compatibility_change": "disabled sensitivity option renamed to _forw",
+  "execution_constraint_change": "none; original generated dimensions and constraints restored",
+  "sha256": "a2171e5151aa42805f7a23ca7253bc6b3fea8fc73d6ddef28e097c33858483fc"
+}

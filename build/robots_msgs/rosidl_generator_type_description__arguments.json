@@ -1,0 +1,19 @@
+{
+  "package_name": "robots_msgs",
+  "output_dir": "/home/dengjiaxi/simulation_seu/test/build/robots_msgs/rosidl_generator_type_description/robots_msgs",
+  "idl_tuples": [
+    "/home/dengjiaxi/simulation_seu/test/build/robots_msgs/rosidl_adapter/robots_msgs:msg/EnemyPose.idl",
+    "/home/dengjiaxi/simulation_seu/test/build/robots_msgs/rosidl_adapter/robots_msgs:msg/GameStatus.idl",
+    "/home/dengjiaxi/simulation_seu/test/build/robots_msgs/rosidl_adapter/robots_msgs:msg/RobotStatus.idl",
+    "/home/dengjiaxi/simulation_seu/test/build/robots_msgs/rosidl_adapter/robots_msgs:msg/GimbCmdFram.idl",
+    "/home/dengjiaxi/simulation_seu/test/build/robots_msgs/rosidl_adapter/robots_msgs:msg/GimbalData.idl",
+    "/home/dengjiaxi/simulation_seu/test/build/robots_msgs/rosidl_adapter/robots_msgs:msg/ModeCmd.idl",
+    "/home/dengjiaxi/simulation_seu/test/build/robots_msgs/rosidl_adapter/robots_msgs:msg/MyPath.idl",
+    "/home/dengjiaxi/simulation_seu/test/build/robots_msgs/rosidl_adapter/robots_msgs:msg/ChassisOdom.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs"
+  ]
+}

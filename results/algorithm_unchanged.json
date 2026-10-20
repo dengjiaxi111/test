@@ -1,0 +1,22 @@
+[
+  {
+    "file": "src/nmpc.cpp",
+    "identical": true,
+    "sha256": "2bbc4d4aca3cc1c22df5ff080943661b399800674c328432fcce86fc4765b225"
+  },
+  {
+    "file": "include/nav_components/nmpc.hpp",
+    "identical": true,
+    "sha256": "00b69f3587d9e6515e09ff43460125827b3a62a2a28437777f77309fb094b99e"
+  },
+  {
+    "file": "include/nav_components/omni_model.hpp",
+    "identical": true,
+    "sha256": "c574531f12f8400bf9fc04377e69d43ae3ec1538504dfb46322f23846b14c6cc"
+  },
+  {
+    "file": "src/hole_connection_optimizer.cpp",
+    "identical": true,
+    "sha256": "227eb2c22c9c2ba608e5f8df12b78ee0c90995e66fff945e203c8b5f97986221"
+  }
+]

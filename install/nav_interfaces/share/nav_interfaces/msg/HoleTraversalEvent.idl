@@ -1,0 +1,55 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from nav_interfaces/msg/HoleTraversalEvent.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module nav_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "导航侧发布 hole_traversal_event：某个路径事件已被执行调度器触发的通知。" "\n"
+      "对应交接文档5.4、7.3；区别于仅描述计划位置的HoleEvent。" "\n"
+      "接收方仍须按会话/任务/通行/事件类型记录去重，不能假设外部动作恰好执行一次。")
+    struct HoleTraversalEvent {
+      @verbatim (language="comment", text=
+        "公共消息头：stamp为发送方填写的ROS时间；frame_id标注坐标系。不会自动填时间或转换坐标。")
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "导航本次运行的身份，程序自动生成；重启时更换，同次运行的重规划不更换。用于拒绝旧会话消息。")
+      string session_id;
+
+      @verbatim (language="comment", text=
+        "本次最终导航任务的身份；同一个最终目标的重规划保持不变，不是路径点编号。")
+      string goal_id;
+
+      @verbatim (language="comment", text=
+        "当前计划版本；同一会话内接纳新版本/失效等会更新。不能单凭换版重复执行已完成动作。")
+      uint64 plan_id;
+
+      @verbatim (language="comment", text=
+        "本次触发事件属于哪一次具体通行，与计划中的对应记录匹配。")
+      string traversal_uid;
+
+      @verbatim (language="comment", text=
+        "当前控制器实例内递增的执行事件序号，便于排查顺序；不单独作为动作去重键。")
+      uint64 sequence;
+
+      @verbatim (language="comment", text=
+        "已触发的事件类型：0 A，1 S，2 E，3 X，4 T，5 D。通知本身不替代真实机构反馈。")
+      uint8 type;
+
+      @verbatim (language="comment", text=
+        "该事件在触发时计划路径上的弧长位置，单位m。")
+      double event_arc;
+
+      @verbatim (language="comment", text=
+        "处理该事件时参考点的可靠路径进度，单位m，可略大于event_arc。")
+      double progress;
+
+      @verbatim (language="comment", text=
+        "所属尝试编号；历史事件不因倒退删除。")
+      uint32 attempt;
+    };
+  };
+};

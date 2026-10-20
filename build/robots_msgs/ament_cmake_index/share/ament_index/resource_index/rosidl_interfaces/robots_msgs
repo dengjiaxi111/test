@@ -1,0 +1,16 @@
+auto_detect/EnemyPose.msg
+msg/ChassisOdom.idl
+msg/EnemyPose.idl
+msg/GameStatus.idl
+msg/GimbCmdFram.idl
+msg/GimbalData.idl
+msg/ModeCmd.idl
+msg/MyPath.idl
+msg/RobotStatus.idl
+referee_system/GameStatus.msg
+referee_system/RobotStatus.msg
+slave_computer/ChassisOdom.msg
+slave_computer/GimbCmdFram.msg
+slave_computer/GimbalData.msg
+slave_computer/ModeCmd.msg
+slave_computer/MyPath.msg

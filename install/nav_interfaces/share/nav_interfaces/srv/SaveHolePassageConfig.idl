@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from nav_interfaces/srv/SaveHolePassageConfig.srv
+// generated code does not contain a copyright notice
+
+
+module nav_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "只保存指定版本的已确认快照，不接受未确认草稿。")
+    struct SaveHolePassageConfig_Request {
+      uint64 expected_config_revision;
+
+      uint64 expected_terrain_revision;
+    };
+    struct SaveHolePassageConfig_Response {
+      boolean success;
+
+      string reason;
+
+      string config_path;
+
+      uint64 config_revision;
+    };
+  };
+};

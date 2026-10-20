@@ -1,0 +1,43 @@
+# 隔离Gazebo示例：速度、制动、时间阈值均不是实车标定值。
+hole_state_machine:
+  enabled: true  # 启用坡洞执行接口；仅影响本隔离副本
+  allow_free: false  # 默认严格中心线，禁止free模式
+  simulation_only: true  # 仅接受Gazebo反馈；实车需单独适配并设false
+  physical_parameters_confirmed: false  # 当前示例未实车标定
+  max_replans: 2  # 本任务允许的换洞重规划次数
+  max_action_retries: 2  # 每种机构动作最多额外重试2次，补发同ID不计数
+  max_traversal_retries: 2  # 每次上坡通行最多额外退回S重试2次
+  flat_speed: 2.0  # 平地基础上限；单位 m/s
+  uphill_speed: 2.0  # 上坡基础上限；单位 m/s
+  downhill_speed: 0.35  # 下坡基础上限；单位 m/s
+  prepare_speed: 0.35  # 移动变形期间上限；单位 m/s
+  restore_speed: 0.35  # 移动恢复期间上限；单位 m/s
+  restricted_speed: 0.4  # 坡顶后受限区上限；单位 m/s
+  post_slope_distance: 1.5  # 坡顶后低速路径长度；单位 m
+  braking_deceleration: 1.5  # 最差坡向保证制动减速度，必须实测确认；单位 m/s^2
+  acceleration_limit: 2.0  # 特殊执行加速度上限；单位 m/s^2
+  control_latency: 0.1  # 控制与反馈链路延迟预算；单位 s
+  entry_margin: 0.45  # E前停车余量；单位 m
+  event_tolerance: 0.01  # 事件调度数值容差，不放宽E进入许可；单位 m
+  backward_window: 0.15  # 进度向后投影窗口；单位 m
+  forward_window: 1.0  # 进度向前投影窗口；单位 m
+  max_lateral_error: 0.15  # 可靠进度横向误差上限；单位 m
+  progress_slack: 0.05  # 定位可达位移额外容差；单位 m
+  pose_timeout: 0.4  # 位姿接收有效期；单位 s
+  feedback_timeout: 0.4  # 结构反馈源年龄和接收有效期；单位 s
+  prepare_timeout: 12.0  # 本次准备动作总期限，重传不重置；单位 s
+  traverse_timeout: 60.0  # 特殊通行最长执行时间；单位 s
+  restore_timeout: 8.0  # 本次恢复动作总期限；单位 s
+  hold_timeout: 5.0  # 同一暂停原因的连续等待期限；单位 s
+  request_interval: 0.3  # 同一请求号传输重发周期；单位 s
+  ack_timeout: 1.0  # 机构接收确认最大等待；单位 s
+  stop_ack_timeout: 2.0  # 旧动作停止确认最大等待；单位 s
+  stall_timeout: 2.5  # 有前进指令时无路径进展期限；单位 s
+  stall_progress: 0.05  # 有效路径进展阈值；单位 m
+  retreat_speed: 0.15  # 上坡失败后向下退让上限；单位 m/s
+  retreat_timeout: 12.0  # 单次退让期限；单位 s
+  stopped_speed: 0.03  # 停稳速度阈值；单位 m/s
+  settle_time: 0.2  # 停稳连续确认时间；单位 s
+  alignment_tolerance: 0.05  # 底盘四面对准误差；单位 rad
+  rotation_stopped_rate: 0.1  # 当前Gazebo地面yaw停转阈值；单位 rad/s，连续满足settle_time且误差≤0.05rad才放行，非实车标定值
+  blocked_ttl: 30.0  # 本任务禁用堵洞的有效期；单位 s

@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robots_msgs/msg/slave_computer/GimbalData.msg
+// generated code does not contain a copyright notice
+
+
+module robots_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "gimbal data")
+    struct GimbalData {
+      float gimbal_yaw;
+
+      float gimbal_pitch;
+
+      float yaw_va;
+
+      float base_yaw;
+
+      uint8 self_team;
+    };
+  };
+};

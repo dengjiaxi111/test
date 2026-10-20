@@ -1,0 +1,8 @@
+/home/dengjiaxi/simulation_seu/test/build/robots_msgs/rosidl_adapter/robots_msgs:msg/EnemyPose.idl
+/home/dengjiaxi/simulation_seu/test/build/robots_msgs/rosidl_adapter/robots_msgs:msg/GameStatus.idl
+/home/dengjiaxi/simulation_seu/test/build/robots_msgs/rosidl_adapter/robots_msgs:msg/RobotStatus.idl
+/home/dengjiaxi/simulation_seu/test/build/robots_msgs/rosidl_adapter/robots_msgs:msg/GimbCmdFram.idl
+/home/dengjiaxi/simulation_seu/test/build/robots_msgs/rosidl_adapter/robots_msgs:msg/GimbalData.idl
+/home/dengjiaxi/simulation_seu/test/build/robots_msgs/rosidl_adapter/robots_msgs:msg/ModeCmd.idl
+/home/dengjiaxi/simulation_seu/test/build/robots_msgs/rosidl_adapter/robots_msgs:msg/MyPath.idl
+/home/dengjiaxi/simulation_seu/test/build/robots_msgs/rosidl_adapter/robots_msgs:msg/ChassisOdom.idl

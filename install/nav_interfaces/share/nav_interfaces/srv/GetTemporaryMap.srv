@@ -1,0 +1,11 @@
+# 查询本次导航的原始地图及已应用人工笔迹，不包含动态障碍或洞口清障结果。
+---
+bool success
+string reason
+string map_path
+string session_id
+string source_id
+uint64 map_revision
+nav_msgs/OccupancyGrid source_map
+uint32[] indices
+int8[] values

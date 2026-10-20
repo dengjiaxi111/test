@@ -1,0 +1,136 @@
+[0.010s] Invoking command in '/home/dengjiaxi/simulation_seu/test/build/nav_components': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components -DBUILD_TESTING=OFF -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_CXX_FLAGS_RELWITHDEBINFO=-O2 -g1 -DNDEBUG -DACADOS_SOURCE_DIR=/home/dengjiaxi/dependency/acados -DCMAKE_INSTALL_PREFIX=/home/dengjiaxi/simulation_seu/test/install/nav_components
+[0.056s] -- The C compiler identification is GNU 13.3.0
+[0.097s] -- The CXX compiler identification is GNU 13.3.0
+[0.111s] -- Detecting C compiler ABI info
+[0.184s] -- Detecting C compiler ABI info - done
+[0.190s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.190s] -- Detecting C compile features
+[0.194s] -- Detecting C compile features - done
+[0.200s] -- Detecting CXX compiler ABI info
+[0.280s] -- Detecting CXX compiler ABI info - done
+[0.286s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.287s] -- Detecting CXX compile features
+[0.287s] -- Detecting CXX compile features - done
+[0.291s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.414s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.514s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.559s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.574s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.590s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.610s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.679s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.683s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.762s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.780s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.802s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.870s] -- Found rclcpp_action: 28.1.22 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[0.912s] -- Found geometry_msgs: 5.3.8 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.940s] -- Found nav_msgs: 5.3.8 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[0.961s] -- Found visualization_msgs: 5.3.8 (/opt/ros/jazzy/share/visualization_msgs/cmake)
+[1.009s] -- Found tf2: 0.36.22 (/opt/ros/jazzy/share/tf2/cmake)
+[1.017s] -- Found tf2_ros: 0.36.22 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[1.106s] -- Found tf2_geometry_msgs: 0.36.22 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+[1.127s] -- Found eigen3_cmake_module: 0.3.1 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[1.128s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.128s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.130s] -- Found nav_interfaces: 0.1.0 (/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake)
+[1.155s] -- Found nav_core: 0.1.0 (/home/dengjiaxi/simulation_seu/test/install/nav_core/share/nav_core/cmake)
+[1.164s] -- Found robots_msgs: 1.0.0 (/home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake)
+[1.209s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: serialization filesystem system 
+[1.291s] -- Found ompl: /opt/ros/jazzy/include/ompl-1.7;/usr/include;/usr/include/eigen3  
+[1.292s] -- ✓ 找到 NMPC solver: /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/nmpc_solver_omni
+[1.292s] -- ✓ 使用 acados: /home/dengjiaxi/dependency/acados
+[1.370s] -- Configuring done (1.4s)
+[1.404s] -- Generating done (0.0s)
+[1.406s] -- Build files have been written to: /home/dengjiaxi/simulation_seu/test/build/nav_components
+[1.417s] Invoked command in '/home/dengjiaxi/simulation_seu/test/build/nav_components' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components -DBUILD_TESTING=OFF -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_CXX_FLAGS_RELWITHDEBINFO=-O2 -g1 -DNDEBUG -DACADOS_SOURCE_DIR=/home/dengjiaxi/dependency/acados -DCMAKE_INSTALL_PREFIX=/home/dengjiaxi/simulation_seu/test/install/nav_components
+[1.418s] Invoking command in '/home/dengjiaxi/simulation_seu/test/build/nav_components': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/dengjiaxi/simulation_seu/test/build/nav_components
+[1.468s] [  3%] Building CXX object CMakeFiles/hole_connection_optimizer.dir/src/hole_connection_optimizer.cpp.o
+[13.100s] [  7%] Building CXX object CMakeFiles/hole_connection_optimizer.dir/src/hole_feasible_approach.cpp.o
+[14.029s] [ 11%] Building CXX object CMakeFiles/hole_connection_optimizer.dir/src/normal_navigation_segment.cpp.o
+[20.074s] [ 14%] Linking CXX static library libhole_connection_optimizer.a
+[20.164s] [ 14%] Built target hole_connection_optimizer
+[20.191s] [ 18%] Building CXX object CMakeFiles/nav_server.dir/src/nav_server.cpp.o
+[46.883s] [ 22%] Building CXX object CMakeFiles/nav_server.dir/src/slopehole_controller.cpp.o
+[48.466s] [ 25%] Building CXX object CMakeFiles/nav_server.dir/src/hole_execution_config.cpp.o
+[50.187s] [ 29%] Building CXX object CMakeFiles/nav_server.dir/src/hole_plan_adapter.cpp.o
+[54.259s] [ 33%] Building CXX object CMakeFiles/nav_server.dir/src/slopehole_ros_adapter.cpp.o
+[67.907s] [ 37%] Building CXX object CMakeFiles/nav_server.dir/src/simple_planner.cpp.o
+[78.860s] [ 40%] Building CXX object CMakeFiles/nav_server.dir/src/pure_pursuit.cpp.o
+[81.138s] [ 44%] Building CXX object CMakeFiles/nav_server.dir/src/backup_recovery.cpp.o
+[83.406s] [ 48%] Building CXX object CMakeFiles/nav_server.dir/src/spin_recovery.cpp.o
+[85.678s] [ 51%] Building CXX object CMakeFiles/nav_server.dir/src/arc_backup_recovery.cpp.o
+[87.950s] [ 55%] Building CXX object CMakeFiles/nav_server.dir/src/recovery_manager.cpp.o
+[90.044s] [ 59%] Building CXX object CMakeFiles/nav_server.dir/src/layered_map_manager.cpp.o
+[94.606s] [ 62%] Building CXX object CMakeFiles/nav_server.dir/src/terrain_region_map.cpp.o
+[97.172s] [ 66%] Building CXX object CMakeFiles/nav_server.dir/src/hole_clearance.cpp.o
+[99.068s] [ 70%] Building CXX object CMakeFiles/nav_server.dir/src/hole_geometry_previewer.cpp.o
+[108.748s] [ 74%] Building CXX object CMakeFiles/nav_server.dir/src/hole_passage_planner.cpp.o
+[119.704s] [ 77%] Building CXX object CMakeFiles/nav_server.dir/src/hole_route_planner.cpp.o
+[124.839s] [ 81%] Building CXX object CMakeFiles/nav_server.dir/src/hole_global_planner.cpp.o
+[132.762s] [ 85%] Building CXX object CMakeFiles/nav_server.dir/src/hole_connection_search.cpp.o
+[135.230s] [ 88%] Building CXX object CMakeFiles/nav_server.dir/src/nmpc.cpp.o
+[148.579s] [ 92%] Linking CXX executable nav_server
+[149.408s] [ 92%] Built target nav_server
+[149.428s] [ 96%] Building CXX object CMakeFiles/two_point_patrol.dir/src/two_point_patrol_node.cpp.o
+[157.701s] [100%] Linking CXX executable two_point_patrol
+[157.912s] [100%] Built target two_point_patrol
+[157.922s] Invoked command in '/home/dengjiaxi/simulation_seu/test/build/nav_components' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/dengjiaxi/simulation_seu/test/build/nav_components
+[157.934s] Invoking command in '/home/dengjiaxi/simulation_seu/test/build/nav_components': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/dengjiaxi/simulation_seu/test/build/nav_components
+[157.941s] -- Install configuration: "RelWithDebInfo"
+[157.941s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/lib/libacados_ocp_solver_omni_nmpc.so
+[157.942s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/lib/nav_components/nav_server
+[157.971s] -- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/nav_components/lib/nav_components/nav_server" to "$ORIGIN/..:/home/dengjiaxi/dependency/acados/lib"
+[157.971s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/lib/nav_components/two_point_patrol
+[157.975s] -- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/nav_components/lib/nav_components/two_point_patrol" to ""
+[157.976s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/lib/nav_components/hole_structure_simulator.py
+[157.976s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include
+[157.976s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components
+[157.977s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/spin_recovery.hpp
+[157.977s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner
+[157.977s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner/hole_connection_search.hpp
+[157.977s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner/normal_navigation_segment.hpp
+[157.977s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner/hole_connection_optimizer.hpp
+[157.977s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner/path_smoother.hpp
+[157.977s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner/bspline.hpp
+[157.978s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner/bspline_optimizer.hpp
+[157.978s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/hole_execution_config.hpp
+[157.978s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/pure_pursuit.hpp
+[157.978s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/hole_plan_adapter.hpp
+[157.978s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/slopehole_ros_adapter.hpp
+[157.979s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/hole_clearance.hpp
+[157.979s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/hole_geometry_previewer.hpp
+[157.979s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/omni_motion.hpp
+[157.979s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/simple_planner.hpp
+[157.979s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/hole_selected_snapshot.hpp
+[157.980s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/layered_map_manager.hpp
+[157.980s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/arc_backup_recovery.hpp
+[157.980s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/slopehole_controller.hpp
+[157.980s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/esdf_map.hpp
+[157.980s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/recovery_manager.hpp
+[157.980s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/backup_recovery.hpp
+[157.981s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/static_map_loader.hpp
+[157.981s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/nmpc.hpp
+[157.981s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/omni_model.hpp
+[157.981s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/translation_recovery.hpp
+[157.982s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/map_image_io.hpp
+[157.982s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/costmap_inflater.hpp
+[157.982s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/terrain_region_map.hpp
+[157.982s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/hole_passage_planner.hpp
+[157.982s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/nmpc_config
+[157.983s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/ament_index/resource_index/package_run_dependencies/nav_components
+[157.983s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/ament_index/resource_index/parent_prefix_path/nav_components
+[157.983s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/environment/ament_prefix_path.sh
+[157.984s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/environment/ament_prefix_path.dsv
+[157.984s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/environment/path.sh
+[157.984s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/environment/path.dsv
+[157.984s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/local_setup.bash
+[157.985s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/local_setup.sh
+[157.985s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/local_setup.zsh
+[157.985s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/local_setup.dsv
+[157.985s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/package.dsv
+[157.986s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/ament_index/resource_index/packages/nav_components
+[157.986s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/cmake/nav_componentsConfig.cmake
+[157.986s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/cmake/nav_componentsConfig-version.cmake
+[157.986s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/package.xml
+[157.989s] Invoked command in '/home/dengjiaxi/simulation_seu/test/build/nav_components' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/dengjiaxi/simulation_seu/test/build/nav_components

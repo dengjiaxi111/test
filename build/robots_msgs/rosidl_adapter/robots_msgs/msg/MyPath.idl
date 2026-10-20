@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robots_msgs/msg/slave_computer/MyPath.msg
+// generated code does not contain a copyright notice
+
+
+module robots_msgs {
+  module msg {
+    struct MyPath {
+      uint8 intention;
+
+      uint16 start_x;
+
+      uint16 start_y;
+
+      sequence<int8> delta_x;
+
+      sequence<int8> delta_y;
+
+      uint16 sender_id;
+    };
+  };
+};

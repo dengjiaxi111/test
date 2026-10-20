@@ -1,0 +1,5 @@
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_ros_adapter.cpp: In member function ‘int nav_components::SlopeHoleRosAdapter::updateRetreat(const geometry_msgs::msg::PoseStamped&, double, const std::function<bool(double, double)>&, geometry_msgs::msg::Twist&)’:
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_ros_adapter.cpp:206:10: warning: converting to ‘geometry_msgs::msg::Twist_<std::allocator<void> >’ from initializer list would use explicit constructor ‘geometry_msgs::msg::Twist_<ContainerAllocator>::Twist_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>]’
+  206 |     cmd={};updated_=node_->now().seconds();auto in=input(pose,speed);
+      |          ^
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_ros_adapter.cpp:206:10: note: in C++11 and above a default constructor can be explicit

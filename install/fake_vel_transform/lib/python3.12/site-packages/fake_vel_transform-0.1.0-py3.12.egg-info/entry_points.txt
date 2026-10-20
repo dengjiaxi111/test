@@ -1,0 +1,2 @@
+[console_scripts]
+fake_vel_transform_node = fake_vel_transform.node:main

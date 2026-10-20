@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "nav_interfaces/srv/GetTemporaryMap_Request",
+      "fields": [
+        {
+          "name": "structure_needs_at_least_one_member",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "nav_interfaces/srv/GetTemporaryMap_Request",
+      "hash_string": "RIHS01_baf245cdb6915bd21026bf71019a341ceb42a33d746bf6c3f76e019d47c4b962"
+    }
+  ]
+}

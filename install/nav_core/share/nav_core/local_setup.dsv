@@ -1,0 +1,2 @@
+source;share/nav_core/environment/ament_prefix_path.sh
+source;share/nav_core/environment/path.sh

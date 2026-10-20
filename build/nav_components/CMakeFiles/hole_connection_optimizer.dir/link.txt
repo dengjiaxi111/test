@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhole_connection_optimizer.a CMakeFiles/hole_connection_optimizer.dir/src/hole_connection_optimizer.cpp.o CMakeFiles/hole_connection_optimizer.dir/src/hole_feasible_approach.cpp.o CMakeFiles/hole_connection_optimizer.dir/src/normal_navigation_segment.cpp.o
+/usr/bin/ranlib libhole_connection_optimizer.a

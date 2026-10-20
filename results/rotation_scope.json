@@ -1,0 +1,15 @@
+{
+  "original_files_checked": 602,
+  "original_files_changed": [],
+  "algorithm_files_identical_to_original": {
+    "src/nmpc.cpp": true,
+    "include/nav_components/nmpc.hpp": true,
+    "include/nav_components/omni_model.hpp": true,
+    "src/hole_connection_optimizer.cpp": true,
+    "src/hole_passage_planner.cpp": false,
+    "src/hole_route_planner.cpp": false,
+    "src/hole_global_planner.cpp": false,
+    "src/hole_connection_search.cpp": true,
+    "src/normal_navigation_segment.cpp": true
+  }
+}

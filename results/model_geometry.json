@@ -1,0 +1,28 @@
+{
+  "wheel_joints_and_collisions_unchanged": true,
+  "yaw_mount_radians": 1.6032,
+  "radar_mount_xyz_rpy": [
+    0.045,
+    0.123,
+    0,
+    -0.785,
+    0,
+    0
+  ],
+  "radar_low_world_z_bounds_m": [
+    0.17313142029463005,
+    0.2455330139120883
+  ],
+  "low_total_height_m": 0.2455330139120883,
+  "deck_top_m": 0.2,
+  "pocket_floor_m": 0.16,
+  "gun_body_m": [
+    0.4,
+    0.1,
+    0.04
+  ],
+  "chassis_outer_footprint_m": [
+    0.6,
+    0.6
+  ]
+}

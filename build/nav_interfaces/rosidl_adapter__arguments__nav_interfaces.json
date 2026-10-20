@@ -1,0 +1,21 @@
+{
+  "package_name": "nav_interfaces",
+  "non_idl_tuples": [
+    "/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_interfaces:action/Navigate.action",
+    "/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_interfaces:msg/HoleEvent.msg",
+    "/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_interfaces:msg/HoleStraight.msg",
+    "/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_interfaces:msg/HoleSpeedRegion.msg",
+    "/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_interfaces:msg/HoleTraversal.msg",
+    "/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_interfaces:msg/NavigationPlan.msg",
+    "/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_interfaces:msg/HoleStructureRequest.msg",
+    "/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_interfaces:msg/HoleStructureFeedback.msg",
+    "/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_interfaces:msg/HoleTraversalState.msg",
+    "/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_interfaces:msg/HoleTraversalEvent.msg",
+    "/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_interfaces:srv/ReloadTerrain.srv",
+    "/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_interfaces:srv/GetTemporaryMap.srv",
+    "/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_interfaces:srv/ApplyTemporaryMap.srv",
+    "/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_interfaces:srv/GetHolePassageConfig.srv",
+    "/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_interfaces:srv/ApplyHolePassageConfig.srv",
+    "/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_interfaces:srv/SaveHolePassageConfig.srv"
+  ]
+}

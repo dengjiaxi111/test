@@ -1,0 +1,32 @@
+upper (4.694, 6.0) -> (-2.0, 7.604)
+PLAN 1 0 [('hole_A2', True), ('hole_B2', False)]
+STATE {'t': 5.988, 'state': 1, 'decision': 1, 'reason': 'A reached or remaining preparation required', 'attempt': 0, 'recovery': 0}
+STATE {'t': 6.009, 'state': 1, 'decision': 0, 'reason': 'A reached or remaining preparation required', 'attempt': 0, 'recovery': 0}
+EVENT {'uid': '2808482249-0.000000:1:1', 'type': 1, 'sequence': 1, 'attempt': 0, 'arc': 0.01901184816686441, 'progress': 0.01934192567283849, 'lift': 0.2568720996401075}
+STATE {'t': 7.429, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 19.584, 'state': 4, 'decision': 1, 'reason': 'motion blocked/controller unavailable', 'attempt': 0, 'recovery': 0}
+STATE {'t': 19.604000000000003, 'state': 4, 'decision': 3, 'reason': 'motion blocked/controller unavailable', 'attempt': 0, 'recovery': 1}
+STATE {'t': 19.624000000000002, 'state': 4, 'decision': 3, 'reason': 'slopehole dedicated retreat', 'attempt': 0, 'recovery': 1}
+STATE {'t': 19.984, 'state': 4, 'decision': 3, 'reason': 'slopehole dedicated retreat', 'attempt': 0, 'recovery': 2}
+STATE {'t': 20.004, 'state': 4, 'decision': 3, 'reason': 'slopehole dedicated retreat', 'attempt': 0, 'recovery': 3}
+STATE {'t': 22.081000000000003, 'state': 4, 'decision': 3, 'reason': 'slopehole dedicated retreat', 'attempt': 0, 'recovery': 4}
+STATE {'t': 22.465, 'state': 4, 'decision': 3, 'reason': 'slopehole dedicated retreat', 'attempt': 0, 'recovery': 5}
+STATE {'t': 22.485000000000003, 'state': 0, 'decision': 1, 'reason': '', 'attempt': 0, 'recovery': 0}
+STATE {'t': 22.505000000000003, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 1, 'recovery': 0}
+STATE {'t': 27.607000000000003, 'state': 2, 'decision': 1, 'reason': 'aligning chassis to selected face', 'attempt': 1, 'recovery': 0}
+STATE {'t': 27.987000000000002, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 1, 'recovery': 0}
+STATE {'t': 28.007, 'state': 4, 'decision': 1, 'reason': 'motion blocked/controller unavailable', 'attempt': 1, 'recovery': 0}
+STATE {'t': 28.027, 'state': 4, 'decision': 3, 'reason': 'motion blocked/controller unavailable', 'attempt': 1, 'recovery': 1}
+STATE {'t': 28.047, 'state': 4, 'decision': 3, 'reason': 'slopehole dedicated retreat', 'attempt': 1, 'recovery': 1}
+STATE {'t': 28.767000000000003, 'state': 4, 'decision': 3, 'reason': 'slopehole dedicated retreat', 'attempt': 1, 'recovery': 2}
+STATE {'t': 28.787000000000003, 'state': 4, 'decision': 3, 'reason': 'slopehole dedicated retreat', 'attempt': 1, 'recovery': 3}
+STATE {'t': 29.927000000000003, 'state': 4, 'decision': 3, 'reason': 'slopehole dedicated retreat', 'attempt': 1, 'recovery': 4}
+STATE {'t': 30.286, 'state': 4, 'decision': 3, 'reason': 'slopehole dedicated retreat', 'attempt': 1, 'recovery': 5}
+STATE {'t': 30.303, 'state': 0, 'decision': 1, 'reason': '', 'attempt': 0, 'recovery': 0}
+STATE {'t': 30.321, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 2, 'recovery': 0}
+STATE {'t': 35.423, 'state': 4, 'decision': 1, 'reason': 'motion blocked/controller unavailable', 'attempt': 2, 'recovery': 0}
+STATE {'t': 40.42, 'state': 4, 'decision': 2, 'reason': 'motion blocked/controller unavailable', 'attempt': 2, 'recovery': 0}
+PLAN 2 1 [('hole_A2', True), ('hole_B2', False)]
+PLAN 3 4 [('hole_A2', True), ('hole_B2', False)]
+FAIL 恢复失败
+FAIL 恢复失败

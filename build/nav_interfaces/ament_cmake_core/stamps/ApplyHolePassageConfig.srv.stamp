@@ -1,0 +1,10 @@
+# 完整草稿；确认仅改变导航快照，不写入文件。
+string config_yaml
+uint64 expected_config_revision
+uint64 expected_terrain_revision
+---
+bool success
+string reason
+uint64 config_revision
+uint64 terrain_revision
+bool replanning_triggered

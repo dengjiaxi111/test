@@ -1,0 +1,6 @@
+{'result': 'FAIL', 'final_chassis_y': 6.605515614097492, 'target_y': 7.1, 'fixed_world_velocity_y': 0.6, 'simulated_motion_seconds': 12.048000000000002, 'final_measured_speed': 0.002067130206248205, 'controller': 'original swerve + original fake bridge; no navigation optimizer'}
+Traceback (most recent call last):
+  File "/home/dengjiaxi/simulation_seu/test/scripts/ramp_smoke.py", line 63, in <module>
+    assert reached_y>=7.1,'固定前进指令下原轮组参数仍无法上坡'
+           ^^^^^^^^^^^^^^
+AssertionError: 固定前进指令下原轮组参数仍无法上坡

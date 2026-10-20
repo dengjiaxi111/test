@@ -1,0 +1,420 @@
+[0.000000] (-) TimerEvent: {}
+[0.000111] (-) JobUnselected: {'identifier': 'fake_vel_transform'}
+[0.000164] (-) JobUnselected: {'identifier': 'nav_bringup'}
+[0.000205] (-) JobUnselected: {'identifier': 'nav_core'}
+[0.000231] (-) JobUnselected: {'identifier': 'nav_interfaces'}
+[0.000260] (-) JobUnselected: {'identifier': 'robots_msgs'}
+[0.000292] (nav_components) JobQueued: {'identifier': 'nav_components', 'dependencies': OrderedDict({'nav_core': '/home/dengjiaxi/simulation_seu/test/install/nav_core', 'nav_interfaces': '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces', 'robots_msgs': '/home/dengjiaxi/simulation_seu/test/install/robots_msgs'})}
+[0.000337] (nav_components) JobStarted: {'identifier': 'nav_components'}
+[0.041311] (nav_components) JobProgress: {'identifier': 'nav_components', 'progress': 'cmake'}
+[0.042855] (nav_components) JobProgress: {'identifier': 'nav_components', 'progress': 'build'}
+[0.043995] (nav_components) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dengjiaxi/simulation_seu/test/build/nav_components'], 'cwd': '/home/dengjiaxi/simulation_seu/test/build/nav_components', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/dengjiaxi', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'HTTPS_PROXY': 'http://127.0.0.1:7897', 'CMAKE_BUILD_PARALLEL_LEVEL': '1', 'CODEX_CI': '1', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'dengjiaxi', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"zh-cn","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'DEBUG': 'release', 'OPENBLAS_NUM_THREADS': '1', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib:/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib:/home/dengjiaxi/simulation_seu/test/install/nav_components/lib:/home/dengjiaxi/dependency/acados/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'ACADOS_SOURCE_DIR': '/home/dengjiaxi/dependency/acados', 'INPUT_METHOD': 'ibus', 'HOME': '/home/dengjiaxi', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/dengjiaxi/simulation_seu', 'DESKTOP_SESSION': 'ubuntu-xorg', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-7267b4bb-1.13-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'MANAGERPID': '2901', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '3375', 'MAKEFLAGS': '-j1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4794', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/dengjiaxi/simulation_seu/test/install', 'CUDA_VISIBLE_DEVICES': '', 'CODEX_PERMISSION_PROFILE': ':workspace', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'dengjiaxi', 'JOURNAL_STREAM': '10:21217', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'CODEX_APPLY_PATCH_PRESERVE_LINE_ENDINGS': '1', 'RUST_LOG': 'warn', 'USERNAME': 'dengjiaxi', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'PATH': '/home/dengjiaxi/.local/bin:/home/dengjiaxi/.codex/tmp/arg0/codex-arg0yvyZM6:/home/dengjiaxi/.local/bin:/home/dengjiaxi/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/dengjiaxi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/dengjiaxi/.vscode/extensions/openai.chatgpt-26.1007.21434-linux-x64/bin/linux-x86_64', 'SESSION_MANAGER': 'local/dengjiaxiASUSubuntu2404:@/tmp/.ICE-unix/3331,unix/dengjiaxiASUSubuntu2404:/tmp/.ICE-unix/3331', 'CODEX_VERSION': '0.162.0-alpha.17.2', 'CODEX_SESSION_ID': '01a14934-919a-75b0-b4d8-6d1d62ca0b1f', 'INVOCATION_ID': '3c379f0988cd4e6eb5ecf21b8c84a233', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'CODEX_SANDBOX_NETWORK_DISABLED': '1', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=fcitx', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/dengjiaxi/simulation_seu/test/install/nav_components:/home/dengjiaxi/simulation_seu/test/install/robots_msgs:/home/dengjiaxi/simulation_seu/test/install/nav_interfaces:/home/dengjiaxi/simulation_seu/test/install/nav_core:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '01a14934-919a-75b0-b4d8-6d1d62ca0b1f', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/dengjiaxi/simulation_seu/test/build/nav_components', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/dengjiaxi/.config/Code/CachedData/7debcd0e2acdea1c52de81bf9ee1620444407dda', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages:/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'HTTP_PROXY': 'http://127.0.0.1:7897', 'OMP_NUM_THREADS': '1', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/dengjiaxi/simulation_seu/test/install/robots_msgs:/home/dengjiaxi/simulation_seu/test/install/nav_interfaces:/home/dengjiaxi/simulation_seu/test/install/nav_core:/home/dengjiaxi/simulation_seu/test/install/nav_components:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '4794'}), 'shell': False}
+[0.096798] (-) TimerEvent: {}
+[0.197035] (-) TimerEvent: {}
+[0.245994] (nav_components) StdoutLine: {'line': b'[ 14%] Built target hole_connection_optimizer\n'}
+[0.297181] (-) TimerEvent: {}
+[0.397471] (-) TimerEvent: {}
+[0.497748] (-) TimerEvent: {}
+[0.562194] (nav_components) StdoutLine: {'line': b'[ 18%] Building CXX object CMakeFiles/nav_server.dir/src/nav_server.cpp.o\n'}
+[0.597862] (-) TimerEvent: {}
+[0.698837] (-) TimerEvent: {}
+[0.799137] (-) TimerEvent: {}
+[0.899404] (-) TimerEvent: {}
+[0.999691] (-) TimerEvent: {}
+[1.100844] (-) TimerEvent: {}
+[1.201105] (-) TimerEvent: {}
+[1.301362] (-) TimerEvent: {}
+[1.401573] (-) TimerEvent: {}
+[1.501813] (-) TimerEvent: {}
+[1.602788] (-) TimerEvent: {}
+[1.702958] (-) TimerEvent: {}
+[1.803153] (-) TimerEvent: {}
+[1.903367] (-) TimerEvent: {}
+[2.003582] (-) TimerEvent: {}
+[2.103804] (-) TimerEvent: {}
+[2.204812] (-) TimerEvent: {}
+[2.305018] (-) TimerEvent: {}
+[2.405244] (-) TimerEvent: {}
+[2.505473] (-) TimerEvent: {}
+[2.605702] (-) TimerEvent: {}
+[2.705942] (-) TimerEvent: {}
+[2.806818] (-) TimerEvent: {}
+[2.907065] (-) TimerEvent: {}
+[3.007277] (-) TimerEvent: {}
+[3.107479] (-) TimerEvent: {}
+[3.207691] (-) TimerEvent: {}
+[3.308842] (-) TimerEvent: {}
+[3.409106] (-) TimerEvent: {}
+[3.509327] (-) TimerEvent: {}
+[3.609534] (-) TimerEvent: {}
+[3.709748] (-) TimerEvent: {}
+[3.809999] (-) TimerEvent: {}
+[3.910797] (-) TimerEvent: {}
+[4.010980] (-) TimerEvent: {}
+[4.111163] (-) TimerEvent: {}
+[4.211349] (-) TimerEvent: {}
+[4.311519] (-) TimerEvent: {}
+[4.411792] (-) TimerEvent: {}
+[4.512784] (-) TimerEvent: {}
+[4.612986] (-) TimerEvent: {}
+[4.713262] (-) TimerEvent: {}
+[4.813439] (-) TimerEvent: {}
+[4.913596] (-) TimerEvent: {}
+[5.013762] (-) TimerEvent: {}
+[5.113913] (-) TimerEvent: {}
+[5.214777] (-) TimerEvent: {}
+[5.314915] (-) TimerEvent: {}
+[5.415068] (-) TimerEvent: {}
+[5.515218] (-) TimerEvent: {}
+[5.615354] (-) TimerEvent: {}
+[5.715493] (-) TimerEvent: {}
+[5.815638] (-) TimerEvent: {}
+[5.915821] (-) TimerEvent: {}
+[6.016772] (-) TimerEvent: {}
+[6.116907] (-) TimerEvent: {}
+[6.217043] (-) TimerEvent: {}
+[6.317178] (-) TimerEvent: {}
+[6.417316] (-) TimerEvent: {}
+[6.517454] (-) TimerEvent: {}
+[6.617603] (-) TimerEvent: {}
+[6.717744] (-) TimerEvent: {}
+[6.817884] (-) TimerEvent: {}
+[6.918060] (-) TimerEvent: {}
+[7.018774] (-) TimerEvent: {}
+[7.118922] (-) TimerEvent: {}
+[7.219059] (-) TimerEvent: {}
+[7.319198] (-) TimerEvent: {}
+[7.419342] (-) TimerEvent: {}
+[7.519480] (-) TimerEvent: {}
+[7.619622] (-) TimerEvent: {}
+[7.719769] (-) TimerEvent: {}
+[7.820771] (-) TimerEvent: {}
+[7.920909] (-) TimerEvent: {}
+[8.021049] (-) TimerEvent: {}
+[8.121193] (-) TimerEvent: {}
+[8.221348] (-) TimerEvent: {}
+[8.321499] (-) TimerEvent: {}
+[8.421656] (-) TimerEvent: {}
+[8.521779] (-) TimerEvent: {}
+[8.621925] (-) TimerEvent: {}
+[8.722061] (-) TimerEvent: {}
+[8.822769] (-) TimerEvent: {}
+[8.922905] (-) TimerEvent: {}
+[9.023038] (-) TimerEvent: {}
+[9.123176] (-) TimerEvent: {}
+[9.223324] (-) TimerEvent: {}
+[9.323459] (-) TimerEvent: {}
+[9.423597] (-) TimerEvent: {}
+[9.523738] (-) TimerEvent: {}
+[9.624774] (-) TimerEvent: {}
+[9.724916] (-) TimerEvent: {}
+[9.825057] (-) TimerEvent: {}
+[9.925206] (-) TimerEvent: {}
+[10.025361] (-) TimerEvent: {}
+[10.125510] (-) TimerEvent: {}
+[10.225662] (-) TimerEvent: {}
+[10.325782] (-) TimerEvent: {}
+[10.425945] (-) TimerEvent: {}
+[10.526171] (-) TimerEvent: {}
+[10.626777] (-) TimerEvent: {}
+[10.726932] (-) TimerEvent: {}
+[10.827082] (-) TimerEvent: {}
+[10.927233] (-) TimerEvent: {}
+[11.027393] (-) TimerEvent: {}
+[11.127780] (-) TimerEvent: {}
+[11.227933] (-) TimerEvent: {}
+[11.328087] (-) TimerEvent: {}
+[11.428777] (-) TimerEvent: {}
+[11.528928] (-) TimerEvent: {}
+[11.629083] (-) TimerEvent: {}
+[11.729235] (-) TimerEvent: {}
+[11.829396] (-) TimerEvent: {}
+[11.929556] (-) TimerEvent: {}
+[12.029776] (-) TimerEvent: {}
+[12.130776] (-) TimerEvent: {}
+[12.230930] (-) TimerEvent: {}
+[12.331088] (-) TimerEvent: {}
+[12.431244] (-) TimerEvent: {}
+[12.531396] (-) TimerEvent: {}
+[12.631547] (-) TimerEvent: {}
+[12.731717] (-) TimerEvent: {}
+[12.831921] (-) TimerEvent: {}
+[12.932080] (-) TimerEvent: {}
+[13.032776] (-) TimerEvent: {}
+[13.132930] (-) TimerEvent: {}
+[13.233092] (-) TimerEvent: {}
+[13.333242] (-) TimerEvent: {}
+[13.433390] (-) TimerEvent: {}
+[13.533539] (-) TimerEvent: {}
+[13.633774] (-) TimerEvent: {}
+[13.734771] (-) TimerEvent: {}
+[13.834910] (-) TimerEvent: {}
+[13.935047] (-) TimerEvent: {}
+[14.035181] (-) TimerEvent: {}
+[14.135314] (-) TimerEvent: {}
+[14.235448] (-) TimerEvent: {}
+[14.335582] (-) TimerEvent: {}
+[14.435721] (-) TimerEvent: {}
+[14.535869] (-) TimerEvent: {}
+[14.636009] (-) TimerEvent: {}
+[14.736145] (-) TimerEvent: {}
+[14.836771] (-) TimerEvent: {}
+[14.936913] (-) TimerEvent: {}
+[15.037054] (-) TimerEvent: {}
+[15.137190] (-) TimerEvent: {}
+[15.237334] (-) TimerEvent: {}
+[15.337471] (-) TimerEvent: {}
+[15.437623] (-) TimerEvent: {}
+[15.537775] (-) TimerEvent: {}
+[15.638775] (-) TimerEvent: {}
+[15.738964] (-) TimerEvent: {}
+[15.839164] (-) TimerEvent: {}
+[15.939310] (-) TimerEvent: {}
+[16.039475] (-) TimerEvent: {}
+[16.139613] (-) TimerEvent: {}
+[16.239792] (-) TimerEvent: {}
+[16.339935] (-) TimerEvent: {}
+[16.440102] (-) TimerEvent: {}
+[16.540773] (-) TimerEvent: {}
+[16.640931] (-) TimerEvent: {}
+[16.741085] (-) TimerEvent: {}
+[16.841239] (-) TimerEvent: {}
+[16.941391] (-) TimerEvent: {}
+[17.041529] (-) TimerEvent: {}
+[17.141676] (-) TimerEvent: {}
+[17.241792] (-) TimerEvent: {}
+[17.342816] (-) TimerEvent: {}
+[17.443016] (-) TimerEvent: {}
+[17.543154] (-) TimerEvent: {}
+[17.643294] (-) TimerEvent: {}
+[17.743436] (-) TimerEvent: {}
+[17.843600] (-) TimerEvent: {}
+[17.943759] (-) TimerEvent: {}
+[18.043916] (-) TimerEvent: {}
+[18.144775] (-) TimerEvent: {}
+[18.244946] (-) TimerEvent: {}
+[18.345099] (-) TimerEvent: {}
+[18.445256] (-) TimerEvent: {}
+[18.545410] (-) TimerEvent: {}
+[18.645564] (-) TimerEvent: {}
+[18.745718] (-) TimerEvent: {}
+[18.846775] (-) TimerEvent: {}
+[18.946922] (-) TimerEvent: {}
+[19.047074] (-) TimerEvent: {}
+[19.147238] (-) TimerEvent: {}
+[19.247397] (-) TimerEvent: {}
+[19.347545] (-) TimerEvent: {}
+[19.447697] (-) TimerEvent: {}
+[19.547852] (-) TimerEvent: {}
+[19.648019] (-) TimerEvent: {}
+[19.748208] (-) TimerEvent: {}
+[19.848781] (-) TimerEvent: {}
+[19.948952] (-) TimerEvent: {}
+[20.049096] (-) TimerEvent: {}
+[20.149244] (-) TimerEvent: {}
+[20.249388] (-) TimerEvent: {}
+[20.349775] (-) TimerEvent: {}
+[20.449914] (-) TimerEvent: {}
+[20.550045] (-) TimerEvent: {}
+[20.650188] (-) TimerEvent: {}
+[20.750779] (-) TimerEvent: {}
+[20.850916] (-) TimerEvent: {}
+[20.951052] (-) TimerEvent: {}
+[21.051198] (-) TimerEvent: {}
+[21.151336] (-) TimerEvent: {}
+[21.251477] (-) TimerEvent: {}
+[21.351782] (-) TimerEvent: {}
+[21.451935] (-) TimerEvent: {}
+[21.552783] (-) TimerEvent: {}
+[21.652925] (-) TimerEvent: {}
+[21.753084] (-) TimerEvent: {}
+[21.853277] (-) TimerEvent: {}
+[21.953420] (-) TimerEvent: {}
+[22.053564] (-) TimerEvent: {}
+[22.153732] (-) TimerEvent: {}
+[22.253882] (-) TimerEvent: {}
+[22.354792] (-) TimerEvent: {}
+[22.454934] (-) TimerEvent: {}
+[22.555077] (-) TimerEvent: {}
+[22.655225] (-) TimerEvent: {}
+[22.755369] (-) TimerEvent: {}
+[22.855511] (-) TimerEvent: {}
+[22.955656] (-) TimerEvent: {}
+[23.055790] (-) TimerEvent: {}
+[23.155937] (-) TimerEvent: {}
+[23.256795] (-) TimerEvent: {}
+[23.356944] (-) TimerEvent: {}
+[23.457090] (-) TimerEvent: {}
+[23.557268] (-) TimerEvent: {}
+[23.657487] (-) TimerEvent: {}
+[23.757669] (-) TimerEvent: {}
+[23.857831] (-) TimerEvent: {}
+[23.958837] (-) TimerEvent: {}
+[24.059247] (-) TimerEvent: {}
+[24.159551] (-) TimerEvent: {}
+[24.259824] (-) TimerEvent: {}
+[24.360818] (-) TimerEvent: {}
+[24.461047] (-) TimerEvent: {}
+[24.561231] (-) TimerEvent: {}
+[24.661391] (-) TimerEvent: {}
+[24.761574] (-) TimerEvent: {}
+[24.861816] (-) TimerEvent: {}
+[24.962823] (-) TimerEvent: {}
+[25.063040] (-) TimerEvent: {}
+[25.163251] (-) TimerEvent: {}
+[25.263475] (-) TimerEvent: {}
+[25.363717] (-) TimerEvent: {}
+[25.464819] (-) TimerEvent: {}
+[25.565057] (-) TimerEvent: {}
+[25.665284] (-) TimerEvent: {}
+[25.765513] (-) TimerEvent: {}
+[25.865752] (-) TimerEvent: {}
+[25.966821] (-) TimerEvent: {}
+[26.067063] (-) TimerEvent: {}
+[26.167279] (-) TimerEvent: {}
+[26.267511] (-) TimerEvent: {}
+[26.367711] (-) TimerEvent: {}
+[26.468828] (-) TimerEvent: {}
+[26.569061] (-) TimerEvent: {}
+[26.669287] (-) TimerEvent: {}
+[26.769507] (-) TimerEvent: {}
+[26.869729] (-) TimerEvent: {}
+[26.969962] (-) TimerEvent: {}
+[27.070846] (-) TimerEvent: {}
+[27.171059] (-) TimerEvent: {}
+[27.271276] (-) TimerEvent: {}
+[27.371492] (-) TimerEvent: {}
+[27.471720] (-) TimerEvent: {}
+[27.572821] (-) TimerEvent: {}
+[27.673037] (-) TimerEvent: {}
+[27.773290] (-) TimerEvent: {}
+[27.873693] (-) TimerEvent: {}
+[27.974926] (-) TimerEvent: {}
+[28.075182] (-) TimerEvent: {}
+[28.175424] (-) TimerEvent: {}
+[28.275794] (-) TimerEvent: {}
+[28.376825] (-) TimerEvent: {}
+[28.477232] (-) TimerEvent: {}
+[28.577452] (-) TimerEvent: {}
+[28.677672] (-) TimerEvent: {}
+[28.778823] (-) TimerEvent: {}
+[28.879201] (-) TimerEvent: {}
+[28.979508] (-) TimerEvent: {}
+[29.079739] (-) TimerEvent: {}
+[29.179953] (-) TimerEvent: {}
+[29.280939] (-) TimerEvent: {}
+[29.381222] (-) TimerEvent: {}
+[29.481445] (-) TimerEvent: {}
+[29.581815] (-) TimerEvent: {}
+[29.682795] (-) TimerEvent: {}
+[29.783025] (-) TimerEvent: {}
+[29.883240] (-) TimerEvent: {}
+[29.983465] (-) TimerEvent: {}
+[30.083683] (-) TimerEvent: {}
+[30.184843] (-) TimerEvent: {}
+[30.285071] (-) TimerEvent: {}
+[30.385469] (-) TimerEvent: {}
+[30.485687] (-) TimerEvent: {}
+[30.585931] (-) TimerEvent: {}
+[30.686784] (-) TimerEvent: {}
+[30.786934] (-) TimerEvent: {}
+[30.887085] (-) TimerEvent: {}
+[30.987236] (-) TimerEvent: {}
+[31.087391] (-) TimerEvent: {}
+[31.187551] (-) TimerEvent: {}
+[31.287718] (-) TimerEvent: {}
+[31.387877] (-) TimerEvent: {}
+[31.488788] (-) TimerEvent: {}
+[31.588949] (-) TimerEvent: {}
+[31.689102] (-) TimerEvent: {}
+[31.789282] (-) TimerEvent: {}
+[31.889464] (-) TimerEvent: {}
+[31.989681] (-) TimerEvent: {}
+[32.089907] (-) TimerEvent: {}
+[32.190820] (-) TimerEvent: {}
+[32.291012] (-) TimerEvent: {}
+[32.391198] (-) TimerEvent: {}
+[32.491431] (-) TimerEvent: {}
+[32.591598] (-) TimerEvent: {}
+[32.691788] (-) TimerEvent: {}
+[32.792781] (-) TimerEvent: {}
+[32.893793] (-) TimerEvent: {}
+[32.994819] (-) TimerEvent: {}
+[33.095033] (-) TimerEvent: {}
+[33.195264] (-) TimerEvent: {}
+[33.295503] (-) TimerEvent: {}
+[33.395742] (-) TimerEvent: {}
+[33.495967] (-) TimerEvent: {}
+[33.596150] (-) TimerEvent: {}
+[33.696299] (-) TimerEvent: {}
+[33.796452] (-) TimerEvent: {}
+[33.896618] (-) TimerEvent: {}
+[33.996795] (-) TimerEvent: {}
+[34.097782] (-) TimerEvent: {}
+[34.126957] (nav_components) StdoutLine: {'line': b'[ 22%] Building CXX object CMakeFiles/nav_server.dir/src/slopehole_controller.cpp.o\n'}
+[34.197870] (-) TimerEvent: {}
+[34.298020] (-) TimerEvent: {}
+[34.398171] (-) TimerEvent: {}
+[34.415208] (nav_components) StderrLine: {'line': b'/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp: In member function \xe2\x80\x98nav_core::hole_exec::Output nav_components::SlopeHoleController::update(const Input&)\xe2\x80\x99:\n'}
+[34.415367] (nav_components) StderrLine: {'line': b'/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:164:60: error: \xe2\x80\x98using nav_components::SlopeHoleController::Output = struct nav_core::hole_exec::Output\xe2\x80\x99 {aka \xe2\x80\x98struct nav_core::hole_exec::Output\xe2\x80\x99} has no member named \xe2\x80\x98attempt\xe2\x80\x99\n'}
+[34.415425] (nav_components) StderrLine: {'line': b'  164 |     Output out;out.state=state_;out.progress=progress_;out.attempt=attempt_;\n'}
+[34.415474] (nav_components) StderrLine: {'line': b'      |                                                            ^~~~~~~\n'}
+[34.420905] (nav_components) StderrLine: {'line': b'/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:199:17: error: \xe2\x80\x98using nav_components::SlopeHoleController::Output = struct nav_core::hole_exec::Output\xe2\x80\x99 {aka \xe2\x80\x98struct nav_core::hole_exec::Output\xe2\x80\x99} has no member named \xe2\x80\x98cancel_request\xe2\x80\x99\n'}
+[34.421016] (nav_components) StderrLine: {'line': b'  199 |             out.cancel_request=true;\n'}
+[34.421066] (nav_components) StderrLine: {'line': b'      |                 ^~~~~~~~~~~~~~\n'}
+[34.421108] (nav_components) StderrLine: {'line': b'/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:200:46: error: \xe2\x80\x98const struct nav_core::hole_exec::StructureFeedback\xe2\x80\x99 has no member named \xe2\x80\x98action_stopped\xe2\x80\x99\n'}
+[34.421151] (nav_components) StderrLine: {'line': b'  200 |             if(feedback_fresh && in.feedback.action_stopped && in.feedback.retry_allowed && request_) {\n'}
+[34.421192] (nav_components) StderrLine: {'line': b'      |                                              ^~~~~~~~~~~~~~\n'}
+[34.421229] (nav_components) StderrLine: {'line': b'/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:200:76: error: \xe2\x80\x98const struct nav_core::hole_exec::StructureFeedback\xe2\x80\x99 has no member named \xe2\x80\x98retry_allowed\xe2\x80\x99\n'}
+[34.421268] (nav_components) StderrLine: {'line': b'  200 |             if(feedback_fresh && in.feedback.action_stopped && in.feedback.retry_allowed && request_) {\n'}
+[34.421312] (nav_components) StderrLine: {'line': b'      |                                                                            ^~~~~~~~~~~~~\n'}
+[34.421352] (nav_components) StderrLine: {'line': b'/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:202:53: error: \xe2\x80\x98using nav_components::SlopeHoleController::Config = struct nav_core::hole_exec::Config\xe2\x80\x99 {aka \xe2\x80\x98struct nav_core::hole_exec::Config\xe2\x80\x99} has no member named \xe2\x80\x98max_action_retries\xe2\x80\x99\n'}
+[34.421391] (nav_components) StderrLine: {'line': b'  202 |                 if(action_retries_[target]>=config_.max_action_retries) {out.decision=Decision::FAILURE;out.reason="structure retry budget exhausted";return done();}\n'}
+[34.421427] (nav_components) StderrLine: {'line': b'      |                                                     ^~~~~~~~~~~~~~~~~~\n'}
+[34.421464] (nav_components) StderrLine: {'line': b'/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:203:82: error: \xe2\x80\x98using nav_components::SlopeHoleController::Output = struct nav_core::hole_exec::Output\xe2\x80\x99 {aka \xe2\x80\x98struct nav_core::hole_exec::Output\xe2\x80\x99} has no member named \xe2\x80\x98cancel_request\xe2\x80\x99\n'}
+[34.421501] (nav_components) StderrLine: {'line': b'  203 |                 ++action_retries_[target];request_.reset();cancelling_=false;out.cancel_request=false;\n'}
+[34.421538] (nav_components) StderrLine: {'line': b'      |                                                                                  ^~~~~~~~~~~~~~\n'}
+[34.421571] (nav_components) StderrLine: {'line': b'/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:206:52: error: \xe2\x80\x98using nav_components::SlopeHoleController::Config = struct nav_core::hole_exec::Config\xe2\x80\x99 {aka \xe2\x80\x98struct nav_core::hole_exec::Config\xe2\x80\x99} has no member named \xe2\x80\x98stop_ack_timeout\xe2\x80\x99; did you mean \xe2\x80\x98feedback_timeout\xe2\x80\x99?\n'}
+[34.421612] (nav_components) StderrLine: {'line': b'  206 |                 if(in.now-cancel_started_>=config_.stop_ack_timeout){out.decision=Decision::FAILURE;out.reason="no stopped/retry confirmation";}\n'}
+[34.421649] (nav_components) StderrLine: {'line': b'      |                                                    ^~~~~~~~~~~~~~~~\n'}
+[34.421684] (nav_components) StderrLine: {'line': b'      |                                                    feedback_timeout\n'}
+[34.421720] (nav_components) StderrLine: {'line': b'/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:240:68: error: \xe2\x80\x98using nav_components::SlopeHoleController::Config = struct nav_core::hole_exec::Config\xe2\x80\x99 {aka \xe2\x80\x98struct nav_core::hole_exec::Config\xe2\x80\x99} has no member named \xe2\x80\x98ack_timeout\xe2\x80\x99; did you mean \xe2\x80\x98pose_timeout\xe2\x80\x99?\n'}
+[34.421763] (nav_components) StderrLine: {'line': b'  240 |             if(!freshFeedback(in)&&in.now-request_started_>config_.ack_timeout){hold(in.now,"structure acknowledgement missing");return done();}\n'}
+[34.421804] (nav_components) StderrLine: {'line': b'      |                                                                    ^~~~~~~~~~~\n'}
+[34.421843] (nav_components) StderrLine: {'line': b'      |                                                                    pose_timeout\n'}
+[34.421878] (nav_components) StderrLine: {'line': b'/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:241:144: error: \xe2\x80\x98using nav_components::SlopeHoleController::Output = struct nav_core::hole_exec::Output\xe2\x80\x99 {aka \xe2\x80\x98struct nav_core::hole_exec::Output\xe2\x80\x99} has no member named \xe2\x80\x98cancel_request\xe2\x80\x99\n'}
+[34.421914] (nav_components) StderrLine: {'line': b'  241 |             if(in.now-request_started_>config_.prepare_timeout){hold(in.now,"preparation timeout");cancelling_=true;cancel_started_=in.now;out.cancel_request=true;return done();}\n'}
+[34.421947] (nav_components) StderrLine: {'line': b'      |                                                                                                                                                ^~~~~~~~~~~~~~\n'}
+[34.421983] (nav_components) StderrLine: {'line': b'/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:250:19: error: \xe2\x80\x98const nav_components::SlopeHoleController::Input\xe2\x80\x99 {aka \xe2\x80\x98const struct nav_core::hole_exec::Input\xe2\x80\x99} has no member named \xe2\x80\x98command_requested\xe2\x80\x99\n'}
+[34.422019] (nav_components) StderrLine: {'line': b'  250 |             if(in.command_requested) {\n'}
+[34.422053] (nav_components) StderrLine: {'line': b'      |                   ^~~~~~~~~~~~~~~~~\n'}
+[34.422086] (nav_components) StderrLine: {'line': b'/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:251:77: error: \xe2\x80\x98using nav_components::SlopeHoleController::Config = struct nav_core::hole_exec::Config\xe2\x80\x99 {aka \xe2\x80\x98struct nav_core::hole_exec::Config\xe2\x80\x99} has no member named \xe2\x80\x98stall_progress\xe2\x80\x99\n'}
+[34.422119] (nav_components) StderrLine: {'line': b'  251 |                 if(progress_started_<0||progress_-progress_anchor_>=config_.stall_progress){progress_anchor_=progress_;progress_started_=in.now;}\n'}
+[34.422155] (nav_components) StderrLine: {'line': b'      |                                                                             ^~~~~~~~~~~~~~\n'}
+[34.422190] (nav_components) StderrLine: {'line': b'/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:252:53: error: \xe2\x80\x98using nav_components::SlopeHoleController::Config = struct nav_core::hole_exec::Config\xe2\x80\x99 {aka \xe2\x80\x98struct nav_core::hole_exec::Config\xe2\x80\x99} has no member named \xe2\x80\x98stall_timeout\xe2\x80\x99; did you mean \xe2\x80\x98hold_timeout\xe2\x80\x99?\n'}
+[34.422226] (nav_components) StderrLine: {'line': b'  252 |                 if(in.now-progress_started_>config_.stall_timeout){hold(in.now,"traverse no progress");return done();}\n'}
+[34.422259] (nav_components) StderrLine: {'line': b'      |                                                     ^~~~~~~~~~~~~\n'}
+[34.422297] (nav_components) StderrLine: {'line': b'      |                                                     hold_timeout\n'}
+[34.422332] (nav_components) StderrLine: {'line': b'/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:266:140: error: \xe2\x80\x98using nav_components::SlopeHoleController::Output = struct nav_core::hole_exec::Output\xe2\x80\x99 {aka \xe2\x80\x98struct nav_core::hole_exec::Output\xe2\x80\x99} has no member named \xe2\x80\x98cancel_request\xe2\x80\x99\n'}
+[34.422369] (nav_components) StderrLine: {'line': b'  266 |             if(in.now-request_started_>config_.restore_timeout){hold(in.now,"restore timeout");cancelling_=true;cancel_started_=in.now;out.cancel_request=true;return done();}\n'}
+[34.422402] (nav_components) StderrLine: {'line': b'      |                                                                                                                                            ^~~~~~~~~~~~~~\n'}
+[34.422439] (nav_components) StderrLine: {'line': b'/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:273:38: error: \xe2\x80\x98using nav_components::SlopeHoleController::Config = struct nav_core::hole_exec::Config\xe2\x80\x99 {aka \xe2\x80\x98struct nav_core::hole_exec::Config\xe2\x80\x99} has no member named \xe2\x80\x98stopped_speed\xe2\x80\x99\n'}
+[34.422477] (nav_components) StderrLine: {'line': b'  273 |         if(in.measured_speed<config_.stopped_speed){if(stop_stable_since_<0)stop_stable_since_=in.now;}\n'}
+[34.422511] (nav_components) StderrLine: {'line': b'      |                                      ^~~~~~~~~~~~~\n'}
+[34.422546] (nav_components) StderrLine: {'line': b'/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:275:70: error: \xe2\x80\x98using nav_components::SlopeHoleController::Config = struct nav_core::hole_exec::Config\xe2\x80\x99 {aka \xe2\x80\x98struct nav_core::hole_exec::Config\xe2\x80\x99} has no member named \xe2\x80\x98settle_time\xe2\x80\x99\n'}
+[34.422581] (nav_components) StderrLine: {'line': b'  275 |         if(stop_stable_since_>=0&&in.now-stop_stable_since_>=config_.settle_time&&matching(in,Posture::LOW)) {emergency_=false;stop_stable_since_=-1;}\n'}
+[34.422616] (nav_components) StderrLine: {'line': b'      |                                                                      ^~~~~~~~~~~\n'}
+[34.422653] (nav_components) StderrLine: {'line': b'/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:278:48: error: \xe2\x80\x98using nav_components::SlopeHoleController::Config = struct nav_core::hole_exec::Config\xe2\x80\x99 {aka \xe2\x80\x98struct nav_core::hole_exec::Config\xe2\x80\x99} has no member named \xe2\x80\x98stopped_speed\xe2\x80\x99\n'}
+[34.422690] (nav_components) StderrLine: {'line': b'  278 |     if(out.stop_arc&&in.measured_speed>config_.stopped_speed) {\n'}
+[34.422725] (nav_components) StderrLine: {'line': b'      |                                                ^~~~~~~~~~~~~\n'}
+[34.422764] (nav_components) StderrLine: {'line': b'/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp: In member function \xe2\x80\x98void nav_components::SlopeHoleController::completeRetreat(double, const Input&)\xe2\x80\x99:\n'}
+[34.422801] (nav_components) StderrLine: {'line': b'/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:290:78: error: \xe2\x80\x98using nav_components::SlopeHoleController::Config = struct nav_core::hole_exec::Config\xe2\x80\x99 {aka \xe2\x80\x98struct nav_core::hole_exec::Config\xe2\x80\x99} has no member named \xe2\x80\x98stopped_speed\xe2\x80\x99\n'}
+[34.422839] (nav_components) StderrLine: {'line': b'  290 |     if(!matching(in,Posture::LOW)||!in.pose_valid||in.measured_speed>config_.stopped_speed)\n'}
+[34.422874] (nav_components) StderrLine: {'line': b'      |                                                                              ^~~~~~~~~~~~~\n'}
+[34.498261] (-) TimerEvent: {}
+[34.584583] (nav_components) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nav_server.dir/build.make:90: CMakeFiles/nav_server.dir/src/slopehole_controller.cpp.o] Error 1\n'}
+[34.585137] (nav_components) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/nav_server.dir/all] Error 2\n'}
+[34.585480] (nav_components) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[34.587708] (nav_components) CommandEnded: {'returncode': 2}
+[34.595400] (nav_components) JobEnded: {'identifier': 'nav_components', 'rc': 2}
+[34.595865] (-) EventReactorShutdown: {}

@@ -1,0 +1,71 @@
+[0.034s] Invoking command in '/home/dengjiaxi/simulation_seu/test/build/nav_bringup': AMENT_PREFIX_PATH=/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_bringup -DBUILD_TESTING=OFF -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_CXX_FLAGS_RELWITHDEBINFO=-O2 -g1 -DNDEBUG -DACADOS_SOURCE_DIR=/home/dengjiaxi/dependency/acados -DCMAKE_INSTALL_PREFIX=/home/dengjiaxi/simulation_seu/test/install/nav_bringup
+[0.142s] -- The C compiler identification is GNU 13.3.0
+[0.254s] -- The CXX compiler identification is GNU 13.3.0
+[0.286s] -- Detecting C compiler ABI info
+[0.451s] -- Detecting C compiler ABI info - done
+[0.465s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.466s] -- Detecting C compile features
+[0.472s] -- Detecting C compile features - done
+[0.484s] -- Detecting CXX compiler ABI info
+[0.657s] -- Detecting CXX compiler ABI info - done
+[0.669s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.670s] -- Detecting CXX compile features
+[0.671s] -- Detecting CXX compile features - done
+[0.688s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.915s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.165s] -- Configuring done (1.1s)
+[1.169s] -- Generating done (0.0s)
+[1.170s] CMake Warning:
+[1.170s]   Manually-specified variables were not used by the project:
+[1.170s] 
+[1.170s]     ACADOS_SOURCE_DIR
+[1.170s] 
+[1.170s] 
+[1.172s] -- Build files have been written to: /home/dengjiaxi/simulation_seu/test/build/nav_bringup
+[1.177s] Invoked command in '/home/dengjiaxi/simulation_seu/test/build/nav_bringup' returned '0': AMENT_PREFIX_PATH=/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_bringup -DBUILD_TESTING=OFF -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_CXX_FLAGS_RELWITHDEBINFO=-O2 -g1 -DNDEBUG -DACADOS_SOURCE_DIR=/home/dengjiaxi/dependency/acados -DCMAKE_INSTALL_PREFIX=/home/dengjiaxi/simulation_seu/test/install/nav_bringup
+[1.178s] Invoking command in '/home/dengjiaxi/simulation_seu/test/build/nav_bringup': AMENT_PREFIX_PATH=/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/dengjiaxi/simulation_seu/test/build/nav_bringup
+[1.231s] Invoked command in '/home/dengjiaxi/simulation_seu/test/build/nav_bringup' returned '0': AMENT_PREFIX_PATH=/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/dengjiaxi/simulation_seu/test/build/nav_bringup
+[1.244s] Invoking command in '/home/dengjiaxi/simulation_seu/test/build/nav_bringup': AMENT_PREFIX_PATH=/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/dengjiaxi/simulation_seu/test/build/nav_bringup
+[1.256s] -- Install configuration: "RelWithDebInfo"
+[1.256s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/launch
+[1.256s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/launch/two_point_patrol.launch.py
+[1.257s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/launch/navigation.launch.py
+[1.257s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/launch/run.launch.py
+[1.258s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/config
+[1.258s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/config/nav_params.yaml
+[1.258s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/config/hole_state_machine.yaml
+[1.259s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps
+[1.259s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/RMUC_final_no_slope1.pgm
+[1.260s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/test1.txt
+[1.260s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/map3.pgm
+[1.263s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/RMUC_final_no_slope.pgm
+[1.265s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/map4.yaml
+[1.266s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/map1.pgm
+[1.266s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/map2.pgm
+[1.268s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/map.pgm
+[1.269s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/map.yaml
+[1.269s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/map_obst.pgm
+[1.271s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/map3.yaml
+[1.271s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/map4.pgm
+[1.272s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/RMUC_final.yaml
+[1.273s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/rviz
+[1.273s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/rviz/navigation_full.rviz
+[1.273s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/rviz/navigation.rviz
+[1.274s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/lib/nav_bringup/static_relocator.py
+[1.274s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/lib/nav_bringup/odom_base_debug_rebaser.py
+[1.279s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/ament_index/resource_index/package_run_dependencies/nav_bringup
+[1.279s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/ament_index/resource_index/parent_prefix_path/nav_bringup
+[1.279s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/environment/ament_prefix_path.sh
+[1.279s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/environment/ament_prefix_path.dsv
+[1.279s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/environment/path.sh
+[1.279s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/environment/path.dsv
+[1.279s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/local_setup.bash
+[1.279s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/local_setup.sh
+[1.279s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/local_setup.zsh
+[1.279s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/local_setup.dsv
+[1.279s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/package.dsv
+[1.279s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/ament_index/resource_index/packages/nav_bringup
+[1.279s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/cmake/nav_bringupConfig.cmake
+[1.279s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/cmake/nav_bringupConfig-version.cmake
+[1.280s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/package.xml
+[1.280s] Invoked command in '/home/dengjiaxi/simulation_seu/test/build/nav_bringup' returned '0': AMENT_PREFIX_PATH=/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/dengjiaxi/simulation_seu/test/build/nav_bringup

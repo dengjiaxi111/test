@@ -1,0 +1,82 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robots_msgs/msg/referee_system/RobotStatus.msg
+// generated code does not contain a copyright notice
+
+
+module robots_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "robot status")
+    struct RobotStatus {
+      uint8 robot_id;
+
+      @verbatim (language="comment", text=
+        "本机器人位置 x 坐标，单位：m")
+      float x;
+
+      @verbatim (language="comment", text=
+        "本机器人位置 y 坐标，单位：m")
+      float y;
+
+      @verbatim (language="comment", text=
+        "本机器人测速模块的朝向，单位：度。正北为 0 度")
+      float angle;
+
+      @verbatim (language="comment", text=
+        "机器人回血增益（百分比，值为 10 表示每秒恢复血量上限的 10%")
+      uint8 recovery_buff;
+
+      @verbatim (language="comment", text=
+        "机器人防御增益（百分比，值为 50 表示 50%防御增益")
+      uint8 defence_buff;
+
+      @verbatim (language="comment", text=
+        "机器人负防御增益（百分比，值为 30 表示-30%防御增益）")
+      uint8 vulnerability_buff;
+
+      @verbatim (language="comment", text=
+        "机器人攻击增益（百分比，值为 50 表示 50%攻击增益")
+      uint16 attack_buff;
+
+      @verbatim (language="comment", text=
+        "机器人剩余能量值反馈，以 16 进制标识机器人剩余能量值比例")
+      uint8 remaining_energy;
+
+      @verbatim (language="comment", text=
+        "17mm 弹丸允许发弹量")
+      uint16 projectile_allowance_17mm;
+
+      @verbatim (language="comment", text=
+        "己方堡垒")
+      uint8 fort_area;
+
+      @verbatim (language="comment", text=
+        "己方补血点")
+      uint8 supply_blood_area;
+
+      uint16 local_exchange_projectile_allowance_17mm;
+
+      uint8 remote_exchange_projectile_times;
+
+      uint8 remote_exchange_health_times;
+
+      uint8 can_free_rebirth;
+
+      uint8 can_instant_rebirth;
+
+      uint16 rebirth_need_coin;
+
+      uint8 ttk_status;
+
+      uint16 projectile_allowance_17mm_remain;
+
+      @verbatim (language="comment", text=
+        "云台手发的控制目标位置x坐标")
+      float target_position_x;
+
+      @verbatim (language="comment", text=
+        "云台手发的控制目标位置y坐标")
+      float target_position_y;
+    };
+  };
+};

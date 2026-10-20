@@ -1,0 +1,16 @@
+[INFO] [1792461589.686434585] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1792461589.686648162] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[INFO] [1792461589.723431148] [rviz2]: Stereo is NOT SUPPORTED
+[ERROR] [1792461590.048340896] [rviz2]: Could not load resource [/home/dengjiaxi/simulation_seu/navigatiosim2/src/pb2025_robot_description/resource/models/mid360/meshes/mid360.dae]: Unable to open file "/home/dengjiaxi/simulation_seu/navigatiosim2/src/pb2025_robot_description/resource/models/mid360/meshes/mid360.dae".
+[ERROR] [1792461590.048860515] [rviz2]: Could not load resource [/home/dengjiaxi/simulation_seu/navigatiosim2/src/pb2025_robot_description/resource/models/mid360/meshes/mid360.dae]: Unable to open file "/home/dengjiaxi/simulation_seu/navigatiosim2/src/pb2025_robot_description/resource/models/mid360/meshes/mid360.dae".
+[INFO] [1792461597.042510996] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[INFO] [1792461654.185053967] [rviz2]: Setting goal pose: Frame:map, Position(10.9106, 0.0541992, 0), Orientation(0, 0, 0.989991, 0.141131) = Angle: 2.85839
+[INFO] [1792461663.263351003] [rviz2]: Setting goal pose: Frame:map, Position(11.5557, 3.83465, 0), Orientation(0, 0, 0.996913, 0.0785147) = Angle: 2.9844
+[INFO] [1792461674.991641174] [rviz2]: Setting goal pose: Frame:map, Position(7.50968, 6.04726, 0), Orientation(0, 0, 0.995906, 0.0903953) = Angle: 2.96055
+[INFO] [1792461724.393109987] [rviz2]: Setting goal pose: Frame:map, Position(4.85308, -0.766171, 0), Orientation(0, 0, 0.434999, 0.900431) = Angle: 0.900075
+[INFO] [1792462255.271803764] [rviz2]: Setting goal pose: Frame:map, Position(13.1349, -0.0386496, 0), Orientation(0, 0, 0.434999, 0.900431) = Angle: 0.900075
+[INFO] [1792462281.969580915] [rviz2]: Setting goal pose: Frame:map, Position(11.8395, 0.183359, 0), Orientation(0, 0, 0.992714, 0.120496) = Angle: 2.90001
+[INFO] [1792462285.893354133] [rviz2]: Setting goal pose: Frame:map, Position(6.2298, 2.08534, 0), Orientation(0, 0, -0.591879, 0.806027) = Angle: -1.26678
+[INFO] [1792462292.115034026] [rviz2]: Setting goal pose: Frame:map, Position(3.72049, -2.32025, 0), Orientation(0, 0, 0.499551, 0.866285) = Angle: 1.04616
+[INFO] [1792462298.816658808] [rviz2]: Setting goal pose: Frame:map, Position(4.81212, 0.233547, 0), Orientation(0, 0, -0.484186, 0.874965) = Angle: -1.01086
+[INFO] [1792462318.318715570] [rclcpp]: signal_handler(SIGINT/SIGTERM)

@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robots_msgs/msg/slave_computer/GimbCmdFram.msg
+// generated code does not contain a copyright notice
+
+
+module robots_msgs {
+  module msg {
+    struct GimbCmdFram {
+      float center_yaw;
+
+      float armor_pitch;
+
+      float armor_yaw;
+
+      uint8 spin_flag;
+
+      uint8 shot_mode;
+    };
+  };
+};

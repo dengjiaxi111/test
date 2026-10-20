@@ -1,0 +1,8 @@
+# 编辑器保存文件的绝对路径；必须与导航 terrain_file 指向同一文件。
+string expected_path
+---
+bool success
+string reason
+string terrain_path
+uint64 terrain_revision
+bool replanning_triggered

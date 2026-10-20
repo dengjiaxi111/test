@@ -1,0 +1,1 @@
+['-DBUILD_TESTING=OFF', '-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DCMAKE_CXX_FLAGS_RELWITHDEBINFO=-O2 -g1 -DNDEBUG', '-DACADOS_SOURCE_DIR=/home/dengjiaxi/dependency/acados']

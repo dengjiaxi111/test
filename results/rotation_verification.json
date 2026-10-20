@@ -1,0 +1,26 @@
+{
+  "original_files_checked": 602,
+  "original_files_changed": [],
+  "build": "PASS: nav_core, nav_components, fake_vel_transform, nav_bringup",
+  "unit_checks": "PASS: rotation geometry, command order, positive/negative E entry",
+  "flat_physics": {
+    "result": "PASS",
+    "spin_translation_m": 1.7646936780919236,
+    "lateral_drift_m": 0.04362281339213536,
+    "chassis_yaw_change_rad": 2.071295245785524,
+    "opposite_rate_error_rad_s": 0.0008261169868269969,
+    "stop_feedback": true,
+    "alignment_feedback": true,
+    "original_fake_and_new_chassiss": true
+  },
+  "complete_passage": false,
+  "crest_result": "FAIL",
+  "crest_error": "\u8bca\u65ad\u505c\u6b62\u4e8e\u9996\u6b21HOLD: unreliable progress/localization jump",
+  "visible_event_points": 6,
+  "observed_events": [
+    0,
+    1
+  ],
+  "max_map_y_m": 6.409968666015164,
+  "gui_tested": false
+}

@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robots_msgs/msg/slave_computer/ModeCmd.msg
+// generated code does not contain a copyright notice
+
+
+module robots_msgs {
+  module msg {
+    struct ModeCmd {
+      uint8 should_chassis_spin;
+
+      uint8 should_gimbal_patrol;
+
+      uint8 buy_bullet;
+
+      uint8 rebirth;
+
+      uint8 use_capacity;
+    };
+  };
+};

@@ -1,0 +1,255 @@
+# 导航参数配置
+
+nav_server:
+  ros__parameters:
+    hole_state_machine:
+      config_file: ""  # 独立坡洞执行配置绝对路径；空值默认禁用，重启生效
+    use_static_map_odom: true  # 定位模式：true 为 RViz 手动定位，false 为 NDT；调试开关开启时由调试节点接管定位
+    debug_reset_odom_to_base_link: true  # 规划调试：强制 odom==base_link，维护 fake 系；暂停正常定位、速度桥和局部障碍更新，重启生效
+    
+    # 地图路径由 navigation.launch.py 注入
+    map_file: ""
+    hole_passages_file: ""  # 每洞人工范围及准备路径距离文件；空值使用实际 Terrain 同目录的 hole_passages.yaml，重启生效
+    # 启动时清除洞内及两条通行边外侧的静态障碍，仅在内存中生效。
+    # before 对应 passable_edges[0]；after 对应 passable_edges[1]，与行驶方向无关。
+    hole_clearance:
+      enabled: true  # 启用导航启动时的临时洞口静态障碍清除
+      before_distance: 0.5  # 第一条通行边外侧的静态障碍清除距离（米）
+      after_distance: 0.5   # 第二条通行边外侧的静态障碍清除距离（米）
+    # 单洞/多洞方向搜索、固定直线和洞外连续连接优化。
+    hole_planner:
+      enabled: true  # 启用受约束过洞规划及最终校验；普通路线没有穿洞时直接沿用，几何预览独立生效
+      mode: centerline  # free：自主选择进出位置并生成洞前洞后直线；centerline：生成 S—T 全程中心直线
+      use_global_distances: false  # false 优先采用地图每洞物理侧直线范围及单洞距离（米）；true 仅覆盖旧距离模式；已确认人工范围始终优先
+      geometry:
+        rectangle_angle_tolerance_deg: 3.0  # 矩形角度容差（度）
+        parallel_tolerance_deg: 3.0  # 对边平行角度容差（度）
+        min_long_short_ratio: 1.2  # 长边与短边的最小长度比
+        max_centerline_difference: 0.02  # 双向中心线端点最大差异（米）
+        max_axis_difference_deg: 3.0  # 双向中心线方向最大夹角（度）
+      approach:  # 以下距离及 A 搜索仅用于未设置人工范围的兼容模式
+        prepare_distance: 1.5  # A：准备点距入口的距离（米）
+        entry_straight_length: 0.8  # S：入口前开始保持直线的位置距入口的距离（米），不得大于准备距离
+        search_prepare_distance: true  # 严格模式下配置准备点不可连接时尝试其他准备距离
+        prepare_distance_min: 1.0  # 准备距离搜索下限（米），短于入口直线长度的候选跳过
+        prepare_distance_max: 3.0  # 准备距离搜索上限（米）
+        prepare_distance_step: 0.25  # 准备距离搜索步长（米），改变 A 不改变 S
+      departure:
+        planning_policy: normal_navigation  # 离开策略（无单位）：T 后普通搜索/平滑；legacy_constrained 保留轴线 D 必经点，旧配置缺省沿用旧策略
+        exit_straight_length: 0.1  # T：出洞后继续保持直线的长度（米）
+        departure_distance: 0.2  # D（米）：新策略为从 X 沿最终路径的弧长，旧严格策略为轴线距离；不得小于实际出口直线长度
+      optimization:
+        enabled: true  # 启用入口、洞间及 free 洞内的专门优化；旧策略另优化末洞出口，新策略末段采用 planner 优化参数
+        max_iterations: 100  # 每个连接种子的优化迭代上限
+        relative_improvement_tolerance: 0.001  # 相对代价改善不足时的收敛阈值（无量纲）
+        stagnation_iterations: 5  # 连续改善不足达到此迭代数时停止优化
+        control_spacing: 0.45  # 样条控制点目标间距（米）；也用于后备局部圆滑的支撑长度上限
+        length_weight: 1.0  # 归一化路径长度权重
+        curvature_weight: 0.01  # 归一化曲率平方积分权重（无量纲）；较原值减半，允许更紧凑的平滑转弯
+        curvature_change_weight: 0.001  # 归一化曲率变化权重（无量纲）；较原值减半，保留平滑偏好并减少过度拉直
+        obstacle_weight: 5.0  # ESDF 障碍距离软代价权重，最终碰撞校验仍是硬约束
+        reference_weight: 0.1  # 偏离当前连接种子的软代价权重
+        safe_distance: 0.3  # 优化期望障碍距离（米），不是车体半径且不额外膨胀地图
+      connection:
+        approach_policy: feasibility_first  # 洞前/洞间接入策略（无单位）：优先原样条优化，失败后局部圆滑/折线后备；continuous 强制连续曲线；硬曲率开启时采用 continuous
+        smoothing_timeout: 0.2  # feasibility_first 中每次整段样条优化时间上限（秒）；受单连接总预算限制，0 仅尝试局部圆滑；不改变 continuous 策略
+        max_curvature: 1.0  # 可选硬曲率上限及旧版搜索的曲率上限（1/米），倒数为最小转弯半径；不约束车体朝向
+        enforce_max_curvature: false  # 是否强制最大曲率（无单位）；true 使用连续接入并拒绝超限曲率，false 时 feasibility_first 允许固定直线段外的折角
+      cache:
+        enabled: false  # 过洞缓存开关；false 每次重新规划，true 允许复验后的整条过洞路径及洞间连接复用
+        max_entries: 128  # 洞间连接缓存最大条目数，超出后淘汰最近最少使用的条目
+      global:
+        planning_policy: responsive  # responsive 首解后有界比较；compare 在总预算内继续比较
+        shortlist_size: 3  # 每批优先展开的廉价连接候选数，失败后继续扩展备选
+        improvement_timeout: 0.15  # 首条完整合法解之后允许的额外比较时间（秒），不超过总预算
+        relative_cost_gap: 0.1  # 完整代价与有效搜索下界足够接近时的相对结束阈值（无量纲）
+        enabled: true  # 启用第五阶段连接图，支持连续多洞、特殊起终点及过洞/绕行比较；false 使用原单洞流程
+        max_nodes: 192  # 通行候选节点总上限，按洞口分配预算并包含两个方向
+        max_expansions: 256  # 连接图最多展开的状态数量，连接边按需计算
+        max_passages: 8  # 一条路线最多通过的不同洞口数量
+        curvature_weight: 0.002  # 连续策略整条路线曲率平方积分的比较权重；可行优先允许洞外折角，不计此比较项
+        clearance_weight: 0.2  # 整条路线障碍距离不足的比较权重，碰撞校验始终为硬约束
+        prepare_deviation_weight: 0.1  # 严格模式准备距离偏离配置值的比较权重
+      search:
+        state_resolution: 0.1  # 搜索位置状态的分辨率（米）
+        heading_bins: 72  # 运动方向离散数量，不使用车体朝向
+        primitive_length: 0.2  # 每个搜索运动片段的长度（米），不得小于状态分辨率
+        sample_resolution: 0.025  # 输出搜索折线的最大采样间距（米），转弯时自动加密
+        max_expansions: 20000  # 单次连接搜索的最大状态展开数量
+        connection_timeout: 0.5  # 单次连接搜索的时间上限（秒）
+        planning_timeout: 5.0  # 一次完整规划共用的搜索时间上限（秒），包括绕行、多个洞和洞间连接
+        min_motion_speed: 0.05  # 速度超过此值时参考起点运动方向（米/秒）；continuous 强制对齐，可行优先尝试局部平滑对齐
+      free:
+        edge_step: 0.1  # 普通模式沿通行边调整进出位置的步长（米）
+        angle_step_deg: 15.0  # 普通模式进出方向候选的角度步长（度）
+        max_angle_deg: 60.0  # 普通模式相对通行轴的角度采样范围（度）
+        max_candidates: 64  # 普通模式最多尝试的进出候选数量
+      validation:
+        waypoint_tolerance: 0.02  # 约束点位置及直线横向偏差的校验容差（米），不允许缩短配置长度
+        tangent_tolerance_deg: 3.0  # 直线方向及连接处运动切线角度容差（度）
+        side_margin: 0.0  # 路径参考点到侧边的最小几何距离（米），不包含车体半径
+      publish_debug_markers: true  # 发布洞口几何调试标记
+    control_rate: 50.0
+    goal_timeout: 1000.0    # 总任务超时(s)，从收到目标开始超过该时间仍未完成则触发 TIMEOUT recovery
+    goal_tolerance: 0.1
+    yaw_tolerance: 0.1
+    
+    # 坐标系配置
+    map_frame: "map"
+    base_frame: "base_link_fake" # 导航虚拟控制系；base_link 是云台，底盘转换由电控层负责
+    odom_frame: "odom"
+    
+    # 控制器超时保护
+    controller_timeout: 3.5  # 控制器无进展超时(s)，超过该时间无有效位移则触发 CONTROL_FAILED recovery
+    controller_progress_threshold: 0.2  # 控制器有效进展距离阈值(m)，移动超过该距离才刷新进展时间
+    
+    # 周期性路径检查 (动态障碍物应对，默认启用)
+    path_check_period: 0.1 # 路径检查周期(秒) - 降低以快速响应动态障碍物
+    path_lateral_tolerance: 1.25  # 横向偏离路径容忍度(米)，超过则重规划
+    # 说明: 系统每隔 path_check_period 秒检查机器人到路径的最短距离
+    # 如果横向偏离超过 path_lateral_tolerance，会停止并重新规划
+    # path_check_period 越小响应越快，但会增加 CPU 负载（建议 0.2-1.0 秒）
+
+    # ============ 路径持久化/复用 ============
+    path_io:
+      enable_save_planned_path: false   # true: 每次规划成功后保存平滑路径
+      planned_path_file: "/tmp/nav_planned_path.yaml"
+      use_prior_path: false            # true: 规划阶段优先读取先验路径并直接送入控制器
+      prior_path_file: "/tmp/nav_planned_path.yaml"
+      validate_prior_path: false        # 读取后先做障碍物校验
+      fallback_to_planner: false        # 先验路径不可用时回退到在线规划
+    
+    # ============ 分层地图系统 ============
+    # 静态层: 从yaml/pgm文件加载的全局地图
+    enable_static_layer: true   # 启用静态层（默认启用）
+    # 说明: 
+    #   - 启用时: 从map_file加载pgm/yaml静态地图
+    #   - 禁用时: 自动创建50x50m空白地图框架（纯动态SLAM模式）
+    # 注意: 禁用静态层时，必须启用动态层，否则无障碍物信息
+    
+    # 动态层: 来自rog_map的局部障碍物
+    enable_dynamic_layer: true    # 启用动态层融合
+    dynamic_layer_topic: "/rog_map/map_2d"  # 局部障碍物地图话题 (odom坐标系)
+    # 说明: 动态层会自动从odom坐标系投影到map坐标系，并与静态地图融合
+
+    # ============ 地图更新性能日志 ============
+    enable_performance_logging: false  # 启用地图更新性能日志 (开发/调试时启用)
+    # 说明: 启用后会在控制台输出地图融合、ESDF/Costmap重建的详细耗时
+    
+    # ============ ESDF 地图 ============
+    enable_esdf: true
+    esdf_vis_max_dist: 2.0      # 可视化最大距离(m)
+    
+    # Costmap 膨胀
+    inflation:
+      radius: 0.8              # 膨胀半径(m)
+      inscribed_radius: 0.2    # 内切圆半径(m)，致命代价区
+      cost_scaling: 1.8        # 指数衰减因子
+      decay_type: exponential  # linear 或 exponential
+    
+    # 规划器
+    planner:
+      obstacle_threshold: 99   # 障碍物阈值
+      cost_weight: 0.9         # 代价权重 (降低后更愿意通过窄通道)
+      enable_smooth: true      # 启用 B样条平滑
+      resample_interval: 0.3   # 重采样间隔 (m)，控制曲线光滑度，越小越光滑
+      smooth_resolution: 0.05  # 平滑后路径分辨率 (m)
+      
+      # 路径复用和剪枝
+      enable_path_cache: true         # 启用路径缓存和复用
+      enable_auto_prune: true         # 启用自动剪枝已驶过部分
+      goal_change_tolerance: 0.2      # 目标变化阈值(米), 小于此值则认为目标未变化
+      obstacle_check_threshold: 99    # 障碍物检查阈值, 路径上代价值 >= 此值视为障碍物
+      esdf_warn_min_safe_dist: 0.12   # 平滑后ESDF预警最小安全距离(米)
+      start_deviation_threshold: 1.0  # 起点偏离缓存路径阈值(米), 超过则强制重规划
+      astar_max_attempts: 1           # A* 尝试次数（避免无效重试）
+      astar_max_iterations: 3000000   # A* 单次搜索最大迭代次数(<=0 自动)，复杂长路径可适当调大
+      astar_threshold_step: 0         # 关闭反向收紧阈值重试
+      prune_distance: 1.0            # 剪枝保留距离(米), 保留当前位置前方此距离内的点
+      publish_astar_raw_path: true   # 发布原始A*路径到 /plan_astar_raw（平滑前）
+      allow_raw_fallback_on_smooth_fail: false  # 平滑后验证失败时是否回退原始A*（建议关闭）
+      publish_failure_debug_markers: false  # 发布规划失败点到 /debug/planner_failures
+      failure_marker_scale: 0.2          # 失败点球体尺寸(米)
+      
+      # B样条优化）
+      enable_optimization: true    # 启用轨迹优化
+      opt_lambda_smooth: 10.0      # 平滑项权重（弹性带）
+      opt_lambda_collision: 20.0    # 障碍物项权重（ESDF 排斥）- 增大以远离墙壁
+      opt_safe_dist: 0.5           # 安全距离阈值 (m)，降低以提高窄通道可行性
+      opt_max_iter: 100             # 最大迭代次数
+      opt_curvature_adaptive: true # 曲率自适应（转角处更远离障碍物）
+      opt_curvature_weight: 4.0    # 曲率加权系数 - 增大以在弯道处更远离墙壁
+      
+      # 窄通道中心线吸引（进出窄通道时走中间）
+      narrow_passage_align: true   # 启用窄通道中心吸引
+      narrow_passage_thresh: 0.4   # 窄通道判定阈值 (m)，ESDF距离小于此值的区域
+      opt_lambda_align: 10.0       # 中心吸引权重 (降低，防止穿墙)
+      align_entry_points: 3        # 入口/出口各优化几个点 (1-3)
+      narrow_min_consecutive: 3    # 最少连续几个点才算窄通道（防止单点误判）
+
+    # 四维无滞后全向模型，C阶段已接通导航输出。
+    nmpc:
+      max_linear_vel: 2.0
+      max_linear_accel: 4.0 # 二维加速度范数上限
+      speed_profile:
+        v_cruise: 2.0
+        max_lateral_accel: 1.5
+        kappa_epsilon: 0.08
+        curvature_window_m: 1.5
+      # 启动参数，修改后同时重启桥和控制器。0允许没有速度反馈，仍要求LIO有效。
+      odom_feedback_alpha: 0.8
+      odom_topic: "/Odometry/fake"
+      lio_topic: "/Odometry"
+      chassis_velocity_timeout_sec: 0.15
+      chassis_velocity_filter_alpha: 1.0
+      pose_timeout_sec: 0.2
+      goal_stop_speed: 0.05
+      capacitor_limit:
+        v_safe: 0.0
+        v_low: 0.0
+        protect_scale: 1.0
+        low_scale: 1.0
+        filter_alpha: 1.0
+      Q_position: 3.0
+      Q_velocity: 0.1
+      R_linear: 0.01
+      contouring_weight: 25.0
+      esdf_weight: 70.0 # 设0可禁用软ESDF代价；占据检查仍保留
+      esdf_safe_dist: 0.5
+      terminal_multiplier: 2.0
+      near_weight_multiplier: 3.0
+    
+    
+    # 固定fake系二维平移恢复，不再执行实体旋转/弧线差速动作
+    recovery:
+      max_recovery: 3
+      translation_headings: [3.141593, 1.570796, -1.570796, 0.0]
+      translation_distance: 0.3
+      translation_speed: 0.2
+      translation_timeout: 3.0
+      translation_min_progress: 0.02
+      translation_progress_timeout: 1.0
+
+    # 脱困目标必须有完整可通行线段；允许退出当前膨胀区但不穿越原始障碍
+    escape:
+      trigger_costmap_threshold: 99
+      target_safe_esdf: 0.25
+      search_radius: 1.0
+      preferred_search_distance: 1.0
+      preferred_search_half_angle: 0.2
+      forward_speed: 0.2
+      position_tolerance: 0.03
+      drive_min_progress: 0.02
+      drive_progress_timeout: 1.5
+      timeout: 10.0
+
+two_point_patrol:
+  ros__parameters:
+    goal_topic: "goal_pose"                 # RViz 2D Goal 默认话题
+    navigate_action_name: "navigate"        # nav_server action 名称
+    goal_frame: "map"
+    check_period_s: 0.1
+    near_goal_distance_m: 0.45               # 距目标小于该值即视为“到达附近”
+    switch_delay_s: 0.8                      # 到达附近后延时切换到另一个目标
+    save_file: "/tmp/nav_two_goal_points.txt"
+    auto_start: false                        # true: 读取到2点后自动开始循环

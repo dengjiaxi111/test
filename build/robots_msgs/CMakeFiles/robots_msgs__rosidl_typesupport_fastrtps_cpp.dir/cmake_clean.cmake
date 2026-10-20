@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/chassis_odom__type_support.cpp.o"
+  "CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/chassis_odom__type_support.cpp.o.d"
+  "CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/enemy_pose__type_support.cpp.o"
+  "CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/enemy_pose__type_support.cpp.o.d"
+  "CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/game_status__type_support.cpp.o"
+  "CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/game_status__type_support.cpp.o.d"
+  "CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/gimb_cmd_fram__type_support.cpp.o"
+  "CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/gimb_cmd_fram__type_support.cpp.o.d"
+  "CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/gimbal_data__type_support.cpp.o"
+  "CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/gimbal_data__type_support.cpp.o.d"
+  "CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/mode_cmd__type_support.cpp.o"
+  "CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/mode_cmd__type_support.cpp.o.d"
+  "CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/my_path__type_support.cpp.o"
+  "CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/my_path__type_support.cpp.o.d"
+  "CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/robot_status__type_support.cpp.o"
+  "CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/robot_status__type_support.cpp.o.d"
+  "librobots_msgs__rosidl_typesupport_fastrtps_cpp.pdb"
+  "librobots_msgs__rosidl_typesupport_fastrtps_cpp.so"
+  "rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/chassis_odom__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/chassis_odom__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/enemy_pose__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/game_status__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/gimb_cmd_fram__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/gimbal_data__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/mode_cmd__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/my_path__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/dds_fastrtps/robot_status__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/enemy_pose__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/game_status__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/gimb_cmd_fram__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/gimbal_data__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/mode_cmd__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/my_path__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/robots_msgs/msg/detail/robot_status__rosidl_typesupport_fastrtps_cpp.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/robots_msgs__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

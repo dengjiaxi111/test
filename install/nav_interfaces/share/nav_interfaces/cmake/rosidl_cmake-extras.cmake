@@ -1,0 +1,4 @@
+# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
+
+set(nav_interfaces_IDL_FILES "action/Navigate.idl;msg/HoleEvent.idl;msg/HoleStraight.idl;msg/HoleSpeedRegion.idl;msg/HoleTraversal.idl;msg/NavigationPlan.idl;msg/HoleStructureRequest.idl;msg/HoleStructureFeedback.idl;msg/HoleTraversalState.idl;msg/HoleTraversalEvent.idl;srv/ReloadTerrain.idl;srv/GetTemporaryMap.idl;srv/ApplyTemporaryMap.idl;srv/GetHolePassageConfig.idl;srv/ApplyHolePassageConfig.idl;srv/SaveHolePassageConfig.idl")
+set(nav_interfaces_INTERFACE_FILES "action/Navigate.action;msg/HoleEvent.msg;msg/HoleStraight.msg;msg/HoleSpeedRegion.msg;msg/HoleTraversal.msg;msg/NavigationPlan.msg;msg/HoleStructureRequest.msg;msg/HoleStructureFeedback.msg;msg/HoleTraversalState.msg;msg/HoleTraversalEvent.msg;srv/ReloadTerrain.srv;srv/GetTemporaryMap.srv;srv/ApplyTemporaryMap.srv;srv/GetHolePassageConfig.srv;srv/ApplyHolePassageConfig.srv;srv/SaveHolePassageConfig.srv")

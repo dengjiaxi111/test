@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from nav_interfaces/srv/GetHolePassageConfig.srv
+// generated code does not contain a copyright notice
+
+
+module nav_interfaces {
+  module srv {
+    struct GetHolePassageConfig_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetHolePassageConfig_Response {
+      boolean success;
+
+      boolean manual_config_active;
+
+      string reason;
+
+      string config_yaml;
+
+      string config_path;
+
+      string terrain_path;
+
+      string terrain_geometry;
+
+      uint64 config_revision;
+
+      uint64 terrain_revision;
+    };
+  };
+};

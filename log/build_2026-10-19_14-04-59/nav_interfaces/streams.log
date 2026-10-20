@@ -1,0 +1,772 @@
+[0.030s] Invoking command in '/home/dengjiaxi/simulation_seu/test/build/nav_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/dengjiaxi/simulation_seu/test/build/nav_interfaces
+[0.124s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.416s] -- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.420s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.508s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.570s] -- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.576s] -- Found geometry_msgs: 5.3.8 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.681s] -- Found nav_msgs: 5.3.8 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[1.912s] -- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[2.447s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.132s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.138s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[3.936s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[4.223s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.245s] -- Configuring done (4.1s)
+[4.430s] -- Generating done (0.1s)
+[4.463s] -- Build files have been written to: /home/dengjiaxi/simulation_seu/test/build/nav_interfaces
+[4.585s] [  0%] Generating Rust code for ROS interfaces
+[6.542s] [  0%] Built target nav_interfaces__rs
+[6.573s] [  0%] Generating type hashes for ROS interfaces
+[7.614s] [  0%] Built target nav_interfaces__rosidl_generator_type_description
+[7.627s] [  0%] Generating C code for ROS interfaces
+[9.388s] [  1%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/action/detail/navigate__description.c.o
+[9.529s] [  1%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/action/detail/navigate__functions.c.o
+[9.956s] [  2%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/action/detail/navigate__type_support.c.o
+[10.017s] [  2%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_event__description.c.o
+[10.066s] [  3%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_event__functions.c.o
+[10.148s] [  3%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_event__type_support.c.o
+[10.187s] [  4%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_straight__description.c.o
+[10.237s] [  4%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_straight__functions.c.o
+[10.318s] [  5%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_straight__type_support.c.o
+[10.356s] [  6%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_speed_region__description.c.o
+[10.406s] [  6%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_speed_region__functions.c.o
+[10.485s] [  7%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_speed_region__type_support.c.o
+[10.524s] [  7%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_traversal__description.c.o
+[10.580s] [  8%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_traversal__functions.c.o
+[10.669s] [  8%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_traversal__type_support.c.o
+[10.710s] [  9%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/navigation_plan__description.c.o
+[10.765s] [  9%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/navigation_plan__functions.c.o
+[10.856s] [ 10%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/navigation_plan__type_support.c.o
+[10.896s] [ 10%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_structure_request__description.c.o
+[10.946s] [ 11%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_structure_request__functions.c.o
+[11.031s] [ 11%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_structure_request__type_support.c.o
+[11.070s] [ 12%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_structure_feedback__description.c.o
+[11.129s] [ 13%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_structure_feedback__functions.c.o
+[11.214s] [ 13%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_structure_feedback__type_support.c.o
+[11.251s] [ 14%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_traversal_state__description.c.o
+[11.302s] [ 14%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_traversal_state__functions.c.o
+[11.395s] [ 15%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_traversal_state__type_support.c.o
+[11.425s] [ 15%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_traversal_event__description.c.o
+[11.473s] [ 16%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_traversal_event__functions.c.o
+[11.559s] [ 16%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/msg/detail/hole_traversal_event__type_support.c.o
+[11.596s] [ 17%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/srv/detail/reload_terrain__description.c.o
+[11.659s] [ 17%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/srv/detail/reload_terrain__functions.c.o
+[11.814s] [ 18%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/srv/detail/reload_terrain__type_support.c.o
+[11.867s] [ 19%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/srv/detail/get_temporary_map__description.c.o
+[11.945s] [ 19%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/srv/detail/get_temporary_map__functions.c.o
+[12.109s] [ 20%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/srv/detail/get_temporary_map__type_support.c.o
+[12.164s] [ 20%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/srv/detail/apply_temporary_map__description.c.o
+[12.229s] [ 21%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/srv/detail/apply_temporary_map__functions.c.o
+[12.394s] [ 21%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/srv/detail/apply_temporary_map__type_support.c.o
+[12.447s] [ 22%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/srv/detail/get_hole_passage_config__description.c.o
+[12.510s] [ 22%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/srv/detail/get_hole_passage_config__functions.c.o
+[12.676s] [ 23%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/srv/detail/get_hole_passage_config__type_support.c.o
+[12.727s] [ 23%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/srv/detail/apply_hole_passage_config__description.c.o
+[12.789s] [ 24%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/srv/detail/apply_hole_passage_config__functions.c.o
+[12.932s] [ 24%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/srv/detail/apply_hole_passage_config__type_support.c.o
+[12.973s] [ 25%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/srv/detail/save_hole_passage_config__description.c.o
+[13.024s] [ 26%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/srv/detail/save_hole_passage_config__functions.c.o
+[13.162s] [ 26%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/nav_interfaces/srv/detail/save_hole_passage_config__type_support.c.o
+[13.203s] [ 27%] Linking C shared library libnav_interfaces__rosidl_generator_c.so
+[13.253s] [ 27%] Built target nav_interfaces__rosidl_generator_c
+[13.263s] [ 27%] Generating C type support for eProsima Fast-RTPS
+[15.018s] [ 28%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_interfaces/action/detail/navigate__type_support_c.cpp.o
+[15.713s] [ 28%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_interfaces/msg/detail/hole_event__type_support_c.cpp.o
+[16.111s] [ 29%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_interfaces/msg/detail/hole_straight__type_support_c.cpp.o
+[16.518s] [ 30%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_interfaces/msg/detail/hole_speed_region__type_support_c.cpp.o
+[16.920s] [ 30%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_interfaces/msg/detail/hole_traversal__type_support_c.cpp.o
+[17.312s] [ 31%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_interfaces/msg/detail/navigation_plan__type_support_c.cpp.o
+[17.732s] [ 31%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_interfaces/msg/detail/hole_structure_request__type_support_c.cpp.o
+[18.139s] [ 32%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_interfaces/msg/detail/hole_structure_feedback__type_support_c.cpp.o
+[18.637s] [ 32%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_interfaces/msg/detail/hole_traversal_state__type_support_c.cpp.o
+[19.074s] [ 33%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_interfaces/msg/detail/hole_traversal_event__type_support_c.cpp.o
+[19.522s] [ 33%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_interfaces/srv/detail/reload_terrain__type_support_c.cpp.o
+[20.030s] [ 34%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_interfaces/srv/detail/get_temporary_map__type_support_c.cpp.o
+[20.543s] [ 34%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_interfaces/srv/detail/apply_temporary_map__type_support_c.cpp.o
+[20.965s] [ 35%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_interfaces/srv/detail/get_hole_passage_config__type_support_c.cpp.o
+[21.462s] [ 35%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_interfaces/srv/detail/apply_hole_passage_config__type_support_c.cpp.o
+[21.918s] [ 36%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/nav_interfaces/srv/detail/save_hole_passage_config__type_support_c.cpp.o
+[22.318s] [ 37%] Linking CXX shared library libnav_interfaces__rosidl_typesupport_fastrtps_c.so
+[22.387s] [ 37%] Built target nav_interfaces__rosidl_typesupport_fastrtps_c
+[22.397s] [ 38%] Generating C introspection for ROS interfaces
+[23.602s] [ 38%] Building C object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_interfaces/action/detail/navigate__type_support.c.o
+[23.703s] [ 39%] Building C object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_interfaces/msg/detail/hole_event__type_support.c.o
+[23.749s] [ 39%] Building C object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_interfaces/msg/detail/hole_straight__type_support.c.o
+[23.795s] [ 40%] Building C object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_interfaces/msg/detail/hole_speed_region__type_support.c.o
+[23.839s] [ 41%] Building C object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_interfaces/msg/detail/hole_traversal__type_support.c.o
+[23.897s] [ 41%] Building C object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_interfaces/msg/detail/navigation_plan__type_support.c.o
+[23.957s] [ 42%] Building C object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_interfaces/msg/detail/hole_structure_request__type_support.c.o
+[24.008s] [ 42%] Building C object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_interfaces/msg/detail/hole_structure_feedback__type_support.c.o
+[24.061s] [ 43%] Building C object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_interfaces/msg/detail/hole_traversal_state__type_support.c.o
+[24.124s] [ 43%] Building C object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_interfaces/msg/detail/hole_traversal_event__type_support.c.o
+[24.172s] [ 44%] Building C object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_interfaces/srv/detail/reload_terrain__type_support.c.o
+[24.239s] [ 44%] Building C object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_interfaces/srv/detail/get_temporary_map__type_support.c.o
+[24.314s] [ 45%] Building C object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_interfaces/srv/detail/apply_temporary_map__type_support.c.o
+[24.390s] [ 45%] Building C object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_interfaces/srv/detail/get_hole_passage_config__type_support.c.o
+[24.459s] [ 46%] Building C object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_interfaces/srv/detail/apply_hole_passage_config__type_support.c.o
+[24.522s] [ 46%] Building C object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/nav_interfaces/srv/detail/save_hole_passage_config__type_support.c.o
+[24.587s] [ 47%] Linking C shared library libnav_interfaces__rosidl_typesupport_introspection_c.so
+[24.635s] [ 47%] Built target nav_interfaces__rosidl_typesupport_introspection_c
+[24.652s] [ 48%] Generating C type support dispatch for ROS interfaces
+[25.837s] [ 48%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_interfaces/action/navigate__type_support.cpp.o
+[25.902s] [ 49%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_interfaces/msg/hole_event__type_support.cpp.o
+[25.951s] [ 50%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_interfaces/msg/hole_straight__type_support.cpp.o
+[25.998s] [ 50%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_interfaces/msg/hole_speed_region__type_support.cpp.o
+[26.048s] [ 51%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_interfaces/msg/hole_traversal__type_support.cpp.o
+[26.097s] [ 51%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_interfaces/msg/navigation_plan__type_support.cpp.o
+[26.146s] [ 52%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_interfaces/msg/hole_structure_request__type_support.cpp.o
+[26.196s] [ 52%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_interfaces/msg/hole_structure_feedback__type_support.cpp.o
+[26.245s] [ 53%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_interfaces/msg/hole_traversal_state__type_support.cpp.o
+[26.292s] [ 53%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_interfaces/msg/hole_traversal_event__type_support.cpp.o
+[26.342s] [ 54%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_interfaces/srv/reload_terrain__type_support.cpp.o
+[26.398s] [ 54%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_interfaces/srv/get_temporary_map__type_support.cpp.o
+[26.451s] [ 55%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_interfaces/srv/apply_temporary_map__type_support.cpp.o
+[26.502s] [ 55%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_interfaces/srv/get_hole_passage_config__type_support.cpp.o
+[26.557s] [ 56%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_interfaces/srv/apply_hole_passage_config__type_support.cpp.o
+[26.609s] [ 57%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/nav_interfaces/srv/save_hole_passage_config__type_support.cpp.o
+[26.660s] [ 57%] Linking CXX shared library libnav_interfaces__rosidl_typesupport_c.so
+[26.714s] [ 57%] Built target nav_interfaces__rosidl_typesupport_c
+[26.744s] [ 57%] Generating C++ code for ROS interfaces
+[28.293s] [ 57%] Built target nav_interfaces__cpp
+[28.309s] [ 57%] Generating C++ type support for eProsima Fast-RTPS
+[29.937s] [ 58%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_interfaces/action/detail/dds_fastrtps/navigate__type_support.cpp.o
+[30.855s] [ 58%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_interfaces/msg/detail/dds_fastrtps/hole_event__type_support.cpp.o
+[31.188s] [ 59%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_interfaces/msg/detail/dds_fastrtps/hole_straight__type_support.cpp.o
+[31.524s] [ 59%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_interfaces/msg/detail/dds_fastrtps/hole_speed_region__type_support.cpp.o
+[31.834s] [ 60%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_interfaces/msg/detail/dds_fastrtps/hole_traversal__type_support.cpp.o
+[32.247s] [ 60%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_interfaces/msg/detail/dds_fastrtps/navigation_plan__type_support.cpp.o
+[32.740s] [ 61%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_interfaces/msg/detail/dds_fastrtps/hole_structure_request__type_support.cpp.o
+[33.171s] [ 61%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_interfaces/msg/detail/dds_fastrtps/hole_structure_feedback__type_support.cpp.o
+[33.630s] [ 62%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_interfaces/msg/detail/dds_fastrtps/hole_traversal_state__type_support.cpp.o
+[34.126s] [ 62%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_interfaces/msg/detail/dds_fastrtps/hole_traversal_event__type_support.cpp.o
+[34.496s] [ 63%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_interfaces/srv/detail/dds_fastrtps/reload_terrain__type_support.cpp.o
+[35.063s] [ 64%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_interfaces/srv/detail/dds_fastrtps/get_temporary_map__type_support.cpp.o
+[35.802s] [ 64%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_interfaces/srv/detail/dds_fastrtps/apply_temporary_map__type_support.cpp.o
+[36.482s] [ 65%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_interfaces/srv/detail/dds_fastrtps/get_hole_passage_config__type_support.cpp.o
+[37.065s] [ 65%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_interfaces/srv/detail/dds_fastrtps/apply_hole_passage_config__type_support.cpp.o
+[37.619s] [ 66%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/nav_interfaces/srv/detail/dds_fastrtps/save_hole_passage_config__type_support.cpp.o
+[38.251s] [ 66%] Linking CXX shared library libnav_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[38.324s] [ 66%] Built target nav_interfaces__rosidl_typesupport_fastrtps_cpp
+[38.336s] [ 67%] Generating C++ introspection for ROS interfaces
+[39.591s] [ 67%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_interfaces/action/detail/navigate__type_support.cpp.o
+[40.282s] [ 68%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_interfaces/msg/detail/hole_event__type_support.cpp.o
+[40.488s] [ 68%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_interfaces/msg/detail/hole_straight__type_support.cpp.o
+[40.693s] [ 69%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_interfaces/msg/detail/hole_speed_region__type_support.cpp.o
+[40.911s] [ 69%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_interfaces/msg/detail/hole_traversal__type_support.cpp.o
+[41.169s] [ 70%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_interfaces/msg/detail/navigation_plan__type_support.cpp.o
+[41.518s] [ 70%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_interfaces/msg/detail/hole_structure_request__type_support.cpp.o
+[41.770s] [ 71%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_interfaces/msg/detail/hole_structure_feedback__type_support.cpp.o
+[42.022s] [ 71%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_interfaces/msg/detail/hole_traversal_state__type_support.cpp.o
+[42.372s] [ 72%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_interfaces/msg/detail/hole_traversal_event__type_support.cpp.o
+[42.589s] [ 72%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_interfaces/srv/detail/reload_terrain__type_support.cpp.o
+[42.973s] [ 73%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_interfaces/srv/detail/get_temporary_map__type_support.cpp.o
+[43.530s] [ 74%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_interfaces/srv/detail/apply_temporary_map__type_support.cpp.o
+[44.090s] [ 74%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_interfaces/srv/detail/get_hole_passage_config__type_support.cpp.o
+[44.515s] [ 75%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_interfaces/srv/detail/apply_hole_passage_config__type_support.cpp.o
+[44.968s] [ 75%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/nav_interfaces/srv/detail/save_hole_passage_config__type_support.cpp.o
+[45.344s] [ 76%] Linking CXX shared library libnav_interfaces__rosidl_typesupport_introspection_cpp.so
+[45.419s] [ 76%] Built target nav_interfaces__rosidl_typesupport_introspection_cpp
+[45.429s] [ 77%] Generating C++ type support dispatch for ROS interfaces
+[46.448s] [ 77%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_interfaces/action/navigate__type_support.cpp.o
+[46.952s] [ 78%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_interfaces/msg/hole_event__type_support.cpp.o
+[47.183s] [ 78%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_interfaces/msg/hole_straight__type_support.cpp.o
+[47.467s] [ 79%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_interfaces/msg/hole_speed_region__type_support.cpp.o
+[47.744s] [ 79%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_interfaces/msg/hole_traversal__type_support.cpp.o
+[48.018s] [ 80%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_interfaces/msg/navigation_plan__type_support.cpp.o
+[48.302s] [ 80%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_interfaces/msg/hole_structure_request__type_support.cpp.o
+[48.581s] [ 81%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_interfaces/msg/hole_structure_feedback__type_support.cpp.o
+[48.849s] [ 81%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_interfaces/msg/hole_traversal_state__type_support.cpp.o
+[49.128s] [ 82%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_interfaces/msg/hole_traversal_event__type_support.cpp.o
+[49.397s] [ 83%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_interfaces/srv/reload_terrain__type_support.cpp.o
+[49.787s] [ 83%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_interfaces/srv/get_temporary_map__type_support.cpp.o
+[50.229s] [ 84%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_interfaces/srv/apply_temporary_map__type_support.cpp.o
+[50.667s] [ 84%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_interfaces/srv/get_hole_passage_config__type_support.cpp.o
+[51.000s] [ 85%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_interfaces/srv/apply_hole_passage_config__type_support.cpp.o
+[51.369s] [ 85%] Building CXX object CMakeFiles/nav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/nav_interfaces/srv/save_hole_passage_config__type_support.cpp.o
+[51.760s] [ 86%] Linking CXX shared library libnav_interfaces__rosidl_typesupport_cpp.so
+[51.849s] [ 86%] Built target nav_interfaces__rosidl_typesupport_cpp
+[51.878s] [ 86%] Built target nav_interfaces
+[51.937s] [ 86%] Built target ament_cmake_python_copy_nav_interfaces
+[52.100s] running egg_info
+[52.116s] writing nav_interfaces.egg-info/PKG-INFO
+[52.116s] writing dependency_links to nav_interfaces.egg-info/dependency_links.txt
+[52.116s] writing top-level names to nav_interfaces.egg-info/top_level.txt
+[52.150s] reading manifest file 'nav_interfaces.egg-info/SOURCES.txt'
+[52.151s] writing manifest file 'nav_interfaces.egg-info/SOURCES.txt'
+[52.197s] [ 86%] Built target ament_cmake_python_build_nav_interfaces_egg
+[52.227s] [ 87%] Generating Python code for ROS interfaces
+[55.411s] [ 87%] Built target nav_interfaces__py
+[55.467s] [ 87%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/action/_navigate_s.c.o
+[55.843s] [ 88%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_event_s.c.o
+[55.983s] [ 88%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_straight_s.c.o
+[56.125s] [ 89%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_speed_region_s.c.o
+[56.261s] [ 89%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_traversal_s.c.o
+[56.443s] [ 90%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_navigation_plan_s.c.o
+[56.636s] [ 90%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_structure_request_s.c.o
+[56.802s] [ 91%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_structure_feedback_s.c.o
+[56.985s] [ 91%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_traversal_state_s.c.o
+[57.211s] [ 92%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/msg/_hole_traversal_event_s.c.o
+[57.374s] [ 93%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/srv/_reload_terrain_s.c.o
+[57.580s] [ 93%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/srv/_get_temporary_map_s.c.o
+[57.849s] [ 94%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/srv/_apply_temporary_map_s.c.o
+[58.112s] [ 94%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/srv/_get_hole_passage_config_s.c.o
+[58.323s] [ 95%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/srv/_apply_hole_passage_config_s.c.o
+[58.502s] [ 95%] Building C object CMakeFiles/nav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/nav_interfaces/srv/_save_hole_passage_config_s.c.o
+[58.672s] [ 96%] Linking C shared library libnav_interfaces__rosidl_generator_py.so
+[58.721s] [ 96%] Built target nav_interfaces__rosidl_generator_py
+[58.747s] [ 97%] Building C object CMakeFiles/nav_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/nav_interfaces/_nav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[59.160s] [ 97%] Linking C shared module rosidl_generator_py/nav_interfaces/nav_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[59.197s] [ 97%] Built target nav_interfaces_s__rosidl_typesupport_fastrtps_c
+[59.224s] [ 98%] Building C object CMakeFiles/nav_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/nav_interfaces/_nav_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o
+[59.645s] [ 99%] Linking C shared module rosidl_generator_py/nav_interfaces/nav_interfaces_s__rosidl_typesupport_introspection_c.so
+[59.679s] [ 99%] Built target nav_interfaces_s__rosidl_typesupport_introspection_c
+[59.705s] [100%] Building C object CMakeFiles/nav_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/nav_interfaces/_nav_interfaces_s.ep.rosidl_typesupport_c.c.o
+[60.115s] [100%] Linking C shared module rosidl_generator_py/nav_interfaces/nav_interfaces_s__rosidl_typesupport_c.so
+[60.149s] [100%] Built target nav_interfaces_s__rosidl_typesupport_c
+[60.161s] Invoked command in '/home/dengjiaxi/simulation_seu/test/build/nav_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/dengjiaxi/simulation_seu/test/build/nav_interfaces
+[60.172s] Invoking command in '/home/dengjiaxi/simulation_seu/test/build/nav_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/dengjiaxi/simulation_seu/test/build/nav_interfaces
+[60.180s] -- Install configuration: "RelWithDebInfo"
+[60.182s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/ament_index/resource_index/rosidl_interfaces/nav_interfaces
+[60.182s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/action/Navigate.json
+[60.182s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleEvent.json
+[60.182s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleStraight.json
+[60.182s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleSpeedRegion.json
+[60.182s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleTraversal.json
+[60.182s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/NavigationPlan.json
+[60.182s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleStructureRequest.json
+[60.182s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleStructureFeedback.json
+[60.182s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleTraversalState.json
+[60.182s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleTraversalEvent.json
+[60.182s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/srv/ReloadTerrain.json
+[60.183s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/srv/GetTemporaryMap.json
+[60.183s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/srv/ApplyTemporaryMap.json
+[60.183s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/srv/GetHolePassageConfig.json
+[60.184s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/srv/ApplyHolePassageConfig.json
+[60.184s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/srv/SaveHolePassageConfig.json
+[60.184s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces
+[60.186s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action
+[60.186s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/navigate.h
+[60.186s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail
+[60.186s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail/navigate__struct.h
+[60.186s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail/navigate__functions.h
+[60.186s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail/navigate__description.c
+[60.186s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail/navigate__functions.c
+[60.186s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail/navigate__type_support.c
+[60.186s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail/navigate__type_support.h
+[60.186s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg
+[60.186s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/hole_traversal_event.h
+[60.186s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/navigation_plan.h
+[60.186s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/hole_traversal_state.h
+[60.187s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/rosidl_generator_c__visibility_control.h
+[60.187s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/hole_traversal.h
+[60.187s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/hole_event.h
+[60.190s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_straight__functions.c
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_event__type_support.c
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal__functions.c
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_feedback__type_support.c
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_event__functions.c
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_speed_region__type_support.c
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_speed_region__functions.c
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_event__struct.h
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/navigation_plan__description.c
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_speed_region__description.c
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_straight__struct.h
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_request__type_support.c
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/navigation_plan__struct.h
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_event__type_support.c
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_speed_region__functions.h
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_state__functions.c
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_event__functions.c
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_state__description.c
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_state__struct.h
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_event__description.c
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_straight__functions.h
+[60.190s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/navigation_plan__type_support.c
+[60.191s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal__struct.h
+[60.191s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_request__struct.h
+[60.191s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/navigation_plan__functions.h
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_event__struct.h
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_speed_region__struct.h
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_feedback__struct.h
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_state__type_support.c
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_request__functions.c
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_feedback__functions.c
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_event__functions.h
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_request__functions.h
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_feedback__description.c
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal__type_support.h
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_feedback__functions.h
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_straight__type_support.h
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/navigation_plan__type_support.h
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_speed_region__type_support.h
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal__description.c
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_event__description.c
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_state__functions.h
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_request__description.c
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal__type_support.c
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_state__type_support.h
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_straight__description.c
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_event__type_support.h
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_feedback__type_support.h
+[60.195s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal__functions.h
+[60.196s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/navigation_plan__functions.c
+[60.196s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_event__type_support.h
+[60.196s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_straight__type_support.c
+[60.196s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_event__functions.h
+[60.196s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_request__type_support.h
+[60.196s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/hole_straight.h
+[60.196s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/hole_structure_request.h
+[60.196s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/hole_structure_feedback.h
+[60.196s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/hole_speed_region.h
+[60.197s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv
+[60.197s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail
+[60.197s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_hole_passage_config__description.c
+[60.200s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_temporary_map__functions.c
+[60.200s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_temporary_map__struct.h
+[60.200s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_hole_passage_config__functions.h
+[60.200s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/reload_terrain__functions.c
+[60.200s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_hole_passage_config__functions.c
+[60.200s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_hole_passage_config__type_support.h
+[60.200s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_hole_passage_config__functions.h
+[60.200s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_temporary_map__functions.h
+[60.200s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_temporary_map__type_support.h
+[60.200s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_hole_passage_config__description.c
+[60.200s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_temporary_map__description.c
+[60.200s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/reload_terrain__description.c
+[60.200s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_temporary_map__type_support.c
+[60.200s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/save_hole_passage_config__functions.h
+[60.200s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/reload_terrain__type_support.c
+[60.200s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_temporary_map__type_support.h
+[60.200s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_temporary_map__functions.h
+[60.200s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/reload_terrain__struct.h
+[60.201s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/save_hole_passage_config__type_support.h
+[60.201s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_temporary_map__functions.c
+[60.201s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_temporary_map__struct.h
+[60.201s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/reload_terrain__functions.h
+[60.202s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/save_hole_passage_config__description.c
+[60.202s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/save_hole_passage_config__type_support.c
+[60.205s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/save_hole_passage_config__functions.c
+[60.205s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_hole_passage_config__functions.c
+[60.205s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_hole_passage_config__struct.h
+[60.205s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_hole_passage_config__type_support.c
+[60.205s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_temporary_map__type_support.c
+[60.205s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_temporary_map__description.c
+[60.205s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_hole_passage_config__type_support.c
+[60.205s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_hole_passage_config__struct.h
+[60.205s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/reload_terrain__type_support.h
+[60.205s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_hole_passage_config__type_support.h
+[60.205s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/save_hole_passage_config__struct.h
+[60.205s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/get_hole_passage_config.h
+[60.205s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/get_temporary_map.h
+[60.205s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/apply_temporary_map.h
+[60.205s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/reload_terrain.h
+[60.205s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/save_hole_passage_config.h
+[60.205s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/apply_hole_passage_config.h
+[60.205s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/environment/library_path.sh
+[60.205s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/environment/library_path.dsv
+[60.205s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/libnav_interfaces__rosidl_generator_c.so
+[60.207s] -- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/libnav_interfaces__rosidl_generator_c.so" to ""
+[60.207s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces
+[60.207s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action
+[60.207s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail
+[60.207s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail/navigate__rosidl_typesupport_fastrtps_c.h
+[60.207s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg
+[60.207s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[60.208s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail
+[60.208s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_event__rosidl_typesupport_fastrtps_c.h
+[60.208s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal__rosidl_typesupport_fastrtps_c.h
+[60.208s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/navigation_plan__rosidl_typesupport_fastrtps_c.h
+[60.208s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_speed_region__rosidl_typesupport_fastrtps_c.h
+[60.209s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_state__rosidl_typesupport_fastrtps_c.h
+[60.209s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_request__rosidl_typesupport_fastrtps_c.h
+[60.211s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_straight__rosidl_typesupport_fastrtps_c.h
+[60.211s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_feedback__rosidl_typesupport_fastrtps_c.h
+[60.211s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_event__rosidl_typesupport_fastrtps_c.h
+[60.211s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv
+[60.211s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail
+[60.211s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_hole_passage_config__rosidl_typesupport_fastrtps_c.h
+[60.211s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/reload_terrain__rosidl_typesupport_fastrtps_c.h
+[60.211s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_hole_passage_config__rosidl_typesupport_fastrtps_c.h
+[60.211s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_temporary_map__rosidl_typesupport_fastrtps_c.h
+[60.211s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_temporary_map__rosidl_typesupport_fastrtps_c.h
+[60.211s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/save_hole_passage_config__rosidl_typesupport_fastrtps_c.h
+[60.211s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/libnav_interfaces__rosidl_typesupport_fastrtps_c.so
+[60.212s] -- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/libnav_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[60.212s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces
+[60.212s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action
+[60.213s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail
+[60.213s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail/navigate__rosidl_typesupport_introspection_c.h
+[60.213s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail/navigate__type_support.c
+[60.215s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg
+[60.215s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail
+[60.215s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_event__type_support.c
+[60.215s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_event__rosidl_typesupport_introspection_c.h
+[60.215s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_speed_region__rosidl_typesupport_introspection_c.h
+[60.215s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_feedback__type_support.c
+[60.215s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_speed_region__type_support.c
+[60.215s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_request__type_support.c
+[60.215s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_event__type_support.c
+[60.215s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_event__rosidl_typesupport_introspection_c.h
+[60.215s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/navigation_plan__rosidl_typesupport_introspection_c.h
+[60.215s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/navigation_plan__type_support.c
+[60.215s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_state__rosidl_typesupport_introspection_c.h
+[60.215s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_straight__rosidl_typesupport_introspection_c.h
+[60.215s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_request__rosidl_typesupport_introspection_c.h
+[60.215s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_feedback__rosidl_typesupport_introspection_c.h
+[60.216s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_state__type_support.c
+[60.216s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal__type_support.c
+[60.216s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal__rosidl_typesupport_introspection_c.h
+[60.216s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_straight__type_support.c
+[60.217s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[60.217s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv
+[60.217s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail
+[60.220s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_hole_passage_config__rosidl_typesupport_introspection_c.h
+[60.220s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_temporary_map__type_support.c
+[60.220s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/reload_terrain__type_support.c
+[60.220s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_temporary_map__rosidl_typesupport_introspection_c.h
+[60.220s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/save_hole_passage_config__rosidl_typesupport_introspection_c.h
+[60.220s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/save_hole_passage_config__type_support.c
+[60.220s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_hole_passage_config__type_support.c
+[60.220s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/reload_terrain__rosidl_typesupport_introspection_c.h
+[60.220s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_temporary_map__type_support.c
+[60.220s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_hole_passage_config__type_support.c
+[60.220s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_temporary_map__rosidl_typesupport_introspection_c.h
+[60.220s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_hole_passage_config__rosidl_typesupport_introspection_c.h
+[60.220s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/libnav_interfaces__rosidl_typesupport_introspection_c.so
+[60.220s] -- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/libnav_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[60.220s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/libnav_interfaces__rosidl_typesupport_c.so
+[60.221s] -- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/libnav_interfaces__rosidl_typesupport_c.so" to ""
+[60.221s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces
+[60.221s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action
+[60.221s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail
+[60.222s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail/navigate__traits.hpp
+[60.222s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail/navigate__builder.hpp
+[60.222s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail/navigate__type_support.hpp
+[60.222s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail/navigate__struct.hpp
+[60.223s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/navigate.hpp
+[60.223s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg
+[60.223s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[60.223s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/hole_traversal.hpp
+[60.223s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/hole_traversal_state.hpp
+[60.224s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail
+[60.224s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal__struct.hpp
+[60.224s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_event__builder.hpp
+[60.224s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_feedback__struct.hpp
+[60.224s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_straight__traits.hpp
+[60.225s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_state__struct.hpp
+[60.225s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_event__traits.hpp
+[60.225s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal__type_support.hpp
+[60.226s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/navigation_plan__type_support.hpp
+[60.226s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_event__traits.hpp
+[60.226s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_request__type_support.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_speed_region__type_support.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_event__type_support.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_state__type_support.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_speed_region__struct.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_straight__struct.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_event__type_support.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_speed_region__traits.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_request__builder.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_request__struct.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_speed_region__builder.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal__builder.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_state__traits.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_state__builder.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal__traits.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/navigation_plan__struct.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_straight__builder.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_event__struct.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_event__builder.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/navigation_plan__traits.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_straight__type_support.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_feedback__type_support.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_feedback__builder.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/navigation_plan__builder.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_event__struct.hpp
+[60.230s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_feedback__traits.hpp
+[60.231s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_request__traits.hpp
+[60.231s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/hole_event.hpp
+[60.231s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/hole_straight.hpp
+[60.231s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/hole_speed_region.hpp
+[60.231s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/navigation_plan.hpp
+[60.231s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/hole_structure_feedback.hpp
+[60.231s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/hole_structure_request.hpp
+[60.231s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/hole_traversal_event.hpp
+[60.231s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv
+[60.231s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/apply_hole_passage_config.hpp
+[60.232s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/get_temporary_map.hpp
+[60.232s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/apply_temporary_map.hpp
+[60.232s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/get_hole_passage_config.hpp
+[60.233s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail
+[60.233s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/save_hole_passage_config__struct.hpp
+[60.233s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_hole_passage_config__type_support.hpp
+[60.233s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_temporary_map__traits.hpp
+[60.234s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/reload_terrain__traits.hpp
+[60.234s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_hole_passage_config__builder.hpp
+[60.234s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_temporary_map__type_support.hpp
+[60.235s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_temporary_map__struct.hpp
+[60.235s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_hole_passage_config__struct.hpp
+[60.235s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/save_hole_passage_config__traits.hpp
+[60.235s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/save_hole_passage_config__builder.hpp
+[60.236s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_temporary_map__struct.hpp
+[60.236s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_hole_passage_config__traits.hpp
+[60.237s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_temporary_map__builder.hpp
+[60.237s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_hole_passage_config__struct.hpp
+[60.237s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_hole_passage_config__type_support.hpp
+[60.237s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_temporary_map__type_support.hpp
+[60.237s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_hole_passage_config__traits.hpp
+[60.237s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_temporary_map__traits.hpp
+[60.241s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/save_hole_passage_config__type_support.hpp
+[60.241s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/reload_terrain__builder.hpp
+[60.241s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_temporary_map__builder.hpp
+[60.241s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/reload_terrain__type_support.hpp
+[60.241s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_hole_passage_config__builder.hpp
+[60.241s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/reload_terrain__struct.hpp
+[60.241s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/reload_terrain.hpp
+[60.241s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/save_hole_passage_config.hpp
+[60.241s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces
+[60.241s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action
+[60.241s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail
+[60.241s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail/navigate__rosidl_typesupport_fastrtps_cpp.hpp
+[60.241s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail/dds_fastrtps
+[60.241s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg
+[60.241s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail
+[60.241s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/navigation_plan__rosidl_typesupport_fastrtps_cpp.hpp
+[60.241s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_event__rosidl_typesupport_fastrtps_cpp.hpp
+[60.241s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_speed_region__rosidl_typesupport_fastrtps_cpp.hpp
+[60.241s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_event__rosidl_typesupport_fastrtps_cpp.hpp
+[60.241s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_request__rosidl_typesupport_fastrtps_cpp.hpp
+[60.241s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/dds_fastrtps
+[60.241s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal__rosidl_typesupport_fastrtps_cpp.hpp
+[60.242s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_feedback__rosidl_typesupport_fastrtps_cpp.hpp
+[60.242s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_straight__rosidl_typesupport_fastrtps_cpp.hpp
+[60.242s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_state__rosidl_typesupport_fastrtps_cpp.hpp
+[60.242s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[60.242s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv
+[60.242s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail
+[60.242s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_temporary_map__rosidl_typesupport_fastrtps_cpp.hpp
+[60.242s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/save_hole_passage_config__rosidl_typesupport_fastrtps_cpp.hpp
+[60.242s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_hole_passage_config__rosidl_typesupport_fastrtps_cpp.hpp
+[60.242s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/reload_terrain__rosidl_typesupport_fastrtps_cpp.hpp
+[60.242s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_hole_passage_config__rosidl_typesupport_fastrtps_cpp.hpp
+[60.242s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/dds_fastrtps
+[60.242s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_temporary_map__rosidl_typesupport_fastrtps_cpp.hpp
+[60.242s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/libnav_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[60.244s] -- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/libnav_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[60.244s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces
+[60.244s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action
+[60.244s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail
+[60.245s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail/navigate__rosidl_typesupport_introspection_cpp.hpp
+[60.245s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/action/detail/navigate__type_support.cpp
+[60.245s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg
+[60.247s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail
+[60.247s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_event__type_support.cpp
+[60.247s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_event__type_support.cpp
+[60.247s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_straight__rosidl_typesupport_introspection_cpp.hpp
+[60.247s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal__rosidl_typesupport_introspection_cpp.hpp
+[60.247s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_event__rosidl_typesupport_introspection_cpp.hpp
+[60.247s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_feedback__rosidl_typesupport_introspection_cpp.hpp
+[60.247s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_request__rosidl_typesupport_introspection_cpp.hpp
+[60.247s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_event__rosidl_typesupport_introspection_cpp.hpp
+[60.247s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_feedback__type_support.cpp
+[60.247s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_speed_region__rosidl_typesupport_introspection_cpp.hpp
+[60.247s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/navigation_plan__rosidl_typesupport_introspection_cpp.hpp
+[60.247s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_speed_region__type_support.cpp
+[60.248s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/navigation_plan__type_support.cpp
+[60.248s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_state__type_support.cpp
+[60.248s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_state__rosidl_typesupport_introspection_cpp.hpp
+[60.248s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_structure_request__type_support.cpp
+[60.249s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal__type_support.cpp
+[60.252s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_straight__type_support.cpp
+[60.252s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv
+[60.252s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail
+[60.252s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/save_hole_passage_config__rosidl_typesupport_introspection_cpp.hpp
+[60.252s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_temporary_map__rosidl_typesupport_introspection_cpp.hpp
+[60.252s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_hole_passage_config__rosidl_typesupport_introspection_cpp.hpp
+[60.252s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_hole_passage_config__type_support.cpp
+[60.252s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_hole_passage_config__type_support.cpp
+[60.252s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_hole_passage_config__rosidl_typesupport_introspection_cpp.hpp
+[60.252s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/apply_temporary_map__type_support.cpp
+[60.252s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/save_hole_passage_config__type_support.cpp
+[60.252s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_temporary_map__type_support.cpp
+[60.252s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/reload_terrain__type_support.cpp
+[60.252s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/reload_terrain__rosidl_typesupport_introspection_cpp.hpp
+[60.252s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/srv/detail/get_temporary_map__rosidl_typesupport_introspection_cpp.hpp
+[60.252s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/libnav_interfaces__rosidl_typesupport_introspection_cpp.so
+[60.253s] -- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/libnav_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[60.253s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/libnav_interfaces__rosidl_typesupport_cpp.so
+[60.254s] -- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/libnav_interfaces__rosidl_typesupport_cpp.so" to ""
+[60.254s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/environment/pythonpath.sh
+[60.254s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/environment/pythonpath.dsv
+[60.254s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces-0.1.0-py3.12.egg-info
+[60.255s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces-0.1.0-py3.12.egg-info/top_level.txt
+[60.255s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces-0.1.0-py3.12.egg-info/SOURCES.txt
+[60.255s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces-0.1.0-py3.12.egg-info/dependency_links.txt
+[60.257s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces-0.1.0-py3.12.egg-info/PKG-INFO
+[60.257s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces
+[60.257s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/nav_interfaces_s__rosidl_typesupport_introspection_c.so
+[60.257s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/_nav_interfaces_s.ep.rosidl_typesupport_c.c
+[60.257s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/action
+[60.257s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/action/_navigate.py
+[60.257s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/action/__init__.py
+[60.257s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/action/_navigate_s.c
+[60.257s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/__init__.py
+[60.257s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/nav_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[60.257s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/_nav_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[60.258s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg
+[60.258s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_straight.py
+[60.258s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_event.py
+[60.258s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_traversal.py
+[60.258s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_structure_feedback_s.c
+[60.259s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_structure_feedback.py
+[60.259s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_structure_request.py
+[60.259s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_navigation_plan.py
+[60.259s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_traversal_s.c
+[60.260s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_traversal_state.py
+[60.260s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_traversal_state_s.c
+[60.260s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/__init__.py
+[60.260s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_structure_request_s.c
+[60.262s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_straight_s.c
+[60.262s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_speed_region.py
+[60.262s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_traversal_event.py
+[60.262s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_traversal_event_s.c
+[60.262s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_speed_region_s.c
+[60.262s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_event_s.c
+[60.262s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_navigation_plan_s.c
+[60.262s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/nav_interfaces_s__rosidl_typesupport_c.so
+[60.262s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/_nav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[60.262s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv
+[60.262s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv/_apply_temporary_map.py
+[60.263s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv/_save_hole_passage_config_s.c
+[60.266s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv/_get_temporary_map.py
+[60.266s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv/_apply_temporary_map_s.c
+[60.266s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv/_reload_terrain.py
+[60.266s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv/__init__.py
+[60.266s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv/_apply_hole_passage_config.py
+[60.266s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv/_get_temporary_map_s.c
+[60.266s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv/_apply_hole_passage_config_s.c
+[60.266s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv/_save_hole_passage_config.py
+[60.266s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv/_reload_terrain_s.c
+[60.266s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv/_get_hole_passage_config_s.c
+[60.266s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv/_get_hole_passage_config.py
+[60.333s] Listing '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces'...
+[60.333s] Compiling '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/__init__.py'...
+[60.333s] Listing '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/action'...
+[60.333s] Compiling '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/action/__init__.py'...
+[60.333s] Compiling '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/action/_navigate.py'...
+[60.333s] Listing '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg'...
+[60.334s] Compiling '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/__init__.py'...
+[60.334s] Compiling '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_event.py'...
+[60.334s] Compiling '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_speed_region.py'...
+[60.334s] Compiling '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_straight.py'...
+[60.334s] Compiling '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_structure_feedback.py'...
+[60.334s] Compiling '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_structure_request.py'...
+[60.334s] Compiling '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_traversal.py'...
+[60.334s] Compiling '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_traversal_event.py'...
+[60.334s] Compiling '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_hole_traversal_state.py'...
+[60.334s] Compiling '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/msg/_navigation_plan.py'...
+[60.334s] Listing '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv'...
+[60.334s] Compiling '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv/__init__.py'...
+[60.334s] Compiling '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv/_apply_hole_passage_config.py'...
+[60.334s] Compiling '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv/_apply_temporary_map.py'...
+[60.334s] Compiling '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv/_get_hole_passage_config.py'...
+[60.334s] Compiling '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv/_get_temporary_map.py'...
+[60.334s] Compiling '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv/_reload_terrain.py'...
+[60.334s] Compiling '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/srv/_save_hole_passage_config.py'...
+[60.341s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/nav_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[60.342s] -- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/nav_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""
+[60.343s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/nav_interfaces_s__rosidl_typesupport_introspection_c.so
+[60.343s] -- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/nav_interfaces_s__rosidl_typesupport_introspection_c.so" to ""
+[60.344s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/nav_interfaces_s__rosidl_typesupport_c.so
+[60.344s] -- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages/nav_interfaces/nav_interfaces_s__rosidl_typesupport_c.so" to ""
+[60.345s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/libnav_interfaces__rosidl_generator_py.so
+[60.346s] -- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/libnav_interfaces__rosidl_generator_py.so" to ""
+[60.346s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/rust
+[60.348s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/rust/src
+[60.348s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/rust/src/action.rs
+[60.348s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/rust/src/msg.rs
+[60.348s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/rust/src/action
+[60.348s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/rust/src/action/rmw.rs
+[60.348s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/rust/src/msg
+[60.348s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/rust/src/msg/rmw.rs
+[60.348s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/rust/src/srv.rs
+[60.348s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/rust/src/srv
+[60.348s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/rust/src/srv/rmw.rs
+[60.348s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/rust/src/lib.rs
+[60.348s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/rust/Cargo.toml
+[60.348s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/rust/build.rs
+[60.348s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/action/Navigate.idl
+[60.348s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleEvent.idl
+[60.348s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleStraight.idl
+[60.348s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleSpeedRegion.idl
+[60.348s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleTraversal.idl
+[60.348s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/NavigationPlan.idl
+[60.348s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleStructureRequest.idl
+[60.348s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleStructureFeedback.idl
+[60.349s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleTraversalState.idl
+[60.349s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleTraversalEvent.idl
+[60.349s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/srv/ReloadTerrain.idl
+[60.349s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/srv/GetTemporaryMap.idl
+[60.350s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/srv/ApplyTemporaryMap.idl
+[60.350s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/srv/GetHolePassageConfig.idl
+[60.350s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/srv/ApplyHolePassageConfig.idl
+[60.350s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/srv/SaveHolePassageConfig.idl
+[60.350s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/action/Navigate.action
+[60.350s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleEvent.msg
+[60.351s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleStraight.msg
+[60.351s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleSpeedRegion.msg
+[60.351s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleTraversal.msg
+[60.351s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/NavigationPlan.msg
+[60.353s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleStructureRequest.msg
+[60.353s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleStructureFeedback.msg
+[60.353s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleTraversalState.msg
+[60.353s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/msg/HoleTraversalEvent.msg
+[60.353s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/srv/ReloadTerrain.srv
+[60.353s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/srv/GetTemporaryMap.srv
+[60.353s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/srv/ApplyTemporaryMap.srv
+[60.353s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/srv/GetHolePassageConfig.srv
+[60.353s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/srv/ApplyHolePassageConfig.srv
+[60.353s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/srv/SaveHolePassageConfig.srv
+[60.353s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/ament_index/resource_index/package_run_dependencies/nav_interfaces
+[60.353s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/ament_index/resource_index/parent_prefix_path/nav_interfaces
+[60.353s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/environment/ament_prefix_path.sh
+[60.354s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/environment/ament_prefix_path.dsv
+[60.354s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/environment/path.sh
+[60.354s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/environment/path.dsv
+[60.354s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/local_setup.bash
+[60.354s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/local_setup.sh
+[60.354s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/local_setup.zsh
+[60.354s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/local_setup.dsv
+[60.354s] -- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/package.dsv
+[60.354s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/ament_index/resource_index/packages/nav_interfaces
+[60.354s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/export_nav_interfaces__rosidl_generator_cExport.cmake
+[60.354s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/export_nav_interfaces__rosidl_generator_cExport-relwithdebinfo.cmake
+[60.354s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/export_nav_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[60.355s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/export_nav_interfaces__rosidl_typesupport_fastrtps_cExport-relwithdebinfo.cmake
+[60.355s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/nav_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[60.355s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/nav_interfaces__rosidl_typesupport_introspection_cExport-relwithdebinfo.cmake
+[60.355s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/nav_interfaces__rosidl_typesupport_cExport.cmake
+[60.356s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/nav_interfaces__rosidl_typesupport_cExport-relwithdebinfo.cmake
+[60.356s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/export_nav_interfaces__rosidl_generator_cppExport.cmake
+[60.356s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/export_nav_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[60.357s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/export_nav_interfaces__rosidl_typesupport_fastrtps_cppExport-relwithdebinfo.cmake
+[60.357s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/nav_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[60.357s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/nav_interfaces__rosidl_typesupport_introspection_cppExport-relwithdebinfo.cmake
+[60.358s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/nav_interfaces__rosidl_typesupport_cppExport.cmake
+[60.358s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/nav_interfaces__rosidl_typesupport_cppExport-relwithdebinfo.cmake
+[60.358s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/export_nav_interfaces__rosidl_generator_pyExport.cmake
+[60.358s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/export_nav_interfaces__rosidl_generator_pyExport-relwithdebinfo.cmake
+[60.358s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/rosidl_cmake-extras.cmake
+[60.359s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[60.359s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[60.359s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[60.359s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[60.359s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[60.359s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[60.362s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[60.362s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/nav_interfacesConfig.cmake
+[60.362s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake/nav_interfacesConfig-version.cmake
+[60.362s] -- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/package.xml
+[60.362s] Invoked command in '/home/dengjiaxi/simulation_seu/test/build/nav_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/dengjiaxi/simulation_seu/test/build/nav_interfaces

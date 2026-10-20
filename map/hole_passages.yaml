@@ -1,0 +1,47 @@
+schema_version: 1  # 文件格式版本
+frame_id: map  # 范围所在地图坐标系
+holes:
+  - id: hole_A1  # 对应 Terrain 洞口 ID
+    passable_edges: [0, 2]  # 零起点物理通行边编号
+    prepare_path_distance: 1.5  # 准备点到实际入口沿最终路径的距离（米）；允许在入口直线内准备，进入 E 前须完成变形
+    straight_range:
+      schema_version: 1  # 固定范围格式版本
+      binding: passable_edges  # 两侧长度绑定物理通行边，反向共用同一区间
+      sides:
+        - edge_id: 0  # 物理通行边编号
+          extension_length: 0.39447273635864244  # 从该边向洞外延伸的固定直线长度（米）
+        - edge_id: 2  # 物理通行边编号
+          extension_length: 0.69314227676391615  # 从该边向洞外延伸的固定直线长度（米）
+  - id: hole_A2  # 对应 Terrain 洞口 ID
+    passable_edges: [0, 2]  # 零起点物理通行边编号
+    prepare_path_distance: 1.5  # 准备点到实际入口沿最终路径的距离（米）；允许在入口直线内准备，进入 E 前须完成变形
+    straight_range:
+      schema_version: 1  # 固定范围格式版本
+      binding: passable_edges  # 两侧长度绑定物理通行边，反向共用同一区间
+      sides:
+        - edge_id: 0  # 物理通行边编号
+          extension_length: 0.80000000000000004  # 从该边向洞外延伸的固定直线长度（米）
+        - edge_id: 2  # 物理通行边编号
+          extension_length: 0.10000000000000001  # 从该边向洞外延伸的固定直线长度（米）
+  - id: hole_B1  # 对应 Terrain 洞口 ID
+    passable_edges: [1, 3]  # 零起点物理通行边编号
+    prepare_path_distance: 1.5  # 准备点到实际入口沿最终路径的距离（米）；允许在入口直线内准备，进入 E 前须完成变形
+    straight_range:
+      schema_version: 1  # 固定范围格式版本
+      binding: passable_edges  # 两侧长度绑定物理通行边，反向共用同一区间
+      sides:
+        - edge_id: 1  # 物理通行边编号
+          extension_length: 2.4125336875915528  # 从该边向洞外延伸的固定直线长度（米）
+        - edge_id: 3  # 物理通行边编号
+          extension_length: 0.82077581024169932  # 从该边向洞外延伸的固定直线长度（米）
+  - id: hole_B2  # 对应 Terrain 洞口 ID
+    passable_edges: [1, 3]  # 零起点物理通行边编号
+    prepare_path_distance: 1.5  # 准备点到实际入口沿最终路径的距离（米）；允许在入口直线内准备，进入 E 前须完成变形
+    straight_range:
+      schema_version: 1  # 固定范围格式版本
+      binding: passable_edges  # 两侧长度绑定物理通行边，反向共用同一区间
+      sides:
+        - edge_id: 1  # 物理通行边编号
+          extension_length: 0.80000000000000004  # 从该边向洞外延伸的固定直线长度（米）
+        - edge_id: 3  # 物理通行边编号
+          extension_length: 0.10000000000000001  # 从该边向洞外延伸的固定直线长度（米）

@@ -1,0 +1,307 @@
+regions:
+  - id: slope_A1
+    frame_id: map
+    type: slope
+    name: slope_A1
+    notes: 自动检测候选；几何和配准须复核
+    geometry:
+      polygon:
+        -
+          - -5.1310000000000002
+          - -3.7810000000000001
+        -
+          - -4.2560000000000002
+          - -3.7810000000000001
+        -
+          - -3.6520000000000001
+          - -3.0259999999999998
+        -
+          - -5.1310000000000002
+          - -3.0259999999999998
+    attributes:
+      slope_angle_deg: 15.05
+      nominal_slope_angle_deg: 15.0
+      uphill_yaw_deg: 269.74
+      height_rise_m: 0.156
+      hole_relative_to_slope: OVERLAP_WITH_SLOPE_END
+      related_hole_id: hole_A1
+      confidence: 0.76
+      confidence_basis: heuristic
+      registration_status: auto_matched
+      review_status: pending
+      crop_method: shared_edges_right_trapezoid
+      slope_pixel_coverage: 0.987
+  - id: hole_A1
+    frame_id: map
+    type: low_clearance
+    name: hole_A1
+    notes: 上方低矮遮挡候选；PCD缺点不代表已观测FREE
+    geometry:
+      polygon:
+        -
+          - -5.1310000000000002
+          - -3.7810000000000001
+        -
+          - -4.2560000000000002
+          - -3.7810000000000001
+        -
+          - -4.2560000000000002
+          - -3.5310000000000001
+        -
+          - -5.1310000000000002
+          - -3.5310000000000001
+    attributes:
+      estimated_clearance_m: 0.261
+      median_clearance_m: 0.289
+      clearance_p10_m: 0.261
+      nominal_clearance_m: 0.26
+      roof_width_m: 0.72
+      roof_depth_m: 0.24
+      nominal_roof_width_m: 0.8
+      nominal_roof_depth_m: 0.35
+      related_slope_id: slope_A1
+      gap_from_slope_m: 0.0
+      confidence: 0.76
+      confidence_basis: heuristic
+      registration_status: auto_matched
+      review_status: pending
+      footprint_source: mesh_occupied_pgm_rectangle_fit
+      footprint_length_m: 1.1
+      footprint_width_m: 0.25
+      clearance_evidence_scope: detected_core_only
+      geometry_model: shorter_opening_edge_rectangle
+    traversal:
+      passable_edges:
+        - 0
+        - 2
+      bidirectional: true
+  - id: slope_A2
+    frame_id: map
+    type: slope
+    name: slope_A2
+    notes: 自动检测候选；几何和配准须复核
+    geometry:
+      polygon:
+        -
+          - 3.6400000000000001
+          - 6.3140000000000001
+        -
+          - 5.1440000000000001
+          - 6.3140000000000001
+        -
+          - 5.1440000000000001
+          - 7.069
+        -
+          - 4.2439999999999998
+          - 7.069
+    attributes:
+      slope_angle_deg: 15.05
+      nominal_slope_angle_deg: 15.0
+      uphill_yaw_deg: 90.26
+      height_rise_m: 0.156
+      hole_relative_to_slope: OVERLAP_WITH_SLOPE_END
+      related_hole_id: hole_A2
+      confidence: 0.77
+      confidence_basis: heuristic
+      registration_status: auto_matched
+      review_status: pending
+      crop_method: shared_edges_right_trapezoid
+      slope_pixel_coverage: 0.976
+  - id: hole_A2
+    frame_id: map
+    type: low_clearance
+    name: hole_A2
+    notes: 上方低矮遮挡候选；PCD缺点不代表已观测FREE
+    geometry:
+      polygon:
+        -
+          - 4.2439999999999998
+          - 6.819
+        -
+          - 5.1440000000000001
+          - 6.819
+        -
+          - 5.1440000000000001
+          - 7.069
+        -
+          - 4.2439999999999998
+          - 7.069
+    attributes:
+      estimated_clearance_m: 0.262
+      median_clearance_m: 0.283
+      clearance_p10_m: 0.262
+      nominal_clearance_m: 0.26
+      roof_width_m: 0.741
+      roof_depth_m: 0.239
+      nominal_roof_width_m: 0.8
+      nominal_roof_depth_m: 0.35
+      related_slope_id: slope_A2
+      gap_from_slope_m: 0.0
+      confidence: 0.77
+      confidence_basis: heuristic
+      registration_status: auto_matched
+      review_status: pending
+      footprint_source: mesh_occupied_pgm_rectangle_fit
+      footprint_length_m: 1.1
+      footprint_width_m: 0.25
+      clearance_evidence_scope: detected_core_only
+      geometry_model: shorter_opening_edge_rectangle
+    traversal:
+      passable_edges:
+        - 0
+        - 2
+      bidirectional: true
+  - id: slope_B1
+    frame_id: map
+    type: slope
+    name: slope_B1
+    notes: 自动检测候选；几何和配准须复核
+    geometry:
+      polygon:
+        -
+          - 0.28899999999999998
+          - -4.7060000000000004
+        -
+          - -0.65100000000000002
+          - -4.7060000000000004
+        -
+          - -0.65100000000000002
+          - -3.9260000000000002
+        -
+          - 0.28899999999999998
+          - -3.9260000000000002
+    attributes:
+      slope_angle_deg: 11.4
+      nominal_slope_angle_deg: 11.0
+      uphill_yaw_deg: 179.99
+      height_rise_m: 0.154
+      hole_relative_to_slope: DOWNHILL_SIDE
+      related_hole_id: hole_B1
+      confidence: 0.8
+      confidence_basis: heuristic
+      registration_status: auto_matched
+      review_status: pending
+      crop_method: local_entrance_window
+      plane_fit_rmse_m: 0.0011
+      source_component_area_m2: 0.936
+      observed_slope_length_m: 0.944
+      observed_slope_width_m: 0.785
+      nominal_slope_length_m: 1.0
+      nominal_slope_width_m: 0.8
+  - id: hole_B1
+    frame_id: map
+    type: low_clearance
+    name: hole_B1
+    notes: 上方低矮遮挡候选；PCD缺点不代表已观测FREE
+    geometry:
+      polygon:
+        -
+          - 1.0089999999999999
+          - -4.6859999999999999
+        -
+          - 0.749
+          - -4.6859999999999999
+        -
+          - 0.749
+          - -3.9260000000000002
+        -
+          - 1.0089999999999999
+          - -3.9260000000000002
+    attributes:
+      estimated_clearance_m: 0.25
+      median_clearance_m: 0.25
+      clearance_p10_m: 0.25
+      nominal_clearance_m: 0.25
+      roof_width_m: 0.76
+      roof_depth_m: 0.26
+      nominal_roof_width_m: 0.8
+      nominal_roof_depth_m: 0.35
+      related_slope_id: slope_B1
+      gap_from_slope_m: 0.456
+      confidence: 0.8
+      confidence_basis: heuristic
+      registration_status: auto_matched
+      review_status: pending
+      geometry_model: shorter_opening_edge_rectangle
+    traversal:
+      passable_edges:
+        - 1
+        - 3
+      bidirectional: true
+  - id: slope_B2
+    frame_id: map
+    type: slope
+    name: slope_B2
+    notes: 自动检测候选；几何和配准须复核
+    geometry:
+      polygon:
+        -
+          - 0.64900000000000002
+          - 7.194
+        -
+          - -0.29099999999999998
+          - 7.194
+        -
+          - -0.29099999999999998
+          - 7.9939999999999998
+        -
+          - 0.64900000000000002
+          - 7.9939999999999998
+    attributes:
+      slope_angle_deg: 11.42
+      nominal_slope_angle_deg: 11.0
+      uphill_yaw_deg: 360.0
+      height_rise_m: 0.154
+      hole_relative_to_slope: DOWNHILL_SIDE
+      related_hole_id: hole_B2
+      confidence: 0.79
+      confidence_basis: heuristic
+      registration_status: auto_matched
+      review_status: pending
+      crop_method: local_entrance_window
+      plane_fit_rmse_m: 0.0012
+      source_component_area_m2: 0.932
+      observed_slope_length_m: 0.943
+      observed_slope_width_m: 0.8
+      nominal_slope_length_m: 1.0
+      nominal_slope_width_m: 0.8
+  - id: hole_B2
+    frame_id: map
+    type: low_clearance
+    name: hole_B2
+    notes: 上方低矮遮挡候选；PCD缺点不代表已观测FREE
+    geometry:
+      polygon:
+        -
+          - -0.751
+          - 7.234
+        -
+          - -0.99099999999999999
+          - 7.234
+        -
+          - -0.99099999999999999
+          - 7.9740000000000002
+        -
+          - -0.751
+          - 7.9740000000000002
+    attributes:
+      estimated_clearance_m: 0.25
+      median_clearance_m: 0.25
+      clearance_p10_m: 0.25
+      nominal_clearance_m: 0.25
+      roof_width_m: 0.74
+      roof_depth_m: 0.24
+      nominal_roof_width_m: 0.8
+      nominal_roof_depth_m: 0.35
+      related_slope_id: slope_B2
+      gap_from_slope_m: 0.458
+      confidence: 0.79
+      confidence_basis: heuristic
+      registration_status: auto_matched
+      review_status: pending
+      geometry_model: shorter_opening_edge_rectangle
+    traversal:
+      passable_edges:
+        - 1
+        - 3
+      bidirectional: true

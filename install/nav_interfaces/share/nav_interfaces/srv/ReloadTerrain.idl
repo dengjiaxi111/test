@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from nav_interfaces/srv/ReloadTerrain.srv
+// generated code does not contain a copyright notice
+
+
+module nav_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "编辑器保存文件的绝对路径；必须与导航 terrain_file 指向同一文件。")
+    struct ReloadTerrain_Request {
+      string expected_path;
+    };
+    struct ReloadTerrain_Response {
+      boolean success;
+
+      string reason;
+
+      string terrain_path;
+
+      uint64 terrain_revision;
+
+      boolean replanning_triggered;
+    };
+  };
+};

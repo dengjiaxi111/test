@@ -1,0 +1,10 @@
+---
+bool success
+bool manual_config_active
+string reason
+string config_yaml
+string config_path
+string terrain_path
+string terrain_geometry
+uint64 config_revision
+uint64 terrain_revision

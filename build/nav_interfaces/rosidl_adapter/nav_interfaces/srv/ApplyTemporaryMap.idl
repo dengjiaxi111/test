@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from nav_interfaces/srv/ApplyTemporaryMap.srv
+// generated code does not contain a copyright notice
+
+
+module nav_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "完整替换本次导航的人工笔迹；空数组表示清除全部临时修改。绝不写入文件。")
+    struct ApplyTemporaryMap_Request {
+      string expected_session_id;
+
+      string expected_source_id;
+
+      uint64 expected_map_revision;
+
+      sequence<uint32> indices;
+
+      sequence<int8> values;
+    };
+    struct ApplyTemporaryMap_Response {
+      boolean success;
+
+      string reason;
+
+      uint64 map_revision;
+
+      boolean replanning_triggered;
+    };
+  };
+};

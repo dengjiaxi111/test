@@ -1,0 +1,13 @@
+{
+  "package_name": "robots_msgs",
+  "non_idl_tuples": [
+    "/home/dengjiaxi/simulation_seu/test/src/robots_msgs:msg/auto_detect/EnemyPose.msg",
+    "/home/dengjiaxi/simulation_seu/test/src/robots_msgs:msg/referee_system/GameStatus.msg",
+    "/home/dengjiaxi/simulation_seu/test/src/robots_msgs:msg/referee_system/RobotStatus.msg",
+    "/home/dengjiaxi/simulation_seu/test/src/robots_msgs:msg/slave_computer/GimbCmdFram.msg",
+    "/home/dengjiaxi/simulation_seu/test/src/robots_msgs:msg/slave_computer/GimbalData.msg",
+    "/home/dengjiaxi/simulation_seu/test/src/robots_msgs:msg/slave_computer/ModeCmd.msg",
+    "/home/dengjiaxi/simulation_seu/test/src/robots_msgs:msg/slave_computer/MyPath.msg",
+    "/home/dengjiaxi/simulation_seu/test/src/robots_msgs:msg/slave_computer/ChassisOdom.msg"
+  ]
+}

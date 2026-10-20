@@ -1,0 +1,11 @@
+# 完整替换本次导航的人工笔迹；空数组表示清除全部临时修改。绝不写入文件。
+string expected_session_id
+string expected_source_id
+uint64 expected_map_revision
+uint32[] indices
+int8[] values
+---
+bool success
+string reason
+uint64 map_revision
+bool replanning_triggered

@@ -1,0 +1,59 @@
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp: In member function ‘nav_core::hole_exec::Output nav_components::SlopeHoleController::update(const Input&)’:
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:164:60: error: ‘using nav_components::SlopeHoleController::Output = struct nav_core::hole_exec::Output’ {aka ‘struct nav_core::hole_exec::Output’} has no member named ‘attempt’
+  164 |     Output out;out.state=state_;out.progress=progress_;out.attempt=attempt_;
+      |                                                            ^~~~~~~
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:199:17: error: ‘using nav_components::SlopeHoleController::Output = struct nav_core::hole_exec::Output’ {aka ‘struct nav_core::hole_exec::Output’} has no member named ‘cancel_request’
+  199 |             out.cancel_request=true;
+      |                 ^~~~~~~~~~~~~~
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:200:46: error: ‘const struct nav_core::hole_exec::StructureFeedback’ has no member named ‘action_stopped’
+  200 |             if(feedback_fresh && in.feedback.action_stopped && in.feedback.retry_allowed && request_) {
+      |                                              ^~~~~~~~~~~~~~
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:200:76: error: ‘const struct nav_core::hole_exec::StructureFeedback’ has no member named ‘retry_allowed’
+  200 |             if(feedback_fresh && in.feedback.action_stopped && in.feedback.retry_allowed && request_) {
+      |                                                                            ^~~~~~~~~~~~~
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:202:53: error: ‘using nav_components::SlopeHoleController::Config = struct nav_core::hole_exec::Config’ {aka ‘struct nav_core::hole_exec::Config’} has no member named ‘max_action_retries’
+  202 |                 if(action_retries_[target]>=config_.max_action_retries) {out.decision=Decision::FAILURE;out.reason="structure retry budget exhausted";return done();}
+      |                                                     ^~~~~~~~~~~~~~~~~~
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:203:82: error: ‘using nav_components::SlopeHoleController::Output = struct nav_core::hole_exec::Output’ {aka ‘struct nav_core::hole_exec::Output’} has no member named ‘cancel_request’
+  203 |                 ++action_retries_[target];request_.reset();cancelling_=false;out.cancel_request=false;
+      |                                                                                  ^~~~~~~~~~~~~~
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:206:52: error: ‘using nav_components::SlopeHoleController::Config = struct nav_core::hole_exec::Config’ {aka ‘struct nav_core::hole_exec::Config’} has no member named ‘stop_ack_timeout’; did you mean ‘feedback_timeout’?
+  206 |                 if(in.now-cancel_started_>=config_.stop_ack_timeout){out.decision=Decision::FAILURE;out.reason="no stopped/retry confirmation";}
+      |                                                    ^~~~~~~~~~~~~~~~
+      |                                                    feedback_timeout
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:240:68: error: ‘using nav_components::SlopeHoleController::Config = struct nav_core::hole_exec::Config’ {aka ‘struct nav_core::hole_exec::Config’} has no member named ‘ack_timeout’; did you mean ‘pose_timeout’?
+  240 |             if(!freshFeedback(in)&&in.now-request_started_>config_.ack_timeout){hold(in.now,"structure acknowledgement missing");return done();}
+      |                                                                    ^~~~~~~~~~~
+      |                                                                    pose_timeout
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:241:144: error: ‘using nav_components::SlopeHoleController::Output = struct nav_core::hole_exec::Output’ {aka ‘struct nav_core::hole_exec::Output’} has no member named ‘cancel_request’
+  241 |             if(in.now-request_started_>config_.prepare_timeout){hold(in.now,"preparation timeout");cancelling_=true;cancel_started_=in.now;out.cancel_request=true;return done();}
+      |                                                                                                                                                ^~~~~~~~~~~~~~
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:250:19: error: ‘const nav_components::SlopeHoleController::Input’ {aka ‘const struct nav_core::hole_exec::Input’} has no member named ‘command_requested’
+  250 |             if(in.command_requested) {
+      |                   ^~~~~~~~~~~~~~~~~
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:251:77: error: ‘using nav_components::SlopeHoleController::Config = struct nav_core::hole_exec::Config’ {aka ‘struct nav_core::hole_exec::Config’} has no member named ‘stall_progress’
+  251 |                 if(progress_started_<0||progress_-progress_anchor_>=config_.stall_progress){progress_anchor_=progress_;progress_started_=in.now;}
+      |                                                                             ^~~~~~~~~~~~~~
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:252:53: error: ‘using nav_components::SlopeHoleController::Config = struct nav_core::hole_exec::Config’ {aka ‘struct nav_core::hole_exec::Config’} has no member named ‘stall_timeout’; did you mean ‘hold_timeout’?
+  252 |                 if(in.now-progress_started_>config_.stall_timeout){hold(in.now,"traverse no progress");return done();}
+      |                                                     ^~~~~~~~~~~~~
+      |                                                     hold_timeout
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:266:140: error: ‘using nav_components::SlopeHoleController::Output = struct nav_core::hole_exec::Output’ {aka ‘struct nav_core::hole_exec::Output’} has no member named ‘cancel_request’
+  266 |             if(in.now-request_started_>config_.restore_timeout){hold(in.now,"restore timeout");cancelling_=true;cancel_started_=in.now;out.cancel_request=true;return done();}
+      |                                                                                                                                            ^~~~~~~~~~~~~~
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:273:38: error: ‘using nav_components::SlopeHoleController::Config = struct nav_core::hole_exec::Config’ {aka ‘struct nav_core::hole_exec::Config’} has no member named ‘stopped_speed’
+  273 |         if(in.measured_speed<config_.stopped_speed){if(stop_stable_since_<0)stop_stable_since_=in.now;}
+      |                                      ^~~~~~~~~~~~~
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:275:70: error: ‘using nav_components::SlopeHoleController::Config = struct nav_core::hole_exec::Config’ {aka ‘struct nav_core::hole_exec::Config’} has no member named ‘settle_time’
+  275 |         if(stop_stable_since_>=0&&in.now-stop_stable_since_>=config_.settle_time&&matching(in,Posture::LOW)) {emergency_=false;stop_stable_since_=-1;}
+      |                                                                      ^~~~~~~~~~~
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:278:48: error: ‘using nav_components::SlopeHoleController::Config = struct nav_core::hole_exec::Config’ {aka ‘struct nav_core::hole_exec::Config’} has no member named ‘stopped_speed’
+  278 |     if(out.stop_arc&&in.measured_speed>config_.stopped_speed) {
+      |                                                ^~~~~~~~~~~~~
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp: In member function ‘void nav_components::SlopeHoleController::completeRetreat(double, const Input&)’:
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_controller.cpp:290:78: error: ‘using nav_components::SlopeHoleController::Config = struct nav_core::hole_exec::Config’ {aka ‘struct nav_core::hole_exec::Config’} has no member named ‘stopped_speed’
+  290 |     if(!matching(in,Posture::LOW)||!in.pose_valid||in.measured_speed>config_.stopped_speed)
+      |                                                                              ^~~~~~~~~~~~~
+gmake[2]: *** [CMakeFiles/nav_server.dir/build.make:90: CMakeFiles/nav_server.dir/src/slopehole_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/nav_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,8 @@
+# 只保存指定版本的已确认快照，不接受未确认草稿。
+uint64 expected_config_revision
+uint64 expected_terrain_revision
+---
+bool success
+string reason
+string config_path
+uint64 config_revision

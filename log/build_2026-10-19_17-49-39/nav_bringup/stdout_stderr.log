@@ -1,0 +1,65 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Configuring done (1.1s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    ACADOS_SOURCE_DIR
+
+
+-- Build files have been written to: /home/dengjiaxi/simulation_seu/test/build/nav_bringup
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/launch
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/launch/two_point_patrol.launch.py
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/launch/navigation.launch.py
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/launch/run.launch.py
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/config
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/config/nav_params.yaml
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/config/hole_state_machine.yaml
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/RMUC_final_no_slope1.pgm
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/test1.txt
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/map3.pgm
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/RMUC_final_no_slope.pgm
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/map4.yaml
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/map1.pgm
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/map2.pgm
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/map.pgm
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/map.yaml
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/map_obst.pgm
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/map3.yaml
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/map4.pgm
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/maps/RMUC_final.yaml
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/rviz
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/rviz/navigation_full.rviz
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/rviz/navigation.rviz
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/lib/nav_bringup/static_relocator.py
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/lib/nav_bringup/odom_base_debug_rebaser.py
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/ament_index/resource_index/package_run_dependencies/nav_bringup
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/ament_index/resource_index/parent_prefix_path/nav_bringup
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/environment/ament_prefix_path.sh
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/environment/ament_prefix_path.dsv
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/environment/path.sh
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/environment/path.dsv
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/local_setup.bash
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/local_setup.sh
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/local_setup.zsh
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/local_setup.dsv
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/package.dsv
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/ament_index/resource_index/packages/nav_bringup
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/cmake/nav_bringupConfig.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/cmake/nav_bringupConfig-version.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_bringup/share/nav_bringup/package.xml

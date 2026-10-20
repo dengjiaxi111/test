@@ -1,0 +1,43 @@
+running egg_info
+creating ../../../build/fake_vel_transform/fake_vel_transform.egg-info
+writing ../../../build/fake_vel_transform/fake_vel_transform.egg-info/PKG-INFO
+writing dependency_links to ../../../build/fake_vel_transform/fake_vel_transform.egg-info/dependency_links.txt
+writing entry points to ../../../build/fake_vel_transform/fake_vel_transform.egg-info/entry_points.txt
+writing requirements to ../../../build/fake_vel_transform/fake_vel_transform.egg-info/requires.txt
+writing top-level names to ../../../build/fake_vel_transform/fake_vel_transform.egg-info/top_level.txt
+writing manifest file '../../../build/fake_vel_transform/fake_vel_transform.egg-info/SOURCES.txt'
+reading manifest file '../../../build/fake_vel_transform/fake_vel_transform.egg-info/SOURCES.txt'
+writing manifest file '../../../build/fake_vel_transform/fake_vel_transform.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/dengjiaxi/simulation_seu/test/build/fake_vel_transform/build
+creating /home/dengjiaxi/simulation_seu/test/build/fake_vel_transform/build/lib
+creating /home/dengjiaxi/simulation_seu/test/build/fake_vel_transform/build/lib/fake_vel_transform
+copying fake_vel_transform/config.py -> /home/dengjiaxi/simulation_seu/test/build/fake_vel_transform/build/lib/fake_vel_transform
+copying fake_vel_transform/node.py -> /home/dengjiaxi/simulation_seu/test/build/fake_vel_transform/build/lib/fake_vel_transform
+copying fake_vel_transform/__init__.py -> /home/dengjiaxi/simulation_seu/test/build/fake_vel_transform/build/lib/fake_vel_transform
+copying fake_vel_transform/core.py -> /home/dengjiaxi/simulation_seu/test/build/fake_vel_transform/build/lib/fake_vel_transform
+running install
+running install_lib
+creating /home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/python3.12/site-packages/fake_vel_transform
+copying /home/dengjiaxi/simulation_seu/test/build/fake_vel_transform/build/lib/fake_vel_transform/config.py -> /home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/python3.12/site-packages/fake_vel_transform
+copying /home/dengjiaxi/simulation_seu/test/build/fake_vel_transform/build/lib/fake_vel_transform/node.py -> /home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/python3.12/site-packages/fake_vel_transform
+copying /home/dengjiaxi/simulation_seu/test/build/fake_vel_transform/build/lib/fake_vel_transform/__init__.py -> /home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/python3.12/site-packages/fake_vel_transform
+copying /home/dengjiaxi/simulation_seu/test/build/fake_vel_transform/build/lib/fake_vel_transform/core.py -> /home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/python3.12/site-packages/fake_vel_transform
+byte-compiling /home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/python3.12/site-packages/fake_vel_transform/config.py to config.cpython-312.pyc
+byte-compiling /home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/python3.12/site-packages/fake_vel_transform/node.py to node.cpython-312.pyc
+byte-compiling /home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/python3.12/site-packages/fake_vel_transform/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/python3.12/site-packages/fake_vel_transform/core.py to core.cpython-312.pyc
+running install_data
+creating /home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/share/ament_index
+creating /home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/share/ament_index/resource_index
+creating /home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/share/ament_index/resource_index/packages
+copying resource/fake_vel_transform -> /home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/share/ament_index/resource_index/packages
+copying package.xml -> /home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/share/fake_vel_transform
+creating /home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/share/fake_vel_transform/launch
+copying launch/fake_vel_transform.launch.py -> /home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/share/fake_vel_transform/launch
+running install_egg_info
+Copying ../../../build/fake_vel_transform/fake_vel_transform.egg-info to /home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/python3.12/site-packages/fake_vel_transform-0.1.0-py3.12.egg-info
+running install_scripts
+Installing fake_vel_transform_node script to /home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/fake_vel_transform
+writing list of installed files to '/home/dengjiaxi/simulation_seu/test/build/fake_vel_transform/install.log'

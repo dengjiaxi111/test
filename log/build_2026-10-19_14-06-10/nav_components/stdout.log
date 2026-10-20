@@ -1,0 +1,3 @@
+[ 14%] Built target hole_connection_optimizer
+[ 18%] Building CXX object CMakeFiles/nav_server.dir/src/nav_server.cpp.o
+[ 22%] Building CXX object CMakeFiles/nav_server.dir/src/slopehole_controller.cpp.o

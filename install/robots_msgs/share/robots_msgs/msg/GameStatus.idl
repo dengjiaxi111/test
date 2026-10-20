@@ -1,0 +1,72 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robots_msgs/msg/referee_system/GameStatus.msg
+// generated code does not contain a copyright notice
+
+
+module robots_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "game status")
+    struct GameStatus {
+      uint8 game_type;
+
+      uint8 game_progress;
+
+      @verbatim (language="comment", text=
+        "当前阶段剩余时间")
+      uint16 stage_remain_time;
+
+      uint16 my_hp;
+
+      uint16 my_outpost_hp;
+
+      uint16 my_base_hp;
+
+      float our_hero_x;
+
+      float our_hero_y;
+
+      uint16 enemy_1_robot_hp;
+
+      uint16 enemy_2_robot_hp;
+
+      uint16 enemy_3_robot_hp;
+
+      uint16 enemy_4_robot_hp;
+
+      uint16 enemy_5_robot_hp;
+
+      uint16 enemy_7_robot_hp;
+
+      uint16 enemy_outpost_hp;
+
+      uint16 enemy_base_hp;
+
+      @verbatim (language="comment", text=
+        "己方补给站前补血点的占领状态")
+      uint8 external_supply_area_occupied;
+
+      @verbatim (language="comment", text=
+        "己方补给站内部补血点的占领状态")
+      uint8 inner_supply_area_occupied;
+
+      @verbatim (language="comment", text=
+        "己方补给区的占领状态")
+      uint8 supply_area_occupied;
+
+      @verbatim (language="comment", text=
+        "己方小符激活状态")
+      uint8 our_small_buff_activated;
+
+      @verbatim (language="comment", text=
+        "己方大符激活状态")
+      uint8 our_big_buff_activated;
+
+      @verbatim (language="comment", text=
+        "己方堡垒占领状态")
+      uint8 our_fortress_status;
+
+      uint16 remaining_gold_coin;
+    };
+  };
+};

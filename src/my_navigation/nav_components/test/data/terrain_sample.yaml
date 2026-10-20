@@ -1,0 +1,21 @@
+regions:
+  - id: slope_test
+    frame_id: map
+    type: slope
+    name: test_slope
+    geometry:
+      polygon: [[0, 0], [2, 0], [2, 2], [0, 2]]
+    attributes:
+      slope_angle_deg: 15.0
+      future:
+        mode: SOME_MODE
+  - id: hole_test
+    frame_id: map
+    type: low_clearance
+    name: test_hole
+    geometry:
+      polygon: [[1, 1], [3, 1], [3, 3], [1, 3]]
+    attributes:
+      traversal:
+        max_speed: 0.3
+        robot_mode: LOW

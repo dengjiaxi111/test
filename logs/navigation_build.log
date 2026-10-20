@@ -1,0 +1,141 @@
+Starting >>> nav_components
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_action: 28.1.22 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+-- Found geometry_msgs: 5.3.8 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found nav_msgs: 5.3.8 (/opt/ros/jazzy/share/nav_msgs/cmake)
+-- Found visualization_msgs: 5.3.8 (/opt/ros/jazzy/share/visualization_msgs/cmake)
+-- Found tf2: 0.36.22 (/opt/ros/jazzy/share/tf2/cmake)
+-- Found tf2_ros: 0.36.22 (/opt/ros/jazzy/share/tf2_ros/cmake)
+-- Found tf2_geometry_msgs: 0.36.22 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.3.1 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found nav_interfaces: 0.1.0 (/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/share/nav_interfaces/cmake)
+-- Found nav_core: 0.1.0 (/home/dengjiaxi/simulation_seu/test/install/nav_core/share/nav_core/cmake)
+-- Found robots_msgs: 1.0.0 (/home/dengjiaxi/simulation_seu/test/install/robots_msgs/share/robots_msgs/cmake)
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: serialization filesystem system 
+-- Found ompl: /opt/ros/jazzy/include/ompl-1.7;/usr/include;/usr/include/eigen3  
+-- ✓ 找到 NMPC solver: /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/nmpc_solver_omni
+-- ✓ 使用 acados: /home/dengjiaxi/dependency/acados
+-- Configuring done (1.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/dengjiaxi/simulation_seu/test/build/nav_components
+[  3%] Building CXX object CMakeFiles/hole_connection_optimizer.dir/src/hole_connection_optimizer.cpp.o
+[  7%] Building CXX object CMakeFiles/hole_connection_optimizer.dir/src/hole_feasible_approach.cpp.o
+[ 11%] Building CXX object CMakeFiles/hole_connection_optimizer.dir/src/normal_navigation_segment.cpp.o
+[ 14%] Linking CXX static library libhole_connection_optimizer.a
+[ 14%] Built target hole_connection_optimizer
+[ 18%] Building CXX object CMakeFiles/nav_server.dir/src/nav_server.cpp.o
+[ 22%] Building CXX object CMakeFiles/nav_server.dir/src/slopehole_controller.cpp.o
+[ 25%] Building CXX object CMakeFiles/nav_server.dir/src/hole_execution_config.cpp.o
+[ 29%] Building CXX object CMakeFiles/nav_server.dir/src/hole_plan_adapter.cpp.o
+[ 33%] Building CXX object CMakeFiles/nav_server.dir/src/slopehole_ros_adapter.cpp.o
+[ 37%] Building CXX object CMakeFiles/nav_server.dir/src/simple_planner.cpp.o
+[ 40%] Building CXX object CMakeFiles/nav_server.dir/src/pure_pursuit.cpp.o
+[ 44%] Building CXX object CMakeFiles/nav_server.dir/src/backup_recovery.cpp.o
+[ 48%] Building CXX object CMakeFiles/nav_server.dir/src/spin_recovery.cpp.o
+[ 51%] Building CXX object CMakeFiles/nav_server.dir/src/arc_backup_recovery.cpp.o
+[ 55%] Building CXX object CMakeFiles/nav_server.dir/src/recovery_manager.cpp.o
+[ 59%] Building CXX object CMakeFiles/nav_server.dir/src/layered_map_manager.cpp.o
+[ 62%] Building CXX object CMakeFiles/nav_server.dir/src/terrain_region_map.cpp.o
+[ 66%] Building CXX object CMakeFiles/nav_server.dir/src/hole_clearance.cpp.o
+[ 70%] Building CXX object CMakeFiles/nav_server.dir/src/hole_geometry_previewer.cpp.o
+[ 74%] Building CXX object CMakeFiles/nav_server.dir/src/hole_passage_planner.cpp.o
+[ 77%] Building CXX object CMakeFiles/nav_server.dir/src/hole_route_planner.cpp.o
+[ 81%] Building CXX object CMakeFiles/nav_server.dir/src/hole_global_planner.cpp.o
+[ 85%] Building CXX object CMakeFiles/nav_server.dir/src/hole_connection_search.cpp.o
+[ 88%] Building CXX object CMakeFiles/nav_server.dir/src/nmpc.cpp.o
+[ 92%] Linking CXX executable nav_server
+[ 92%] Built target nav_server
+[ 96%] Building CXX object CMakeFiles/two_point_patrol.dir/src/two_point_patrol_node.cpp.o
+[100%] Linking CXX executable two_point_patrol
+[100%] Built target two_point_patrol
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/lib/libacados_ocp_solver_omni_nmpc.so
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/lib/nav_components/nav_server
+-- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/nav_components/lib/nav_components/nav_server" to "$ORIGIN/..:/home/dengjiaxi/dependency/acados/lib"
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/lib/nav_components/two_point_patrol
+-- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/nav_components/lib/nav_components/two_point_patrol" to ""
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/lib/nav_components/hole_structure_simulator.py
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/spin_recovery.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner/hole_connection_search.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner/normal_navigation_segment.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner/hole_connection_optimizer.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner/path_smoother.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner/bspline.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner/bspline_optimizer.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/hole_execution_config.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/pure_pursuit.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/hole_plan_adapter.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/slopehole_ros_adapter.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/hole_clearance.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/hole_geometry_previewer.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/omni_motion.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/simple_planner.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/hole_selected_snapshot.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/layered_map_manager.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/arc_backup_recovery.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/slopehole_controller.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/esdf_map.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/recovery_manager.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/backup_recovery.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/static_map_loader.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/nmpc.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/omni_model.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/translation_recovery.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/map_image_io.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/costmap_inflater.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/terrain_region_map.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/hole_passage_planner.hpp
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/nmpc_config
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/ament_index/resource_index/package_run_dependencies/nav_components
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/ament_index/resource_index/parent_prefix_path/nav_components
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/environment/ament_prefix_path.sh
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/environment/ament_prefix_path.dsv
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/environment/path.sh
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/environment/path.dsv
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/local_setup.bash
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/local_setup.sh
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/local_setup.zsh
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/local_setup.dsv
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/package.dsv
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/ament_index/resource_index/packages/nav_components
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/cmake/nav_componentsConfig.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/cmake/nav_componentsConfig-version.cmake
+-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/package.xml
+Finished <<< nav_components [2min 38s]
+[158.183s] ERROR:colcon.colcon_cmake.task.cmake.build:Failed to find the following files:
+- /home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/share/fake_vel_transform/package.sh
+Check that the following packages have been built:
+- fake_vel_transform
+Starting >>> nav_bringup
+Failed   <<< nav_bringup [0.00s, exited with code 1]
+
+Summary: 1 package finished [2min 38s]
+  1 package failed: nav_bringup

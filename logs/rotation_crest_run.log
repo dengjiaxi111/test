@@ -1,0 +1,62 @@
+crest (4.694, 5.0) -> (4.694, 7.604)
+PLAN 1 0 [('hole_A2', True)]
+STATE {'t': 7.644, 'state': 0, 'decision': 1, 'reason': 'waiting for chassis alignment and measured rotation stop', 'attempt': 0, 'recovery': 0}
+STATE {'t': 7.841, 'state': 0, 'decision': 0, 'reason': 'ordinary path following', 'attempt': 0, 'recovery': 0}
+STATE {'t': 8.861, 'state': 1, 'decision': 0, 'reason': 'A reached or remaining preparation required', 'attempt': 0, 'recovery': 0}
+EVENT {'uid': '804729685-0.000000:1:1', 'type': 0, 'sequence': 1, 'attempt': 0, 'arc': 0.31901180225046044, 'progress': 0.3218660831087765, 'lift': 0.2974404004895487, 'rotation_rates': [-0.015853350859973164, -0.020908709499270924], 'rotation_stopped': True}
+STATE {'t': 10.321000000000002, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+EVENT {'uid': '804729685-0.000000:1:1', 'type': 1, 'sequence': 2, 'attempt': 0, 'arc': 1.0190118022504606, 'progress': 1.027674995130429, 'lift': -1.0367844782684397e-14, 'rotation_rates': [0.06470258850661988, -0.0012589799052671734], 'rotation_stopped': True}
+STATE {'t': 11.059000000000001, 'state': 2, 'decision': 1, 'reason': 'emergency braking distance insufficient', 'attempt': 0, 'recovery': 0}
+STATE {'t': 11.079, 'state': 2, 'decision': 1, 'reason': 'emergency stop; waiting for stopped and prepared', 'attempt': 0, 'recovery': 0}
+STATE {'t': 12.073, 'state': 2, 'decision': 1, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 12.093, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 12.269, 'state': 2, 'decision': 1, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 12.289000000000001, 'state': 2, 'decision': 1, 'reason': 'emergency braking distance insufficient', 'attempt': 0, 'recovery': 0}
+STATE {'t': 12.309000000000001, 'state': 2, 'decision': 1, 'reason': 'emergency stop; waiting for stopped and prepared', 'attempt': 0, 'recovery': 0}
+STATE {'t': 12.794, 'state': 2, 'decision': 1, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 12.813, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 13.007000000000001, 'state': 2, 'decision': 1, 'reason': 'emergency braking distance insufficient', 'attempt': 0, 'recovery': 0}
+STATE {'t': 13.026000000000002, 'state': 2, 'decision': 1, 'reason': 'emergency stop; waiting for stopped and prepared', 'attempt': 0, 'recovery': 0}
+STATE {'t': 13.426, 'state': 2, 'decision': 1, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 13.663, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 13.843000000000002, 'state': 2, 'decision': 1, 'reason': 'emergency braking distance insufficient', 'attempt': 0, 'recovery': 0}
+STATE {'t': 13.862, 'state': 2, 'decision': 1, 'reason': 'emergency stop; waiting for stopped and prepared', 'attempt': 0, 'recovery': 0}
+STATE {'t': 14.243, 'state': 2, 'decision': 1, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 14.462000000000002, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 14.661000000000001, 'state': 2, 'decision': 1, 'reason': 'emergency braking distance insufficient', 'attempt': 0, 'recovery': 0}
+STATE {'t': 14.681000000000001, 'state': 2, 'decision': 1, 'reason': 'emergency stop; waiting for stopped and prepared', 'attempt': 0, 'recovery': 0}
+STATE {'t': 15.119000000000002, 'state': 2, 'decision': 1, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 15.339, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 15.539000000000001, 'state': 2, 'decision': 1, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 15.619000000000002, 'state': 2, 'decision': 1, 'reason': 'emergency braking distance insufficient', 'attempt': 0, 'recovery': 0}
+STATE {'t': 15.639000000000001, 'state': 2, 'decision': 1, 'reason': 'emergency stop; waiting for stopped and prepared', 'attempt': 0, 'recovery': 0}
+STATE {'t': 15.839, 'state': 2, 'decision': 1, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 16.159000000000002, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 16.315, 'state': 2, 'decision': 1, 'reason': 'emergency braking distance insufficient', 'attempt': 0, 'recovery': 0}
+STATE {'t': 16.335, 'state': 2, 'decision': 1, 'reason': 'emergency stop; waiting for stopped and prepared', 'attempt': 0, 'recovery': 0}
+STATE {'t': 17.414, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 17.714000000000002, 'state': 2, 'decision': 1, 'reason': 'emergency braking distance insufficient', 'attempt': 0, 'recovery': 0}
+STATE {'t': 17.734, 'state': 2, 'decision': 1, 'reason': 'emergency stop; waiting for stopped and prepared', 'attempt': 0, 'recovery': 0}
+STATE {'t': 18.154, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 18.254, 'state': 2, 'decision': 1, 'reason': 'emergency braking distance insufficient', 'attempt': 0, 'recovery': 0}
+STATE {'t': 18.274, 'state': 2, 'decision': 1, 'reason': 'emergency stop; waiting for stopped and prepared', 'attempt': 0, 'recovery': 0}
+STATE {'t': 18.634, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 18.812, 'state': 2, 'decision': 1, 'reason': 'emergency braking distance insufficient', 'attempt': 0, 'recovery': 0}
+STATE {'t': 18.831, 'state': 2, 'decision': 1, 'reason': 'emergency stop; waiting for stopped and prepared', 'attempt': 0, 'recovery': 0}
+STATE {'t': 19.19, 'state': 2, 'decision': 1, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 19.23, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 19.407, 'state': 2, 'decision': 1, 'reason': 'emergency braking distance insufficient', 'attempt': 0, 'recovery': 0}
+STATE {'t': 19.427, 'state': 2, 'decision': 1, 'reason': 'emergency stop; waiting for stopped and prepared', 'attempt': 0, 'recovery': 0}
+STATE {'t': 19.742, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 21.789, 'state': 2, 'decision': 1, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 21.809, 'state': 2, 'decision': 1, 'reason': 'emergency braking distance insufficient', 'attempt': 0, 'recovery': 0}
+STATE {'t': 21.829, 'state': 2, 'decision': 1, 'reason': 'emergency stop; waiting for stopped and prepared', 'attempt': 0, 'recovery': 0}
+STATE {'t': 22.289, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 22.449, 'state': 2, 'decision': 1, 'reason': 'emergency braking distance insufficient', 'attempt': 0, 'recovery': 0}
+STATE {'t': 22.469, 'state': 2, 'decision': 1, 'reason': 'emergency stop; waiting for stopped and prepared', 'attempt': 0, 'recovery': 0}
+STATE {'t': 23.308, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 23.488000000000003, 'state': 2, 'decision': 1, 'reason': 'emergency braking distance insufficient', 'attempt': 0, 'recovery': 0}
+STATE {'t': 23.507, 'state': 2, 'decision': 1, 'reason': 'emergency stop; waiting for stopped and prepared', 'attempt': 0, 'recovery': 0}
+STATE {'t': 24.421000000000003, 'state': 4, 'decision': 1, 'reason': 'unreliable progress/localization jump', 'attempt': 0, 'recovery': 0}
+FAIL 诊断停止于首次HOLD: unreliable progress/localization jump
+FAIL 诊断停止于首次HOLD: unreliable progress/localization jump
