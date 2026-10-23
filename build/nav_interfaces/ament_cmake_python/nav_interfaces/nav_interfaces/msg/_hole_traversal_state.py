@@ -83,6 +83,8 @@ class HoleTraversalState(metaclass=Metaclass_HoleTraversalState):
         '_traversal_uids',
         '_phases',
         '_preparing_required',
+        '_attempt',
+        '_recovery_phase',
         '_check_fields',
     ]
 
@@ -99,6 +101,8 @@ class HoleTraversalState(metaclass=Metaclass_HoleTraversalState):
         'traversal_uids': 'sequence<string>',
         'phases': 'sequence<uint8>',
         'preparing_required': 'sequence<boolean>',
+        'attempt': 'uint32',
+        'recovery_phase': 'uint8',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
@@ -116,6 +120,8 @@ class HoleTraversalState(metaclass=Metaclass_HoleTraversalState):
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.UnboundedString()),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('uint8')),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('boolean')),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -140,6 +146,8 @@ class HoleTraversalState(metaclass=Metaclass_HoleTraversalState):
         self.traversal_uids = kwargs.get('traversal_uids', [])
         self.phases = array.array('B', kwargs.get('phases', []))
         self.preparing_required = kwargs.get('preparing_required', [])
+        self.attempt = kwargs.get('attempt', int())
+        self.recovery_phase = kwargs.get('recovery_phase', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -194,6 +202,10 @@ class HoleTraversalState(metaclass=Metaclass_HoleTraversalState):
         if self.phases != other.phases:
             return False
         if self.preparing_required != other.preparing_required:
+            return False
+        if self.attempt != other.attempt:
+            return False
+        if self.recovery_phase != other.recovery_phase:
             return False
         return True
 
@@ -403,3 +415,33 @@ class HoleTraversalState(metaclass=Metaclass_HoleTraversalState):
                  True), \
                 "The 'preparing_required' field must be a set or sequence and each value of type 'bool'"
         self._preparing_required = value
+
+    @builtins.property
+    def attempt(self):
+        """Message field 'attempt'."""
+        return self._attempt
+
+    @attempt.setter
+    def attempt(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, int), \
+                "The 'attempt' field must be of type 'int'"
+            assert value >= 0 and value < 4294967296, \
+                "The 'attempt' field must be an unsigned integer in [0, 4294967295]"
+        self._attempt = value
+
+    @builtins.property
+    def recovery_phase(self):
+        """Message field 'recovery_phase'."""
+        return self._recovery_phase
+
+    @recovery_phase.setter
+    def recovery_phase(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, int), \
+                "The 'recovery_phase' field must be of type 'int'"
+            assert value >= 0 and value < 256, \
+                "The 'recovery_phase' field must be an unsigned integer in [0, 255]"
+        self._recovery_phase = value

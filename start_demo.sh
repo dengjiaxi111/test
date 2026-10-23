@@ -16,4 +16,4 @@ for arg in "$@"; do
   esac
 done
 exec /usr/bin/python3 "$TASK_ROOT/scripts/run_case.py" \
-  --case upper_approach --gui --hold-open --render nvidia --max-wall 180 "${model_args[@]}" "$@"
+  --case upper_approach --gui --manual --render nvidia --max-wall 3600 "${model_args[@]}" "$@"

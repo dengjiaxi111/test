@@ -25,7 +25,8 @@ int main() {
     for(int i=1;i<=16;++i)assert(step(i*.1).state!=State::HOLD);
     assert(core.visits().at("first").complete);
     const auto connector=step(1.7,.4,1.);
-    assert(connector.state==State::NORMAL&&connector.decision==Decision::CONTINUE);
+    assert(connector.state==State::TRAVERSE&&connector.decision==Decision::CONTINUE);
+    assert(request.target==Posture::LOW); // Keep LOW across the connector without freezing correction.
     assert(step(1.8,0.,1.).state!=State::HOLD);
     for(int i=19;i<=51;++i)assert(step(i*.1).state!=State::HOLD);
     const auto strict=step(5.2,.4,1.);

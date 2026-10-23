@@ -142,6 +142,16 @@
             "nested_type_name": ""
           },
           "default_value": ""
+        },
+        {
+          "name": "hold_gimbal_heading",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
         }
       ]
     },
@@ -201,7 +211,7 @@
   "type_hashes": [
     {
       "type_name": "nav_interfaces/msg/HoleTraversalState",
-      "hash_string": "RIHS01_5a508977ab5fb3e7a15c2606cf0a0a9e974283f9029d310f122db86569df9f5a"
+      "hash_string": "RIHS01_6ae81402ee986007bacbcb8f1d1f4103f2181d75839b9c2a27fc0561d931bdf5"
     },
     {
       "type_name": "builtin_interfaces/msg/Time",

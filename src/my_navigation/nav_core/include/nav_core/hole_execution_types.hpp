@@ -148,6 +148,9 @@ struct Output {
     double progress=0,speed_limit=0;
     std::optional<double> stop_arc;
     bool pause_progress_timeout=false,allow_recovery=false,cancel_request=false;
+    // 状态机旋转指令：保持第一次已完成对准的云台地面朝向。
+    // 连续洞之间不释放；不限制底盘旋转，安全停转仍有更高优先级。
+    bool hold_gimbal_heading=false;
     std::uint32_t attempt=0;
     std::optional<StructureRequest> request;
     std::vector<FiredEvent> events;

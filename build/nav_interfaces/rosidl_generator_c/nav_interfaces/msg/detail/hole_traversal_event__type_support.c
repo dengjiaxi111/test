@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "nav_interfaces/msg/detail/hole_traversal_event__struct.h"
-#include "nav_interfaces/msg/detail/hole_traversal_event__functions.h"
-#include "nav_interfaces/msg/detail/hole_traversal_event__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "nav_interfaces/msg/detail/hole_traversal_event__type_support.h"
+#include "nav_interfaces/msg/detail/hole_traversal_event__functions.h"
+#include "nav_interfaces/msg/detail/hole_traversal_event__struct.h"
 
 #ifdef __cplusplus
 extern "C"

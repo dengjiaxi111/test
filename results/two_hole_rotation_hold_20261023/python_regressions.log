@@ -1,0 +1,8 @@
+gimbal_hold_between_holes
+PASS: gimbal world heading persists across chassis spin and second alignment; final release restores spin
+rotation_ground_rate
+PASS: ground-relative 50°/s targets independent; stop remains dominant
+gimbal_alignment
+PASS: physical gimbal alignment, mounting offset, wraparound, slope, target change, stop
+rotation_geometry
+PASS: chassiss水平、fake不变、平地/坡面世界yaw解耦、停转补偿、平移方向不变

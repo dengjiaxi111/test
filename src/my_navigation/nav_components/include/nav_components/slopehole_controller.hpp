@@ -45,6 +45,7 @@ private:
     double progress_=0,last_projected_arc_=0,last_now_=-1,last_pose_time_=-1,state_started_=0,request_started_=0,last_sent_=-1;
     nav_core::hole_exec::Point last_position_;
     bool have_progress_=false,plan_valid_=false,closed_=false,had_low_=false;
+    bool gimbal_heading_held_=false; // 与连续洞LOW保持共用释放时机。
     std::map<std::string,double> tunnel_started_;
     bool tunnel_occupied_=false;
     double attempt_started_=-1,progress_started_=-1,progress_anchor_=0,cancel_started_=-1,stop_stable_since_=-1;

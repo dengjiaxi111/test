@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "nav_interfaces/srv/detail/reload_terrain__struct.h"
-#include "nav_interfaces/srv/detail/reload_terrain__type_support.h"
-#include "nav_interfaces/srv/detail/reload_terrain__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "nav_interfaces/srv/detail/reload_terrain__functions.h"
+#include "nav_interfaces/srv/detail/reload_terrain__type_support.h"
+#include "nav_interfaces/srv/detail/reload_terrain__struct.h"
 
 #ifdef __cplusplus
 extern "C"

@@ -4,10 +4,10 @@
 
 #include <string.h>
 
+#include "rosidl_typesupport_interface/macros.h"
+#include "nav_interfaces/srv/detail/get_temporary_map__type_support.h"
 #include "nav_interfaces/srv/detail/get_temporary_map__struct.h"
 #include "nav_interfaces/srv/detail/get_temporary_map__functions.h"
-#include "nav_interfaces/srv/detail/get_temporary_map__type_support.h"
-#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

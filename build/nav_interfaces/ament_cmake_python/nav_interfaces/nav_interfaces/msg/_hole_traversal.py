@@ -79,6 +79,7 @@ class HoleTraversal(metaclass=Metaclass_HoleTraversal):
         '_requirement_revision',
         '_events',
         '_straight_segments',
+        '_uphill_entry',
         '_check_fields',
     ]
 
@@ -92,6 +93,7 @@ class HoleTraversal(metaclass=Metaclass_HoleTraversal):
         'requirement_revision': 'uint64',
         'events': 'nav_interfaces/HoleEvent[6]',
         'straight_segments': 'sequence<nav_interfaces/HoleStraight>',
+        'uphill_entry': 'boolean',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
@@ -106,6 +108,7 @@ class HoleTraversal(metaclass=Metaclass_HoleTraversal):
         rosidl_parser.definition.BasicType('uint64'),  # noqa: E501
         rosidl_parser.definition.Array(rosidl_parser.definition.NamespacedType(['nav_interfaces', 'msg'], 'HoleEvent'), 6),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['nav_interfaces', 'msg'], 'HoleStraight')),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -130,6 +133,7 @@ class HoleTraversal(metaclass=Metaclass_HoleTraversal):
             [HoleEvent() for x in range(6)]
         )
         self.straight_segments = kwargs.get('straight_segments', [])
+        self.uphill_entry = kwargs.get('uphill_entry', bool())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -178,6 +182,8 @@ class HoleTraversal(metaclass=Metaclass_HoleTraversal):
         if self.events != other.events:
             return False
         if self.straight_segments != other.straight_segments:
+            return False
+        if self.uphill_entry != other.uphill_entry:
             return False
         return True
 
@@ -331,3 +337,16 @@ class HoleTraversal(metaclass=Metaclass_HoleTraversal):
                  True), \
                 "The 'straight_segments' field must be a set or sequence and each value of type 'HoleStraight'"
         self._straight_segments = value
+
+    @builtins.property
+    def uphill_entry(self):
+        """Message field 'uphill_entry'."""
+        return self._uphill_entry
+
+    @uphill_entry.setter
+    def uphill_entry(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, bool), \
+                "The 'uphill_entry' field must be of type 'bool'"
+        self._uphill_entry = value

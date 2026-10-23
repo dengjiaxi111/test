@@ -23,10 +23,10 @@ nav_interfaces__msg__HoleTraversal__get_type_hash(
 #include <string.h>
 
 // Include directives for referenced types
-#include "geometry_msgs/msg/detail/point__functions.h"
-#include "nav_interfaces/msg/detail/hole_straight__functions.h"
 #include "nav_interfaces/msg/detail/hole_event__functions.h"
+#include "geometry_msgs/msg/detail/point__functions.h"
 #include "geometry_msgs/msg/detail/vector3__functions.h"
+#include "nav_interfaces/msg/detail/hole_straight__functions.h"
 
 // Hashes for external referenced types
 #ifndef NDEBUG

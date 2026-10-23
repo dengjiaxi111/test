@@ -85,6 +85,7 @@ class HoleTraversalState(metaclass=Metaclass_HoleTraversalState):
         '_preparing_required',
         '_attempt',
         '_recovery_phase',
+        '_hold_gimbal_heading',
         '_check_fields',
     ]
 
@@ -103,6 +104,7 @@ class HoleTraversalState(metaclass=Metaclass_HoleTraversalState):
         'preparing_required': 'sequence<boolean>',
         'attempt': 'uint32',
         'recovery_phase': 'uint8',
+        'hold_gimbal_heading': 'boolean',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
@@ -122,6 +124,7 @@ class HoleTraversalState(metaclass=Metaclass_HoleTraversalState):
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('boolean')),  # noqa: E501
         rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -148,6 +151,7 @@ class HoleTraversalState(metaclass=Metaclass_HoleTraversalState):
         self.preparing_required = kwargs.get('preparing_required', [])
         self.attempt = kwargs.get('attempt', int())
         self.recovery_phase = kwargs.get('recovery_phase', int())
+        self.hold_gimbal_heading = kwargs.get('hold_gimbal_heading', bool())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -206,6 +210,8 @@ class HoleTraversalState(metaclass=Metaclass_HoleTraversalState):
         if self.attempt != other.attempt:
             return False
         if self.recovery_phase != other.recovery_phase:
+            return False
+        if self.hold_gimbal_heading != other.hold_gimbal_heading:
             return False
         return True
 
@@ -445,3 +451,16 @@ class HoleTraversalState(metaclass=Metaclass_HoleTraversalState):
             assert value >= 0 and value < 256, \
                 "The 'recovery_phase' field must be an unsigned integer in [0, 255]"
         self._recovery_phase = value
+
+    @builtins.property
+    def hold_gimbal_heading(self):
+        """Message field 'hold_gimbal_heading'."""
+        return self._hold_gimbal_heading
+
+    @hold_gimbal_heading.setter
+    def hold_gimbal_heading(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, bool), \
+                "The 'hold_gimbal_heading' field must be of type 'bool'"
+        self._hold_gimbal_heading = value

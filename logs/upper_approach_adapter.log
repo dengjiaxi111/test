@@ -1,11 +1,15 @@
 RCUTILS_CONSOLE_STDOUT_LINE_BUFFERED is now ignored. Please set RCUTILS_LOGGING_USE_STDOUT and RCUTILS_LOGGING_BUFFERED_STREAM to control the stream and the buffering of log messages.
-[INFO] [1792743735.956689912] [hole_gazebo_bridge]: rotation mode: WAIT_FEEDBACK
-[INFO] [1792743735.959517247] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
-[INFO] [1792743746.360087619] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
-[INFO] [1792743749.879925445] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
-[INFO] [1792743755.301705218] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
-[INFO] [1792743760.141916113] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
-[INFO] [1792743771.571191401] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
-[INFO] [1792743775.202786792] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
-[INFO] [1792743786.204123629] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
-[INFO] [1792743789.843774761] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+[INFO] [1792746217.110857998] [hole_gazebo_bridge]: rotation mode: WAIT_FEEDBACK
+[INFO] [1792746217.114136814] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+[INFO] [1792746314.096385492] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
+[INFO] [1792746317.898771552] [hole_gazebo_bridge]: rotation mode: GIMBAL_HOLD
+[INFO] [1792746323.498531972] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
+[INFO] [1792746327.604036187] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+[INFO] [1792746355.837935715] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
+[INFO] [1792746359.574615986] [hole_gazebo_bridge]: rotation mode: GIMBAL_HOLD
+[INFO] [1792746370.133094928] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
+[INFO] [1792746373.793311764] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+[INFO] [1792746390.538098968] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
+[INFO] [1792746394.722764257] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+[INFO] [1792746410.872873819] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
+[INFO] [1792746415.743565668] [hole_gazebo_bridge]: rotation mode: NAV_AUTO

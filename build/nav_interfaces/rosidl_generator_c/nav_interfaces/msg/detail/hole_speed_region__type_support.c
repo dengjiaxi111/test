@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "nav_interfaces/msg/detail/hole_speed_region__type_support.h"
-#include "nav_interfaces/msg/detail/hole_speed_region__struct.h"
-#include "nav_interfaces/msg/detail/hole_speed_region__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "nav_interfaces/msg/detail/hole_speed_region__struct.h"
+#include "nav_interfaces/msg/detail/hole_speed_region__type_support.h"
+#include "nav_interfaces/msg/detail/hole_speed_region__functions.h"
 
 #ifdef __cplusplus
 extern "C"

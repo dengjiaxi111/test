@@ -218,6 +218,33 @@ bool nav_interfaces__msg__hole_structure_feedback__convert_from_py(PyObject * _p
     ros_message->simulated = (Py_True == field);
     Py_DECREF(field);
   }
+  {  // action_stopped
+    PyObject * field = PyObject_GetAttrString(_pymsg, "action_stopped");
+    if (!field) {
+      return false;
+    }
+    assert(PyBool_Check(field));
+    ros_message->action_stopped = (Py_True == field);
+    Py_DECREF(field);
+  }
+  {  // retry_allowed
+    PyObject * field = PyObject_GetAttrString(_pymsg, "retry_allowed");
+    if (!field) {
+      return false;
+    }
+    assert(PyBool_Check(field));
+    ros_message->retry_allowed = (Py_True == field);
+    Py_DECREF(field);
+  }
+  {  // fault_code
+    PyObject * field = PyObject_GetAttrString(_pymsg, "fault_code");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->fault_code = (uint16_t)PyLong_AsUnsignedLong(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -396,6 +423,39 @@ PyObject * nav_interfaces__msg__hole_structure_feedback__convert_to_py(void * ra
     field = PyBool_FromLong(ros_message->simulated ? 1 : 0);
     {
       int rc = PyObject_SetAttrString(_pymessage, "simulated", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // action_stopped
+    PyObject * field = NULL;
+    field = PyBool_FromLong(ros_message->action_stopped ? 1 : 0);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "action_stopped", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // retry_allowed
+    PyObject * field = NULL;
+    field = PyBool_FromLong(ros_message->retry_allowed ? 1 : 0);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "retry_allowed", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // fault_code
+    PyObject * field = NULL;
+    field = PyLong_FromUnsignedLong(ros_message->fault_code);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "fault_code", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

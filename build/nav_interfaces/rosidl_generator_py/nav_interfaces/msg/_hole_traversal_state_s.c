@@ -349,6 +349,15 @@ bool nav_interfaces__msg__hole_traversal_state__convert_from_py(PyObject * _pyms
     ros_message->recovery_phase = (uint8_t)PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
+  {  // hold_gimbal_heading
+    PyObject * field = PyObject_GetAttrString(_pymsg, "hold_gimbal_heading");
+    if (!field) {
+      return false;
+    }
+    assert(PyBool_Check(field));
+    ros_message->hold_gimbal_heading = (Py_True == field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -612,6 +621,17 @@ PyObject * nav_interfaces__msg__hole_traversal_state__convert_to_py(void * raw_r
     field = PyLong_FromUnsignedLong(ros_message->recovery_phase);
     {
       int rc = PyObject_SetAttrString(_pymessage, "recovery_phase", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // hold_gimbal_heading
+    PyObject * field = NULL;
+    field = PyBool_FromLong(ros_message->hold_gimbal_heading ? 1 : 0);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "hold_gimbal_heading", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

@@ -177,16 +177,21 @@ class SimBridge(Node):
         alignment=self.align if math.isfinite(self.align) and 0<=now-self.align_received<timeout else None
         spin=self.spin_rate if 0<=now-self.spin_received<timeout else math.radians(self.rotation_config['auto_spin_dps'])
         if self.control_mode=='keyboard':spin=0.
+        hold_gimbal=(self.plan is not None and self.plan.status==self.plan.ACTIVE and
+            self.execution is not None and 0<=now-self.execution_received<.25 and
+            (self.execution.session_id,self.execution.goal_id,self.execution.plan_id)==
+            (self.plan.session_id,self.plan.goal_id,self.plan.plan_id) and self.execution.hold_gimbal_heading)
         mode=('HOLE_SAFETY_STOP' if self.hole_inhibit else
               'MANUAL_STOP' if self.rotation_stop else
               'HOLE_ALIGN' if alignment is not None else
+              'GIMBAL_HOLD' if hold_gimbal else
               'KEYBOARD' if self.control_mode=='keyboard' else
               'COMMAND_ZERO' if abs(spin)<1e-9 else 'NAV_AUTO')
         try:
-            cmd.angular.z,joint_rate=self.rotation.update(rotation,upper_r,world_w,alignment,spin,self.rotation_stop or self.hole_inhibit)
+            cmd.angular.z,joint_rate=self.rotation.update(rotation,upper_r,world_w,alignment,spin,self.rotation_stop or self.hole_inhibit,hold_gimbal)
             if self.control_mode=='keyboard' and alignment is None and not (self.rotation_stop or self.hole_inhibit):
                 cmd.angular.z=self.keyboard.angular.z if 0<=now-self.keyboard_received<.25 else 0.
-                joint_rate=self.manual_yaw if 0<=now-self.manual_yaw_received<.2 else 0.
+                if not hold_gimbal:joint_rate=self.manual_yaw if 0<=now-self.manual_yaw_received<.2 else 0.
             actual_chassis_rate=ground_yaw_rate(rotation,world_w)
             actual_gimbal_rate=ground_yaw_rate(upper_r,world_w+rotation.apply([0.,0.,self.qv['gimbal_yaw_joint']]))
         except ValueError:

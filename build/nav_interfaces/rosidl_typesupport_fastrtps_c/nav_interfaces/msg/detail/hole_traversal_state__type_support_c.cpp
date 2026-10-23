@@ -212,6 +212,11 @@ bool cdr_serialize_nav_interfaces__msg__HoleTraversalState(
     cdr << ros_message->recovery_phase;
   }
 
+  // Field name: hold_gimbal_heading
+  {
+    cdr << (ros_message->hold_gimbal_heading ? true : false);
+  }
+
   return true;
 }
 
@@ -404,6 +409,13 @@ bool cdr_deserialize_nav_interfaces__msg__HoleTraversalState(
     cdr >> ros_message->recovery_phase;
   }
 
+  // Field name: hold_gimbal_heading
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message->hold_gimbal_heading = tmp ? true : false;
+  }
+
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -523,6 +535,13 @@ size_t get_serialized_size_nav_interfaces__msg__HoleTraversalState(
   // Field name: recovery_phase
   {
     size_t item_size = sizeof(ros_message->recovery_phase);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: hold_gimbal_heading
+  {
+    size_t item_size = sizeof(ros_message->hold_gimbal_heading);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -694,6 +713,13 @@ size_t max_serialized_size_nav_interfaces__msg__HoleTraversalState(
     current_alignment += array_size * sizeof(uint8_t);
   }
 
+  // Field name: hold_gimbal_heading
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -703,7 +729,7 @@ size_t max_serialized_size_nav_interfaces__msg__HoleTraversalState(
     using DataType = nav_interfaces__msg__HoleTraversalState;
     is_plain =
       (
-      offsetof(DataType, recovery_phase) +
+      offsetof(DataType, hold_gimbal_heading) +
       last_member_size
       ) == ret_val;
   }
@@ -833,6 +859,11 @@ bool cdr_serialize_key_nav_interfaces__msg__HoleTraversalState(
     cdr << ros_message->recovery_phase;
   }
 
+  // Field name: hold_gimbal_heading
+  {
+    cdr << (ros_message->hold_gimbal_heading ? true : false);
+  }
+
   return true;
 }
 
@@ -952,6 +983,13 @@ size_t get_serialized_size_key_nav_interfaces__msg__HoleTraversalState(
   // Field name: recovery_phase
   {
     size_t item_size = sizeof(ros_message->recovery_phase);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: hold_gimbal_heading
+  {
+    size_t item_size = sizeof(ros_message->hold_gimbal_heading);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -1121,6 +1159,13 @@ size_t max_serialized_size_key_nav_interfaces__msg__HoleTraversalState(
     current_alignment += array_size * sizeof(uint8_t);
   }
 
+  // Field name: hold_gimbal_heading
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -1129,7 +1174,7 @@ size_t max_serialized_size_key_nav_interfaces__msg__HoleTraversalState(
     using DataType = nav_interfaces__msg__HoleTraversalState;
     is_plain =
       (
-      offsetof(DataType, recovery_phase) +
+      offsetof(DataType, hold_gimbal_heading) +
       last_member_size
       ) == ret_val;
   }

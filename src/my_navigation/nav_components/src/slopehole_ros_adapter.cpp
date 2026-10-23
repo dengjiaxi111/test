@@ -220,6 +220,7 @@ void SlopeHoleRosAdapter::publishExecution() {
     s.session_id=session_;s.goal_id=goal_;s.plan_id=core_.plan().id;s.state=static_cast<std::uint8_t>(output_.state);
     s.decision=static_cast<std::uint8_t>(output_.decision);s.s_progress=output_.progress;
     s.speed_limit=output_.speed_limit;s.reason=output_.reason;s.attempt=output_.attempt;s.recovery_phase=retreat_phase_;
+    s.hold_gimbal_heading=output_.hold_gimbal_heading;
     for(const auto& v:core_.visits()){s.traversal_uids.push_back(v.first);s.phases.push_back(static_cast<std::uint8_t>(v.second.phase));s.preparing_required.push_back(v.second.demand);}
     state_pub_->publish(s);
     for(const auto& e:output_.events) {

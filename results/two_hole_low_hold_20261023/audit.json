@@ -1,0 +1,38 @@
+[
+  {
+    "run": "upper_1",
+    "case": "upper_approach",
+    "result": "PASS",
+    "low_request_id": 1,
+    "maximum_held_lift": 6.438046819189181e-05,
+    "first_D": 2.8655283103590756,
+    "second_A": 7.111099161625729
+  },
+  {
+    "run": "upper_2",
+    "case": "upper_approach",
+    "result": "PASS",
+    "low_request_id": 1,
+    "maximum_held_lift": 8.426788951328637e-07,
+    "first_D": 2.8896764842697493,
+    "second_A": 7.135247335536403
+  },
+  {
+    "run": "lower_1",
+    "case": "lower",
+    "result": "PASS",
+    "low_request_id": 1,
+    "maximum_held_lift": 0.0001870964654243805,
+    "first_D": 3.6778041099845264,
+    "second_A": 7.096563169103774
+  },
+  {
+    "run": "final_default",
+    "case": "upper_approach",
+    "result": "PASS",
+    "low_request_id": 1,
+    "maximum_held_lift": 8.962337016801525e-06,
+    "first_D": 2.8720035527927923,
+    "second_A": 7.117574404059446
+  }
+]

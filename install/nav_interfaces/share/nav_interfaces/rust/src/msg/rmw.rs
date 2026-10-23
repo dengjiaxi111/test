@@ -759,7 +759,7 @@ extern "C" {
 #[cfg_attr(feature = "serde", derive(Deserialize, Serialize))]
 
 /// 导航侧发布 hole_traversal_state：当前五态、决策、进度和逐洞阶段。
-/// 对应交接文档5.4、7.1。用于观察执行；本消息不是独立的运动许可协议。
+/// 对应交接文档5.4、7.1。包含云台朝向保持指令；本消息不是独立的平移运动许可协议。
 /// 当前准备信息只包含需求标记，不完整表达准备中/就绪/故障；此为草稿缺口。
 
 #[repr(C)]
@@ -806,6 +806,13 @@ pub struct HoleTraversalState {
 
     /// 专用恢复阶段：0无，1停稳，2校验，3退让，4目标停稳，5重入检查。
     pub recovery_phase: u8,
+
+    /// 状态机明确输出的云台朝向保持指令，非从state/preparing_required推断。
+    /// LOW和实测对准完成后为true；连续洞含洞间连接段保持true，
+    /// 最后相关D及整车净空确认、请求NORMAL时变为false。
+    /// 执行器保持第一次已完成对准的地面朝向，true持续期间不得重选朝向或恢复自旋。
+    /// 不限制底盘普通旋转；HOLD/故障/退让等安全停转指令优先。
+    pub hold_gimbal_heading: bool,
 
 }
 

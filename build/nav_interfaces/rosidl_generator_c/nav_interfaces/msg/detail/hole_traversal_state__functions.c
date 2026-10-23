@@ -71,6 +71,7 @@ nav_interfaces__msg__HoleTraversalState__init(nav_interfaces__msg__HoleTraversal
   }
   // attempt
   // recovery_phase
+  // hold_gimbal_heading
   return true;
 }
 
@@ -101,6 +102,7 @@ nav_interfaces__msg__HoleTraversalState__fini(nav_interfaces__msg__HoleTraversal
   rosidl_runtime_c__boolean__Sequence__fini(&msg->preparing_required);
   // attempt
   // recovery_phase
+  // hold_gimbal_heading
 }
 
 bool
@@ -179,6 +181,10 @@ nav_interfaces__msg__HoleTraversalState__are_equal(const nav_interfaces__msg__Ho
   if (lhs->recovery_phase != rhs->recovery_phase) {
     return false;
   }
+  // hold_gimbal_heading
+  if (lhs->hold_gimbal_heading != rhs->hold_gimbal_heading) {
+    return false;
+  }
   return true;
 }
 
@@ -246,6 +252,8 @@ nav_interfaces__msg__HoleTraversalState__copy(
   output->attempt = input->attempt;
   // recovery_phase
   output->recovery_phase = input->recovery_phase;
+  // hold_gimbal_heading
+  output->hold_gimbal_heading = input->hold_gimbal_heading;
   return true;
 }
 

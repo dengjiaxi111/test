@@ -1,0 +1,9 @@
+{
+  "compared_files": 251,
+  "changed_files": [
+    "src/my_navigation/nav_components/src/slopehole_controller.cpp",
+    "start_demo.sh"
+  ],
+  "startup_change": "user requested manual RViz goal selection; same start/model",
+  "other_sources_model_parameters_unchanged": true
+}

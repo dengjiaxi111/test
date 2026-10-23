@@ -4,10 +4,10 @@
 
 #include <string.h>
 
+#include "rosidl_typesupport_interface/macros.h"
 #include "nav_interfaces/msg/detail/hole_straight__type_support.h"
 #include "nav_interfaces/msg/detail/hole_straight__functions.h"
 #include "nav_interfaces/msg/detail/hole_straight__struct.h"
-#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

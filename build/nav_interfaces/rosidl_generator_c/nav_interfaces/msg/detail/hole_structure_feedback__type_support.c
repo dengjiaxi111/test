@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "nav_interfaces/msg/detail/hole_structure_feedback__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "nav_interfaces/msg/detail/hole_structure_feedback__type_support.h"
 #include "nav_interfaces/msg/detail/hole_structure_feedback__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
+#include "nav_interfaces/msg/detail/hole_structure_feedback__struct.h"
 
 #ifdef __cplusplus
 extern "C"

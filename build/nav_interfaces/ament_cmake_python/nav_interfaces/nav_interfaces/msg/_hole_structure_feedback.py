@@ -30,6 +30,7 @@ class Metaclass_HoleStructureFeedback(type):
         'EXECUTING': 0,
         'COMPLETED': 1,
         'FAILED': 2,
+        'CANCELLED': 3,
     }
 
     @classmethod
@@ -65,6 +66,7 @@ class Metaclass_HoleStructureFeedback(type):
             'EXECUTING': cls.__constants['EXECUTING'],
             'COMPLETED': cls.__constants['COMPLETED'],
             'FAILED': cls.__constants['FAILED'],
+            'CANCELLED': cls.__constants['CANCELLED'],
         }
 
     @property
@@ -82,6 +84,11 @@ class Metaclass_HoleStructureFeedback(type):
         """Message constant 'FAILED'."""
         return Metaclass_HoleStructureFeedback.__constants['FAILED']
 
+    @property
+    def CANCELLED(self):
+        """Message constant 'CANCELLED'."""
+        return Metaclass_HoleStructureFeedback.__constants['CANCELLED']
+
 
 class HoleStructureFeedback(metaclass=Metaclass_HoleStructureFeedback):
     """
@@ -91,6 +98,7 @@ class HoleStructureFeedback(metaclass=Metaclass_HoleStructureFeedback):
       EXECUTING
       COMPLETED
       FAILED
+      CANCELLED
     """
 
     __slots__ = [
@@ -106,6 +114,9 @@ class HoleStructureFeedback(metaclass=Metaclass_HoleStructureFeedback):
         '_moving_transition_supported',
         '_cleared_traversal_uids',
         '_simulated',
+        '_action_stopped',
+        '_retry_allowed',
+        '_fault_code',
         '_check_fields',
     ]
 
@@ -122,6 +133,9 @@ class HoleStructureFeedback(metaclass=Metaclass_HoleStructureFeedback):
         'moving_transition_supported': 'boolean',
         'cleared_traversal_uids': 'sequence<string>',
         'simulated': 'boolean',
+        'action_stopped': 'boolean',
+        'retry_allowed': 'boolean',
+        'fault_code': 'uint16',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
@@ -139,6 +153,9 @@ class HoleStructureFeedback(metaclass=Metaclass_HoleStructureFeedback):
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.UnboundedString()),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint16'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -163,6 +180,9 @@ class HoleStructureFeedback(metaclass=Metaclass_HoleStructureFeedback):
         self.moving_transition_supported = kwargs.get('moving_transition_supported', bool())
         self.cleared_traversal_uids = kwargs.get('cleared_traversal_uids', [])
         self.simulated = kwargs.get('simulated', bool())
+        self.action_stopped = kwargs.get('action_stopped', bool())
+        self.retry_allowed = kwargs.get('retry_allowed', bool())
+        self.fault_code = kwargs.get('fault_code', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -217,6 +237,12 @@ class HoleStructureFeedback(metaclass=Metaclass_HoleStructureFeedback):
         if self.cleared_traversal_uids != other.cleared_traversal_uids:
             return False
         if self.simulated != other.simulated:
+            return False
+        if self.action_stopped != other.action_stopped:
+            return False
+        if self.retry_allowed != other.retry_allowed:
+            return False
+        if self.fault_code != other.fault_code:
             return False
         return True
 
@@ -399,3 +425,44 @@ class HoleStructureFeedback(metaclass=Metaclass_HoleStructureFeedback):
                 isinstance(value, bool), \
                 "The 'simulated' field must be of type 'bool'"
         self._simulated = value
+
+    @builtins.property
+    def action_stopped(self):
+        """Message field 'action_stopped'."""
+        return self._action_stopped
+
+    @action_stopped.setter
+    def action_stopped(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, bool), \
+                "The 'action_stopped' field must be of type 'bool'"
+        self._action_stopped = value
+
+    @builtins.property
+    def retry_allowed(self):
+        """Message field 'retry_allowed'."""
+        return self._retry_allowed
+
+    @retry_allowed.setter
+    def retry_allowed(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, bool), \
+                "The 'retry_allowed' field must be of type 'bool'"
+        self._retry_allowed = value
+
+    @builtins.property
+    def fault_code(self):
+        """Message field 'fault_code'."""
+        return self._fault_code
+
+    @fault_code.setter
+    def fault_code(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, int), \
+                "The 'fault_code' field must be of type 'int'"
+            assert value >= 0 and value < 65536, \
+                "The 'fault_code' field must be an unsigned integer in [0, 65535]"
+        self._fault_code = value

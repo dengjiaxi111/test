@@ -89,7 +89,7 @@ bool SlopeHoleController::acceptPlan(const Plan& p,const Input& in,std::string& 
             auto old=std::find_if(plan_.passages.begin(),plan_.passages.end(),[&](const auto& x){return x.uid==next.uid;});
             if(old!=plan_.passages.end()&&old->requirement_revision!=next.requirement_revision)changed_requirements=true;
         }
-        if(!same){tunnel_started_.clear();visits_.clear();request_.reset();had_low_=false;state_=State::NORMAL;action_retries_.clear();attempt_=0;attempt_started_=-1;progress_started_=-1;cancelling_=false;emergency_=false;event_history_.clear();}
+        if(!same){tunnel_started_.clear();visits_.clear();request_.reset();had_low_=false;gimbal_heading_held_=false;state_=State::NORMAL;action_retries_.clear();attempt_=0;attempt_started_=-1;progress_started_=-1;cancelling_=false;emergency_=false;event_history_.clear();}
         if(changed_requirements){request_.reset();entry_authorized_.clear();}
         for(const auto& uid:safely_abandoned){visits_.at(uid).demand=false;entry_authorized_.erase(uid);}
         for(auto it=entry_authorized_.begin();it!=entry_authorized_.end();) {
@@ -119,6 +119,7 @@ void SlopeHoleController::request(Posture target,const Input& in,Output& out) {
         request_=StructureRequest{plan_.session,plan_.goal,++next_request_,plan_.parameter_revision^(plan_.terrain_revision<<32),target,{}};
         request_started_=in.now;last_sent_=-1;
         if(target==Posture::LOW)had_low_=true;
+        if(target==Posture::NORMAL)gimbal_heading_held_=false; // 最后D及整车净空已由恢复分支确认。
     }
     request_->traversal_uids.clear();
     for(const auto& v:visits_)if(v.second.demand)request_->traversal_uids.push_back(v.first);
@@ -194,8 +195,11 @@ void SlopeHoleController::schedule(const Input& in,Output& out) {
         const auto& v=visits_.at(p.uid);if(v.complete)continue;
         const auto& a=event(p,EventType::A);
         if(a.range==Range::AFTER_PATH||(a.range==Range::ON_PATH&&progress_+epsilon<a.arc))continue;
-        if(in.entry_rotation_ready&&(in.entry_rotation_uid.empty()||in.entry_rotation_uid==p.uid))
+        if(in.entry_rotation_ready&&(in.entry_rotation_uid.empty()||in.entry_rotation_uid==p.uid)) {
             entry_authorized_.insert(p.uid);
+            // LOW和实测对准均完成后锁存；D1释放单洞需求不释放云台朝向。
+            gimbal_heading_held_=true;
+        }
         break;
     }
     struct Item {double s;std::string uid;EventType type;};std::vector<Item> due;
@@ -236,7 +240,7 @@ void SlopeHoleController::schedule(const Input& in,Output& out) {
 }
 Output SlopeHoleController::update(const Input& in) {
     Output out;out.state=state_;out.progress=progress_;out.attempt=attempt_;
-    const auto done=[&](){out.state=state_;out.progress=progress_;if(out.reason.empty())out.reason=reason_;return out;};
+    const auto done=[&](){out.state=state_;out.progress=progress_;out.hold_gimbal_heading=gimbal_heading_held_;if(out.reason.empty())out.reason=reason_;return out;};
     if(!config_.enabled){out.decision=Decision::CONTINUE;out.speed_limit=std::numeric_limits<double>::infinity();return done();}
     if(!std::isfinite(in.now)||in.now<last_now_){out.decision=Decision::FAILURE;out.reason="clock reversed";return done();}
     last_now_=in.now;
@@ -286,6 +290,11 @@ Output SlopeHoleController::update(const Input& in) {
             else {const double stop=e.arc-config_.entry_margin;if(!out.stop_arc||stop<*out.stop_arc)out.stop_arc=stop;}
         }
     }
+    // 同一计划的连续洞共用LOW；尚未到下一洞A时只保留结构状态，
+    // 不提前登记该洞需求或授予对准/入口许可。
+    const bool hold_low_for_next=had_low_&&!demand&&std::any_of(plan_.passages.begin(),plan_.passages.end(),[&](const auto& p){
+        return !visits_.at(p.uid).complete&&event(p,EventType::A).range!=Range::AFTER_PATH;
+    });
     bool can_restore=had_low_&&!demand&&feedback_fresh&&in.feedback.whole_vehicle_clear&&in.feedback.normal_clearance;
     bool terrain_active=tunnel_occupied_;
     for(const auto& p:plan_.passages)if(visits_.at(p.uid).demand&&!visits_.at(p.uid).emitted.count(EventType::X))terrain_active=true;
@@ -361,6 +370,13 @@ Output SlopeHoleController::update(const Input& in) {
             }else {progress_started_=-1;progress_anchor_=progress_;}
             out.speed_limit=terrain_limit;
         }
+    }else if(hold_low_for_next) {
+        if(!matching(in,Posture::LOW)){hold(in.now,"structure feedback stale");return done();}
+        request(Posture::LOW,in,out); // 同一动作编号，已完成的下降不会重新执行。
+        transition(State::TRAVERSE,in.now,"holding low between consecutive passages");
+        // 洞间普通连接路段不计入下一洞的通行/无进展期限。
+        attempt_started_=-1;progress_started_=-1;progress_anchor_=progress_;
+        out.speed_limit=terrain_limit;
     }else if(had_low_) {
         if(state_!=State::RESTORE) {
             if(!can_restore){hold(in.now,"restore clearance not confirmed");return done();}

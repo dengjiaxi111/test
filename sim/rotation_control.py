@@ -32,15 +32,17 @@ class RotationControl:
         self.chassis_hold = self.gimbal_hold = 0.
         self.alignment_target = None
 
-    def update(self, chassis, upper, world_omega, alignment=None, spin_rate=0., stop=False):
+    def update(self, chassis, upper, world_omega, alignment=None, spin_rate=0., stop=False, hold_gimbal=False):
         cyaw = chassis.as_euler('xyz')[2]
         gyaw = upper.as_euler('xyz')[2]
         mode = 'stop' if stop else ('align' if alignment is not None else ('spin' if spin_rate else 'hold'))
         if mode != self.mode:
-            self.chassis_hold, self.gimbal_hold = cyaw, gyaw
+            self.chassis_hold = cyaw
+            if not hold_gimbal or mode == 'stop':
+                self.gimbal_hold = gyaw
             self.mode = mode
         if mode == 'align':
-            if self.alignment_target is None or abs(angle_error(alignment, self.alignment_target)) > 1e-8:
+            if not hold_gimbal and (self.alignment_target is None or abs(angle_error(alignment, self.alignment_target)) > 1e-8):
                 # upper 已含安装偏角；锁定最接近实测云台朝向的合法世界yaw。
                 self.gimbal_hold = gyaw + math.remainder(alignment - gyaw, math.pi / 2)
             self.alignment_target = alignment
@@ -50,7 +52,8 @@ class RotationControl:
             # 两者均相对地面；正值表示底盘逆时针、枪口顺时针。
             chassis_rate = float(np.clip(spin_rate, -self.max_chassis_rate, self.max_chassis_rate))
             # 云台的地面目标独立于底盘是否真的转起来；关节命令再补偿底盘实测角速度。
-            gimbal_rate = -spin_rate
+            # 连续洞之间只保持枪口地面朝向，底盘仍执行普通导航旋转。
+            gimbal_rate = self.gain * angle_error(self.gimbal_hold, gyaw) if hold_gimbal else -spin_rate
         else:
             target = alignment if mode == 'align' else self.chassis_hold
             error = angle_error(target, cyaw)

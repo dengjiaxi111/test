@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "nav_interfaces/action/detail/navigate__type_support.h"
-#include "nav_interfaces/action/detail/navigate__struct.h"
-#include "nav_interfaces/action/detail/navigate__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "nav_interfaces/action/detail/navigate__type_support.h"
+#include "nav_interfaces/action/detail/navigate__functions.h"
+#include "nav_interfaces/action/detail/navigate__struct.h"
 
 #ifdef __cplusplus
 extern "C"

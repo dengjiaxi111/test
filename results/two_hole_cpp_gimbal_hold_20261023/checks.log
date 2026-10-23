@@ -1,0 +1,5 @@
+PASS: C++ holds LOW and aligned gimbal heading until final clearance; A, entry gates, safety, single-hole and replan semantics preserved
+PASS: 初次LOW/对准许可、上下坡许可保持、请求/需求/退让清理及真实过期停车
+PASS: gimbal world heading persists across chassis spin and second alignment; final release restores spin
+PASS: physical gimbal alignment, mounting offset, wraparound, slope, target change, stop
+PASS: installed ROS message round-trip preserves C++ hold_gimbal_heading output

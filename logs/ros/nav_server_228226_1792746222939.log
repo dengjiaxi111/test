@@ -1,0 +1,135 @@
+[INFO] [1792746222.955588616] [nav_server]: ========== NavServer 参数诊断 ==========
+[INFO] [1792746222.955684267] [nav_server]: control_rate: 50.0 Hz
+[INFO] [1792746222.955699155] [nav_server]: controller_timeout: 8.0 s
+[INFO] [1792746222.955706889] [nav_server]: controller_progress_threshold: 0.05 m
+[INFO] [1792746222.955716167] [nav_server]: recovery.max_recovery: 3
+[INFO] [1792746222.955722529] [nav_server]: path_check_period: 0.30 s
+[INFO] [1792746222.955730314] [nav_server]: path_lateral_tolerance: 1.250 m 
+[INFO] [1792746222.955738449] [nav_server]: path_io.enable_save_planned_path: 0
+[INFO] [1792746222.955745873] [nav_server]: path_io.use_prior_path: 0
+[INFO] [1792746222.955750371] [nav_server]: escape.trigger_costmap_threshold: 99
+[INFO] [1792746222.955755671] [nav_server]: escape.target_safe_esdf: 0.25 m
+[INFO] [1792746222.955761132] [nav_server]: escape.search_radius: 1.0 m
+[INFO] [1792746222.955765831] [nav_server]: escape.preferred_search_distance: 1.00 m
+[INFO] [1792746222.955773655] [nav_server]: escape.preferred_search_half_angle: 0.20 rad
+[INFO] [1792746222.955778935] [nav_server]: escape.forward_speed: 0.20 m/s
+[INFO] [1792746222.955784516] [nav_server]: ========================================
+[INFO] [1792746222.963695252] [nav_server]: LayeredMapManager initialized (map: map, odom: odom, perf_log: disabled)
+[INFO] [1792746222.965098650] [nav_server]: Loaded terrain regions: 8 from /home/dengjiaxi/simulation_seu/test/map/terrain.yaml
+[INFO] [1792746222.965120281] [nav_server]: slope: 4, low_clearance: 4
+[INFO] [1792746222.965180515] [nav_server]: terrain id=slope_A1 type=slope name=slope_A1 frame=map polygon: (-5.131,-3.781) (-4.256,-3.781) (-3.652,-3.026) (-5.131,-3.026)
+[INFO] [1792746222.965191746] [nav_server]: terrain id=hole_A1 type=low_clearance name=hole_A1 frame=map polygon: (-5.131,-3.781) (-4.256,-3.781) (-4.256,-3.531) (-5.131,-3.531)
+[INFO] [1792746222.965201304] [nav_server]: terrain id=slope_A2 type=slope name=slope_A2 frame=map polygon: (3.64,6.314) (5.144,6.314) (5.144,7.069) (4.244,7.069)
+[INFO] [1792746222.965211032] [nav_server]: terrain id=hole_A2 type=low_clearance name=hole_A2 frame=map polygon: (4.244,6.819) (5.144,6.819) (5.144,7.069) (4.244,7.069)
+[INFO] [1792746222.965220550] [nav_server]: terrain id=slope_B1 type=slope name=slope_B1 frame=map polygon: (0.289,-4.706) (-0.651,-4.706) (-0.651,-3.926) (0.289,-3.926)
+[INFO] [1792746222.965230339] [nav_server]: terrain id=hole_B1 type=low_clearance name=hole_B1 frame=map polygon: (1.009,-4.686) (0.749,-4.686) (0.749,-3.926) (1.009,-3.926)
+[INFO] [1792746222.965240137] [nav_server]: terrain id=slope_B2 type=slope name=slope_B2 frame=map polygon: (0.649,7.194) (-0.291,7.194) (-0.291,7.994) (0.649,7.994)
+[INFO] [1792746222.965249795] [nav_server]: terrain id=hole_B2 type=low_clearance name=hole_B2 frame=map polygon: (-0.751,7.234) (-0.991,7.234) (-0.991,7.974) (-0.751,7.974)
+[INFO] [1792746222.966640690] [nav_server]: Hole preview hole_A1: OK width=0.875 depth=0.250 angle_error=0.000 parallel_error=0.000
+[INFO] [1792746222.966694451] [nav_server]: Hole preview hole_A2: OK width=0.900 depth=0.250 angle_error=0.000 parallel_error=0.000
+[INFO] [1792746222.966744706] [nav_server]: Hole preview hole_B1: OK width=0.760 depth=0.260 angle_error=0.000 parallel_error=0.000
+[INFO] [1792746222.966776015] [nav_server]: Hole preview hole_B2: OK width=0.740 depth=0.240 angle_error=0.000 parallel_error=0.000
+[INFO] [1792746222.973665975] [nav_server]: Omni MPC NX=4 NU=2 N=75 dt=0.02 alpha=0.800 feedback_required=1
+[INFO] [1792746222.982953269] [nav_server]: 地图加载成功: 595x321, 分辨率: 0.050
+[INFO] [1792746222.983250630] [nav_server]: Hole clearance preprocessing: 180 occupied cells cleared (before=0.50 m, after=0.50 m)
+[INFO] [1792746222.991944194] [nav_server]: Static map loaded: 595x321 @ 0.050 m/cell, inflation_radius=0.80
+[INFO] [1792746222.992030136] [nav_server]: B样条优化: ESDF 回调已设置
+[INFO] [1792746222.992106260] [nav_server]: 静态地图加载完成
+[INFO] [1792746311.969685071] [nav_server]: RViz 目标: (-3.70, 6.71)
+[INFO] [1792746311.970025935] [nav_server]: 状态: IDLE -> PLANNING
+[INFO] [1792746312.037018054] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/11
+[INFO] [1792746312.037153750] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/11
+[INFO] [1792746312.037220997] [bspline_opt]: 优化完成: 7次迭代, 0.22ms | 代价: 3.1417 -> 1.3264 (降低57.8%) | 平滑=0.133, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792746312.178997207] [nav_server]: 过洞接入: hole=hole_A2 S=(4.694,6.019) 方法=FEASIBLE_APPROACH_CONTINUOUS 平滑后备原因=none
+[INFO] [1792746312.179064414] [nav_server]: 过洞接入: hole=hole_B2 S=(0.049,7.604) 方法=FEASIBLE_APPROACH_CONTINUOUS 平滑后备原因=none
+[INFO] [1792746312.179753875] [nav_server]: 规划汇总: total=204.1ms astar=4.1ms outer_validation=0.5ms hole=199.1ms first_valid=59.6ms post_first=139.4ms | geometry=0.0 connectivity=2.4 candidates=0.3 seed_search=45.2 fit=25.1 curve_check=70.9 candidate_check=0.5 final_check=0.4 cache_check=0.0 ms | optimized=3 fits=13 iterations=606 cache_hits=0 cache_rejected=0 disconnected=1 stop=QUALITY_ACCEPTED
+[INFO] [1792746312.180767978] [nav_server]: FSM preparation advanced: hole=hole_B2 A=7.795 -> 7.095 (slope lead 0.800m; path unchanged)
+[INFO] [1792746312.181436840] [nav_server]: 状态: PLANNING -> CONTROLLING
+[INFO] [1792746312.181643300] [nav_server]: Hole execution: state=0 decision=0 progress=0.001 limit=0.649 reason=ordinary path following
+[INFO] [1792746314.075835209] [nav_server]: Hole execution: state=1 decision=0 progress=0.302 limit=0.558 reason=moving alignment; stop upstream of E if unfinished
+[INFO] [1792746314.775811097] [nav_server]: Hole execution: state=2 decision=0 progress=0.525 limit=0.473 reason=moving alignment; stop upstream of E if unfinished
+[INFO] [1792746315.395810296] [nav_server]: Hole execution: state=2 decision=0 progress=0.749 limit=2.000 reason=low posture confirmed
+[INFO] [1792746316.137118639] [nav_server]: uphill speed ownership: phase=ENTRY forward=0.540 minimum=1.900 target=2.000 command=0.614
+[INFO] [1792746317.136598322] [nav_server]: uphill speed ownership: phase=SLOPE forward=1.143 minimum=1.900 target=2.000 command=1.826
+[INFO] [1792746317.875854614] [nav_server]: Hole execution: state=2 decision=0 progress=2.895 limit=2.000 reason=holding low between consecutive passages
+[INFO] [1792746323.495735837] [nav_server]: Hole execution: state=2 decision=0 progress=7.097 limit=0.499 reason=moving alignment; stop upstream of E if unfinished
+[INFO] [1792746324.535856969] [nav_server]: Hole execution: state=2 decision=0 progress=7.416 limit=2.000 reason=holding low between consecutive passages
+[INFO] [1792746327.575811361] [nav_server]: Hole execution: state=3 decision=0 progress=10.341 limit=2.050 reason=all traversal demands released with clearance
+[INFO] [1792746328.315784098] [nav_server]: Hole execution: state=0 decision=0 progress=11.014 limit=2.000 reason=normal posture confirmed
+[INFO] [1792746328.335785107] [nav_server]: Hole execution: state=0 decision=0 progress=11.029 limit=2.000 reason=ordinary path following
+[INFO] [1792746348.055850016] [nav_server]: Controller: SUCCEEDED!
+[INFO] [1792746348.055919627] [nav_server]: 状态: CONTROLLING -> SUCCEEDED
+[INFO] [1792746348.076027074] [nav_server]: 状态: SUCCEEDED -> IDLE
+[INFO] [1792746348.076229764] [nav_server]: 导航成功 (36.11s)
+[INFO] [1792746352.411269794] [nav_server]: RViz 目标: (4.93, 4.45)
+[INFO] [1792746352.411575557] [nav_server]: 状态: IDLE -> PLANNING
+[INFO] [1792746352.514201474] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/9
+[INFO] [1792746352.514379518] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/9
+[INFO] [1792746352.514437085] [bspline_opt]: 优化完成: 7次迭代, 0.28ms | 代价: 1.3668 -> 0.6586 (降低51.8%) | 平滑=0.066, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792746352.599532129] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/54
+[INFO] [1792746352.599670678] [bspline_opt]:   pt[1]: L=0.35 R=0.40 W=0.75 
+[INFO] [1792746352.599693682] [bspline_opt]:   pt[2]: L=0.40 R=0.40 W=0.80 
+[INFO] [1792746352.599713328] [bspline_opt]:   pt[3]: L=0.50 R=0.25 W=0.75 
+[INFO] [1792746352.599732474] [bspline_opt]:   pt[4]: L=0.30 R=0.60 W=0.90 
+[INFO] [1792746352.599766869] [bspline_opt]:   pt[5]: L=0.50 R=0.40 W=0.90 
+[INFO] [1792746352.599801203] [bspline_opt]:   pt[6]: L=0.45 R=0.55 W=1.00 
+[INFO] [1792746352.600227461] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/54
+[INFO] [1792746352.600256195] [bspline_opt]:   pt[1]: L=0.35 R=0.40 W=0.75 
+[INFO] [1792746352.600275511] [bspline_opt]:   pt[2]: L=0.35 R=0.40 W=0.75 
+[INFO] [1792746352.600294737] [bspline_opt]:   pt[3]: L=0.40 R=0.35 W=0.75 
+[INFO] [1792746352.600313733] [bspline_opt]:   pt[4]: L=0.40 R=0.50 W=0.90 
+[INFO] [1792746352.600332458] [bspline_opt]:   pt[5]: L=0.45 R=0.45 W=0.90 
+[INFO] [1792746352.600501484] [bspline_opt]: 优化完成: 7次迭代, 1.30ms | 代价: 10.5365 -> 3.4919 (降低66.9%) | 平滑=0.282, 碰撞=0.034, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792746352.609917911] [nav_server]: 过洞接入: hole=hole_B2 S=(-1.791,7.604) 方法=FEASIBLE_APPROACH_CONTINUOUS 平滑后备原因=none
+[INFO] [1792746352.610098609] [nav_server]: 过洞接入: hole=hole_A2 S=(4.694,7.869) 方法=FEASIBLE_APPROACH_CONTINUOUS 平滑后备原因=none
+[INFO] [1792746352.610749769] [nav_server]: 规划汇总: total=195.1ms astar=7.5ms outer_validation=0.4ms hole=186.8ms first_valid=92.3ms post_first=94.5ms | geometry=0.0 connectivity=5.0 candidates=0.4 seed_search=27.0 fit=16.9 curve_check=77.1 candidate_check=1.5 final_check=0.4 cache_check=0.0 ms | optimized=2 fits=6 iterations=331 cache_hits=0 cache_rejected=0 disconnected=2 stop=QUALITY_ACCEPTED
+[INFO] [1792746352.612177853] [nav_server]: 状态: PLANNING -> CONTROLLING
+[INFO] [1792746352.612563856] [nav_server]: Hole execution: state=0 decision=0 progress=0.000 limit=1.588 reason=ordinary path following
+[INFO] [1792746355.815841073] [nav_server]: Hole execution: state=1 decision=0 progress=1.518 limit=0.942 reason=moving alignment; stop upstream of E if unfinished
+[INFO] [1792746356.555837316] [nav_server]: Hole execution: state=2 decision=0 progress=1.727 limit=0.752 reason=moving alignment; stop upstream of E if unfinished
+[INFO] [1792746356.695714032] [nav_server]: Hole execution: state=2 decision=0 progress=1.757 limit=2.000 reason=low posture confirmed
+[INFO] [1792746358.956632497] [nav_server]: uphill speed ownership: phase=ENTRY forward=1.140 minimum=1.900 target=2.000 command=1.201
+[INFO] [1792746359.535760909] [nav_server]: Hole execution: state=2 decision=0 progress=4.064 limit=2.000 reason=holding low between consecutive passages
+[WARN] [1792746363.199072068] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[INFO] [1792746370.115803065] [nav_server]: Hole execution: state=2 decision=0 progress=9.296 limit=0.949 reason=moving alignment; stop upstream of E if unfinished
+[INFO] [1792746371.395720828] [nav_server]: Hole execution: state=2 decision=0 progress=9.688 limit=2.000 reason=holding low between consecutive passages
+[INFO] [1792746373.755741983] [nav_server]: Hole execution: state=3 decision=0 progress=11.855 limit=2.050 reason=all traversal demands released with clearance
+[INFO] [1792746374.575720257] [nav_server]: Hole execution: state=0 decision=0 progress=12.843 limit=2.000 reason=normal posture confirmed
+[INFO] [1792746374.595782861] [nav_server]: Hole execution: state=0 decision=0 progress=12.843 limit=2.000 reason=ordinary path following
+[INFO] [1792746384.226318042] [nav_server]: RViz 目标: (1.93, 7.52)
+[INFO] [1792746384.226525601] [nav_server]: 状态: IDLE -> PLANNING
+[INFO] [1792746384.315948671] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/13
+[INFO] [1792746384.316189583] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/13
+[INFO] [1792746384.316248643] [bspline_opt]: 优化完成: 7次迭代, 0.37ms | 代价: 10.6842 -> 3.4032 (降低68.1%) | 平滑=0.340, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792746384.469124217] [nav_server]: 过洞接入: hole=hole_A2 S=(4.694,6.019) 方法=FEASIBLE_APPROACH_CONTINUOUS 平滑后备原因=none
+[INFO] [1792746384.469624905] [nav_server]: 规划汇总: total=234.0ms astar=1.2ms outer_validation=0.3ms hole=232.1ms first_valid=81.5ms post_first=150.6ms | geometry=0.0 connectivity=2.4 candidates=0.4 seed_search=0.1 fit=35.8 curve_check=141.3 candidate_check=0.4 final_check=0.3 cache_check=0.0 ms | optimized=2 fits=6 iterations=459 cache_hits=0 cache_rejected=0 disconnected=0 stop=IMPROVEMENT_BUDGET_EXHAUSTED
+[INFO] [1792746384.470549999] [nav_server]: 状态: PLANNING -> CONTROLLING
+[INFO] [1792746384.470693277] [nav_server]: Hole execution: state=0 decision=0 progress=0.014 limit=0.962 reason=ordinary path following
+[INFO] [1792746390.515832026] [nav_server]: Hole execution: state=1 decision=0 progress=0.820 limit=0.614 reason=moving alignment; stop upstream of E if unfinished
+[INFO] [1792746391.276689358] [nav_server]: Hole execution: state=2 decision=0 progress=1.046 limit=0.469 reason=moving alignment; stop upstream of E if unfinished
+[INFO] [1792746391.535828372] [nav_server]: Hole execution: state=2 decision=0 progress=1.118 limit=2.000 reason=low posture confirmed
+[INFO] [1792746392.698419805] [nav_server]: uphill speed ownership: phase=ENTRY forward=0.493 minimum=1.900 target=2.000 command=0.543
+[INFO] [1792746393.818978185] [nav_server]: uphill speed ownership: phase=SLOPE forward=1.158 minimum=1.900 target=2.000 command=1.694
+[INFO] [1792746394.696093412] [nav_server]: Hole execution: state=3 decision=0 progress=3.410 limit=2.050 reason=all traversal demands released with clearance
+[INFO] [1792746395.555780617] [nav_server]: Hole execution: state=0 decision=0 progress=3.777 limit=2.000 reason=normal posture confirmed
+[INFO] [1792746395.575760606] [nav_server]: Hole execution: state=0 decision=0 progress=3.788 limit=2.000 reason=ordinary path following
+[INFO] [1792746407.869996507] [nav_server]: RViz 目标: (-4.29, 5.10)
+[INFO] [1792746407.870224965] [nav_server]: 状态: IDLE -> PLANNING
+[INFO] [1792746407.887774433] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/15
+[INFO] [1792746407.887973486] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/15
+[INFO] [1792746407.888099392] [bspline_opt]: 优化完成: 7次迭代, 0.50ms | 代价: 2.6983 -> 0.8502 (降低68.5%) | 平滑=0.085, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792746407.954676149] [nav_server]: 过洞接入: hole=hole_B2 S=(0.049,7.604) 方法=FEASIBLE_APPROACH_CONTINUOUS 平滑后备原因=none
+[INFO] [1792746407.955133486] [nav_server]: 规划汇总: total=79.5ms astar=0.7ms outer_validation=0.3ms hole=78.1ms first_valid=16.8ms post_first=61.3ms | geometry=0.0 connectivity=2.0 candidates=0.3 seed_search=0.0 fit=1.8 curve_check=11.8 candidate_check=0.4 final_check=0.3 cache_check=0.0 ms | optimized=1 fits=2 iterations=34 cache_hits=0 cache_rejected=0 disconnected=0 stop=QUALITY_ACCEPTED
+[INFO] [1792746407.955841403] [nav_server]: FSM preparation advanced: hole=hole_B2 A=1.436 -> 0.735 (slope lead 0.800m; path unchanged)
+[INFO] [1792746407.956147697] [nav_server]: 状态: PLANNING -> CONTROLLING
+[INFO] [1792746407.956575880] [nav_server]: Hole execution: state=0 decision=0 progress=0.008 limit=0.794 reason=ordinary path following
+[INFO] [1792746410.855725471] [nav_server]: Hole execution: state=1 decision=0 progress=0.738 limit=0.403 reason=moving alignment; stop upstream of E if unfinished
+[INFO] [1792746411.616247217] [nav_server]: Hole execution: state=2 decision=0 progress=0.963 limit=0.293 reason=moving alignment; stop upstream of E if unfinished
+[INFO] [1792746412.175795500] [nav_server]: Hole execution: state=2 decision=0 progress=1.084 limit=2.000 reason=low posture confirmed
+[INFO] [1792746415.715789951] [nav_server]: Hole execution: state=3 decision=0 progress=3.995 limit=2.050 reason=all traversal demands released with clearance
+[INFO] [1792746416.575678342] [nav_server]: Hole execution: state=0 decision=0 progress=4.629 limit=2.000 reason=normal posture confirmed
+[INFO] [1792746416.595688305] [nav_server]: Hole execution: state=0 decision=0 progress=4.646 limit=2.000 reason=ordinary path following
+[INFO] [1792746430.435911422] [nav_server]: Controller: SUCCEEDED!
+[INFO] [1792746430.436004066] [nav_server]: 状态: CONTROLLING -> SUCCEEDED
+[INFO] [1792746430.455789192] [nav_server]: 状态: SUCCEEDED -> IDLE
+[INFO] [1792746430.455842943] [nav_server]: 导航成功 (22.59s)

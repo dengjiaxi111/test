@@ -1,0 +1,35 @@
+[
+  {
+    "run": "upper_1",
+    "case": "upper_approach",
+    "result": "PASS",
+    "low_request_id": 1,
+    "maximum_held_lift": 1.4431159531199915e-07,
+    "first_D": 2.8553881709766396,
+    "second_A": 7.100959022243293,
+    "maximum_gimbal_heading_excursion_rad": 0.029566559911190282,
+    "alignment_continuous": true
+  },
+  {
+    "run": "lower_1",
+    "case": "lower",
+    "result": "PASS",
+    "low_request_id": 1,
+    "maximum_held_lift": 0.0007677814912626084,
+    "first_D": 3.6780195219375966,
+    "second_A": 7.096778581056842,
+    "maximum_gimbal_heading_excursion_rad": 0.042834275137076716,
+    "alignment_continuous": true
+  },
+  {
+    "run": "final_default",
+    "case": "upper_approach",
+    "result": "PASS",
+    "low_request_id": 1,
+    "maximum_held_lift": 6.71416103201547e-05,
+    "first_D": 2.8721052188222345,
+    "second_A": 7.117676070088887,
+    "maximum_gimbal_heading_excursion_rad": 0.025510824729480852,
+    "alignment_continuous": true
+  }
+]

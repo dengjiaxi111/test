@@ -24,16 +24,32 @@ namespace msg
 namespace builder
 {
 
+class Init_HoleTraversalState_hold_gimbal_heading
+{
+public:
+  explicit Init_HoleTraversalState_hold_gimbal_heading(::nav_interfaces::msg::HoleTraversalState & msg)
+  : msg_(msg)
+  {}
+  ::nav_interfaces::msg::HoleTraversalState hold_gimbal_heading(::nav_interfaces::msg::HoleTraversalState::_hold_gimbal_heading_type arg)
+  {
+    msg_.hold_gimbal_heading = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::nav_interfaces::msg::HoleTraversalState msg_;
+};
+
 class Init_HoleTraversalState_recovery_phase
 {
 public:
   explicit Init_HoleTraversalState_recovery_phase(::nav_interfaces::msg::HoleTraversalState & msg)
   : msg_(msg)
   {}
-  ::nav_interfaces::msg::HoleTraversalState recovery_phase(::nav_interfaces::msg::HoleTraversalState::_recovery_phase_type arg)
+  Init_HoleTraversalState_hold_gimbal_heading recovery_phase(::nav_interfaces::msg::HoleTraversalState::_recovery_phase_type arg)
   {
     msg_.recovery_phase = std::move(arg);
-    return std::move(msg_);
+    return Init_HoleTraversalState_hold_gimbal_heading(msg_);
   }
 
 private:

@@ -194,6 +194,15 @@ bool nav_interfaces__msg__hole_traversal__convert_from_py(PyObject * _pymsg, voi
     Py_DECREF(seq_field);
     Py_DECREF(field);
   }
+  {  // uphill_entry
+    PyObject * field = PyObject_GetAttrString(_pymsg, "uphill_entry");
+    if (!field) {
+      return false;
+    }
+    assert(PyBool_Check(field));
+    ros_message->uphill_entry = (Py_True == field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -355,6 +364,17 @@ PyObject * nav_interfaces__msg__hole_traversal__convert_to_py(void * raw_ros_mes
     assert(PySequence_Check(field));
     {
       int rc = PyObject_SetAttrString(_pymessage, "straight_segments", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // uphill_entry
+    PyObject * field = NULL;
+    field = PyBool_FromLong(ros_message->uphill_entry ? 1 : 0);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "uphill_entry", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

@@ -57,6 +57,7 @@ struct HoleTraversalState_
       this->reason = "";
       this->attempt = 0ul;
       this->recovery_phase = 0;
+      this->hold_gimbal_heading = false;
     }
   }
 
@@ -79,6 +80,7 @@ struct HoleTraversalState_
       this->reason = "";
       this->attempt = 0ul;
       this->recovery_phase = 0;
+      this->hold_gimbal_heading = false;
     }
   }
 
@@ -125,6 +127,9 @@ struct HoleTraversalState_
   using _recovery_phase_type =
     uint8_t;
   _recovery_phase_type recovery_phase;
+  using _hold_gimbal_heading_type =
+    bool;
+  _hold_gimbal_heading_type hold_gimbal_heading;
 
   // setters for named parameter idiom
   Type & set__header(
@@ -211,6 +216,12 @@ struct HoleTraversalState_
     this->recovery_phase = _arg;
     return *this;
   }
+  Type & set__hold_gimbal_heading(
+    const bool & _arg)
+  {
+    this->hold_gimbal_heading = _arg;
+    return *this;
+  }
 
   // constant declarations
 
@@ -294,6 +305,9 @@ struct HoleTraversalState_
       return false;
     }
     if (this->recovery_phase != other.recovery_phase) {
+      return false;
+    }
+    if (this->hold_gimbal_heading != other.hold_gimbal_heading) {
       return false;
     }
     return true;

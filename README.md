@@ -6,4 +6,4 @@
 
 模型 3 的实际 Gazebo 验证、根因与边界说明见 [本轮修复记录](SLOPE_FSM_FIX_20261023.md)，当前控制链见 [控制架构](SLOPE_CONTROL_ARCHITECTURE.md)，启动操作见 [START_DEMO.md](START_DEMO.md)。
 
-直接运行 `bash test/start_demo.sh`：默认模型3，自动执行已验收的 A2 上坡 → B2 下坡，成功后保留窗口。手动选点加 `--manual --max-wall 3600`。
+直接运行 `bash test/start_demo.sh`：默认模型3，map 起点 `(4.694,5.0)`，等待你在 RViz 自己选择目标，不自动规划路线。连续两洞之间保持 LOW，最后一洞结束且净空确认后才升起。

@@ -1,0 +1,3 @@
+RCUTILS_CONSOLE_STDOUT_LINE_BUFFERED is now ignored. Please set RCUTILS_LOGGING_USE_STDOUT and RCUTILS_LOGGING_BUFFERED_STREAM to control the stream and the buffering of log messages.
+[INFO] [1792744625.208160125] [swerve_sim_controller]: Swerve controller ready: 100.0 Hz, wheel radius 0.0535 m, timeout 0.200 s
+[INFO] [1792744659.010740574] [rclcpp]: signal_handler(SIGINT/SIGTERM)

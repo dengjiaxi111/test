@@ -331,6 +331,24 @@ bool nav_interfaces__msg__hole_traversal_state__convert_from_py(PyObject * _pyms
     }
     Py_DECREF(field);
   }
+  {  // attempt
+    PyObject * field = PyObject_GetAttrString(_pymsg, "attempt");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->attempt = PyLong_AsUnsignedLong(field);
+    Py_DECREF(field);
+  }
+  {  // recovery_phase
+    PyObject * field = PyObject_GetAttrString(_pymsg, "recovery_phase");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->recovery_phase = (uint8_t)PyLong_AsUnsignedLong(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -572,6 +590,28 @@ PyObject * nav_interfaces__msg__hole_traversal_state__convert_to_py(void * raw_r
     assert(PySequence_Check(field));
     {
       int rc = PyObject_SetAttrString(_pymessage, "preparing_required", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // attempt
+    PyObject * field = NULL;
+    field = PyLong_FromUnsignedLong(ros_message->attempt);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "attempt", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // recovery_phase
+    PyObject * field = NULL;
+    field = PyLong_FromUnsignedLong(ros_message->recovery_phase);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "recovery_phase", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

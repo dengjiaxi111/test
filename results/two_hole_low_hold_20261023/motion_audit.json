@@ -1,0 +1,174 @@
+[
+  {
+    "run": "upper_1",
+    "result": "STRICT_AUDIT_REJECTED",
+    "reason": "zero command during the preparation/traversal range"
+  },
+  {
+    "case": "upper_approach",
+    "run": "upper_2",
+    "result": "PASS",
+    "explicit_stops": 0,
+    "passages": [
+      {
+        "hole": "hole_A2",
+        "uphill": true,
+        "minimum_command_speed": 0.28614922830175415,
+        "events": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "hole": "hole_B2",
+        "uphill": false,
+        "minimum_command_speed": 0.23288872079675682,
+        "events": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "slopes": [
+      {
+        "id": "slope_A2",
+        "begin": 1.3346764842697496,
+        "end": 2.0896764842697495,
+        "uphill": true,
+        "minimum_command_speed": 1.4756532996082987,
+        "maximum_command_speed": 1.9999999999999998,
+        "minimum_measured_horizontal_speed": 1.0411425594846742,
+        "maximum_measured_horizontal_speed": 1.3679402673310714
+      },
+      {
+        "id": "slope_B2",
+        "begin": 7.935247335536403,
+        "end": 8.875255526943798,
+        "uphill": false,
+        "minimum_command_speed": 0.915897575652591,
+        "maximum_command_speed": 1.2582639578086368,
+        "minimum_measured_horizontal_speed": 0.9515497408913457,
+        "maximum_measured_horizontal_speed": 1.3157337644613734
+      }
+    ]
+  },
+  {
+    "case": "lower",
+    "run": "lower_1",
+    "result": "PASS",
+    "explicit_stops": 0,
+    "passages": [
+      {
+        "hole": "hole_B1",
+        "uphill": true,
+        "minimum_command_speed": 0.30670166296159707,
+        "events": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "hole": "hole_A1",
+        "uphill": false,
+        "minimum_command_speed": 0.29996698396306914,
+        "events": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "slopes": [
+      {
+        "id": "slope_B1",
+        "begin": 1.725270422392974,
+        "end": 2.6652704223929766,
+        "uphill": true,
+        "minimum_command_speed": 1.809158793349893,
+        "maximum_command_speed": 2.0,
+        "minimum_measured_horizontal_speed": 1.1427354843890962,
+        "maximum_measured_horizontal_speed": 1.630715126687639
+      },
+      {
+        "id": "slope_A1",
+        "begin": 8.596563169103774,
+        "end": 9.351563169103763,
+        "uphill": false,
+        "minimum_command_speed": 1.218753435836979,
+        "maximum_command_speed": 1.565717401081084,
+        "minimum_measured_horizontal_speed": 1.2921378416237013,
+        "maximum_measured_horizontal_speed": 1.6772706080535584
+      }
+    ]
+  },
+  {
+    "case": "upper_approach",
+    "run": "final_default",
+    "result": "PASS",
+    "explicit_stops": 0,
+    "passages": [
+      {
+        "hole": "hole_A2",
+        "uphill": true,
+        "minimum_command_speed": 0.2640773885535274,
+        "events": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "hole": "hole_B2",
+        "uphill": false,
+        "minimum_command_speed": 0.2027513919036863,
+        "events": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "slopes": [
+      {
+        "id": "slope_A2",
+        "begin": 1.3170035527927926,
+        "end": 2.0720035527927925,
+        "uphill": true,
+        "minimum_command_speed": 1.527172283781009,
+        "maximum_command_speed": 2.0,
+        "minimum_measured_horizontal_speed": 1.0322987979380216,
+        "maximum_measured_horizontal_speed": 1.3588904656588658
+      },
+      {
+        "id": "slope_B2",
+        "begin": 7.917574404059446,
+        "end": 8.857582595466841,
+        "uphill": false,
+        "minimum_command_speed": 0.9882178609418943,
+        "maximum_command_speed": 1.3272833660165397,
+        "minimum_measured_horizontal_speed": 1.033594265884715,
+        "maximum_measured_horizontal_speed": 1.4043459490408758
+      }
+    ]
+  }
+]

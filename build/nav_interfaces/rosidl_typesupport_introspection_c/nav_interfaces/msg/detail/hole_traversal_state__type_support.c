@@ -210,7 +210,7 @@ bool nav_interfaces__msg__HoleTraversalState__rosidl_typesupport_introspection_c
   return rosidl_runtime_c__boolean__Sequence__init(member, size);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember nav_interfaces__msg__HoleTraversalState__rosidl_typesupport_introspection_c__HoleTraversalState_message_member_array[14] = {
+static rosidl_typesupport_introspection_c__MessageMember nav_interfaces__msg__HoleTraversalState__rosidl_typesupport_introspection_c__HoleTraversalState_message_member_array[15] = {
   {
     "header",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -462,13 +462,31 @@ static rosidl_typesupport_introspection_c__MessageMember nav_interfaces__msg__Ho
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "hold_gimbal_heading",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(nav_interfaces__msg__HoleTraversalState, hold_gimbal_heading),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers nav_interfaces__msg__HoleTraversalState__rosidl_typesupport_introspection_c__HoleTraversalState_message_members = {
   "nav_interfaces__msg",  // message namespace
   "HoleTraversalState",  // message name
-  14,  // number of fields
+  15,  // number of fields
   sizeof(nav_interfaces__msg__HoleTraversalState),
   false,  // has_any_key_member_
   nav_interfaces__msg__HoleTraversalState__rosidl_typesupport_introspection_c__HoleTraversalState_message_member_array,  // message members
