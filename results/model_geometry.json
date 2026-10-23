@@ -24,5 +24,16 @@
   "chassis_outer_footprint_m": [
     0.6,
     0.6
-  ]
+  ],
+  "chassis_mass_kg": 20.0,
+  "gimbal_mass_kg": 0.8,
+  "gimbal_inertia_kg_m2": [
+    0.0087,
+    0.0087,
+    1e-06
+  ],
+  "radar_mass_kg": 0.005,
+  "radar_collision": false,
+  "chassis_bottom_clearance_m": 0.1,
+  "chassis_shell_height_m": 0.1
 }

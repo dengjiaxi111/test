@@ -1,0 +1,9 @@
+{
+  "begin_sim_s": 119.301,
+  "end_sim_s": 145.70100000000002,
+  "samples": 235,
+  "nonzero_navigation_commands": 230,
+  "nonzero_final_translation_commands": 0,
+  "max_navigation_command_mps": 0.20000000000000004,
+  "body_displacement_m": 0.022753972223838948
+}

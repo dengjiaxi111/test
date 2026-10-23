@@ -109,24 +109,24 @@ void NMPC::initialize(rclcpp::Node* node) {
                     "Omni feedback sample rejected: frame=%s child=%s age=%.6f limit=%.3f finite=%d",
                     msg->header.frame_id.c_str(),msg->child_frame_id.c_str(),
                     now-stamp,feedback_timeout_,omni::finite(value));
-                have_feedback_=false; return;
+                // Frame/numeric faults retain the existing hard rejection policy.
+                if(msg->header.frame_id!=odom_frame_ || msg->child_frame_id!=fake_frame_ || !omni::finite(value))
+                    feedback_.have=false;
+                return;
             }
-            if(have_feedback_ && now>=feedback_received_ && stamp<=feedback_stamp_) return;
-            if(have_feedback_ && omni::fresh(now,feedback_received_,feedback_timeout_))
-                for(int j=0;j<2;++j) value[j]=filter_alpha_*value[j]+(1-filter_alpha_)*feedback_[j];
-            feedback_=value; feedback_stamp_=stamp; feedback_received_=now; have_feedback_=true;
+            if(feedback_.have && omni::fresh(now,feedback_.received,feedback_timeout_))
+                for(int j=0;j<2;++j) value[j]=filter_alpha_*value[j]+(1-filter_alpha_)*feedback_.value[j];
+            feedback_.offer(now,stamp,value,feedback_timeout_);
         });
     lio_sub_=node_->create_subscription<nav_msgs::msg::Odometry>(lio_topic,qos,
         [this](nav_msgs::msg::Odometry::ConstSharedPtr msg) {
             std::lock_guard<std::mutex> lock(mutex_);
             const double now=node_->now().seconds();
             if(msg->header.frame_id!=odom_frame_ || msg->child_frame_id!="base_link" ||
-               !validPose(msg->pose.pose) || !omni::fresh(now,seconds(msg->header.stamp),pose_timeout_)) {
-                have_lio_=false; return;
+               !validPose(msg->pose.pose)) {
+                lio_.have=false; return;
             }
-            if(have_lio_ && seconds(msg->header.stamp)<=seconds(lio_.header.stamp) &&
-               now>=lio_received_) return;
-            lio_=*msg; lio_received_=now; have_lio_=true;
+            lio_.offer(now,seconds(msg->header.stamp),*msg,pose_timeout_);
         });
     capacitor_sub_=node_->create_subscription<robots_msgs::msg::ChassisOdom>(
         "/ChassisOdom",qos,[this](robots_msgs::msg::ChassisOdom::ConstSharedPtr msg) {
@@ -141,6 +141,7 @@ void NMPC::initialize(rclcpp::Node* node) {
     measured_pub_=node_->create_publisher<geometry_msgs::msg::TwistStamped>("nmpc/measured_velocity",10);
     fused_pub_=node_->create_publisher<geometry_msgs::msg::TwistStamped>("nmpc/fused_velocity",10);
     command_pub_=node_->create_publisher<geometry_msgs::msg::TwistStamped>("nmpc/command_velocity",10);
+    applied_pub_=node_->create_publisher<geometry_msgs::msg::TwistStamped>("nmpc/applied_command_velocity",10);
     parameters_callback_=node_->add_on_set_parameters_callback(
         [this](const std::vector<rclcpp::Parameter>& values) {
             std::lock_guard<std::mutex> lock(mutex_);
@@ -171,12 +172,12 @@ void NMPC::setPath(const nav_msgs::msg::Path& path) {
 }
 void NMPC::reset() {
     std::lock_guard<std::mutex> lock(mutex_);
-    observer_->reset(); warm_=false; last_time_=0; last_sent_={0,0}; nearest_=0;
+    supplementation_allowed_=false;observer_->reset(); warm_=false; last_time_=0; last_sent_={0,0}; nearest_=0;
     have_transform_=false;
     if(solver_created_) omni_nmpc_acados_reset(capsule_,1);
 }
 ControlResult NMPC::stop(geometry_msgs::msg::Twist& command) {
-    command=geometry_msgs::msg::Twist(); observer_->reset(); warm_=false; last_sent_={0,0}; last_time_=0;
+    supplementation_allowed_=false;command=geometry_msgs::msg::Twist(); observer_->reset(); warm_=false; last_sent_={0,0}; last_time_=0;
     return ControlResult::FAILED;
 }
 std::vector<NMPC::Reference> NMPC::reference(const std::vector<Vec>& input, Vec position) {
@@ -345,27 +346,26 @@ bool NMPC::predictionSafe(const tf2::Transform& to_map) const {
 ControlResult NMPC::computeVelocity(const geometry_msgs::msg::PoseStamped& pose,
                                     geometry_msgs::msg::Twist& command) {
     std::lock_guard<std::mutex> lock(mutex_);
+    supplementation_allowed_=false;
     command=geometry_msgs::msg::Twist();
     const double now=node_->now().seconds();
     const double elapsed=last_time_>0 ? now-last_time_ : omni::DT;
     if(!solver_created_ || path_.poses.empty() || !validPose(pose.pose) ||
-       !have_lio_ || !omni::fresh(now,lio_received_,pose_timeout_) ||
-       !omni::fresh(now,seconds(lio_.header.stamp),pose_timeout_) ||
+       !lio_.valid(now,pose_timeout_) ||
        elapsed<0 || elapsed>0.1) {
         RCLCPP_WARN_THROTTLE(node_->get_logger(),*node_->get_clock(),1000,
             "Omni input invalid: solver=%d path=%zu pose=%d lio=%d lio_receive_age=%.3f lio_stamp_age=%.3f elapsed=%.3f",
-            solver_created_,path_.poses.size(),validPose(pose.pose),have_lio_,
-            have_lio_ ? now-lio_received_ : -1.0,
-            have_lio_ ? now-seconds(lio_.header.stamp) : -1.0,elapsed);
+            solver_created_,path_.poses.size(),validPose(pose.pose),lio_.have,
+            lio_.have ? now-lio_.received : -1.0,
+            lio_.have ? now-lio_.stamp : -1.0,elapsed);
         return stop(command);
     }
-    const bool measured_valid=have_feedback_ &&
-        omni::fresh(now,feedback_received_,feedback_timeout_) && omni::fresh(now,feedback_stamp_,feedback_timeout_);
+    const bool measured_valid=feedback_.valid(now,feedback_timeout_);
     if(alpha_>0 && !measured_valid) {
         RCLCPP_WARN_THROTTLE(node_->get_logger(),*node_->get_clock(),1000,
             "Omni feedback invalid: have=%d receive_age=%.3f stamp_age=%.3f limit=%.3f",
-            have_feedback_,have_feedback_ ? now-feedback_received_ : -1.0,
-            have_feedback_ ? now-feedback_stamp_ : -1.0,feedback_timeout_);
+            feedback_.have,feedback_.have ? now-feedback_.received : -1.0,
+            feedback_.have ? now-feedback_.stamp : -1.0,feedback_timeout_);
         return stop(command);
     }
     tf2::Transform to_map; to_map.setIdentity();
@@ -397,10 +397,10 @@ ControlResult NMPC::computeVelocity(const geometry_msgs::msg::PoseStamped& pose,
             points.push_back(point);
     }
     if(points.empty()) return stop(command);
-    const Vec fused=observer_->update(now,feedback_,measured_valid);
-    State state{lio_.pose.pose.position.x,lio_.pose.pose.position.y,fused[0],fused[1]};
+    const Vec fused=observer_->update(now,feedback_.value,measured_valid);last_fused_=fused;
+    State state{lio_.value.pose.pose.position.x,lio_.value.pose.pose.position.y,fused[0],fused[1]};
     const double goal_distance=std::hypot(state[0]-points.back()[0],state[1]-points.back()[1]);
-    const Vec stop_velocity=alpha_>0 ? feedback_ : fused;
+    const Vec stop_velocity=alpha_>0 ? feedback_.value : fused;
     if(goal_distance<=tolerance_ && omni::norm(stop_velocity)<=stop_speed_) {
         stop(command); return ControlResult::SUCCEEDED;
     }
@@ -420,12 +420,17 @@ ControlResult NMPC::computeVelocity(const geometry_msgs::msg::PoseStamped& pose,
             warm_=false;
             sent=omni::limit(last_sent_,std::max(0.0,omni::norm(last_sent_)-acceleration*std::min(elapsed,omni::DT)));
             RCLCPP_WARN_THROTTLE(node_->get_logger(),*node_->get_clock(),1000,"Omni solve/constraint/map check failed; ramping to stop");
+         } else {
+            // 保护性减速和终点制动均不允许被状态机补速抬高。
+            const double braking_distance=config_.max_velocity*config_.max_velocity/(2*std::max(acceleration,1e-6));
+            supplementation_allowed_=acceleration>=config_.max_acceleration-1e-6 &&
+                goal_distance>std::max(tolerance_,braking_distance);
         }
     }
     sent=omni::limit(sent,config_.max_velocity);
     command.linear.x=sent[0]; command.linear.y=sent[1];
     observer_->record(now,fused,sent); last_sent_=sent; last_time_=now;
-    publishObservation(state,feedback_,measured_valid,sent);
+    publishObservation(state,feedback_.value,measured_valid,sent);
     if(warm_) {
         nav_msgs::msg::Path out; out.header.frame_id=odom_frame_; out.header.stamp=node_->now();
         for(const auto& x:predicted_) {
@@ -436,6 +441,21 @@ ControlResult NMPC::computeVelocity(const geometry_msgs::msg::PoseStamped& pose,
         predicted_pub_->publish(out);
     }
     return ControlResult::RUNNING;
+}
+bool NMPC::supplementationAllowed() {
+    std::lock_guard<std::mutex> lock(mutex_);
+    return supplementation_allowed_ && node_ && omni::fresh(node_->now().seconds(),last_time_,0.1);
+}
+void NMPC::recordAppliedCommand(const geometry_msgs::msg::Twist& command) {
+    std::lock_guard<std::mutex> lock(mutex_);
+    if(!node_||!observer_)return;
+    const Vec sent{command.linear.x,command.linear.y};
+    if(!omni::finite(sent))return;
+    if(omni::norm(Vec{sent[0]-last_sent_[0],sent[1]-last_sent_[1]})>1e-6)warm_=false;
+    if(last_time_>0)observer_->record(node_->now().seconds(),last_fused_,sent);
+    last_sent_=sent;
+    geometry_msgs::msg::TwistStamped msg;msg.header.frame_id=fake_frame_;msg.header.stamp=node_->now();msg.twist=command;
+    applied_pub_->publish(msg);
 }
 void NMPC::publishObservation(const State& x,Vec measured,bool valid,Vec command) {
     geometry_msgs::msg::TwistStamped msg;

@@ -3,6 +3,7 @@
 /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/hole_grid_collision.hpp
 /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/hole_passage.hpp
 /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/hole_execution_types.hpp
+/home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/slope_speed_takeover.hpp
 /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/map_interface.hpp
 /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/raster_edit.hpp
 /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/types.hpp

@@ -1,0 +1,8 @@
+[INFO] [1792682133.265042749] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1792682133.265134896] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[INFO] [1792682133.282411049] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1792682140.129736989] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[INFO] [1792682194.615315802] [rviz2]: Setting goal pose: Frame:map, Position(-4.7888, 3.57443, 0), Orientation(0, 0, -0.999691, 0.0248702) = Angle: -3.09185
+[INFO] [1792682211.394387156] [rviz2]: Setting goal pose: Frame:map, Position(-3.8199, 5.86717, 0), Orientation(0, 0, -0.857995, 0.513658) = Angle: -2.06271
+[INFO] [1792682251.587651833] [rviz2]: Setting goal pose: Frame:map, Position(5.61037, 3.60952, 0), Orientation(0, 0, 0.853293, 0.521431) = Angle: 2.04454
+[INFO] [1792682280.922858830] [rclcpp]: signal_handler(SIGINT/SIGTERM)

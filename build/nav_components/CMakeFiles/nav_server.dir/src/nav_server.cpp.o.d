@@ -1264,12 +1264,18 @@ CMakeFiles/nav_server.dir/src/nav_server.cpp.o: \
  /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/hole_execution_types.hpp \
  /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/include/nav_components/hole_execution_config.hpp \
  /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/include/nav_components/hole_plan_adapter.hpp \
+ /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/slope_speed_takeover.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/float64.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64__builder.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64__traits.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64__type_support.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/bool.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/joint_state.hpp \
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp \
  /opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__builder.hpp \

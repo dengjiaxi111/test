@@ -1,0 +1,212 @@
+# 仅供隔离测试；不修改原算法配置。
+nav_server:
+  ros__parameters:
+    use_static_map_odom: true
+    debug_reset_odom_to_base_link: false
+    map_file: /home/dengjiaxi/simulation_seu/test/map/map.yaml
+    hole_passages_file: /home/dengjiaxi/simulation_seu/test/map/hole_passages.yaml
+    hole_clearance:
+      enabled: true
+      before_distance: 0.5
+      after_distance: 0.5
+    hole_planner:
+      enabled: true
+      mode: centerline
+      use_global_distances: false
+      geometry:
+        rectangle_angle_tolerance_deg: 3.0
+        parallel_tolerance_deg: 3.0
+        min_long_short_ratio: 1.2
+        max_centerline_difference: 0.02
+        max_axis_difference_deg: 3.0
+      approach:
+        prepare_distance: 1.5
+        entry_straight_length: 0.8
+        search_prepare_distance: true
+        prepare_distance_min: 1.0
+        prepare_distance_max: 3.0
+        prepare_distance_step: 0.25
+      departure:
+        planning_policy: normal_navigation
+        exit_straight_length: 0.1
+        departure_distance: 0.2
+      optimization:
+        enabled: true
+        max_iterations: 100
+        relative_improvement_tolerance: 0.001
+        stagnation_iterations: 5
+        control_spacing: 0.45
+        length_weight: 1.0
+        curvature_weight: 0.01
+        curvature_change_weight: 0.001
+        obstacle_weight: 5.0
+        reference_weight: 0.1
+        safe_distance: 0.3
+      connection:
+        approach_policy: feasibility_first
+        smoothing_timeout: 0.2
+        max_curvature: 1.0
+        enforce_max_curvature: false
+      cache:
+        enabled: false
+        max_entries: 128
+      global:
+        planning_policy: responsive
+        shortlist_size: 3
+        improvement_timeout: 0.15
+        relative_cost_gap: 0.1
+        enabled: true
+        max_nodes: 192
+        max_expansions: 256
+        max_passages: 8
+        curvature_weight: 0.002
+        clearance_weight: 0.2
+        prepare_deviation_weight: 0.1
+      search:
+        state_resolution: 0.1
+        heading_bins: 72
+        primitive_length: 0.2
+        sample_resolution: 0.025
+        max_expansions: 20000
+        connection_timeout: 0.5
+        planning_timeout: 5.0
+        min_motion_speed: 0.05
+      free:
+        edge_step: 0.1
+        angle_step_deg: 15.0
+        max_angle_deg: 60.0
+        max_candidates: 64
+      validation:
+        waypoint_tolerance: 0.02
+        tangent_tolerance_deg: 3.0
+        side_margin: 0.0
+      publish_debug_markers: true
+    control_rate: 50.0
+    goal_timeout: 300.0
+    goal_tolerance: 0.1
+    yaw_tolerance: 0.1
+    map_frame: map
+    base_frame: base_link_fake
+    odom_frame: odom
+    controller_timeout: 8.0
+    controller_progress_threshold: 0.05
+    path_check_period: 0.3
+    path_lateral_tolerance: 1.25
+    path_io:
+      enable_save_planned_path: false
+      planned_path_file: /tmp/nav_planned_path.yaml
+      use_prior_path: false
+      prior_path_file: /tmp/nav_planned_path.yaml
+      validate_prior_path: false
+      fallback_to_planner: false
+    enable_static_layer: true
+    enable_dynamic_layer: false
+    dynamic_layer_topic: /rog_map/map_2d
+    enable_performance_logging: false
+    enable_esdf: true
+    esdf_vis_max_dist: 2.0
+    inflation:
+      radius: 0.8
+      inscribed_radius: 0.2
+      cost_scaling: 1.8
+      decay_type: exponential
+    planner:
+      obstacle_threshold: 99
+      cost_weight: 0.9
+      enable_smooth: true
+      resample_interval: 0.3
+      smooth_resolution: 0.05
+      enable_path_cache: true
+      enable_auto_prune: true
+      goal_change_tolerance: 0.2
+      obstacle_check_threshold: 99
+      esdf_warn_min_safe_dist: 0.12
+      start_deviation_threshold: 1.0
+      astar_max_attempts: 1
+      astar_max_iterations: 3000000
+      astar_threshold_step: 0
+      prune_distance: 1.0
+      publish_astar_raw_path: true
+      allow_raw_fallback_on_smooth_fail: false
+      publish_failure_debug_markers: false
+      failure_marker_scale: 0.2
+      enable_optimization: true
+      opt_lambda_smooth: 10.0
+      opt_lambda_collision: 20.0
+      opt_safe_dist: 0.5
+      opt_max_iter: 100
+      opt_curvature_adaptive: true
+      opt_curvature_weight: 4.0
+      narrow_passage_align: true
+      narrow_passage_thresh: 0.4
+      opt_lambda_align: 10.0
+      align_entry_points: 3
+      narrow_min_consecutive: 3
+    nmpc:
+      max_linear_vel: 4.0
+      max_linear_accel: 10.0
+      speed_profile:
+        v_cruise: 2.0
+        max_lateral_accel: 1.5
+        kappa_epsilon: 0.08
+        curvature_window_m: 1.5
+      odom_feedback_alpha: 0.8
+      odom_topic: /Odometry/fake
+      lio_topic: /Odometry
+      chassis_velocity_timeout_sec: 0.5
+      chassis_velocity_filter_alpha: 1.0
+      pose_timeout_sec: 0.5
+      goal_stop_speed: 0.05
+      capacitor_limit:
+        v_safe: 0.0
+        v_low: 0.0
+        protect_scale: 1.0
+        low_scale: 1.0
+        filter_alpha: 1.0
+      Q_position: 3.0
+      Q_velocity: 0.1
+      R_linear: 1.0
+      contouring_weight: 100.0
+      esdf_weight: 70.0
+      esdf_safe_dist: 0.32
+      terminal_multiplier: 2.0
+      near_weight_multiplier: 3.0
+    recovery:
+      max_recovery: 3
+      translation_headings:
+      - 3.141593
+      - 1.570796
+      - -1.570796
+      - 0.0
+      translation_distance: 0.3
+      translation_speed: 0.2
+      translation_timeout: 3.0
+      translation_min_progress: 0.02
+      translation_progress_timeout: 1.0
+    escape:
+      trigger_costmap_threshold: 99
+      target_safe_esdf: 0.25
+      search_radius: 1.0
+      preferred_search_distance: 1.0
+      preferred_search_half_angle: 0.2
+      forward_speed: 0.2
+      position_tolerance: 0.03
+      drive_min_progress: 0.02
+      drive_progress_timeout: 1.5
+      timeout: 10.0
+    use_sim_time: true
+    terrain_file: /home/dengjiaxi/simulation_seu/test/map/terrain.yaml
+    hole_state_machine:
+      config_file: /home/dengjiaxi/simulation_seu/test/sim/active_hole.yaml
+    hole_runtime:
+      save_file: /home/dengjiaxi/simulation_seu/test/sim/runtime_tuning.yaml
+two_point_patrol:
+  ros__parameters:
+    goal_topic: goal_pose
+    navigate_action_name: navigate
+    goal_frame: map
+    check_period_s: 0.1
+    near_goal_distance_m: 0.45
+    switch_delay_s: 0.8
+    save_file: /tmp/nav_two_goal_points.txt
+    auto_start: false

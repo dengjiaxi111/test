@@ -1,0 +1,2 @@
+[INFO] [1792654285.791850477] [swerve_sim_controller]: Swerve controller ready: 100.0 Hz, wheel radius 0.0535 m, timeout 0.200 s
+[INFO] [1792654331.386884839] [rclcpp]: signal_handler(SIGINT/SIGTERM)

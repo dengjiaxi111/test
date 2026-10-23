@@ -1,0 +1,2 @@
+[INFO] [1792682132.096963028] [fake_vel_transform]: Fixed fake frame; translation only, alpha=0.8, feedback_required=True.
+[WARN] [1792682132.097330354] [fake_vel_transform]: Gimbal-base feedback uses receive time; nearest LIO pose is bounded by feedback_pose_max_skew.

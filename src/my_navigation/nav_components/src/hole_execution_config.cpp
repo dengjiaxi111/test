@@ -9,6 +9,8 @@ nav_core::hole_exec::Config loadHoleExecutionConfig(const std::string& filename)
 #define HOLE_EXEC_LOAD(name,value,meaning,unit) known.insert(#name);if(n[#name])c.name=n[#name].as<double>();
     HOLE_EXEC_DOUBLE_PARAMETERS(HOLE_EXEC_LOAD)
 #undef HOLE_EXEC_LOAD
+    // 兼容旧测试配置；准备阶段已无独立限速，此字段不再参与控制。
+    known.insert("prepare_speed");
     for(auto key:{"enabled","allow_free","physical_parameters_confirmed","simulation_only","max_replans","max_action_retries","max_traversal_retries"})known.insert(key);
     if(n["enabled"])c.enabled=n["enabled"].as<bool>();
     if(n["allow_free"])c.allow_free=n["allow_free"].as<bool>();

@@ -3,8 +3,11 @@
 #include "nav_components/hole_execution_config.hpp"
 #include "nav_components/hole_plan_adapter.hpp"
 #include "nav_components/simple_planner.hpp"
+#include "nav_core/slope_speed_takeover.hpp"
 #include <geometry_msgs/msg/twist.hpp>
 #include <std_msgs/msg/float64.hpp>
+#include <std_msgs/msg/bool.hpp>
+#include <rcl_interfaces/srv/set_parameters_atomically.hpp>
 #include <functional>
 #include <nav_msgs/msg/odometry.hpp>
 #include <sensor_msgs/msg/joint_state.hpp>
@@ -25,7 +28,10 @@ public:
         const geometry_msgs::msg::PoseStamped& pose,std::string& error);
     nav_core::hole_exec::Output tick(const geometry_msgs::msg::PoseStamped& pose,double measured_speed);
     nav_core::hole_exec::MotionConstraints constraints() const;
-    bool gate(const geometry_msgs::msg::Twist& cmd,bool recovery=false) const;
+    bool gate(const geometry_msgs::msg::Twist& cmd,bool recovery=false,bool takeover=false) const;
+    bool applyMinimumSpeed(const geometry_msgs::msg::PoseStamped&,geometry_msgs::msg::Twist&,
+        bool controller_healthy,double total_limit,const std::function<bool(double,double)>& valid,bool& takeover);
+    bool tunnelOccupied() const {return core_.tunnelOccupied();}
     bool canRecover() const;
     double measuredSpeed() const;
     void recordCommand(double speed){last_command_speed_=speed;}
@@ -41,6 +47,7 @@ public:
     void blockCurrentHole(SimplePlanner& planner);
     void applyBlocks(SimplePlanner& planner);
 private:
+    void initializeTuning();
     nav_core::hole_exec::Input input(const geometry_msgs::msg::PoseStamped&,double) const;
     void publishPlan();
     rclcpp::Node* node_;
@@ -50,11 +57,16 @@ private:
     SlopeHoleController core_;
     nav_core::hole_exec::StructureFeedback feedback_;
     double measured_speed_=0,speed_received_=-1,speed_stamp_=-1;
+    nav_core::hole_exec::Point velocity_odom_;
+    nav_core::hole_exec::SlopeSpeedTakeover speed_takeover_;
+    bool takeover_authorized_=false;
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr speed_sub_;
     rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr rotation_sub_;
     double rotation_stamp_=-1,rotation_received_=-1,chassis_rate_=0,gimbal_rate_=0,alignment_stable_=-1;
+    double rotation_chassis_yaw_=0,gimbal_yaw_=0;
     std::string aligning_uid_;
-    std::set<std::string> aligned_passages_;
+    double preparation_remaining_=0,prepare_started_=-1;
+    std::uint64_t prepare_request_id_=0;
     nav_core::hole_exec::Output output_;
     std::string session_,goal_;
     double last_command_speed_=0,retreat_started_=0,retreat_progress_time_=0,retreat_best_=0,retreat_stable_=-1,retreat_arc_=0;
@@ -64,6 +76,9 @@ private:
     std::map<std::string,int> traversal_retries_;
     std::map<std::string,double> alignment_targets_;
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr alignment_pub_;
+    rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr rotation_inhibit_pub_;
+    rclcpp::Service<rcl_interfaces::srv::SetParametersAtomically>::SharedPtr tuning_service_;
+    std::string tuning_save_file_;
     std::uint64_t goal_sequence_=0,plan_sequence_=0,uid_sequence_=0;
     double updated_=-1;
     std::map<std::string,double> blocked_;

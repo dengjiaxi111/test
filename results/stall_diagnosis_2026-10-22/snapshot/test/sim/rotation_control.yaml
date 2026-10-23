@@ -1,0 +1,9 @@
+# 仅隔离仿真旋转适配；不更改平移规划、NMPC、舵轮 PID 或轮胎参数。
+heading_gain: 3.0            # 朝向误差比例增益，单位 1/s。
+heading_deadband: 0.01      # 误差小于此值时底盘给零转速，避免微量修正抖动；单位 rad，小于状态机0.05rad许可阈值。
+max_chassis_rate: 1.7453292519943295 # 底盘相对地面旋转速度上限，100 degree/s，单位 rad/s。
+max_joint_rate: 4.8         # 云台相对底盘关节速度上限；为地面反向100 degree/s及坡面补偿留余量，单位 rad/s。
+command_timeout: 0.2        # 连续旋转命令有效期，单位 s；超时保持当前朝向。
+stopped_rate: 0.1           # 当前Gazebo接触抖动下的停转阈值，单位 rad/s；并非实车标定值，FSM还检查朝向误差。
+settle_time: 0.2            # 停转条件连续成立时间，单位 s。
+auto_spin_dps: 60.0         # NAV模式且没有对准/故障/停转要求时，底盘与枪口的地面反向旋转目标，单位 degree/s。

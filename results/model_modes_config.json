@@ -1,0 +1,24 @@
+{
+  "result": "PASS",
+  "models": [
+    {
+      "model": 1,
+      "max_linear_vel": 4.0,
+      "fsm_enabled": false,
+      "urdf_links": 12
+    },
+    {
+      "model": 2,
+      "max_linear_vel": 4.0,
+      "fsm_enabled": true,
+      "urdf_links": 13
+    },
+    {
+      "model": 3,
+      "max_linear_vel": 4.0,
+      "fsm_enabled": true,
+      "urdf_links": 13
+    }
+  ],
+  "assets_unchanged": true
+}

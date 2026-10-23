@@ -1,0 +1,30 @@
+RCUTILS_CONSOLE_STDOUT_LINE_BUFFERED is now ignored. Please set RCUTILS_LOGGING_USE_STDOUT and RCUTILS_LOGGING_BUFFERED_STREAM to control the stream and the buffering of log messages.
+[INFO] [1792743452.088189730] [hole_gazebo_bridge]: rotation mode: WAIT_FEEDBACK
+[INFO] [1792743452.091060286] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+[INFO] [1792743462.320600153] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
+[INFO] [1792743465.800200033] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+[INFO] [1792743471.481392778] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
+[INFO] [1792743476.184799821] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+Traceback (most recent call last):
+  File "/home/dengjiaxi/simulation_seu/test/sim/sim_bridge.py", line 258, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/dengjiaxi/simulation_seu/test/sim/sim_bridge.py", line 253, in main
+    try:rclpy.spin(n)
+        ^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 247, in spin
+    executor.spin_once()
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 926, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 918, in _spin_once_impl
+    raise handler.exception()
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/task.py", line 286, in _execute_coroutine_step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 584, in handler
+    call_coroutine = take_from_wait_list(entity)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 470, in _take_subscription
+    msg_info = sub.handle.take_message(sub.msg_type, sub.raw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Unable to convert call argument '0' to Python object (#define PYBIND11_DETAILED_ERROR_MESSAGES or compile in debug mode for details)

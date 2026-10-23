@@ -1,0 +1,7 @@
+{
+  "result": "PASS",
+  "orphan_reaped": true,
+  "repeated_ctrl_c": true,
+  "unrelated_process_untouched": true,
+  "output": "PASS: adopted detached grandchild cleaned"
+}

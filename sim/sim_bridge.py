@@ -16,7 +16,7 @@ from sensor_msgs.msg import JointState
 from std_msgs.msg import Float64,String,Bool
 from rotation_control import RotationControl,horizontal_child,ground_yaw_rate
 from tf2_ros import TransformBroadcaster,StaticTransformBroadcaster
-from nav_interfaces.msg import HoleStructureRequest as Request,HoleStructureFeedback as Feedback,NavigationPlan
+from nav_interfaces.msg import HoleStructureRequest as Request,HoleStructureFeedback as Feedback,NavigationPlan,HoleTraversalState
 
 class SimBridge(Node):
     def __init__(self):
@@ -27,6 +27,9 @@ class SimBridge(Node):
         self.rotation_config=cfg
         self.rotation=RotationControl(cfg['heading_gain'],cfg['max_chassis_rate'],cfg['max_joint_rate'],cfg['heading_deadband'])
         self.spin_rate=0.;self.spin_received=-1.;self.rotation_stop=False;self.rotation_stable=-1.
+        self.rotation_mode=None
+        self.hole_inhibit=False;self.control_mode='navigation';self.keyboard=Twist();self.keyboard_received=-1.
+        self.manual_yaw=0.;self.manual_yaw_received=-1.;self.execution=None;self.execution_received=-1.
         self.q={};self.qv={};self.joint_received=-1.;self.joint_stamp=None;self.odom=None;self.odom_received=-1.
         self.request=None;self.req_time=0.;self.start_lift=0.;self.target=.30;self.cancelled=False;self.completed=False
         self.command=Twist();self.command_received=-1.;self.align=float('nan');self.align_received=-1.;self.plan=None
@@ -38,7 +41,10 @@ class SimBridge(Node):
         self.pub_yaw=self.create_publisher(Float64,'/gimbal/cmd_vel',10)
         self.pub_rotation=self.create_publisher(JointState,'/rotation/feedback',10)
         self.pub_rotation_stopped=self.create_publisher(Bool,'/rotation/stopped',10)
-        self.model=ET.parse(Path(__file__).with_name('robot.sdf')).getroot().find('model')
+        self.pub_rotation_mode=self.create_publisher(String,'/rotation/mode',10)
+        model_path=Path(self.declare_parameter('model_sdf',str(Path(__file__).with_name('robot.sdf'))).value)
+        self.model=ET.parse(model_path).getroot().find('model')
+        self.has_lift=self.model.find("joint[@name='lift_joint']") is not None
         self.description=self.create_publisher(String,'robot_description',QoSProfile(depth=1,durability=DurabilityPolicy.TRANSIENT_LOCAL))
         self.description.publish(String(data=Path(__file__).with_name('robot.urdf').read_text()))
         self.tf=TransformBroadcaster(self);self.static=StaticTransformBroadcaster(self)
@@ -49,6 +55,11 @@ class SimBridge(Node):
         self.create_subscription(Float64,'hole_alignment_target',self.on_align,10)
         self.create_subscription(Float64,'/rotation/world_yaw_rate',self.on_spin,10)
         self.create_subscription(Bool,'/rotation/stop',self.on_rotation_stop,10)
+        self.create_subscription(Bool,'hole_rotation_inhibit',lambda m:setattr(self,'hole_inhibit',m.data),10)
+        self.create_subscription(String,'/control_mode',self.on_mode,10)
+        self.create_subscription(Twist,'/keyboard/cmd_vel_gimbal',self.on_keyboard,10)
+        self.create_subscription(Float64,'/keyboard/gimbal_cmd_vel',self.on_manual_yaw,10)
+        self.create_subscription(HoleTraversalState,'hole_traversal_state',self.on_execution,10)
         self.create_subscription(Request,'hole_structure/request',self.on_request,10)
         qos=QoSProfile(depth=1,durability=DurabilityPolicy.TRANSIENT_LOCAL)
         self.create_subscription(NavigationPlan,'navigation_plan',self.on_plan,qos)
@@ -60,6 +71,15 @@ class SimBridge(Node):
         self.q=dict(zip(m.name,m.position));self.qv=dict(zip(m.name,m.velocity));self.joint_received=self.simtime();self.joint_stamp=m.header.stamp
     def on_cmd(self,m):self.command=m;self.command_received=self.simtime()
     def on_align(self,m):self.align=m.data;self.align_received=self.simtime()
+    def on_execution(self,m):self.execution=m;self.execution_received=self.simtime()
+    def on_keyboard(self,m):
+        if all(math.isfinite(x) for x in (m.linear.x,m.linear.y,m.angular.z)):self.keyboard=m;self.keyboard_received=self.simtime()
+    def on_manual_yaw(self,m):
+        if math.isfinite(m.data):self.manual_yaw=m.data;self.manual_yaw_received=self.simtime()
+    def on_mode(self,m):
+        if m.data in ('keyboard','navigation') and m.data!=self.control_mode:
+            self.control_mode=m.data;self.keyboard=Twist();self.command=Twist()
+            self.keyboard_received=self.command_received=self.manual_yaw_received=-1.
     def on_spin(self,m):
         if math.isfinite(m.data):self.spin_rate=m.data;self.spin_received=self.simtime()
     def on_rotation_stop(self,m):
@@ -67,6 +87,11 @@ class SimBridge(Node):
         self.rotation_stop=m.data
         # 停转后必须收到新的旋转请求才重启，旧缓存命令不能复活。
         if invalidate:self.spin_rate=0.;self.spin_received=-1.
+    def publish_rotation_mode(self,mode):
+        self.pub_rotation_mode.publish(String(data=mode))
+        if mode!=self.rotation_mode:
+            self.get_logger().info('rotation mode: '+mode)
+            self.rotation_mode=mode
     def on_request(self,m):
         if m.cancel_motion:
             if self.request and (m.session_id,m.goal_id)==(self.request.session_id,self.request.goal_id):
@@ -83,15 +108,17 @@ class SimBridge(Node):
         now=self.simtime()
         if (self.odom is None or not 0<=now-self.odom_received<=.2 or
             not 0<=now-self.joint_received<=.2 or
-            'lift_joint' not in self.q or 'gimbal_yaw_joint' not in self.q or 'gimbal_yaw_joint' not in self.qv):
+            (self.has_lift and 'lift_joint' not in self.q) or
+            'gimbal_yaw_joint' not in self.q or 'gimbal_yaw_joint' not in self.qv):
+            self.publish_rotation_mode('WAIT_FEEDBACK')
             self.pub_motion.publish(Twist());self.pub_yaw.publish(Float64(data=0.))
             self.pub_rotation_stopped.publish(Bool(data=False));self.rotation_stable=-1.;return
         od=self.odom;p=od.pose.pose.position;qq=od.pose.pose.orientation
         chassis_position=np.array([p.x,p.y,p.z])-self.world_offset
         rotation=Rot.from_quat([qq.x,qq.y,qq.z,qq.w]);cyaw=rotation.as_euler('xyz')[2]
-        gyaw=self.q['gimbal_yaw_joint'];lift=self.q['lift_joint'];lv=self.qv.get('lift_joint',0.)
+        gyaw=self.q['gimbal_yaw_joint'];lift=self.q.get('lift_joint',0.);lv=self.qv.get('lift_joint',0.)
         upper_r=rotation*Rot.from_euler('z',1.6032+gyaw)
-        offset=rotation.apply([0.,0.,-.07185+lift]);position=chassis_position+offset
+        offset=rotation.apply([0.,0.,(-.07185+lift) if self.has_lift else .0165]);position=chassis_position+offset
         vt=od.twist.twist.linear;wt=od.twist.twist.angular
         world_v=rotation.apply([vt.x,vt.y,vt.z]);world_w=rotation.apply([wt.x,wt.y,wt.z])
         point_v=world_v+np.cross(world_w,offset)+rotation.apply([0.,0.,lv])
@@ -103,8 +130,11 @@ class SimBridge(Node):
             t.transform.rotation.x,t.transform.rotation.y,t.transform.rotation.z,t.transform.rotation.w=map(float,r.as_quat());transforms.append(t)
         tf('odom','chassis',chassis_position,rotation)
         tf('chassis','chassiss',[0,0,0],horizontal_child(rotation))
-        tf('chassis','lift_carriage',[0,0,-.08835+lift],Rot.identity())
-        tf('lift_carriage','base_link',[0,0,.0165],Rot.from_euler('z',1.6032+gyaw))
+        if self.has_lift:
+            tf('chassis','lift_carriage',[0,0,-.08835+lift],Rot.identity())
+            tf('lift_carriage','base_link',[0,0,.0165],Rot.from_euler('z',1.6032+gyaw))
+        else:
+            tf('chassis','base_link',[0,0,.0165],Rot.from_euler('z',1.6032+gyaw))
         tf('base_link','livox_frame',[.045,.123,0],Rot.from_euler('x',-.785))
         for joint in self.model.findall('joint'):
             name=joint.get('name')
@@ -126,24 +156,44 @@ class SimBridge(Node):
         fvel=upper_r.inv().apply(point_v);chassis_feedback=ChassisOdom()
         chassis_feedback.speed_x=float(fvel[0]);chassis_feedback.speed_y=float(fvel[1])
         self.pub_chassis_feedback.publish(chassis_feedback)
-        # 1.5s smooth requested trajectory; completion below is based on measured joint.
-        ratio=np.clip((now-self.req_time)/1.5,0.,1.);s=ratio*ratio*(3.-2.*ratio)
+        # 0.7s smooth requested trajectory; completion below is based on measured joint.
+        ratio=np.clip((now-self.req_time)/.7,0.,1.);s=ratio*ratio*(3.-2.*ratio)
         desired=self.start_lift+(self.target-self.start_lift)*s
         self.pub_lift.publish(Float64(data=float(desired)))
         # 唯一旋转指令出口：导航平移不变，旋转在此合并；外部勿直接抢发关节命令。
         cmd=Twist()
-        if now-self.command_received<.2:
+        if self.control_mode=='navigation' and 0<=now-self.command_received<.2:
             cmd.linear.x=self.command.linear.x;cmd.linear.y=self.command.linear.y
+        if self.control_mode=='keyboard' and 0<=now-self.keyboard_received<.25:
+            local=Rot.from_euler('z',upper_r.as_euler('xyz')[2]-cyaw).apply([self.keyboard.linear.x,self.keyboard.linear.y,0.])
+            cmd.linear.x,cmd.linear.y=map(float,local[:2])
+            if self.plan and self.plan.status==self.plan.ACTIVE:
+                if self.execution is None or now-self.execution_received>.25 or self.execution.decision!=0:
+                    cmd.linear.x=cmd.linear.y=0.
+                else:
+                    speed=math.hypot(cmd.linear.x,cmd.linear.y);limit=self.execution.speed_limit
+                    if speed>limit and speed>0:cmd.linear.x*=limit/speed;cmd.linear.y*=limit/speed
         timeout=self.rotation_config['command_timeout']
         alignment=self.align if math.isfinite(self.align) and 0<=now-self.align_received<timeout else None
-        spin=self.spin_rate if 0<=now-self.spin_received<timeout else 0.
+        spin=self.spin_rate if 0<=now-self.spin_received<timeout else math.radians(self.rotation_config['auto_spin_dps'])
+        if self.control_mode=='keyboard':spin=0.
+        mode=('HOLE_SAFETY_STOP' if self.hole_inhibit else
+              'MANUAL_STOP' if self.rotation_stop else
+              'HOLE_ALIGN' if alignment is not None else
+              'KEYBOARD' if self.control_mode=='keyboard' else
+              'COMMAND_ZERO' if abs(spin)<1e-9 else 'NAV_AUTO')
         try:
-            cmd.angular.z,joint_rate=self.rotation.update(rotation,upper_r,world_w,alignment,spin,self.rotation_stop)
+            cmd.angular.z,joint_rate=self.rotation.update(rotation,upper_r,world_w,alignment,spin,self.rotation_stop or self.hole_inhibit)
+            if self.control_mode=='keyboard' and alignment is None and not (self.rotation_stop or self.hole_inhibit):
+                cmd.angular.z=self.keyboard.angular.z if 0<=now-self.keyboard_received<.25 else 0.
+                joint_rate=self.manual_yaw if 0<=now-self.manual_yaw_received<.2 else 0.
             actual_chassis_rate=ground_yaw_rate(rotation,world_w)
             actual_gimbal_rate=ground_yaw_rate(upper_r,world_w+rotation.apply([0.,0.,self.qv['gimbal_yaw_joint']]))
         except ValueError:
+            self.publish_rotation_mode('INVALID_ORIENTATION')
             self.pub_motion.publish(Twist());self.pub_yaw.publish(Float64(data=0.))
             self.pub_rotation_stopped.publish(Bool(data=False));self.rotation_stable=-1.;return
+        self.publish_rotation_mode(mode)
         self.pub_yaw.publish(Float64(data=joint_rate))
         self.pub_motion.publish(cmd)
         frot=JointState();frot.header.stamp=stamp;frot.header.frame_id='odom'
@@ -166,7 +216,7 @@ class SimBridge(Node):
         f=Feedback();f.header.stamp=stamp;f.header.frame_id='map'
         f.session_id=q.session_id;f.goal_id=q.goal_id;f.request_id=q.request_id;f.requirement_revision=q.requirement_revision;f.target=q.target
         stopped=abs(lv)<.015;at_target=abs(lift-self.target)<.005
-        if stopped and at_target:self.completed=True
+        if self.has_lift and stopped and at_target:self.completed=True
         # Completion is terminal for this request; contact-induced velocity noise
         # cannot silently restart it. Actual departure from the position band fails.
         lost_posture=self.completed and abs(lift-self.target)>(.004 if q.target==q.LOW else .008)
@@ -175,6 +225,12 @@ class SimBridge(Node):
         if hasattr(f,'action_stopped'):f.action_stopped=stopped and (self.cancelled or at_target)
         if hasattr(f,'retry_allowed'):f.retry_allowed=f.action_stopped
         f.moving_transition_supported=True;f.simulated=True
+        if not self.has_lift:
+            # 无机构不能以默认关节位置0伪报LOW已完成。模式1正常关闭FSM；
+            # 如仍收到动作请求，明确报告不支持且不可重试。
+            f.status=f.CANCELLED if self.cancelled else (f.FAILED if q.target in (q.LOW,q.NORMAL) else f.EXECUTING)
+            f.fault_code=2 if q.target in (q.LOW,q.NORMAL) and not self.cancelled else 0
+            f.action_stopped=True;f.retry_allowed=False;f.moving_transition_supported=False
         occupied=False;clear=[]
         if self.plan and (self.plan.session_id,self.plan.goal_id)==(q.session_id,q.goal_id):
             for passage in self.plan.passages:

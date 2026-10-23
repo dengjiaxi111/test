@@ -1,0 +1,26 @@
+[H[J仿真键盘 / 在线调参（原导航源码不改）
+K手动 N导航 | W/S=-X/+X A/D=+Y/-Y（云台系） J/L底盘 Q/E云台
+空格=停车并停转 R=解除停转 X/Ctrl+C=全部关闭 V=连续日志 | 1～7选择 +/-调整 P保存
+[/] 调手动平移目标：1.0m/s（下次方向键生效，不持久化）
+模式=navigation  实测速度=0.000m/s  底盘指令=0.000m/s
+地面旋转速度[dps]=[]
+  1 平地速度: 等待参数 m/s
+> 2 上坡速度: 等待参数 m/s
+  3 下坡速度: 等待参数 m/s
+  4 坡顶速度: 等待参数 m/s
+  5 准备速度: 等待参数 m/s
+  6 恢复速度: 等待参数 m/s
+  7 NMPC加速度: 等待参数 m/s²
+选择1～7后按+/-调参；仅作用于test副本。
+── 导航 / 坡洞状态机最近输出（V看连续日志）──
+[nav_server] [INFO] [1792590572.040303636] [nav_server]: Hole preview hole_B1: OK width=0.760 depth=0.260 angle_error=0.000 parallel_error=0.000
+[nav_server] [INFO] [1792590572.040339844] [nav_server]: Hole preview hole_B2: OK width=0.740 depth=0.240 angle_error=0.000 parallel_error=0.000
+[nav_server] [INFO] [1792590572.046953271] [nav_server]: Omni MPC NX=4 NU=2 N=75 dt=0.02 alpha=0.800 feedback_required=1
+[nav_server] [INFO] [1792590572.055956002] [nav_server]: 地图加载成功: 595x321, 分辨率: 0.050
+[nav_server] [INFO] [1792590572.056294206] [nav_server]: Hole clearance preprocessing: 180 occupied cells cleared (before=0.50 m, after=0.50 m)
+[nav_server] [INFO] [1792590572.064393887] [nav_server]: Static map loaded: 595x321 @ 0.050 m/cell, inflation_radius=0.80
+[nav_server] [INFO] [1792590572.064422841] [nav_server]: B样条优化: ESDF 回调已设置
+[nav_server] [INFO] [1792590572.064446215] [nav_server]: 静态地图加载完成
+
+键盘终端关闭。
+^C{"mode": "cleanup", "matched_test_roots": [64101, 64105, 64106, 64107, 64108, 64109, 64112, 64113, 64396], "remaining_pids": []}

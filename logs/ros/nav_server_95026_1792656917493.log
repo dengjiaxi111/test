@@ -1,0 +1,38 @@
+[INFO] [1792656917.510666456] [nav_server]: ========== NavServer 参数诊断 ==========
+[INFO] [1792656917.510758270] [nav_server]: control_rate: 50.0 Hz
+[INFO] [1792656917.510768950] [nav_server]: controller_timeout: 8.0 s
+[INFO] [1792656917.510773498] [nav_server]: controller_progress_threshold: 0.05 m
+[INFO] [1792656917.510778358] [nav_server]: recovery.max_recovery: 3
+[INFO] [1792656917.510783357] [nav_server]: path_check_period: 0.30 s
+[INFO] [1792656917.510787685] [nav_server]: path_lateral_tolerance: 1.250 m 
+[INFO] [1792656917.510792514] [nav_server]: path_io.enable_save_planned_path: 0
+[INFO] [1792656917.510797374] [nav_server]: path_io.use_prior_path: 0
+[INFO] [1792656917.510801061] [nav_server]: escape.trigger_costmap_threshold: 99
+[INFO] [1792656917.510805709] [nav_server]: escape.target_safe_esdf: 0.25 m
+[INFO] [1792656917.510810789] [nav_server]: escape.search_radius: 1.0 m
+[INFO] [1792656917.510814696] [nav_server]: escape.preferred_search_distance: 1.00 m
+[INFO] [1792656917.510819295] [nav_server]: escape.preferred_search_half_angle: 0.20 rad
+[INFO] [1792656917.510824214] [nav_server]: escape.forward_speed: 0.20 m/s
+[INFO] [1792656917.510828092] [nav_server]: ========================================
+[INFO] [1792656917.518501883] [nav_server]: LayeredMapManager initialized (map: map, odom: odom, perf_log: disabled)
+[INFO] [1792656917.520292775] [nav_server]: Loaded terrain regions: 8 from /home/dengjiaxi/simulation_seu/test/map/terrain.yaml
+[INFO] [1792656917.520326910] [nav_server]: slope: 4, low_clearance: 4
+[INFO] [1792656917.520344593] [nav_server]: terrain id=slope_A1 type=slope name=slope_A1 frame=map polygon: (-5.131,-3.781) (-4.256,-3.781) (-3.652,-3.026) (-5.131,-3.026)
+[INFO] [1792656917.520355153] [nav_server]: terrain id=hole_A1 type=low_clearance name=hole_A1 frame=map polygon: (-5.131,-3.781) (-4.256,-3.781) (-4.256,-3.531) (-5.131,-3.531)
+[INFO] [1792656917.520363629] [nav_server]: terrain id=slope_A2 type=slope name=slope_A2 frame=map polygon: (3.64,6.314) (5.144,6.314) (5.144,7.069) (4.244,7.069)
+[INFO] [1792656917.520371844] [nav_server]: terrain id=hole_A2 type=low_clearance name=hole_A2 frame=map polygon: (4.244,6.819) (5.144,6.819) (5.144,7.069) (4.244,7.069)
+[INFO] [1792656917.520382254] [nav_server]: terrain id=slope_B1 type=slope name=slope_B1 frame=map polygon: (0.289,-4.706) (-0.651,-4.706) (-0.651,-3.926) (0.289,-3.926)
+[INFO] [1792656917.520392093] [nav_server]: terrain id=hole_B1 type=low_clearance name=hole_B1 frame=map polygon: (1.009,-4.686) (0.749,-4.686) (0.749,-3.926) (1.009,-3.926)
+[INFO] [1792656917.520401390] [nav_server]: terrain id=slope_B2 type=slope name=slope_B2 frame=map polygon: (0.649,7.194) (-0.291,7.194) (-0.291,7.994) (0.649,7.994)
+[INFO] [1792656917.520413233] [nav_server]: terrain id=hole_B2 type=low_clearance name=hole_B2 frame=map polygon: (-0.751,7.234) (-0.991,7.234) (-0.991,7.974) (-0.751,7.974)
+[INFO] [1792656917.522280078] [nav_server]: Hole preview hole_A1: OK width=0.875 depth=0.250 angle_error=0.000 parallel_error=0.000
+[INFO] [1792656917.522367093] [nav_server]: Hole preview hole_A2: OK width=0.900 depth=0.250 angle_error=0.000 parallel_error=0.000
+[INFO] [1792656917.522434029] [nav_server]: Hole preview hole_B1: OK width=0.760 depth=0.260 angle_error=0.000 parallel_error=0.000
+[INFO] [1792656917.522490055] [nav_server]: Hole preview hole_B2: OK width=0.740 depth=0.240 angle_error=0.000 parallel_error=0.000
+[INFO] [1792656917.529929805] [nav_server]: Omni MPC NX=4 NU=2 N=75 dt=0.02 alpha=0.800 feedback_required=1
+[INFO] [1792656917.539022686] [nav_server]: 地图加载成功: 595x321, 分辨率: 0.050
+[INFO] [1792656917.539299419] [nav_server]: Hole clearance preprocessing: 180 occupied cells cleared (before=0.50 m, after=0.50 m)
+[INFO] [1792656917.547559067] [nav_server]: Static map loaded: 595x321 @ 0.050 m/cell, inflation_radius=0.80
+[INFO] [1792656917.547646091] [nav_server]: B样条优化: ESDF 回调已设置
+[INFO] [1792656917.547682881] [nav_server]: 静态地图加载完成
+[INFO] [1792657030.984042514] [rclcpp]: signal_handler(SIGINT/SIGTERM)

@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "original_files_compared": 1083,
+  "changed_original_files": [],
+  "sdf_only_floor_visual_and_collision_changed": true,
+  "bottom_clearance_before_m": 0.05,
+  "bottom_clearance_after_m": 0.1,
+  "deck_top_m": 0.2,
+  "low_total_height_m": 0.2455330139120883,
+  "actual_descent_passage_verified": false
+}

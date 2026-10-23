@@ -1,0 +1,52 @@
+[INFO] [1792742224.619132349] [nav_server]: ========== NavServer 参数诊断 ==========
+[INFO] [1792742224.619229481] [nav_server]: control_rate: 50.0 Hz
+[INFO] [1792742224.619245652] [nav_server]: controller_timeout: 8.0 s
+[INFO] [1792742224.619252865] [nav_server]: controller_progress_threshold: 0.05 m
+[INFO] [1792742224.619260169] [nav_server]: recovery.max_recovery: 3
+[INFO] [1792742224.619267583] [nav_server]: path_check_period: 0.30 s
+[INFO] [1792742224.619278213] [nav_server]: path_lateral_tolerance: 1.250 m 
+[INFO] [1792742224.619286037] [nav_server]: path_io.enable_save_planned_path: 0
+[INFO] [1792742224.619293581] [nav_server]: path_io.use_prior_path: 0
+[INFO] [1792742224.619301045] [nav_server]: escape.trigger_costmap_threshold: 99
+[INFO] [1792742224.619307307] [nav_server]: escape.target_safe_esdf: 0.25 m
+[INFO] [1792742224.619314420] [nav_server]: escape.search_radius: 1.0 m
+[INFO] [1792742224.619319280] [nav_server]: escape.preferred_search_distance: 1.00 m
+[INFO] [1792742224.619324600] [nav_server]: escape.preferred_search_half_angle: 0.20 rad
+[INFO] [1792742224.619329368] [nav_server]: escape.forward_speed: 0.20 m/s
+[INFO] [1792742224.619334448] [nav_server]: ========================================
+[INFO] [1792742224.627340806] [nav_server]: LayeredMapManager initialized (map: map, odom: odom, perf_log: disabled)
+[INFO] [1792742224.628631996] [nav_server]: Loaded terrain regions: 8 from /home/dengjiaxi/simulation_seu/test/map/terrain.yaml
+[INFO] [1792742224.628653055] [nav_server]: slope: 4, low_clearance: 4
+[INFO] [1792742224.628666711] [nav_server]: terrain id=slope_A1 type=slope name=slope_A1 frame=map polygon: (-5.131,-3.781) (-4.256,-3.781) (-3.652,-3.026) (-5.131,-3.026)
+[INFO] [1792742224.628677471] [nav_server]: terrain id=hole_A1 type=low_clearance name=hole_A1 frame=map polygon: (-5.131,-3.781) (-4.256,-3.781) (-4.256,-3.531) (-5.131,-3.531)
+[INFO] [1792742224.628686318] [nav_server]: terrain id=slope_A2 type=slope name=slope_A2 frame=map polygon: (3.64,6.314) (5.144,6.314) (5.144,7.069) (4.244,7.069)
+[INFO] [1792742224.628696026] [nav_server]: terrain id=hole_A2 type=low_clearance name=hole_A2 frame=map polygon: (4.244,6.819) (5.144,6.819) (5.144,7.069) (4.244,7.069)
+[INFO] [1792742224.628706315] [nav_server]: terrain id=slope_B1 type=slope name=slope_B1 frame=map polygon: (0.289,-4.706) (-0.651,-4.706) (-0.651,-3.926) (0.289,-3.926)
+[INFO] [1792742224.628715853] [nav_server]: terrain id=hole_B1 type=low_clearance name=hole_B1 frame=map polygon: (1.009,-4.686) (0.749,-4.686) (0.749,-3.926) (1.009,-3.926)
+[INFO] [1792742224.628725752] [nav_server]: terrain id=slope_B2 type=slope name=slope_B2 frame=map polygon: (0.649,7.194) (-0.291,7.194) (-0.291,7.994) (0.649,7.994)
+[INFO] [1792742224.628735229] [nav_server]: terrain id=hole_B2 type=low_clearance name=hole_B2 frame=map polygon: (-0.751,7.234) (-0.991,7.234) (-0.991,7.974) (-0.751,7.974)
+[INFO] [1792742224.629919890] [nav_server]: Hole preview hole_A1: OK width=0.875 depth=0.250 angle_error=0.000 parallel_error=0.000
+[INFO] [1792742224.629972649] [nav_server]: Hole preview hole_A2: OK width=0.900 depth=0.250 angle_error=0.000 parallel_error=0.000
+[INFO] [1792742224.630026069] [nav_server]: Hole preview hole_B1: OK width=0.760 depth=0.260 angle_error=0.000 parallel_error=0.000
+[INFO] [1792742224.630060013] [nav_server]: Hole preview hole_B2: OK width=0.740 depth=0.240 angle_error=0.000 parallel_error=0.000
+[INFO] [1792742224.635868751] [nav_server]: Omni MPC NX=4 NU=2 N=75 dt=0.02 alpha=0.800 feedback_required=1
+[INFO] [1792742224.642344820] [nav_server]: 地图加载成功: 595x321, 分辨率: 0.050
+[INFO] [1792742224.642614365] [nav_server]: Hole clearance preprocessing: 180 occupied cells cleared (before=0.50 m, after=0.50 m)
+[INFO] [1792742224.649949435] [nav_server]: Static map loaded: 595x321 @ 0.050 m/cell, inflation_radius=0.80
+[INFO] [1792742224.650004207] [nav_server]: B样条优化: ESDF 回调已设置
+[INFO] [1792742224.650027952] [nav_server]: 静态地图加载完成
+[INFO] [1792742228.333353398] [nav_server]: 收到目标: (4.69, 7.60)
+[INFO] [1792742228.333825703] [nav_server]: 状态: IDLE -> PLANNING
+[INFO] [1792742228.510623888] [nav_server]: 过洞接入: hole=hole_A2 S=(4.694,6.019) 方法=FEASIBLE_APPROACH_CONTINUOUS 平滑后备原因=none
+[INFO] [1792742228.510987460] [nav_server]: 规划汇总: total=158.5ms astar=2.3ms outer_validation=0.2ms hole=155.6ms first_valid=5.2ms post_first=150.4ms | geometry=0.0 connectivity=2.9 candidates=0.4 seed_search=24.2 fit=9.3 curve_check=91.8 candidate_check=0.3 final_check=0.2 cache_check=0.0 ms | optimized=2 fits=7 iterations=361 cache_hits=0 cache_rejected=0 disconnected=0 stop=IMPROVEMENT_BUDGET_EXHAUSTED
+[INFO] [1792742228.511655021] [nav_server]: 状态: PLANNING -> CONTROLLING
+[INFO] [1792742228.511781778] [nav_server]: Hole execution: state=0 decision=0 progress=0.001 limit=0.662 reason=ordinary path following
+[INFO] [1792742230.092489537] [nav_server]: Hole execution: state=1 decision=0 progress=0.321 limit=0.539 reason=moving alignment; stop upstream of E if unfinished
+[INFO] [1792742230.772484118] [nav_server]: Hole execution: state=2 decision=0 progress=0.399 limit=0.606 reason=moving alignment; stop upstream of E if unfinished
+[INFO] [1792742231.392455037] [nav_server]: Hole execution: state=2 decision=0 progress=0.549 limit=2.000 reason=low posture confirmed
+[INFO] [1792742232.433443556] [nav_server]: uphill speed ownership: phase=ENTRY forward=0.735 minimum=1.900 target=2.000 command=0.803
+[INFO] [1792742234.032814275] [nav_server]: Controller: SUCCEEDED!
+[INFO] [1792742234.032887502] [nav_server]: 状态: CONTROLLING -> SUCCEEDED
+[INFO] [1792742234.052570911] [nav_server]: 状态: SUCCEEDED -> IDLE
+[INFO] [1792742234.052617990] [nav_server]: 导航成功 (5.72s)
+[INFO] [1792742234.372508943] [rclcpp]: signal_handler(SIGINT/SIGTERM)

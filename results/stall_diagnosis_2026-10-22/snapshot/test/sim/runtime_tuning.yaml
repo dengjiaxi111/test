@@ -1,0 +1,8 @@
+# 隔离仿真显式保存的在线调参；速度m/s，加速度m/s^2。
+boost_speed: 2
+flat_speed: 3
+minimum_entry_speed: 1.9
+minimum_slope_speed: 1.9
+prepare_speed: 3.05
+restore_speed: 2.05
+max_linear_accel: 10

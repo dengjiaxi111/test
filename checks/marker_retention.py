@@ -17,3 +17,6 @@ for status in [p.ACTIVE,p.INVALIDATED]:
  count=sum(m.type==Marker.SPHERE and m.action==Marker.ADD for m in outputs[-1].markers)
  print('plan status',status,'visible event points',count,flush=True)
  assert count==6
+ letters=[m.text for m in outputs[-1].markers if m.type==Marker.TEXT_VIEW_FACING and len(m.text)==1]
+ assert letters==list('ASEXTD'),letters
+ assert all(m.color.a>0 and m.scale.z>=.3 for m in outputs[-1].markers if m.type==Marker.TEXT_VIEW_FACING and len(m.text)==1)

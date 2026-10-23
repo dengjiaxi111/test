@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/nav_server.dir/src/hole_plan_adapter.cpp.o.d"
   "CMakeFiles/nav_server.dir/src/hole_route_planner.cpp.o"
   "CMakeFiles/nav_server.dir/src/hole_route_planner.cpp.o.d"
+  "CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.o"
+  "CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.o.d"
   "CMakeFiles/nav_server.dir/src/layered_map_manager.cpp.o"
   "CMakeFiles/nav_server.dir/src/layered_map_manager.cpp.o.d"
   "CMakeFiles/nav_server.dir/src/nav_server.cpp.o"

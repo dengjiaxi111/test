@@ -1,0 +1,13 @@
+[INFO] [1792588715.107495908] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1792588715.107669489] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[INFO] [1792588715.140330637] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1792588723.241878878] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[INFO] [1792588752.249447064] [rviz2]: Setting goal pose: Frame:map, Position(-2.91014, 5.77433, 0), Orientation(0, 0, -0.948334, 0.317274) = Angle: -2.49589
+[INFO] [1792588764.738486930] [rviz2]: Setting goal pose: Frame:map, Position(-2.30164, 7.1505, 0), Orientation(0, 0, -0.91264, 0.408765) = Angle: -2.29939
+[INFO] [1792588775.607487889] [rviz2]: Setting goal pose: Frame:map, Position(-5.30487, 4.18301, 0), Orientation(0, 0, 0.500118, 0.865957) = Angle: 1.04747
+[INFO] [1792588782.327480876] [rviz2]: Setting goal pose: Frame:map, Position(-6.13645, 2.63908, 0), Orientation(0, 0, 0.515745, 0.856742) = Angle: 1.08376
+[INFO] [1792588807.294412567] [rviz2]: Setting goal pose: Frame:map, Position(-2.5439, -4.81958, 0), Orientation(0, 0, 0.999325, 0.0367463) = Angle: 3.06808
+[INFO] [1792588851.268479102] [rviz2]: Setting goal pose: Frame:map, Position(-3.14431, -4.64328, 0), Orientation(0, 0, 0.0553241, 0.998468) = Angle: 0.110705
+[INFO] [1792588863.888498004] [rviz2]: Setting goal pose: Frame:map, Position(5.67911, -3.23608, 0), Orientation(0, 0, -0.994823, 0.101626) = Angle: -2.93799
+[INFO] [1792588896.503495572] [rviz2]: Setting goal pose: Frame:map, Position(-5.60191, -0.510976, 0), Orientation(0, 0, -0.56272, 0.826648) = Angle: -1.19534
+[INFO] [1792588944.469546767] [rviz2]: Setting goal pose: Frame:map, Position(-6.23589, 0.295797, 0), Orientation(0, 0, -0.465706, 0.88494) = Angle: -0.968864

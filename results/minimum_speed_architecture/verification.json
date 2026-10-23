@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-22",
+  "scope": "test only",
+  "navigate_source_diff_unchanged": true,
+  "nav_core_nav_components_build": "PASS",
+  "final_nav_components_build": "PASS",
+  "targeted_checks_passed": 7,
+  "python_syntax": "PASS",
+  "configuration": "PASS",
+  "terrain_speed_limits_removed": true,
+  "minimum_entry_speed": 0.0,
+  "minimum_slope_speed": 0.0,
+  "boost_speed": 2.0,
+  "tunnel_timeout_s": 15.0,
+  "retreat_speed_mps": 0.5,
+  "retreat_timeout_s": 10.0,
+  "gazebo_navigation_test_run": false
+}

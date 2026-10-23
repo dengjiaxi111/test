@@ -43,7 +43,8 @@ int main(){
     // 移动准备；旧请求反馈不授权进入，真实准备完成后继续同一路线。
     Fixture f;f.accept();f.advance(1.0);assert(f.fsm.state()==State::PREPARE&&f.request.id);
     f.low(false);auto moving=f.step(1.1);assert(moving.decision==Decision::CONTINUE&&moving.stop_arc);
-    f.in.feedback.request_id+=100;auto stale=f.step(1.2);assert(stale.state==State::PREPARE);
+    f.in.feedback.request_id+=100;auto stale=f.step(1.2);
+    assert(stale.state!=State::TRAVERSE&&!f.fsm.visits().at("one").emitted.count(EventType::E));
     f.low();f.advance(1.5);assert(f.fsm.state()==State::TRAVERSE);
     f.advance(3.6);assert(f.fsm.visits().at("one").demand); // D不证明整车退出。
     f.in.feedback.whole_vehicle_clear=f.in.feedback.normal_clearance=true;

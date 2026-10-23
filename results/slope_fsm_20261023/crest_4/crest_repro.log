@@ -1,0 +1,11 @@
+crest (4.694, 5.0) -> (4.694, 7.604)
+PLAN 1 0 [('hole_A2', True)]
+STATE {'t': 5.877000000000001, 'state': 0, 'decision': 0, 'reason': 'ordinary path following', 'attempt': 0, 'recovery': 0}
+PLAN 2 1 [('hole_A2', True)]
+PLAN 3 0 [('hole_A2', True)]
+PLAN 4 1 [('hole_A2', True)]
+PLAN 5 0 [('hole_A2', True)]
+PLAN 6 1 [('hole_A2', True)]
+PLAN 7 4 [('hole_A2', True)]
+FAIL 恢复失败
+FAIL 恢复失败

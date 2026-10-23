@@ -990,6 +990,7 @@ CMakeFiles/nav_server.dir/src/slopehole_ros_adapter.cpp.o: \
  /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/include/nav_components/planner/path_smoother.hpp \
  /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/include/nav_components/planner/bspline.hpp \
  /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/include/nav_components/planner/bspline_optimizer.hpp \
+ /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/slope_speed_takeover.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/twist.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \
@@ -1001,6 +1002,11 @@ CMakeFiles/nav_server.dir/src/slopehole_ros_adapter.cpp.o: \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64__traits.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64__type_support.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/bool.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/odometry.hpp \
  /opt/ros/jazzy/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
@@ -1108,7 +1114,10 @@ CMakeFiles/nav_server.dir/src/slopehole_ros_adapter.cpp.o: \
  /home/dengjiaxi/simulation_seu/test/install/nav_interfaces/include/nav_interfaces/nav_interfaces/msg/detail/hole_traversal_event__type_support.hpp \
  /usr/include/c++/13/random /usr/include/c++/13/bits/random.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h \
- /usr/include/c++/13/bits/random.tcc \
+ /usr/include/c++/13/bits/random.tcc /usr/include/c++/13/fstream \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
+ /usr/include/c++/13/bits/fstream.tcc \
  /opt/ros/jazzy/include/tf2/tf2/utils.h \
  /opt/ros/jazzy/include/tf2/tf2/utils.hpp \
  /opt/ros/jazzy/include/tf2/tf2/LinearMath/Transform.hpp \

@@ -139,10 +139,24 @@ CMakeFiles/nav_server.dir/src/slopehole_ros_adapter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/nav_server.dir/src/slopehole_ros_adapter.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_ros_adapter.cpp -o CMakeFiles/nav_server.dir/src/slopehole_ros_adapter.cpp.s
 
+CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.o: CMakeFiles/nav_server.dir/flags.make
+CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.o: /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/hole_runtime_tuning.cpp
+CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.o: CMakeFiles/nav_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.o -MF CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.o.d -o CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.o -c /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/hole_runtime_tuning.cpp
+
+CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/hole_runtime_tuning.cpp > CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.i
+
+CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/hole_runtime_tuning.cpp -o CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.s
+
 CMakeFiles/nav_server.dir/src/simple_planner.cpp.o: CMakeFiles/nav_server.dir/flags.make
 CMakeFiles/nav_server.dir/src/simple_planner.cpp.o: /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/simple_planner.cpp
 CMakeFiles/nav_server.dir/src/simple_planner.cpp.o: CMakeFiles/nav_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/nav_server.dir/src/simple_planner.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/nav_server.dir/src/simple_planner.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nav_server.dir/src/simple_planner.cpp.o -MF CMakeFiles/nav_server.dir/src/simple_planner.cpp.o.d -o CMakeFiles/nav_server.dir/src/simple_planner.cpp.o -c /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/simple_planner.cpp
 
 CMakeFiles/nav_server.dir/src/simple_planner.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/nav_server.dir/src/simple_planner.cpp.s: cmake_force
 CMakeFiles/nav_server.dir/src/pure_pursuit.cpp.o: CMakeFiles/nav_server.dir/flags.make
 CMakeFiles/nav_server.dir/src/pure_pursuit.cpp.o: /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/pure_pursuit.cpp
 CMakeFiles/nav_server.dir/src/pure_pursuit.cpp.o: CMakeFiles/nav_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/nav_server.dir/src/pure_pursuit.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/nav_server.dir/src/pure_pursuit.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nav_server.dir/src/pure_pursuit.cpp.o -MF CMakeFiles/nav_server.dir/src/pure_pursuit.cpp.o.d -o CMakeFiles/nav_server.dir/src/pure_pursuit.cpp.o -c /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/pure_pursuit.cpp
 
 CMakeFiles/nav_server.dir/src/pure_pursuit.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/nav_server.dir/src/pure_pursuit.cpp.s: cmake_force
 CMakeFiles/nav_server.dir/src/backup_recovery.cpp.o: CMakeFiles/nav_server.dir/flags.make
 CMakeFiles/nav_server.dir/src/backup_recovery.cpp.o: /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/backup_recovery.cpp
 CMakeFiles/nav_server.dir/src/backup_recovery.cpp.o: CMakeFiles/nav_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/nav_server.dir/src/backup_recovery.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/nav_server.dir/src/backup_recovery.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nav_server.dir/src/backup_recovery.cpp.o -MF CMakeFiles/nav_server.dir/src/backup_recovery.cpp.o.d -o CMakeFiles/nav_server.dir/src/backup_recovery.cpp.o -c /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/backup_recovery.cpp
 
 CMakeFiles/nav_server.dir/src/backup_recovery.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/nav_server.dir/src/backup_recovery.cpp.s: cmake_force
 CMakeFiles/nav_server.dir/src/spin_recovery.cpp.o: CMakeFiles/nav_server.dir/flags.make
 CMakeFiles/nav_server.dir/src/spin_recovery.cpp.o: /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/spin_recovery.cpp
 CMakeFiles/nav_server.dir/src/spin_recovery.cpp.o: CMakeFiles/nav_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/nav_server.dir/src/spin_recovery.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/nav_server.dir/src/spin_recovery.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nav_server.dir/src/spin_recovery.cpp.o -MF CMakeFiles/nav_server.dir/src/spin_recovery.cpp.o.d -o CMakeFiles/nav_server.dir/src/spin_recovery.cpp.o -c /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/spin_recovery.cpp
 
 CMakeFiles/nav_server.dir/src/spin_recovery.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/nav_server.dir/src/spin_recovery.cpp.s: cmake_force
 CMakeFiles/nav_server.dir/src/arc_backup_recovery.cpp.o: CMakeFiles/nav_server.dir/flags.make
 CMakeFiles/nav_server.dir/src/arc_backup_recovery.cpp.o: /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/arc_backup_recovery.cpp
 CMakeFiles/nav_server.dir/src/arc_backup_recovery.cpp.o: CMakeFiles/nav_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/nav_server.dir/src/arc_backup_recovery.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/nav_server.dir/src/arc_backup_recovery.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nav_server.dir/src/arc_backup_recovery.cpp.o -MF CMakeFiles/nav_server.dir/src/arc_backup_recovery.cpp.o.d -o CMakeFiles/nav_server.dir/src/arc_backup_recovery.cpp.o -c /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/arc_backup_recovery.cpp
 
 CMakeFiles/nav_server.dir/src/arc_backup_recovery.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/nav_server.dir/src/arc_backup_recovery.cpp.s: cmake_force
 CMakeFiles/nav_server.dir/src/recovery_manager.cpp.o: CMakeFiles/nav_server.dir/flags.make
 CMakeFiles/nav_server.dir/src/recovery_manager.cpp.o: /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/recovery_manager.cpp
 CMakeFiles/nav_server.dir/src/recovery_manager.cpp.o: CMakeFiles/nav_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/nav_server.dir/src/recovery_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/nav_server.dir/src/recovery_manager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nav_server.dir/src/recovery_manager.cpp.o -MF CMakeFiles/nav_server.dir/src/recovery_manager.cpp.o.d -o CMakeFiles/nav_server.dir/src/recovery_manager.cpp.o -c /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/recovery_manager.cpp
 
 CMakeFiles/nav_server.dir/src/recovery_manager.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/nav_server.dir/src/recovery_manager.cpp.s: cmake_force
 CMakeFiles/nav_server.dir/src/layered_map_manager.cpp.o: CMakeFiles/nav_server.dir/flags.make
 CMakeFiles/nav_server.dir/src/layered_map_manager.cpp.o: /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/layered_map_manager.cpp
 CMakeFiles/nav_server.dir/src/layered_map_manager.cpp.o: CMakeFiles/nav_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/nav_server.dir/src/layered_map_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/nav_server.dir/src/layered_map_manager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nav_server.dir/src/layered_map_manager.cpp.o -MF CMakeFiles/nav_server.dir/src/layered_map_manager.cpp.o.d -o CMakeFiles/nav_server.dir/src/layered_map_manager.cpp.o -c /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/layered_map_manager.cpp
 
 CMakeFiles/nav_server.dir/src/layered_map_manager.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/nav_server.dir/src/layered_map_manager.cpp.s: cmake_force
 CMakeFiles/nav_server.dir/src/terrain_region_map.cpp.o: CMakeFiles/nav_server.dir/flags.make
 CMakeFiles/nav_server.dir/src/terrain_region_map.cpp.o: /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/terrain_region_map.cpp
 CMakeFiles/nav_server.dir/src/terrain_region_map.cpp.o: CMakeFiles/nav_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/nav_server.dir/src/terrain_region_map.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/nav_server.dir/src/terrain_region_map.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nav_server.dir/src/terrain_region_map.cpp.o -MF CMakeFiles/nav_server.dir/src/terrain_region_map.cpp.o.d -o CMakeFiles/nav_server.dir/src/terrain_region_map.cpp.o -c /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/terrain_region_map.cpp
 
 CMakeFiles/nav_server.dir/src/terrain_region_map.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/nav_server.dir/src/terrain_region_map.cpp.s: cmake_force
 CMakeFiles/nav_server.dir/src/hole_clearance.cpp.o: CMakeFiles/nav_server.dir/flags.make
 CMakeFiles/nav_server.dir/src/hole_clearance.cpp.o: /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/hole_clearance.cpp
 CMakeFiles/nav_server.dir/src/hole_clearance.cpp.o: CMakeFiles/nav_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/nav_server.dir/src/hole_clearance.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/nav_server.dir/src/hole_clearance.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nav_server.dir/src/hole_clearance.cpp.o -MF CMakeFiles/nav_server.dir/src/hole_clearance.cpp.o.d -o CMakeFiles/nav_server.dir/src/hole_clearance.cpp.o -c /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/hole_clearance.cpp
 
 CMakeFiles/nav_server.dir/src/hole_clearance.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/nav_server.dir/src/hole_clearance.cpp.s: cmake_force
 CMakeFiles/nav_server.dir/src/hole_geometry_previewer.cpp.o: CMakeFiles/nav_server.dir/flags.make
 CMakeFiles/nav_server.dir/src/hole_geometry_previewer.cpp.o: /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/hole_geometry_previewer.cpp
 CMakeFiles/nav_server.dir/src/hole_geometry_previewer.cpp.o: CMakeFiles/nav_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/nav_server.dir/src/hole_geometry_previewer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/nav_server.dir/src/hole_geometry_previewer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nav_server.dir/src/hole_geometry_previewer.cpp.o -MF CMakeFiles/nav_server.dir/src/hole_geometry_previewer.cpp.o.d -o CMakeFiles/nav_server.dir/src/hole_geometry_previewer.cpp.o -c /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/hole_geometry_previewer.cpp
 
 CMakeFiles/nav_server.dir/src/hole_geometry_previewer.cpp.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/nav_server.dir/src/hole_geometry_previewer.cpp.s: cmake_force
 CMakeFiles/nav_server.dir/src/hole_passage_planner.cpp.o: CMakeFiles/nav_server.dir/flags.make
 CMakeFiles/nav_server.dir/src/hole_passage_planner.cpp.o: /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/hole_passage_planner.cpp
 CMakeFiles/nav_server.dir/src/hole_passage_planner.cpp.o: CMakeFiles/nav_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/nav_server.dir/src/hole_passage_planner.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/nav_server.dir/src/hole_passage_planner.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nav_server.dir/src/hole_passage_planner.cpp.o -MF CMakeFiles/nav_server.dir/src/hole_passage_planner.cpp.o.d -o CMakeFiles/nav_server.dir/src/hole_passage_planner.cpp.o -c /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/hole_passage_planner.cpp
 
 CMakeFiles/nav_server.dir/src/hole_passage_planner.cpp.i: cmake_force
@@ -296,7 +310,7 @@ CMakeFiles/nav_server.dir/src/hole_passage_planner.cpp.s: cmake_force
 CMakeFiles/nav_server.dir/src/hole_route_planner.cpp.o: CMakeFiles/nav_server.dir/flags.make
 CMakeFiles/nav_server.dir/src/hole_route_planner.cpp.o: /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/hole_route_planner.cpp
 CMakeFiles/nav_server.dir/src/hole_route_planner.cpp.o: CMakeFiles/nav_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/nav_server.dir/src/hole_route_planner.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/nav_server.dir/src/hole_route_planner.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nav_server.dir/src/hole_route_planner.cpp.o -MF CMakeFiles/nav_server.dir/src/hole_route_planner.cpp.o.d -o CMakeFiles/nav_server.dir/src/hole_route_planner.cpp.o -c /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/hole_route_planner.cpp
 
 CMakeFiles/nav_server.dir/src/hole_route_planner.cpp.i: cmake_force
@@ -310,7 +324,7 @@ CMakeFiles/nav_server.dir/src/hole_route_planner.cpp.s: cmake_force
 CMakeFiles/nav_server.dir/src/hole_global_planner.cpp.o: CMakeFiles/nav_server.dir/flags.make
 CMakeFiles/nav_server.dir/src/hole_global_planner.cpp.o: /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/hole_global_planner.cpp
 CMakeFiles/nav_server.dir/src/hole_global_planner.cpp.o: CMakeFiles/nav_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/nav_server.dir/src/hole_global_planner.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/nav_server.dir/src/hole_global_planner.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nav_server.dir/src/hole_global_planner.cpp.o -MF CMakeFiles/nav_server.dir/src/hole_global_planner.cpp.o.d -o CMakeFiles/nav_server.dir/src/hole_global_planner.cpp.o -c /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/hole_global_planner.cpp
 
 CMakeFiles/nav_server.dir/src/hole_global_planner.cpp.i: cmake_force
@@ -324,7 +338,7 @@ CMakeFiles/nav_server.dir/src/hole_global_planner.cpp.s: cmake_force
 CMakeFiles/nav_server.dir/src/hole_connection_search.cpp.o: CMakeFiles/nav_server.dir/flags.make
 CMakeFiles/nav_server.dir/src/hole_connection_search.cpp.o: /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/hole_connection_search.cpp
 CMakeFiles/nav_server.dir/src/hole_connection_search.cpp.o: CMakeFiles/nav_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/nav_server.dir/src/hole_connection_search.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/nav_server.dir/src/hole_connection_search.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nav_server.dir/src/hole_connection_search.cpp.o -MF CMakeFiles/nav_server.dir/src/hole_connection_search.cpp.o.d -o CMakeFiles/nav_server.dir/src/hole_connection_search.cpp.o -c /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/hole_connection_search.cpp
 
 CMakeFiles/nav_server.dir/src/hole_connection_search.cpp.i: cmake_force
@@ -338,7 +352,7 @@ CMakeFiles/nav_server.dir/src/hole_connection_search.cpp.s: cmake_force
 CMakeFiles/nav_server.dir/src/nmpc.cpp.o: CMakeFiles/nav_server.dir/flags.make
 CMakeFiles/nav_server.dir/src/nmpc.cpp.o: /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/nmpc.cpp
 CMakeFiles/nav_server.dir/src/nmpc.cpp.o: CMakeFiles/nav_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/nav_server.dir/src/nmpc.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/nav_server.dir/src/nmpc.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nav_server.dir/src/nmpc.cpp.o -MF CMakeFiles/nav_server.dir/src/nmpc.cpp.o.d -o CMakeFiles/nav_server.dir/src/nmpc.cpp.o -c /home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/nmpc.cpp
 
 CMakeFiles/nav_server.dir/src/nmpc.cpp.i: cmake_force
@@ -356,6 +370,7 @@ nav_server_OBJECTS = \
 "CMakeFiles/nav_server.dir/src/hole_execution_config.cpp.o" \
 "CMakeFiles/nav_server.dir/src/hole_plan_adapter.cpp.o" \
 "CMakeFiles/nav_server.dir/src/slopehole_ros_adapter.cpp.o" \
+"CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.o" \
 "CMakeFiles/nav_server.dir/src/simple_planner.cpp.o" \
 "CMakeFiles/nav_server.dir/src/pure_pursuit.cpp.o" \
 "CMakeFiles/nav_server.dir/src/backup_recovery.cpp.o" \
@@ -380,6 +395,7 @@ nav_server: CMakeFiles/nav_server.dir/src/slopehole_controller.cpp.o
 nav_server: CMakeFiles/nav_server.dir/src/hole_execution_config.cpp.o
 nav_server: CMakeFiles/nav_server.dir/src/hole_plan_adapter.cpp.o
 nav_server: CMakeFiles/nav_server.dir/src/slopehole_ros_adapter.cpp.o
+nav_server: CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.o
 nav_server: CMakeFiles/nav_server.dir/src/simple_planner.cpp.o
 nav_server: CMakeFiles/nav_server.dir/src/pure_pursuit.cpp.o
 nav_server: CMakeFiles/nav_server.dir/src/backup_recovery.cpp.o
@@ -501,8 +517,8 @@ nav_server: /opt/ros/jazzy/lib/libaction_msgs__rosidl_generator_py.so
 nav_server: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_c.so
 nav_server: /opt/ros/jazzy/lib/libaction_msgs__rosidl_generator_c.so
 nav_server: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so
-nav_server: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so
 nav_server: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_c.so
+nav_server: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so
 nav_server: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_cpp.so
 nav_server: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_cpp.so
 nav_server: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so
@@ -559,7 +575,7 @@ nav_server: /opt/ros/jazzy/lib/librcpputils.so
 nav_server: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 nav_server: /opt/ros/jazzy/lib/librcutils.so
 nav_server: CMakeFiles/nav_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable nav_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dengjiaxi/simulation_seu/test/build/nav_components/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable nav_server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nav_server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

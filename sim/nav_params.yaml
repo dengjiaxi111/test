@@ -143,8 +143,8 @@ nav_server:
       align_entry_points: 3
       narrow_min_consecutive: 3
     nmpc:
-      max_linear_vel: 2.0
-      max_linear_accel: 100.0
+      max_linear_vel: 4.0
+      max_linear_accel: 10.0
       speed_profile:
         v_cruise: 2.0
         max_lateral_accel: 1.5
@@ -165,10 +165,10 @@ nav_server:
         filter_alpha: 1.0
       Q_position: 3.0
       Q_velocity: 0.1
-      R_linear: 0.01
-      contouring_weight: 25.0
+      R_linear: 1.0
+      contouring_weight: 100.0
       esdf_weight: 70.0
-      esdf_safe_dist: 0.5
+      esdf_safe_dist: 0.32
       terminal_multiplier: 2.0
       near_weight_multiplier: 3.0
     recovery:
@@ -198,6 +198,8 @@ nav_server:
     terrain_file: /home/dengjiaxi/simulation_seu/test/map/terrain.yaml
     hole_state_machine:
       config_file: /home/dengjiaxi/simulation_seu/test/sim/active_hole.yaml
+    hole_runtime:
+      save_file: /home/dengjiaxi/simulation_seu/test/sim/runtime_tuning.yaml
 two_point_patrol:
   ros__parameters:
     goal_topic: goal_pose

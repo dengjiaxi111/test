@@ -1,0 +1,7 @@
+{
+  "result": "PASS",
+  "standalone_keyboard_stops_whole_test": true,
+  "repeated_ctrl_c": true,
+  "matched_process_count": 9,
+  "remaining_pids": []
+}

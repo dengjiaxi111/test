@@ -28,13 +28,13 @@
     </light>
     <model name="rmuc_2026">
       <include>
-        <uri>/home/dengjiaxi/simulation_seu/navigatiosim2/src/sentry_velocity/gazeboworld/models/rmuc_2026</uri>
+        <uri>/home/dengjiaxi/simulation_seu/test/sim/roofless_2026</uri>
       </include>
       <pose>0.0 0.0 0 0 0 0</pose>
       <static>true</static>
     </model>
     <include>
-      <uri>/home/dengjiaxi/simulation_seu/test/sim/robot.sdf</uri>
+      <uri>/home/dengjiaxi/simulation_seu/test/sim/simplified_robot.sdf</uri>
       <pose>19.194 13.0 0.6986561200000001 0 0 0</pose>
     </include>
   </world>

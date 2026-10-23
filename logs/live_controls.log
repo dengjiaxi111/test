@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/dengjiaxi/simulation_seu/test/checks/live_controls.py", line 58, in <module>
+    count=len(data['plan'].passages);assert letters==list('ASEXTD')*count,letters
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: []

@@ -1,0 +1,20 @@
+SCENARIO 0
+t=0 1/1 emergency braking distance insufficient request=0
+t=0.02 1/1 emergency stop; waiting for stopped and prepared request=0
+t=120 1/1 emergency stop; waiting for stopped and prepared request=0
+SCENARIO 1
+t=0 1/1 emergency braking distance insufficient request=1
+t=0.02 1/1 emergency stop; waiting for stopped and prepared request=1
+t=1.02 4/1 structure acknowledgement missing request=1
+t=6.02 4/4 structure acknowledgement missing request=1
+SCENARIO 2
+t=0 1/1 emergency braking distance insufficient request=1
+t=0.02 1/1 emergency stop; waiting for stopped and prepared request=1
+t=12.02 4/1 preparation timeout request=1
+t=14.02 4/4 no stopped/retry confirmation request=1
+SCENARIO 3
+t=0 1/1 emergency braking distance insufficient request=1
+t=0.02 1/1 emergency stop; waiting for stopped and prepared request=1
+t=0.82 2/0 low posture confirmed request=1
+t=60.84 4/1 traverse deadline request=1
+t=65.84 4/4 traverse deadline request=1

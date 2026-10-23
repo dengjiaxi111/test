@@ -1,0 +1,22 @@
+crest (4.694, 5.0) -> (4.694, 7.604)
+PLAN 1 0 [('hole_A2', True)]
+STATE {'t': 5.522, 'state': 0, 'decision': 0, 'reason': 'ordinary path following', 'attempt': 0, 'recovery': 0}
+STATE {'t': 6.914000000000001, 'state': 1, 'decision': 1, 'reason': 'emergency braking distance insufficient', 'attempt': 0, 'recovery': 0}
+EVENT {'uid': '1547354614-0.000000:1:1', 'type': 0, 'sequence': 1, 'attempt': 0, 'arc': 0.31901266864449385, 'progress': 0.3240142618897245, 'lift': 0.2973884843238712}
+STATE {'t': 6.934, 'state': 1, 'decision': 1, 'reason': 'emergency stop; waiting for stopped and prepared', 'attempt': 0, 'recovery': 0}
+STATE {'t': 8.374, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+EVENT {'uid': '1547354614-0.000000:1:1', 'type': 1, 'sequence': 2, 'attempt': 0, 'arc': 1.019012668644494, 'progress': 1.0321027764785948, 'lift': -1.0338140497802876e-14}
+STATE {'t': 11.207, 'state': 2, 'decision': 1, 'reason': 'aligning chassis to selected face', 'attempt': 0, 'recovery': 0}
+STATE {'t': 11.422, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 12.373000000000001, 'state': 1, 'decision': 1, 'reason': 'emergency braking distance insufficient', 'attempt': 0, 'recovery': 0}
+STATE {'t': 12.393, 'state': 2, 'decision': 1, 'reason': 'emergency stop; waiting for stopped and prepared', 'attempt': 0, 'recovery': 0}
+STATE {'t': 12.413, 'state': 1, 'decision': 1, 'reason': 'emergency stop; waiting for stopped and prepared', 'attempt': 0, 'recovery': 0}
+STATE {'t': 12.432, 'state': 2, 'decision': 1, 'reason': 'emergency stop; waiting for stopped and prepared', 'attempt': 0, 'recovery': 0}
+STATE {'t': 12.492, 'state': 4, 'decision': 1, 'reason': 'unreliable progress/localization jump', 'attempt': 0, 'recovery': 0}
+STATE {'t': 17.506, 'state': 4, 'decision': 2, 'reason': 'unreliable progress/localization jump', 'attempt': 0, 'recovery': 0}
+PLAN 2 1 [('hole_A2', True)]
+PLAN 3 0 []
+STATE {'t': 17.552, 'state': 3, 'decision': 1, 'reason': 'emergency stop; waiting for stopped and prepared', 'attempt': 0, 'recovery': 0}
+STATE {'t': 19.023, 'state': 0, 'decision': 1, 'reason': 'emergency stop; waiting for stopped and prepared', 'attempt': 0, 'recovery': 0}
+收到Ctrl+C，关闭本组仿真进程。
+FAIL 

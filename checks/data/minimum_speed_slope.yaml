@@ -1,0 +1,8 @@
+regions:
+  - id: slope_test
+    frame_id: map
+    type: slope
+    geometry:
+      polygon: [[0, -1], [2, -1], [2, 1], [0, 1]]
+    attributes:
+      uphill_yaw_deg: 0

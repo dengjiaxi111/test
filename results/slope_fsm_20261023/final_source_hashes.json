@@ -1,0 +1,16 @@
+{
+  "src/my_navigation/nav_components/src/slopehole_controller.cpp": "3c4cc621ecd75f0af9273ba547feab56d5e735c3760280e9d6793bf5acf50f24",
+  "src/my_navigation/nav_components/src/slopehole_ros_adapter.cpp": "41e5576993e8260d72ff7f324451e068b8de88764818ab305143457e0f01abe1",
+  "src/my_navigation/nav_components/include/nav_components/slopehole_controller.hpp": "17f00d40c0a85c4877c5481dec751b72dc3d367919568eb4c0e1d4ee59aff27e",
+  "src/my_navigation/nav_components/include/nav_components/slopehole_ros_adapter.hpp": "651176f8684a5def254f18ccfd3b929dadcd9350db09c193adc9d725d19c285e",
+  "src/my_navigation/nav_core/include/nav_core/hole_execution_types.hpp": "879c246f98cc3ff331d9a4de51acdd8e27030650a6fd7495da61f806938d7694",
+  "src/my_navigation/nav_core/include/nav_core/slope_speed_takeover.hpp": "ec7e8d42403737f10ed9c96ffddfc1236a869c9e1dcfe906c5abc9ad1fb0edcc",
+  "src/my_navigation/nav_bringup/config/hole_state_machine.yaml": "972408c36c61ff54620bd27e6a70ad930712b86cada45dd1f3a00bc0869152fa",
+  "sim/runtime_tuning.yaml": "32b122df08b92a6fce2c9681d8655d0fd42d7af7299b8d71e43a5b574b311277",
+  "sim/simplified_robot.sdf": "bcbd888d30e7ff2019ee82d99607c592409bafa9a1f2e79a735522197fe69452",
+  "install/nav_components/lib/nav_components/nav_server": "7ea9bf6708c1d398659e1cba1bd0810b047fa063ae0e4a592a43b2bf5b58923f",
+  "start_demo.sh": "a9995e05dd9124a01ba728238940fcc705cd4d2066514f82ec35b0b59ed9063b",
+  "scripts/generate_world.py": "f151245df64cbc89cdb2d2661dd6a3bbfd0bd5f1b130bcdc4983dc3e6992d423",
+  "scripts/run_case.py": "e255a6ca030c6332d8c888d38d4a3a371adfa689f2676da2b3f4715efdd65ca8",
+  "checks/slope_navigation_audit.py": "6de0850890aefe10d7cfedd778ea03f7b49a805ac84763e025562c1e30a31f98"
+}

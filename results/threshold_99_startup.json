@@ -1,0 +1,7 @@
+{
+  "result": "PASS",
+  "scope": "3-second startup regression, not full passage completion",
+  "max_command_mps": 1.0251643767194851,
+  "distance_m": 0.41403954137311794,
+  "remaining_pids": []
+}

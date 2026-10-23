@@ -1,0 +1,4 @@
+PASS: A publishes alignment and LOW before S; no prepare cap; emergency preserves alignment; LOW+settled alignment releases braking
+PASS: 5ms source clock phase retains fresh velocity and rotation feedback
+PASS: actual velocity loss stops; fresh stable feedback restores TRAVERSE automatically
+PASS: 16cm lateral error before E keeps normal correction alive; position recovery removes entry bound

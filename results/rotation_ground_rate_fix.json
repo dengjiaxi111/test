@@ -1,0 +1,22 @@
+{
+  "result": "PASS",
+  "before_fix": "blocked chassis commanded joint=0.0 rad/s; regression assertion failed",
+  "after_fix": "blocked chassis commanded independent -50 deg/s gun ground target; regression passed",
+  "unit_checks": [
+    "rotation_ground_rate.py",
+    "rotation_geometry.py",
+    "rotation_command_order.py",
+    "keyboard_commands.py"
+  ],
+  "live_old_instance_read_only": {
+    "duration_s": 2.5,
+    "fsm": "NORMAL / CONTINUE",
+    "inhibit": false,
+    "alignment": "none",
+    "chassis_command_median_rad_s": 0.8727,
+    "chassis_actual_median_rad_s": 0.9024,
+    "gimbal_actual_median_rad_s": -0.8941
+  },
+  "new_code_physics_retested": false,
+  "reason": "user Gazebo session holds test/.run.lock"
+}

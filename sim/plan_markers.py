@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """只从正式NavigationPlan绘制执行六事件，绝不反向驱动状态机。"""
 import rclpy
+import math
 from rclpy.node import Node
 from rclpy.qos import QoSProfile,DurabilityPolicy
 from nav_interfaces.msg import NavigationPlan,HoleTraversalState
 from visualization_msgs.msg import Marker,MarkerArray
+from geometry_msgs.msg import Point
 class Display(Node):
     def __init__(self):
         super().__init__('execution_plan_markers');q=QoSProfile(depth=1,durability=DurabilityPolicy.TRANSIENT_LOCAL)
@@ -24,15 +26,23 @@ class Display(Node):
             nonlocal uid
             m=Marker();m.header=p.header;m.ns='accepted_execution';m.id=uid;uid+=1;m.type=kind;m.action=Marker.ADD;m.pose.orientation.w=1.
             m.pose.position.x,m.pose.position.y,m.pose.position.z=xyz
-            m.scale.x,m.scale.y,m.scale.z=scale;m.color.r,m.color.g,m.color.b=color;m.color.a=1.;m.text=text;out.markers.append(m)
+            m.scale.x,m.scale.y,m.scale.z=scale;m.color.r,m.color.g,m.color.b=color;m.color.a=1.;m.text=text;out.markers.append(m);return m
         active=p.status==p.ACTIVE
         # Keep the last formal plan visible on failure; grey geometry grants no motion.
         for passage in p.passages:
+            entry,exit=passage.events[2],passage.events[3]
+            dx,dy=exit.point.x-entry.point.x,exit.point.y-entry.point.y;length=math.hypot(dx,dy)
+            nx,ny=(-dy/length,dx/length) if length>1e-6 else (1.,0.)
             for i,e in enumerate(passage.events):
                 if not e.point_valid:continue
                 label='ASEXTD'[i];color=colors[i] if active else (.55,.55,.55)
                 mark(Marker.SPHERE,(e.point.x,e.point.y,.08),color,(.10,.10,.10))
-                mark(Marker.TEXT_VIEW_FACING,(e.point.x-.15,e.point.y,.30+i*.10),color,(0.,0.,.14),f'{passage.hole_id} {label} s={e.s_path:.2f} range={e.range_status}')
+                side=.42 if i%2==0 else -.42
+                x,y=e.point.x+side*nx,e.point.y+side*ny
+                mark(Marker.TEXT_VIEW_FACING,(x,y,.75),(.02,.02,.02),(0.,0.,.42),label)
+                mark(Marker.TEXT_VIEW_FACING,(x,y,.35),(.05,.05,.05),(0.,0.,.10),f'{passage.hole_id}\ns={e.s_path:.2f}')
+                line=mark(Marker.LINE_LIST,(0.,0.,0.),color,(.018,0.,0.))
+                line.points=[Point(x=e.point.x,y=e.point.y,z=.08),Point(x=x,y=y,z=.55)]
         if p.path.poses:
             status='ACTIVE' if active else f'INACTIVE({p.status})'
             message=f'plan={p.plan_id} {status}'
@@ -41,7 +51,9 @@ class Display(Node):
             mark(Marker.TEXT_VIEW_FACING,(p.path.poses[0].pose.position.x,p.path.poses[0].pose.position.y,1.),(1.,1.,1.),(0.,0.,.15),message)
         self.pub.publish(out)
 def main():
+    from rclpy.executors import ExternalShutdownException
     rclpy.init();n=Display()
     try:rclpy.spin(n)
+    except (KeyboardInterrupt,ExternalShutdownException):pass
     finally:n.destroy_node();rclpy.try_shutdown()
 if __name__=='__main__':main()

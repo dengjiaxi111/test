@@ -1,0 +1,88 @@
+[INFO] [1792639717.331602525] [nav_server]: ========== NavServer 参数诊断 ==========
+[INFO] [1792639717.331698382] [nav_server]: control_rate: 50.0 Hz
+[INFO] [1792639717.331710384] [nav_server]: controller_timeout: 8.0 s
+[INFO] [1792639717.331716004] [nav_server]: controller_progress_threshold: 0.05 m
+[INFO] [1792639717.331722867] [nav_server]: recovery.max_recovery: 3
+[INFO] [1792639717.331728648] [nav_server]: path_check_period: 0.30 s
+[INFO] [1792639717.331737154] [nav_server]: path_lateral_tolerance: 1.250 m 
+[INFO] [1792639717.331743756] [nav_server]: path_io.enable_save_planned_path: 0
+[INFO] [1792639717.331750017] [nav_server]: path_io.use_prior_path: 0
+[INFO] [1792639717.331755758] [nav_server]: escape.trigger_costmap_threshold: 99
+[INFO] [1792639717.331761789] [nav_server]: escape.target_safe_esdf: 0.25 m
+[INFO] [1792639717.331768081] [nav_server]: escape.search_radius: 1.0 m
+[INFO] [1792639717.331774292] [nav_server]: escape.preferred_search_distance: 1.00 m
+[INFO] [1792639717.331780454] [nav_server]: escape.preferred_search_half_angle: 0.20 rad
+[INFO] [1792639717.331786605] [nav_server]: escape.forward_speed: 0.20 m/s
+[INFO] [1792639717.331792396] [nav_server]: ========================================
+[INFO] [1792639717.341102584] [nav_server]: LayeredMapManager initialized (map: map, odom: odom, perf_log: disabled)
+[INFO] [1792639717.342870503] [nav_server]: Loaded terrain regions: 8 from /home/dengjiaxi/simulation_seu/test/map/terrain.yaml
+[INFO] [1792639717.342902102] [nav_server]: slope: 4, low_clearance: 4
+[INFO] [1792639717.342922790] [nav_server]: terrain id=slope_A1 type=slope name=slope_A1 frame=map polygon: (-5.131,-3.781) (-4.256,-3.781) (-3.652,-3.026) (-5.131,-3.026)
+[INFO] [1792639717.342939451] [nav_server]: terrain id=hole_A1 type=low_clearance name=hole_A1 frame=map polygon: (-5.131,-3.781) (-4.256,-3.781) (-4.256,-3.531) (-5.131,-3.531)
+[INFO] [1792639717.342952826] [nav_server]: terrain id=slope_A2 type=slope name=slope_A2 frame=map polygon: (3.64,6.314) (5.144,6.314) (5.144,7.069) (4.244,7.069)
+[INFO] [1792639717.342966491] [nav_server]: terrain id=hole_A2 type=low_clearance name=hole_A2 frame=map polygon: (4.244,6.819) (5.144,6.819) (5.144,7.069) (4.244,7.069)
+[INFO] [1792639717.342982210] [nav_server]: terrain id=slope_B1 type=slope name=slope_B1 frame=map polygon: (0.289,-4.706) (-0.651,-4.706) (-0.651,-3.926) (0.289,-3.926)
+[INFO] [1792639717.342995775] [nav_server]: terrain id=hole_B1 type=low_clearance name=hole_B1 frame=map polygon: (1.009,-4.686) (0.749,-4.686) (0.749,-3.926) (1.009,-3.926)
+[INFO] [1792639717.343009591] [nav_server]: terrain id=slope_B2 type=slope name=slope_B2 frame=map polygon: (0.649,7.194) (-0.291,7.194) (-0.291,7.994) (0.649,7.994)
+[INFO] [1792639717.343022765] [nav_server]: terrain id=hole_B2 type=low_clearance name=hole_B2 frame=map polygon: (-0.751,7.234) (-0.991,7.234) (-0.991,7.974) (-0.751,7.974)
+[INFO] [1792639717.344690229] [nav_server]: Hole preview hole_A1: OK width=0.875 depth=0.250 angle_error=0.000 parallel_error=0.000
+[INFO] [1792639717.344769876] [nav_server]: Hole preview hole_A2: OK width=0.900 depth=0.250 angle_error=0.000 parallel_error=0.000
+[INFO] [1792639717.344849654] [nav_server]: Hole preview hole_B1: OK width=0.760 depth=0.260 angle_error=0.000 parallel_error=0.000
+[INFO] [1792639717.344904745] [nav_server]: Hole preview hole_B2: OK width=0.740 depth=0.240 angle_error=0.000 parallel_error=0.000
+[INFO] [1792639717.353412880] [nav_server]: Omni MPC NX=4 NU=2 N=75 dt=0.02 alpha=0.800 feedback_required=1
+[INFO] [1792639717.363948054] [nav_server]: 地图加载成功: 595x321, 分辨率: 0.050
+[INFO] [1792639717.364421890] [nav_server]: Hole clearance preprocessing: 180 occupied cells cleared (before=0.50 m, after=0.50 m)
+[INFO] [1792639717.375424378] [nav_server]: Static map loaded: 595x321 @ 0.050 m/cell, inflation_radius=0.80
+[INFO] [1792639717.375498094] [nav_server]: B样条优化: ESDF 回调已设置
+[INFO] [1792639717.375533860] [nav_server]: 静态地图加载完成
+[INFO] [1792639719.536876789] [nav_server]: 收到目标: (-4.69, -2.60)
+[INFO] [1792639719.537133865] [nav_server]: 状态: IDLE -> PLANNING
+[INFO] [1792639719.578650189] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/7
+[INFO] [1792639719.578689111] [bspline_opt]: 优化完成: 1次迭代, 0.05ms | 代价: 0.0000 -> 0.0000 (降低0.0%) | 平滑=0.000, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792639719.654288572] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/48
+[INFO] [1792639719.654542421] [bspline_opt]: 优化完成: 7次迭代, 0.58ms | 代价: 13.9655 -> 3.7451 (降低73.2%) | 平滑=0.356, 碰撞=0.009, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792639719.660244647] [nav_server]: 过洞接入: hole=hole_B1 S=(1.830,-4.306) 方法=FEASIBLE_APPROACH_CONTINUOUS 平滑后备原因=none
+[INFO] [1792639719.660290993] [nav_server]: 过洞接入: hole=hole_A1 S=(-4.694,-4.581) 方法=FEASIBLE_APPROACH_CONTINUOUS 平滑后备原因=none
+[INFO] [1792639719.660647282] [nav_server]: 规划汇总: total=120.8ms astar=2.5ms outer_validation=0.2ms hole=117.7ms first_valid=36.4ms post_first=81.2ms | geometry=0.0 connectivity=2.2 candidates=0.3 seed_search=21.6 fit=4.4 curve_check=33.9 candidate_check=1.0 final_check=0.3 cache_check=0.0 ms | optimized=2 fits=4 iterations=89 cache_hits=0 cache_rejected=0 disconnected=1 stop=NO_BETTER_CANDIDATE
+[INFO] [1792639719.661455066] [nav_server]: 状态: PLANNING -> CONTROLLING
+[WARN] [1792639721.781842365] [nav_server]: Omni norm check failed: v=2.738056 a=2.012937
+[WARN] [1792639721.781888841] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792639724.062291793] [nav_server]: Omni norm check failed: v=2.353199 a=2.001032
+[WARN] [1792639724.062341906] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792639728.882343318] [nav_server]: Omni norm check failed: v=2.579680 a=2.137270
+[WARN] [1792639728.882392559] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792639730.322285927] [nav_server]: Omni norm check failed: v=2.535534 a=2.025103
+[WARN] [1792639730.322326833] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792639732.122836169] [nav_server]: Omni norm check failed: v=2.539283 a=2.041161
+[WARN] [1792639732.122908734] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792639733.922448674] [nav_server]: Omni norm check failed: v=2.535480 a=2.057775
+[WARN] [1792639733.922494679] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792639735.363055465] [nav_server]: Omni norm check failed: v=2.498548 a=2.018585
+[WARN] [1792639735.363112410] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792639738.222008137] [nav_server]: Omni norm check failed: v=2.528880 a=2.007073
+[WARN] [1792639738.222059623] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792639739.342454303] [nav_server]: Omni norm check failed: v=2.450521 a=2.010230
+[WARN] [1792639739.342496241] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792639741.282442434] [nav_server]: Omni norm check failed: v=2.417331 a=2.002736
+[WARN] [1792639741.282489411] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792639742.462567312] [nav_server]: Omni norm check failed: v=2.481118 a=2.054763
+[WARN] [1792639742.462620320] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792639743.962003151] [nav_server]: Omni norm check failed: v=2.417980 a=2.002278
+[WARN] [1792639743.962049026] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792639745.402222767] [nav_server]: Omni norm check failed: v=2.547984 a=2.033150
+[WARN] [1792639745.402275715] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792639748.601968930] [nav_server]: Omni norm check failed: v=2.498057 a=2.026720
+[WARN] [1792639748.602018071] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792639751.682209917] [nav_server]: Omni norm check failed: v=2.447952 a=2.008999
+[WARN] [1792639751.682262254] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792639753.622226149] [nav_server]: Omni norm check failed: v=2.502774 a=2.010118
+[WARN] [1792639753.622275220] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792639754.983445631] [nav_server]: Omni norm check failed: v=2.447035 a=2.001491
+[WARN] [1792639754.983496835] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792639756.202734809] [nav_server]: Omni norm check failed: v=2.520701 a=2.054315
+[WARN] [1792639756.202788368] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792639758.162203411] [nav_server]: Omni norm check failed: v=2.563410 a=2.008389
+[WARN] [1792639758.162256629] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[INFO] [1792639759.175981477] [nav_server]: 取消请求
+[INFO] [1792639759.180171776] [nav_server]: 状态: CONTROLLING -> IDLE
+[INFO] [1792639759.478839196] [rclcpp]: signal_handler(SIGINT/SIGTERM)

@@ -1,0 +1,6 @@
+[INFO] [1792682530.482584835] [hole_gazebo_bridge]: rotation mode: WAIT_FEEDBACK
+[INFO] [1792682530.486200644] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+[INFO] [1792682546.848069306] [hole_gazebo_bridge]: rotation mode: KEYBOARD
+[INFO] [1792682570.349559000] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+[INFO] [1792682581.649623195] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
+[INFO] [1792682582.230094244] [hole_gazebo_bridge]: rotation mode: HOLE_SAFETY_STOP

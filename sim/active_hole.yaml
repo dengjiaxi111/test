@@ -7,14 +7,23 @@ hole_state_machine:
   max_action_retries: 2
   max_traversal_retries: 2
   flat_speed: 2.0
-  uphill_speed: 2.0
-  downhill_speed: 0.35
-  prepare_speed: 0.35
-  restore_speed: 0.35
-  restricted_speed: 0.4
-  post_slope_distance: 1.5
+  minimum_entry_speed: 1.9
+  minimum_slope_speed: 1.9
+  boost_speed: 2.0
+  entry_zone_length: 0.2
+  low_speed_confirm: 0.3
+  speed_recover_margin: 0.1
+  speed_recover_confirm: 0.3
+  boost_timeout: 2.0
+  boost_acceleration: 2.0
+  prepare_prediction_time: 1.0
+  alignment_prediction_rate: 0.6
+  slope_entry_margin: 0.25
+  slope_prepare_distance: 0.8
+  tunnel_timeout: 15.0
+  restore_speed: 2.05
   braking_deceleration: 1.5
-  acceleration_limit: 2.0
+  acceleration_limit: 10.0
   control_latency: 0.1
   entry_margin: 0.45
   event_tolerance: 0.01
@@ -33,8 +42,8 @@ hole_state_machine:
   stop_ack_timeout: 2.0
   stall_timeout: 2.5
   stall_progress: 0.05
-  retreat_speed: 0.15
-  retreat_timeout: 12.0
+  retreat_speed: 0.5
+  retreat_timeout: 10.0
   stopped_speed: 0.03
   settle_time: 0.2
   alignment_tolerance: 0.05

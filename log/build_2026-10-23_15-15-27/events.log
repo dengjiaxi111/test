@@ -1,0 +1,729 @@
+[0.000000] (-) TimerEvent: {}
+[0.000049] (-) JobUnselected: {'identifier': 'fake_vel_transform'}
+[0.000067] (-) JobUnselected: {'identifier': 'nav_bringup'}
+[0.000078] (-) JobUnselected: {'identifier': 'nav_interfaces'}
+[0.000086] (-) JobUnselected: {'identifier': 'robots_msgs'}
+[0.000097] (nav_core) JobQueued: {'identifier': 'nav_core', 'dependencies': OrderedDict()}
+[0.000107] (nav_components) JobQueued: {'identifier': 'nav_components', 'dependencies': OrderedDict({'nav_core': '/home/dengjiaxi/simulation_seu/test/install/nav_core', 'nav_interfaces': '/home/dengjiaxi/simulation_seu/test/install/nav_interfaces', 'robots_msgs': '/home/dengjiaxi/simulation_seu/test/install/robots_msgs'})}
+[0.000124] (nav_core) JobStarted: {'identifier': 'nav_core'}
+[0.003772] (nav_core) JobProgress: {'identifier': 'nav_core', 'progress': 'cmake'}
+[0.004202] (nav_core) JobProgress: {'identifier': 'nav_core', 'progress': 'build'}
+[0.004554] (nav_core) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dengjiaxi/simulation_seu/test/build/nav_core'], 'cwd': '/home/dengjiaxi/simulation_seu/test/build/nav_core', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/dengjiaxi', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'HTTPS_PROXY': 'http://127.0.0.1:7897', 'CMAKE_BUILD_PARALLEL_LEVEL': '1', 'CODEX_CI': '1', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'dengjiaxi', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"zh-cn","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'DEBUG': 'release', 'OPENBLAS_NUM_THREADS': '1', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/dengjiaxi/simulation_seu/test/install/nav_components/lib:/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib:/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib:/home/dengjiaxi/dependency/acados/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'ACADOS_SOURCE_DIR': '/home/dengjiaxi/dependency/acados', 'INPUT_METHOD': 'ibus', 'HOME': '/home/dengjiaxi', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/dengjiaxi/simulation_seu', 'DESKTOP_SESSION': 'ubuntu-xorg', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-7267b4bb-1.13-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'MANAGERPID': '2868', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '3320', 'MAKEFLAGS': '-j1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '119874', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/dengjiaxi/simulation_seu/test/install', 'CUDA_VISIBLE_DEVICES': '', 'CODEX_PERMISSION_PROFILE': ':danger-full-access', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'dengjiaxi', 'JOURNAL_STREAM': '10:29785', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'CODEX_APPLY_PATCH_PRESERVE_LINE_ENDINGS': '1', 'RUST_LOG': 'warn', 'USERNAME': 'dengjiaxi', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'PATH': '/home/dengjiaxi/.local/bin:/home/dengjiaxi/.codex/tmp/arg0/codex-arg0m3Gh2j:/home/dengjiaxi/.local/bin:/home/dengjiaxi/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/dengjiaxi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/dengjiaxi/.vscode/extensions/openai.chatgpt-26.1007.21434-linux-x64/bin/linux-x86_64', 'SESSION_MANAGER': 'local/dengjiaxiASUSubuntu2404:@/tmp/.ICE-unix/3277,unix/dengjiaxiASUSubuntu2404:/tmp/.ICE-unix/3277', 'CODEX_VERSION': '0.162.0-alpha.17.2', 'CODEX_SESSION_ID': '01a16780-ae9f-7f81-9d21-f242225b458f', 'INVOCATION_ID': '93110c49ca2f428284de28bf3c57f41a', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=fcitx', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/dengjiaxi/simulation_seu/test/install/nav_bringup:/home/dengjiaxi/simulation_seu/test/install/nav_components:/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform:/home/dengjiaxi/simulation_seu/test/install/robots_msgs:/home/dengjiaxi/simulation_seu/test/install/nav_interfaces:/home/dengjiaxi/simulation_seu/test/install/nav_core:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '01a16780-ae9f-7f81-9d21-f242225b458f', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/dengjiaxi/simulation_seu/test/build/nav_core', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/dengjiaxi/.config/Code/CachedData/7debcd0e2acdea1c52de81bf9ee1620444407dda', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/python3.12/site-packages:/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages:/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'HTTP_PROXY': 'http://127.0.0.1:7897', 'OMP_NUM_THREADS': '1', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/dengjiaxi/simulation_seu/test/install/nav_bringup:/home/dengjiaxi/simulation_seu/test/install/nav_components:/home/dengjiaxi/simulation_seu/test/install/robots_msgs:/home/dengjiaxi/simulation_seu/test/install/nav_interfaces:/home/dengjiaxi/simulation_seu/test/install/nav_core:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform:/opt/ros/jazzy', 'VSCODE_PID': '119874'}), 'shell': False}
+[0.051158] (nav_core) CommandEnded: {'returncode': 0}
+[0.051857] (nav_core) JobProgress: {'identifier': 'nav_core', 'progress': 'install'}
+[0.062819] (nav_core) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dengjiaxi/simulation_seu/test/build/nav_core'], 'cwd': '/home/dengjiaxi/simulation_seu/test/build/nav_core', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/dengjiaxi', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'HTTPS_PROXY': 'http://127.0.0.1:7897', 'CMAKE_BUILD_PARALLEL_LEVEL': '1', 'CODEX_CI': '1', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'dengjiaxi', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"zh-cn","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'DEBUG': 'release', 'OPENBLAS_NUM_THREADS': '1', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/dengjiaxi/simulation_seu/test/install/nav_components/lib:/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib:/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib:/home/dengjiaxi/dependency/acados/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'ACADOS_SOURCE_DIR': '/home/dengjiaxi/dependency/acados', 'INPUT_METHOD': 'ibus', 'HOME': '/home/dengjiaxi', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/dengjiaxi/simulation_seu', 'DESKTOP_SESSION': 'ubuntu-xorg', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-7267b4bb-1.13-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'MANAGERPID': '2868', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '3320', 'MAKEFLAGS': '-j1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '119874', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/dengjiaxi/simulation_seu/test/install', 'CUDA_VISIBLE_DEVICES': '', 'CODEX_PERMISSION_PROFILE': ':danger-full-access', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'dengjiaxi', 'JOURNAL_STREAM': '10:29785', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'CODEX_APPLY_PATCH_PRESERVE_LINE_ENDINGS': '1', 'RUST_LOG': 'warn', 'USERNAME': 'dengjiaxi', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'PATH': '/home/dengjiaxi/.local/bin:/home/dengjiaxi/.codex/tmp/arg0/codex-arg0m3Gh2j:/home/dengjiaxi/.local/bin:/home/dengjiaxi/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/dengjiaxi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/dengjiaxi/.vscode/extensions/openai.chatgpt-26.1007.21434-linux-x64/bin/linux-x86_64', 'SESSION_MANAGER': 'local/dengjiaxiASUSubuntu2404:@/tmp/.ICE-unix/3277,unix/dengjiaxiASUSubuntu2404:/tmp/.ICE-unix/3277', 'CODEX_VERSION': '0.162.0-alpha.17.2', 'CODEX_SESSION_ID': '01a16780-ae9f-7f81-9d21-f242225b458f', 'INVOCATION_ID': '93110c49ca2f428284de28bf3c57f41a', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=fcitx', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/dengjiaxi/simulation_seu/test/install/nav_bringup:/home/dengjiaxi/simulation_seu/test/install/nav_components:/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform:/home/dengjiaxi/simulation_seu/test/install/robots_msgs:/home/dengjiaxi/simulation_seu/test/install/nav_interfaces:/home/dengjiaxi/simulation_seu/test/install/nav_core:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '01a16780-ae9f-7f81-9d21-f242225b458f', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/dengjiaxi/simulation_seu/test/build/nav_core', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/dengjiaxi/.config/Code/CachedData/7debcd0e2acdea1c52de81bf9ee1620444407dda', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/python3.12/site-packages:/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages:/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'HTTP_PROXY': 'http://127.0.0.1:7897', 'OMP_NUM_THREADS': '1', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/dengjiaxi/simulation_seu/test/install/nav_bringup:/home/dengjiaxi/simulation_seu/test/install/nav_components:/home/dengjiaxi/simulation_seu/test/install/robots_msgs:/home/dengjiaxi/simulation_seu/test/install/nav_interfaces:/home/dengjiaxi/simulation_seu/test/install/nav_core:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform:/opt/ros/jazzy', 'VSCODE_PID': '119874'}), 'shell': False}
+[0.071463] (nav_core) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[0.071581] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/include\n'}
+[0.071628] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core\n'}
+[0.071674] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/hole_geometry_markers.hpp\n'}
+[0.071715] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/nav_fsm.hpp\n'}
+[0.071754] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/hole_grid_collision.hpp\n'}
+[0.071790] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/hole_passage.hpp\n'}
+[0.071826] (nav_core) StdoutLine: {'line': b'-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/hole_execution_types.hpp\n'}
+[0.071860] (nav_core) StdoutLine: {'line': b'-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/slope_speed_takeover.hpp\n'}
+[0.071897] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/map_interface.hpp\n'}
+[0.071938] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/raster_edit.hpp\n'}
+[0.071974] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/types.hpp\n'}
+[0.072011] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/planner_base.hpp\n'}
+[0.072047] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/hole_geometry.hpp\n'}
+[0.072083] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/controller_base.hpp\n'}
+[0.072116] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/hole_passage_config.hpp\n'}
+[0.072152] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/recovery_base.hpp\n'}
+[0.072189] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/special_terrain_constraint.hpp\n'}
+[0.072224] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/include/nav_core/hole_geometry_yaml.hpp\n'}
+[0.072260] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/share/ament_index/resource_index/package_run_dependencies/nav_core\n'}
+[0.072297] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/share/ament_index/resource_index/parent_prefix_path/nav_core\n'}
+[0.072333] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/share/nav_core/environment/ament_prefix_path.sh\n'}
+[0.072368] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/share/nav_core/environment/ament_prefix_path.dsv\n'}
+[0.072409] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/share/nav_core/environment/path.sh\n'}
+[0.072445] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/share/nav_core/environment/path.dsv\n'}
+[0.072481] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/share/nav_core/local_setup.bash\n'}
+[0.072519] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/share/nav_core/local_setup.sh\n'}
+[0.072557] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/share/nav_core/local_setup.zsh\n'}
+[0.072596] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/share/nav_core/local_setup.dsv\n'}
+[0.072633] (nav_core) StdoutLine: {'line': b'-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_core/share/nav_core/package.dsv\n'}
+[0.072801] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/share/ament_index/resource_index/packages/nav_core\n'}
+[0.073170] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/share/nav_core/cmake/export_nav_coreExport.cmake\n'}
+[0.074481] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/share/nav_core/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.074551] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/share/nav_core/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.074596] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/share/nav_core/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.074644] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/share/nav_core/cmake/nav_coreConfig.cmake\n'}
+[0.074682] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/share/nav_core/cmake/nav_coreConfig-version.cmake\n'}
+[0.074722] (nav_core) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_core/share/nav_core/package.xml\n'}
+[0.075002] (nav_core) CommandEnded: {'returncode': 0}
+[0.085755] (nav_core) JobEnded: {'identifier': 'nav_core', 'rc': 0}
+[0.086154] (nav_components) JobStarted: {'identifier': 'nav_components'}
+[0.096714] (-) TimerEvent: {}
+[0.096950] (nav_components) JobProgress: {'identifier': 'nav_components', 'progress': 'cmake'}
+[0.097398] (nav_components) JobProgress: {'identifier': 'nav_components', 'progress': 'build'}
+[0.097544] (nav_components) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dengjiaxi/simulation_seu/test/build/nav_components'], 'cwd': '/home/dengjiaxi/simulation_seu/test/build/nav_components', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/dengjiaxi', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'HTTPS_PROXY': 'http://127.0.0.1:7897', 'CMAKE_BUILD_PARALLEL_LEVEL': '1', 'CODEX_CI': '1', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'dengjiaxi', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"zh-cn","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'DEBUG': 'release', 'OPENBLAS_NUM_THREADS': '1', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib:/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib:/home/dengjiaxi/simulation_seu/test/install/nav_components/lib:/home/dengjiaxi/dependency/acados/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'ACADOS_SOURCE_DIR': '/home/dengjiaxi/dependency/acados', 'INPUT_METHOD': 'ibus', 'HOME': '/home/dengjiaxi', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/dengjiaxi/simulation_seu', 'DESKTOP_SESSION': 'ubuntu-xorg', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-7267b4bb-1.13-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'MANAGERPID': '2868', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '3320', 'MAKEFLAGS': '-j1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '119874', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/dengjiaxi/simulation_seu/test/install', 'CUDA_VISIBLE_DEVICES': '', 'CODEX_PERMISSION_PROFILE': ':danger-full-access', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'dengjiaxi', 'JOURNAL_STREAM': '10:29785', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'CODEX_APPLY_PATCH_PRESERVE_LINE_ENDINGS': '1', 'RUST_LOG': 'warn', 'USERNAME': 'dengjiaxi', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'PATH': '/home/dengjiaxi/.local/bin:/home/dengjiaxi/.codex/tmp/arg0/codex-arg0m3Gh2j:/home/dengjiaxi/.local/bin:/home/dengjiaxi/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/dengjiaxi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/dengjiaxi/.vscode/extensions/openai.chatgpt-26.1007.21434-linux-x64/bin/linux-x86_64', 'SESSION_MANAGER': 'local/dengjiaxiASUSubuntu2404:@/tmp/.ICE-unix/3277,unix/dengjiaxiASUSubuntu2404:/tmp/.ICE-unix/3277', 'CODEX_VERSION': '0.162.0-alpha.17.2', 'CODEX_SESSION_ID': '01a16780-ae9f-7f81-9d21-f242225b458f', 'INVOCATION_ID': '93110c49ca2f428284de28bf3c57f41a', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=fcitx', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/dengjiaxi/simulation_seu/test/install/nav_bringup:/home/dengjiaxi/simulation_seu/test/install/nav_components:/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform:/home/dengjiaxi/simulation_seu/test/install/robots_msgs:/home/dengjiaxi/simulation_seu/test/install/nav_interfaces:/home/dengjiaxi/simulation_seu/test/install/nav_core:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '01a16780-ae9f-7f81-9d21-f242225b458f', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/dengjiaxi/simulation_seu/test/build/nav_components', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/dengjiaxi/.config/Code/CachedData/7debcd0e2acdea1c52de81bf9ee1620444407dda', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages:/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages:/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'HTTP_PROXY': 'http://127.0.0.1:7897', 'OMP_NUM_THREADS': '1', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/dengjiaxi/simulation_seu/test/install/robots_msgs:/home/dengjiaxi/simulation_seu/test/install/nav_interfaces:/home/dengjiaxi/simulation_seu/test/install/nav_core:/home/dengjiaxi/simulation_seu/test/install/nav_bringup:/home/dengjiaxi/simulation_seu/test/install/nav_components:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform:/opt/ros/jazzy', 'VSCODE_PID': '119874'}), 'shell': False}
+[0.158328] (nav_components) StdoutLine: {'line': b'[ 14%] Built target hole_connection_optimizer\n'}
+[0.196813] (-) TimerEvent: {}
+[0.274308] (nav_components) StdoutLine: {'line': b'[ 17%] Building CXX object CMakeFiles/nav_server.dir/src/nav_server.cpp.o\n'}
+[0.296903] (-) TimerEvent: {}
+[0.397065] (-) TimerEvent: {}
+[0.499017] (-) TimerEvent: {}
+[0.599225] (-) TimerEvent: {}
+[0.699971] (-) TimerEvent: {}
+[0.800123] (-) TimerEvent: {}
+[0.900307] (-) TimerEvent: {}
+[1.000499] (-) TimerEvent: {}
+[1.100682] (-) TimerEvent: {}
+[1.200977] (-) TimerEvent: {}
+[1.301125] (-) TimerEvent: {}
+[1.401983] (-) TimerEvent: {}
+[1.502132] (-) TimerEvent: {}
+[1.602280] (-) TimerEvent: {}
+[1.702432] (-) TimerEvent: {}
+[1.802585] (-) TimerEvent: {}
+[1.902735] (-) TimerEvent: {}
+[2.002885] (-) TimerEvent: {}
+[2.103039] (-) TimerEvent: {}
+[2.203988] (-) TimerEvent: {}
+[2.304143] (-) TimerEvent: {}
+[2.404293] (-) TimerEvent: {}
+[2.504442] (-) TimerEvent: {}
+[2.604592] (-) TimerEvent: {}
+[2.704750] (-) TimerEvent: {}
+[2.804896] (-) TimerEvent: {}
+[2.905049] (-) TimerEvent: {}
+[3.005201] (-) TimerEvent: {}
+[3.105973] (-) TimerEvent: {}
+[3.206160] (-) TimerEvent: {}
+[3.306348] (-) TimerEvent: {}
+[3.406537] (-) TimerEvent: {}
+[3.506732] (-) TimerEvent: {}
+[3.606971] (-) TimerEvent: {}
+[3.707984] (-) TimerEvent: {}
+[3.808146] (-) TimerEvent: {}
+[3.908299] (-) TimerEvent: {}
+[4.008450] (-) TimerEvent: {}
+[4.108602] (-) TimerEvent: {}
+[4.208754] (-) TimerEvent: {}
+[4.308947] (-) TimerEvent: {}
+[4.409112] (-) TimerEvent: {}
+[4.509262] (-) TimerEvent: {}
+[4.609973] (-) TimerEvent: {}
+[4.710124] (-) TimerEvent: {}
+[4.810277] (-) TimerEvent: {}
+[4.910427] (-) TimerEvent: {}
+[5.010578] (-) TimerEvent: {}
+[5.110725] (-) TimerEvent: {}
+[5.210969] (-) TimerEvent: {}
+[5.311978] (-) TimerEvent: {}
+[5.412130] (-) TimerEvent: {}
+[5.512280] (-) TimerEvent: {}
+[5.612432] (-) TimerEvent: {}
+[5.712586] (-) TimerEvent: {}
+[5.812734] (-) TimerEvent: {}
+[5.912890] (-) TimerEvent: {}
+[6.013045] (-) TimerEvent: {}
+[6.113198] (-) TimerEvent: {}
+[6.213972] (-) TimerEvent: {}
+[6.314124] (-) TimerEvent: {}
+[6.414277] (-) TimerEvent: {}
+[6.514426] (-) TimerEvent: {}
+[6.614633] (-) TimerEvent: {}
+[6.714807] (-) TimerEvent: {}
+[6.814981] (-) TimerEvent: {}
+[6.915988] (-) TimerEvent: {}
+[7.016138] (-) TimerEvent: {}
+[7.116299] (-) TimerEvent: {}
+[7.216447] (-) TimerEvent: {}
+[7.316597] (-) TimerEvent: {}
+[7.416753] (-) TimerEvent: {}
+[7.516916] (-) TimerEvent: {}
+[7.617070] (-) TimerEvent: {}
+[7.717219] (-) TimerEvent: {}
+[7.817975] (-) TimerEvent: {}
+[7.918122] (-) TimerEvent: {}
+[8.018269] (-) TimerEvent: {}
+[8.118418] (-) TimerEvent: {}
+[8.218609] (-) TimerEvent: {}
+[8.318803] (-) TimerEvent: {}
+[8.418970] (-) TimerEvent: {}
+[8.519986] (-) TimerEvent: {}
+[8.620139] (-) TimerEvent: {}
+[8.720289] (-) TimerEvent: {}
+[8.820492] (-) TimerEvent: {}
+[8.920695] (-) TimerEvent: {}
+[9.020841] (-) TimerEvent: {}
+[9.120989] (-) TimerEvent: {}
+[9.221134] (-) TimerEvent: {}
+[9.321315] (-) TimerEvent: {}
+[9.422005] (-) TimerEvent: {}
+[9.522181] (-) TimerEvent: {}
+[9.622329] (-) TimerEvent: {}
+[9.722479] (-) TimerEvent: {}
+[9.822629] (-) TimerEvent: {}
+[9.922971] (-) TimerEvent: {}
+[10.023161] (-) TimerEvent: {}
+[10.123973] (-) TimerEvent: {}
+[10.224152] (-) TimerEvent: {}
+[10.324342] (-) TimerEvent: {}
+[10.424491] (-) TimerEvent: {}
+[10.524641] (-) TimerEvent: {}
+[10.624790] (-) TimerEvent: {}
+[10.724943] (-) TimerEvent: {}
+[10.825980] (-) TimerEvent: {}
+[10.926135] (-) TimerEvent: {}
+[11.026285] (-) TimerEvent: {}
+[11.126450] (-) TimerEvent: {}
+[11.226600] (-) TimerEvent: {}
+[11.326747] (-) TimerEvent: {}
+[11.426897] (-) TimerEvent: {}
+[11.527049] (-) TimerEvent: {}
+[11.627198] (-) TimerEvent: {}
+[11.727346] (-) TimerEvent: {}
+[11.827989] (-) TimerEvent: {}
+[11.928140] (-) TimerEvent: {}
+[12.028290] (-) TimerEvent: {}
+[12.128437] (-) TimerEvent: {}
+[12.228588] (-) TimerEvent: {}
+[12.328776] (-) TimerEvent: {}
+[12.428956] (-) TimerEvent: {}
+[12.529986] (-) TimerEvent: {}
+[12.630176] (-) TimerEvent: {}
+[12.730328] (-) TimerEvent: {}
+[12.830477] (-) TimerEvent: {}
+[12.930625] (-) TimerEvent: {}
+[13.030774] (-) TimerEvent: {}
+[13.130928] (-) TimerEvent: {}
+[13.231078] (-) TimerEvent: {}
+[13.331229] (-) TimerEvent: {}
+[13.431977] (-) TimerEvent: {}
+[13.532131] (-) TimerEvent: {}
+[13.632292] (-) TimerEvent: {}
+[13.732434] (-) TimerEvent: {}
+[13.832576] (-) TimerEvent: {}
+[13.932718] (-) TimerEvent: {}
+[14.032860] (-) TimerEvent: {}
+[14.133982] (-) TimerEvent: {}
+[14.234125] (-) TimerEvent: {}
+[14.334269] (-) TimerEvent: {}
+[14.434415] (-) TimerEvent: {}
+[14.534578] (-) TimerEvent: {}
+[14.634742] (-) TimerEvent: {}
+[14.734922] (-) TimerEvent: {}
+[14.835106] (-) TimerEvent: {}
+[14.935249] (-) TimerEvent: {}
+[15.035393] (-) TimerEvent: {}
+[15.135538] (-) TimerEvent: {}
+[15.236008] (-) TimerEvent: {}
+[15.336185] (-) TimerEvent: {}
+[15.436332] (-) TimerEvent: {}
+[15.536973] (-) TimerEvent: {}
+[15.637115] (-) TimerEvent: {}
+[15.737293] (-) TimerEvent: {}
+[15.837474] (-) TimerEvent: {}
+[15.937637] (-) TimerEvent: {}
+[16.037976] (-) TimerEvent: {}
+[16.138126] (-) TimerEvent: {}
+[16.238984] (-) TimerEvent: {}
+[16.339124] (-) TimerEvent: {}
+[16.439269] (-) TimerEvent: {}
+[16.539434] (-) TimerEvent: {}
+[16.639581] (-) TimerEvent: {}
+[16.739722] (-) TimerEvent: {}
+[16.839864] (-) TimerEvent: {}
+[16.939987] (-) TimerEvent: {}
+[17.041982] (-) TimerEvent: {}
+[17.142137] (-) TimerEvent: {}
+[17.242291] (-) TimerEvent: {}
+[17.342473] (-) TimerEvent: {}
+[17.442700] (-) TimerEvent: {}
+[17.542883] (-) TimerEvent: {}
+[17.643066] (-) TimerEvent: {}
+[17.743246] (-) TimerEvent: {}
+[17.843396] (-) TimerEvent: {}
+[17.943547] (-) TimerEvent: {}
+[18.043701] (-) TimerEvent: {}
+[18.143850] (-) TimerEvent: {}
+[18.243983] (-) TimerEvent: {}
+[18.344127] (-) TimerEvent: {}
+[18.444277] (-) TimerEvent: {}
+[18.544420] (-) TimerEvent: {}
+[18.644632] (-) TimerEvent: {}
+[18.744981] (-) TimerEvent: {}
+[18.845133] (-) TimerEvent: {}
+[18.945997] (-) TimerEvent: {}
+[19.046152] (-) TimerEvent: {}
+[19.146301] (-) TimerEvent: {}
+[19.246468] (-) TimerEvent: {}
+[19.346621] (-) TimerEvent: {}
+[19.446781] (-) TimerEvent: {}
+[19.546965] (-) TimerEvent: {}
+[19.647989] (-) TimerEvent: {}
+[19.748138] (-) TimerEvent: {}
+[19.848329] (-) TimerEvent: {}
+[19.948553] (-) TimerEvent: {}
+[20.048728] (-) TimerEvent: {}
+[20.148913] (-) TimerEvent: {}
+[20.249094] (-) TimerEvent: {}
+[20.350006] (-) TimerEvent: {}
+[20.450190] (-) TimerEvent: {}
+[20.550373] (-) TimerEvent: {}
+[20.650566] (-) TimerEvent: {}
+[20.750709] (-) TimerEvent: {}
+[20.850850] (-) TimerEvent: {}
+[20.950992] (-) TimerEvent: {}
+[21.051990] (-) TimerEvent: {}
+[21.152128] (-) TimerEvent: {}
+[21.252311] (-) TimerEvent: {}
+[21.352503] (-) TimerEvent: {}
+[21.452665] (-) TimerEvent: {}
+[21.552816] (-) TimerEvent: {}
+[21.652972] (-) TimerEvent: {}
+[21.753127] (-) TimerEvent: {}
+[21.853270] (-) TimerEvent: {}
+[21.953983] (-) TimerEvent: {}
+[22.054133] (-) TimerEvent: {}
+[22.154282] (-) TimerEvent: {}
+[22.254423] (-) TimerEvent: {}
+[22.354568] (-) TimerEvent: {}
+[22.454711] (-) TimerEvent: {}
+[22.554881] (-) TimerEvent: {}
+[22.655973] (-) TimerEvent: {}
+[22.756119] (-) TimerEvent: {}
+[22.856304] (-) TimerEvent: {}
+[22.956515] (-) TimerEvent: {}
+[23.056715] (-) TimerEvent: {}
+[23.156944] (-) TimerEvent: {}
+[23.257168] (-) TimerEvent: {}
+[23.358017] (-) TimerEvent: {}
+[23.458205] (-) TimerEvent: {}
+[23.558387] (-) TimerEvent: {}
+[23.658571] (-) TimerEvent: {}
+[23.758711] (-) TimerEvent: {}
+[23.858864] (-) TimerEvent: {}
+[23.959971] (-) TimerEvent: {}
+[24.060117] (-) TimerEvent: {}
+[24.160264] (-) TimerEvent: {}
+[24.260415] (-) TimerEvent: {}
+[24.360565] (-) TimerEvent: {}
+[24.460712] (-) TimerEvent: {}
+[24.560849] (-) TimerEvent: {}
+[24.662002] (-) TimerEvent: {}
+[24.762181] (-) TimerEvent: {}
+[24.862336] (-) TimerEvent: {}
+[24.962510] (-) TimerEvent: {}
+[25.062658] (-) TimerEvent: {}
+[25.162811] (-) TimerEvent: {}
+[25.262966] (-) TimerEvent: {}
+[25.363122] (-) TimerEvent: {}
+[25.463282] (-) TimerEvent: {}
+[25.563519] (-) TimerEvent: {}
+[25.663722] (-) TimerEvent: {}
+[25.744663] (nav_components) StdoutLine: {'line': b'[ 21%] Building CXX object CMakeFiles/nav_server.dir/src/slopehole_controller.cpp.o\n'}
+[25.763811] (-) TimerEvent: {}
+[25.863993] (-) TimerEvent: {}
+[25.964973] (-) TimerEvent: {}
+[26.065168] (-) TimerEvent: {}
+[26.165322] (-) TimerEvent: {}
+[26.265470] (-) TimerEvent: {}
+[26.365620] (-) TimerEvent: {}
+[26.465768] (-) TimerEvent: {}
+[26.565933] (-) TimerEvent: {}
+[26.666106] (-) TimerEvent: {}
+[26.766987] (-) TimerEvent: {}
+[26.867182] (-) TimerEvent: {}
+[26.967358] (-) TimerEvent: {}
+[27.067507] (-) TimerEvent: {}
+[27.167816] (-) TimerEvent: {}
+[27.268980] (-) TimerEvent: {}
+[27.369183] (-) TimerEvent: {}
+[27.469378] (-) TimerEvent: {}
+[27.569528] (-) TimerEvent: {}
+[27.669710] (-) TimerEvent: {}
+[27.693164] (nav_components) StdoutLine: {'line': b'[ 25%] Building CXX object CMakeFiles/nav_server.dir/src/hole_execution_config.cpp.o\n'}
+[27.769981] (-) TimerEvent: {}
+[27.870128] (-) TimerEvent: {}
+[27.970276] (-) TimerEvent: {}
+[28.070981] (-) TimerEvent: {}
+[28.171128] (-) TimerEvent: {}
+[28.271306] (-) TimerEvent: {}
+[28.371537] (-) TimerEvent: {}
+[28.471699] (-) TimerEvent: {}
+[28.572014] (-) TimerEvent: {}
+[28.672981] (-) TimerEvent: {}
+[28.773126] (-) TimerEvent: {}
+[28.873273] (-) TimerEvent: {}
+[28.973435] (-) TimerEvent: {}
+[29.073581] (-) TimerEvent: {}
+[29.173726] (-) TimerEvent: {}
+[29.273892] (-) TimerEvent: {}
+[29.374090] (-) TimerEvent: {}
+[29.454547] (nav_components) StdoutLine: {'line': b'[ 28%] Building CXX object CMakeFiles/nav_server.dir/src/hole_plan_adapter.cpp.o\n'}
+[29.474169] (-) TimerEvent: {}
+[29.574317] (-) TimerEvent: {}
+[29.674486] (-) TimerEvent: {}
+[29.774638] (-) TimerEvent: {}
+[29.874972] (-) TimerEvent: {}
+[29.975121] (-) TimerEvent: {}
+[30.075972] (-) TimerEvent: {}
+[30.176122] (-) TimerEvent: {}
+[30.276325] (-) TimerEvent: {}
+[30.376475] (-) TimerEvent: {}
+[30.476627] (-) TimerEvent: {}
+[30.576777] (-) TimerEvent: {}
+[30.676933] (-) TimerEvent: {}
+[30.777978] (-) TimerEvent: {}
+[30.878127] (-) TimerEvent: {}
+[30.978277] (-) TimerEvent: {}
+[31.078430] (-) TimerEvent: {}
+[31.178583] (-) TimerEvent: {}
+[31.278736] (-) TimerEvent: {}
+[31.378887] (-) TimerEvent: {}
+[31.479042] (-) TimerEvent: {}
+[31.579190] (-) TimerEvent: {}
+[31.679341] (-) TimerEvent: {}
+[31.779989] (-) TimerEvent: {}
+[31.880140] (-) TimerEvent: {}
+[31.980292] (-) TimerEvent: {}
+[32.080438] (-) TimerEvent: {}
+[32.180590] (-) TimerEvent: {}
+[32.280991] (-) TimerEvent: {}
+[32.381147] (-) TimerEvent: {}
+[32.481295] (-) TimerEvent: {}
+[32.582008] (-) TimerEvent: {}
+[32.682187] (-) TimerEvent: {}
+[32.782337] (-) TimerEvent: {}
+[32.882489] (-) TimerEvent: {}
+[32.982640] (-) TimerEvent: {}
+[33.082972] (-) TimerEvent: {}
+[33.183131] (-) TimerEvent: {}
+[33.281710] (nav_components) StdoutLine: {'line': b'[ 32%] Building CXX object CMakeFiles/nav_server.dir/src/slopehole_ros_adapter.cpp.o\n'}
+[33.283195] (-) TimerEvent: {}
+[33.383337] (-) TimerEvent: {}
+[33.483983] (-) TimerEvent: {}
+[33.584129] (-) TimerEvent: {}
+[33.684319] (-) TimerEvent: {}
+[33.784552] (-) TimerEvent: {}
+[33.884986] (-) TimerEvent: {}
+[33.985165] (-) TimerEvent: {}
+[34.085978] (-) TimerEvent: {}
+[34.186126] (-) TimerEvent: {}
+[34.286275] (-) TimerEvent: {}
+[34.386461] (-) TimerEvent: {}
+[34.486652] (-) TimerEvent: {}
+[34.586801] (-) TimerEvent: {}
+[34.686974] (-) TimerEvent: {}
+[34.787997] (-) TimerEvent: {}
+[34.888178] (-) TimerEvent: {}
+[34.988377] (-) TimerEvent: {}
+[35.088528] (-) TimerEvent: {}
+[35.188739] (-) TimerEvent: {}
+[35.288976] (-) TimerEvent: {}
+[35.389127] (-) TimerEvent: {}
+[35.489990] (-) TimerEvent: {}
+[35.590138] (-) TimerEvent: {}
+[35.690293] (-) TimerEvent: {}
+[35.790494] (-) TimerEvent: {}
+[35.890687] (-) TimerEvent: {}
+[35.990866] (-) TimerEvent: {}
+[36.091976] (-) TimerEvent: {}
+[36.192125] (-) TimerEvent: {}
+[36.292274] (-) TimerEvent: {}
+[36.392423] (-) TimerEvent: {}
+[36.492571] (-) TimerEvent: {}
+[36.592720] (-) TimerEvent: {}
+[36.692868] (-) TimerEvent: {}
+[36.792987] (-) TimerEvent: {}
+[36.893137] (-) TimerEvent: {}
+[36.993287] (-) TimerEvent: {}
+[37.093437] (-) TimerEvent: {}
+[37.193979] (-) TimerEvent: {}
+[37.294129] (-) TimerEvent: {}
+[37.394313] (-) TimerEvent: {}
+[37.494503] (-) TimerEvent: {}
+[37.594983] (-) TimerEvent: {}
+[37.695135] (-) TimerEvent: {}
+[37.795291] (-) TimerEvent: {}
+[37.895441] (-) TimerEvent: {}
+[37.995973] (-) TimerEvent: {}
+[38.096144] (-) TimerEvent: {}
+[38.196301] (-) TimerEvent: {}
+[38.296448] (-) TimerEvent: {}
+[38.396985] (-) TimerEvent: {}
+[38.497143] (-) TimerEvent: {}
+[38.597295] (-) TimerEvent: {}
+[38.697444] (-) TimerEvent: {}
+[38.797974] (-) TimerEvent: {}
+[38.898122] (-) TimerEvent: {}
+[38.998279] (-) TimerEvent: {}
+[39.098438] (-) TimerEvent: {}
+[39.198987] (-) TimerEvent: {}
+[39.299134] (-) TimerEvent: {}
+[39.399278] (-) TimerEvent: {}
+[39.499427] (-) TimerEvent: {}
+[39.599579] (-) TimerEvent: {}
+[39.699979] (-) TimerEvent: {}
+[39.800130] (-) TimerEvent: {}
+[39.900279] (-) TimerEvent: {}
+[40.000984] (-) TimerEvent: {}
+[40.101134] (-) TimerEvent: {}
+[40.201280] (-) TimerEvent: {}
+[40.301428] (-) TimerEvent: {}
+[40.401579] (-) TimerEvent: {}
+[40.501731] (-) TimerEvent: {}
+[40.601881] (-) TimerEvent: {}
+[40.702996] (-) TimerEvent: {}
+[40.803186] (-) TimerEvent: {}
+[40.903377] (-) TimerEvent: {}
+[41.003531] (-) TimerEvent: {}
+[41.103693] (-) TimerEvent: {}
+[41.203848] (-) TimerEvent: {}
+[41.304000] (-) TimerEvent: {}
+[41.404150] (-) TimerEvent: {}
+[41.504301] (-) TimerEvent: {}
+[41.605009] (-) TimerEvent: {}
+[41.705235] (-) TimerEvent: {}
+[41.805450] (-) TimerEvent: {}
+[41.905649] (-) TimerEvent: {}
+[42.005817] (-) TimerEvent: {}
+[42.105983] (-) TimerEvent: {}
+[42.206975] (-) TimerEvent: {}
+[42.307126] (-) TimerEvent: {}
+[42.407279] (-) TimerEvent: {}
+[42.507428] (-) TimerEvent: {}
+[42.607615] (-) TimerEvent: {}
+[42.707796] (-) TimerEvent: {}
+[42.807953] (-) TimerEvent: {}
+[42.908108] (-) TimerEvent: {}
+[43.008255] (-) TimerEvent: {}
+[43.109001] (-) TimerEvent: {}
+[43.209182] (-) TimerEvent: {}
+[43.309368] (-) TimerEvent: {}
+[43.409553] (-) TimerEvent: {}
+[43.509708] (-) TimerEvent: {}
+[43.609971] (-) TimerEvent: {}
+[43.710128] (-) TimerEvent: {}
+[43.810978] (-) TimerEvent: {}
+[43.911129] (-) TimerEvent: {}
+[44.011287] (-) TimerEvent: {}
+[44.111436] (-) TimerEvent: {}
+[44.211578] (-) TimerEvent: {}
+[44.311723] (-) TimerEvent: {}
+[44.411868] (-) TimerEvent: {}
+[44.511977] (-) TimerEvent: {}
+[44.612977] (-) TimerEvent: {}
+[44.713123] (-) TimerEvent: {}
+[44.813270] (-) TimerEvent: {}
+[44.913414] (-) TimerEvent: {}
+[45.013556] (-) TimerEvent: {}
+[45.113704] (-) TimerEvent: {}
+[45.213850] (-) TimerEvent: {}
+[45.313985] (-) TimerEvent: {}
+[45.414296] (-) TimerEvent: {}
+[45.514975] (-) TimerEvent: {}
+[45.615125] (-) TimerEvent: {}
+[45.715287] (-) TimerEvent: {}
+[45.815455] (-) TimerEvent: {}
+[45.915600] (-) TimerEvent: {}
+[46.015743] (-) TimerEvent: {}
+[46.115976] (-) TimerEvent: {}
+[46.216984] (-) TimerEvent: {}
+[46.317137] (-) TimerEvent: {}
+[46.417283] (-) TimerEvent: {}
+[46.517439] (-) TimerEvent: {}
+[46.617618] (-) TimerEvent: {}
+[46.717793] (-) TimerEvent: {}
+[46.817953] (-) TimerEvent: {}
+[46.918180] (-) TimerEvent: {}
+[47.018984] (-) TimerEvent: {}
+[47.119131] (-) TimerEvent: {}
+[47.219327] (-) TimerEvent: {}
+[47.319533] (-) TimerEvent: {}
+[47.419715] (-) TimerEvent: {}
+[47.519861] (-) TimerEvent: {}
+[47.620991] (-) TimerEvent: {}
+[47.721182] (-) TimerEvent: {}
+[47.821381] (-) TimerEvent: {}
+[47.921599] (-) TimerEvent: {}
+[48.021797] (-) TimerEvent: {}
+[48.121951] (-) TimerEvent: {}
+[48.222110] (-) TimerEvent: {}
+[48.322257] (-) TimerEvent: {}
+[48.422403] (-) TimerEvent: {}
+[48.522987] (-) TimerEvent: {}
+[48.623156] (-) TimerEvent: {}
+[48.723305] (-) TimerEvent: {}
+[48.823469] (-) TimerEvent: {}
+[48.923650] (-) TimerEvent: {}
+[49.023823] (-) TimerEvent: {}
+[49.124006] (-) TimerEvent: {}
+[49.225017] (-) TimerEvent: {}
+[49.325208] (-) TimerEvent: {}
+[49.425364] (-) TimerEvent: {}
+[49.525563] (-) TimerEvent: {}
+[49.625747] (-) TimerEvent: {}
+[49.725895] (-) TimerEvent: {}
+[49.826077] (-) TimerEvent: {}
+[49.926982] (-) TimerEvent: {}
+[50.027140] (-) TimerEvent: {}
+[50.127288] (-) TimerEvent: {}
+[50.227440] (-) TimerEvent: {}
+[50.327594] (-) TimerEvent: {}
+[50.427739] (-) TimerEvent: {}
+[50.527888] (-) TimerEvent: {}
+[50.628217] (-) TimerEvent: {}
+[50.728973] (-) TimerEvent: {}
+[50.829159] (-) TimerEvent: {}
+[50.929332] (-) TimerEvent: {}
+[51.029522] (-) TimerEvent: {}
+[51.129735] (-) TimerEvent: {}
+[51.229916] (-) TimerEvent: {}
+[51.330983] (-) TimerEvent: {}
+[51.431129] (-) TimerEvent: {}
+[51.531293] (-) TimerEvent: {}
+[51.631475] (-) TimerEvent: {}
+[51.731658] (-) TimerEvent: {}
+[51.831816] (-) TimerEvent: {}
+[51.931970] (-) TimerEvent: {}
+[52.032158] (-) TimerEvent: {}
+[52.132377] (-) TimerEvent: {}
+[52.232971] (-) TimerEvent: {}
+[52.333119] (-) TimerEvent: {}
+[52.433264] (-) TimerEvent: {}
+[52.533412] (-) TimerEvent: {}
+[52.633558] (-) TimerEvent: {}
+[52.733981] (-) TimerEvent: {}
+[52.834125] (-) TimerEvent: {}
+[52.934268] (-) TimerEvent: {}
+[53.034981] (-) TimerEvent: {}
+[53.135127] (-) TimerEvent: {}
+[53.235281] (-) TimerEvent: {}
+[53.335430] (-) TimerEvent: {}
+[53.435601] (-) TimerEvent: {}
+[53.535787] (-) TimerEvent: {}
+[53.636979] (-) TimerEvent: {}
+[53.737133] (-) TimerEvent: {}
+[53.799489] (nav_components) StdoutLine: {'line': b'[ 35%] Building CXX object CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.o\n'}
+[53.837224] (-) TimerEvent: {}
+[53.937371] (-) TimerEvent: {}
+[54.037524] (-) TimerEvent: {}
+[54.137696] (-) TimerEvent: {}
+[54.237843] (-) TimerEvent: {}
+[54.337988] (-) TimerEvent: {}
+[54.438136] (-) TimerEvent: {}
+[54.538985] (-) TimerEvent: {}
+[54.639134] (-) TimerEvent: {}
+[54.739298] (-) TimerEvent: {}
+[54.839485] (-) TimerEvent: {}
+[54.939673] (-) TimerEvent: {}
+[55.039865] (-) TimerEvent: {}
+[55.140987] (-) TimerEvent: {}
+[55.241148] (-) TimerEvent: {}
+[55.341295] (-) TimerEvent: {}
+[55.441450] (-) TimerEvent: {}
+[55.541599] (-) TimerEvent: {}
+[55.641749] (-) TimerEvent: {}
+[55.741901] (-) TimerEvent: {}
+[55.842056] (-) TimerEvent: {}
+[55.942203] (-) TimerEvent: {}
+[56.042351] (-) TimerEvent: {}
+[56.142978] (-) TimerEvent: {}
+[56.243131] (-) TimerEvent: {}
+[56.343289] (-) TimerEvent: {}
+[56.443441] (-) TimerEvent: {}
+[56.543589] (-) TimerEvent: {}
+[56.644007] (-) TimerEvent: {}
+[56.744191] (-) TimerEvent: {}
+[56.844973] (-) TimerEvent: {}
+[56.945122] (-) TimerEvent: {}
+[57.045300] (-) TimerEvent: {}
+[57.145488] (-) TimerEvent: {}
+[57.245641] (-) TimerEvent: {}
+[57.345795] (-) TimerEvent: {}
+[57.445972] (-) TimerEvent: {}
+[57.546983] (-) TimerEvent: {}
+[57.647135] (-) TimerEvent: {}
+[57.747290] (-) TimerEvent: {}
+[57.847444] (-) TimerEvent: {}
+[57.947594] (-) TimerEvent: {}
+[58.047776] (-) TimerEvent: {}
+[58.147995] (-) TimerEvent: {}
+[58.248184] (-) TimerEvent: {}
+[58.348982] (-) TimerEvent: {}
+[58.449130] (-) TimerEvent: {}
+[58.549279] (-) TimerEvent: {}
+[58.649423] (-) TimerEvent: {}
+[58.749671] (-) TimerEvent: {}
+[58.849932] (-) TimerEvent: {}
+[58.950971] (-) TimerEvent: {}
+[59.051121] (-) TimerEvent: {}
+[59.152013] (-) TimerEvent: {}
+[59.251318] (nav_components) StdoutLine: {'line': b'[ 39%] Linking CXX executable nav_server\n'}
+[59.252197] (-) TimerEvent: {}
+[59.352309] (-) TimerEvent: {}
+[59.452523] (-) TimerEvent: {}
+[59.552748] (-) TimerEvent: {}
+[59.652932] (-) TimerEvent: {}
+[59.753278] (-) TimerEvent: {}
+[59.853458] (-) TimerEvent: {}
+[59.953979] (-) TimerEvent: {}
+[60.054115] (-) TimerEvent: {}
+[60.144570] (nav_components) StdoutLine: {'line': b'[ 92%] Built target nav_server\n'}
+[60.154251] (-) TimerEvent: {}
+[60.173379] (nav_components) StdoutLine: {'line': b'[100%] Built target two_point_patrol\n'}
+[60.182472] (nav_components) CommandEnded: {'returncode': 0}
+[60.183276] (nav_components) JobProgress: {'identifier': 'nav_components', 'progress': 'install'}
+[60.183441] (nav_components) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dengjiaxi/simulation_seu/test/build/nav_components'], 'cwd': '/home/dengjiaxi/simulation_seu/test/build/nav_components', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/dengjiaxi', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'HTTPS_PROXY': 'http://127.0.0.1:7897', 'CMAKE_BUILD_PARALLEL_LEVEL': '1', 'CODEX_CI': '1', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'dengjiaxi', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"zh-cn","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'DEBUG': 'release', 'OPENBLAS_NUM_THREADS': '1', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib:/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib:/home/dengjiaxi/simulation_seu/test/install/nav_components/lib:/home/dengjiaxi/dependency/acados/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'ACADOS_SOURCE_DIR': '/home/dengjiaxi/dependency/acados', 'INPUT_METHOD': 'ibus', 'HOME': '/home/dengjiaxi', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/dengjiaxi/simulation_seu', 'DESKTOP_SESSION': 'ubuntu-xorg', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-7267b4bb-1.13-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'MANAGERPID': '2868', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '3320', 'MAKEFLAGS': '-j1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '119874', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/dengjiaxi/simulation_seu/test/install', 'CUDA_VISIBLE_DEVICES': '', 'CODEX_PERMISSION_PROFILE': ':danger-full-access', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'dengjiaxi', 'JOURNAL_STREAM': '10:29785', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'CODEX_APPLY_PATCH_PRESERVE_LINE_ENDINGS': '1', 'RUST_LOG': 'warn', 'USERNAME': 'dengjiaxi', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'PATH': '/home/dengjiaxi/.local/bin:/home/dengjiaxi/.codex/tmp/arg0/codex-arg0m3Gh2j:/home/dengjiaxi/.local/bin:/home/dengjiaxi/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/dengjiaxi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/dengjiaxi/.vscode/extensions/openai.chatgpt-26.1007.21434-linux-x64/bin/linux-x86_64', 'SESSION_MANAGER': 'local/dengjiaxiASUSubuntu2404:@/tmp/.ICE-unix/3277,unix/dengjiaxiASUSubuntu2404:/tmp/.ICE-unix/3277', 'CODEX_VERSION': '0.162.0-alpha.17.2', 'CODEX_SESSION_ID': '01a16780-ae9f-7f81-9d21-f242225b458f', 'INVOCATION_ID': '93110c49ca2f428284de28bf3c57f41a', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=fcitx', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/dengjiaxi/simulation_seu/test/install/nav_bringup:/home/dengjiaxi/simulation_seu/test/install/nav_components:/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform:/home/dengjiaxi/simulation_seu/test/install/robots_msgs:/home/dengjiaxi/simulation_seu/test/install/nav_interfaces:/home/dengjiaxi/simulation_seu/test/install/nav_core:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '01a16780-ae9f-7f81-9d21-f242225b458f', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/dengjiaxi/simulation_seu/test/build/nav_components', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/dengjiaxi/.config/Code/CachedData/7debcd0e2acdea1c52de81bf9ee1620444407dda', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'PYTHONPATH': '/home/dengjiaxi/simulation_seu/test/install/robots_msgs/lib/python3.12/site-packages:/home/dengjiaxi/simulation_seu/test/install/nav_interfaces/lib/python3.12/site-packages:/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'HTTP_PROXY': 'http://127.0.0.1:7897', 'OMP_NUM_THREADS': '1', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/dengjiaxi/simulation_seu/test/install/robots_msgs:/home/dengjiaxi/simulation_seu/test/install/nav_interfaces:/home/dengjiaxi/simulation_seu/test/install/nav_core:/home/dengjiaxi/simulation_seu/test/install/nav_bringup:/home/dengjiaxi/simulation_seu/test/install/nav_components:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/dengjiaxi/simulation_seu/test/install/fake_vel_transform:/opt/ros/jazzy', 'VSCODE_PID': '119874'}), 'shell': False}
+[60.191630] (nav_components) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[60.191746] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/lib/libacados_ocp_solver_omni_nmpc.so\n'}
+[60.197020] (nav_components) StdoutLine: {'line': b'-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/lib/nav_components/nav_server\n'}
+[60.236409] (nav_components) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/dengjiaxi/simulation_seu/test/install/nav_components/lib/nav_components/nav_server" to "$ORIGIN/..:/home/dengjiaxi/dependency/acados/lib"\n'}
+[60.236784] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/lib/nav_components/two_point_patrol\n'}
+[60.237092] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/lib/nav_components/hole_structure_simulator.py\n'}
+[60.237236] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include\n'}
+[60.237387] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components\n'}
+[60.237538] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/spin_recovery.hpp\n'}
+[60.237671] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner\n'}
+[60.237800] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner/hole_connection_search.hpp\n'}
+[60.237914] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner/normal_navigation_segment.hpp\n'}
+[60.238072] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner/hole_connection_optimizer.hpp\n'}
+[60.238181] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner/path_smoother.hpp\n'}
+[60.238299] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner/bspline.hpp\n'}
+[60.238418] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/planner/bspline_optimizer.hpp\n'}
+[60.238530] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/hole_execution_config.hpp\n'}
+[60.238647] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/pure_pursuit.hpp\n'}
+[60.238746] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/hole_plan_adapter.hpp\n'}
+[60.238845] (nav_components) StdoutLine: {'line': b'-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/slopehole_ros_adapter.hpp\n'}
+[60.239107] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/hole_clearance.hpp\n'}
+[60.239248] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/hole_geometry_previewer.hpp\n'}
+[60.239359] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/omni_motion.hpp\n'}
+[60.239461] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/simple_planner.hpp\n'}
+[60.239564] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/hole_selected_snapshot.hpp\n'}
+[60.239681] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/layered_map_manager.hpp\n'}
+[60.239791] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/arc_backup_recovery.hpp\n'}
+[60.239889] (nav_components) StdoutLine: {'line': b'-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/slopehole_controller.hpp\n'}
+[60.240115] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/esdf_map.hpp\n'}
+[60.240236] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/recovery_manager.hpp\n'}
+[60.240350] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/backup_recovery.hpp\n'}
+[60.240451] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/static_map_loader.hpp\n'}
+[60.240550] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/nmpc.hpp\n'}
+[60.240661] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/omni_model.hpp\n'}
+[60.240758] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/translation_recovery.hpp\n'}
+[60.240854] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/map_image_io.hpp\n'}
+[60.240963] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/costmap_inflater.hpp\n'}
+[60.241063] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/terrain_region_map.hpp\n'}
+[60.241162] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/include/nav_components/hole_passage_planner.hpp\n'}
+[60.241299] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/nmpc_config\n'}
+[60.241491] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/ament_index/resource_index/package_run_dependencies/nav_components\n'}
+[60.241697] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/ament_index/resource_index/parent_prefix_path/nav_components\n'}
+[60.241863] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/environment/ament_prefix_path.sh\n'}
+[60.242034] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/environment/ament_prefix_path.dsv\n'}
+[60.242226] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/environment/path.sh\n'}
+[60.242370] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/environment/path.dsv\n'}
+[60.242500] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/local_setup.bash\n'}
+[60.242628] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/local_setup.sh\n'}
+[60.242756] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/local_setup.zsh\n'}
+[60.242919] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/local_setup.dsv\n'}
+[60.243062] (nav_components) StdoutLine: {'line': b'-- Installing: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/package.dsv\n'}
+[60.243327] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/ament_index/resource_index/packages/nav_components\n'}
+[60.243474] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/cmake/nav_componentsConfig.cmake\n'}
+[60.243587] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/cmake/nav_componentsConfig-version.cmake\n'}
+[60.243719] (nav_components) StdoutLine: {'line': b'-- Up-to-date: /home/dengjiaxi/simulation_seu/test/install/nav_components/share/nav_components/package.xml\n'}
+[60.245203] (nav_components) CommandEnded: {'returncode': 0}
+[60.253729] (nav_components) JobEnded: {'identifier': 'nav_components', 'rc': 0}
+[60.254169] (-) EventReactorShutdown: {}

@@ -2,33 +2,33 @@
 <robot name="sentry_lift_test">
   <link name="chassis">
     <visual>
-      <origin xyz="-.285 0 -.10585" rpy="0 0 0" />
+      <origin xyz="-.22 0 -.10585" rpy="0 0 0" />
       <geometry>
-        <box size=".03 .60 .04" />
+        <box size=".01 .45 .04" />
       </geometry>
     </visual>
     <visual>
-      <origin xyz=".285 0 -.10585" rpy="0 0 0" />
+      <origin xyz=".22 0 -.10585" rpy="0 0 0" />
       <geometry>
-        <box size=".03 .60 .04" />
+        <box size=".01 .45 .04" />
       </geometry>
     </visual>
     <visual>
-      <origin xyz="0 -.285 -.10585" rpy="0 0 0" />
+      <origin xyz="0 -.22 -.10585" rpy="0 0 0" />
       <geometry>
-        <box size=".54 .03 .04" />
+        <box size=".43 .01 .04" />
       </geometry>
     </visual>
     <visual>
-      <origin xyz="0 .285 -.10585" rpy="0 0 0" />
+      <origin xyz="0 .22 -.10585" rpy="0 0 0" />
       <geometry>
-        <box size=".54 .03 .04" />
+        <box size=".43 .01 .04" />
       </geometry>
     </visual>
     <visual>
-      <origin xyz="0 0 -.18085" rpy="0 0 0" />
+      <origin xyz="0 0 -.13085" rpy="0 0 0" />
       <geometry>
-        <box size=".60 .60 .11" />
+        <box size=".45 .45 .01" />
       </geometry>
     </visual>
   </link>
@@ -122,7 +122,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 3.141592653589793" />
       <geometry>
-        <mesh filename="/home/dengjiaxi/simulation_seu/navigatiosim2/src/pb2025_robot_description/resource/models/mid360/meshes/mid360.dae" scale="1 1 1" />
+        <mesh filename="file:///home/dengjiaxi/simulation_seu/navigatiosim2/src/pb2025_robot_description/resource/models/mid360/meshes/mid360.dae" scale="1 1 1" />
       </geometry>
     </visual>
   </link>
@@ -184,7 +184,7 @@
     <child link="lift_carriage" />
     <origin xyz="0 0 -0.08835" rpy="0 0 0" />
     <axis xyz="0 0 1" />
-    <limit lower="0" upper=".3" effort="300" velocity=".25" />
+    <limit lower="0" upper=".3" effort="300" velocity=".8" />
   </joint>
   <joint name="gimbal_yaw_joint" type="continuous">
     <parent link="lift_carriage" />

@@ -1,0 +1,4 @@
+demo (-10.0, 3.0) -> (4.694, 8.1)
+READY: RViz 2D Goal Pose选目标；map起点=[-10.0, 3.0]，推荐目标=[4.694, 8.1]。
+收到Ctrl+C，关闭本组仿真进程。
+MANUAL_SESSION 

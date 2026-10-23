@@ -1,0 +1,8 @@
+[INFO] [1792464264.371459872] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1792464264.371653179] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[INFO] [1792464264.416337288] [rviz2]: Stereo is NOT SUPPORTED
+[ERROR] [1792464264.754103561] [rviz2]: Could not load resource [/home/dengjiaxi/simulation_seu/navigatiosim2/src/pb2025_robot_description/resource/models/mid360/meshes/mid360.dae]: Unable to open file "/home/dengjiaxi/simulation_seu/navigatiosim2/src/pb2025_robot_description/resource/models/mid360/meshes/mid360.dae".
+[ERROR] [1792464264.754710503] [rviz2]: Could not load resource [/home/dengjiaxi/simulation_seu/navigatiosim2/src/pb2025_robot_description/resource/models/mid360/meshes/mid360.dae]: Unable to open file "/home/dengjiaxi/simulation_seu/navigatiosim2/src/pb2025_robot_description/resource/models/mid360/meshes/mid360.dae".
+[INFO] [1792464271.642501236] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[INFO] [1792464282.868412093] [rviz2]: Setting goal pose: Frame:map, Position(-3.91569, 6.96325, 0), Orientation(0, 0, 0, 1) = Angle: 0
+[INFO] [1792464324.179253781] [rclcpp]: signal_handler(SIGINT/SIGTERM)

@@ -25,6 +25,9 @@ public:
                                              geometry_msgs::msg::Twist& command) override;
     void setTolerance(double xy, double) override { tolerance_=xy; }
     void reset() override;
+    // 适配层接口：正常求解才允许补速，实发命令反馈给原速度观测器。
+    bool supplementationAllowed();
+    void recordAppliedCommand(const geometry_msgs::msg::Twist& command);
 private:
     struct Config {
         double max_velocity=2, max_acceleration=4, cruise=2;
@@ -53,10 +56,12 @@ private:
     std::string odom_frame_, map_frame_, fake_frame_;
     double alpha_=0.8, feedback_timeout_=0.15, pose_timeout_=0.2, filter_alpha_=1;
     double tolerance_=0.1, stop_speed_=0.05, last_time_=0, voltage_=0;
-    bool have_voltage_=false, have_feedback_=false, have_lio_=false;
-    omni::Vec feedback_{0,0}, last_sent_{0,0};
-    double feedback_stamp_=-1, feedback_received_=-1, lio_received_=-1;
-    nav_msgs::msg::Odometry lio_;
+    bool have_voltage_=false;
+    bool supplementation_allowed_=false;
+    omni::Vec last_fused_{0,0};
+    omni::Vec last_sent_{0,0};
+    omni::TimestampedSampleCache<omni::Vec> feedback_;
+    omni::TimestampedSampleCache<nav_msgs::msg::Odometry> lio_;
     nav_msgs::msg::Path path_;
     size_t nearest_=0;
     std::array<omni::Vec, omni::N> controls_{};
@@ -68,6 +73,7 @@ private:
     rclcpp::Subscription<robots_msgs::msg::ChassisOdom>::SharedPtr capacitor_sub_;
     rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr predicted_pub_;
     rclcpp::Publisher<geometry_msgs::msg::TwistStamped>::SharedPtr measured_pub_, fused_pub_, command_pub_;
+    rclcpp::Publisher<geometry_msgs::msg::TwistStamped>::SharedPtr applied_pub_;
     rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr parameters_callback_;
 };
 } // namespace nav_components

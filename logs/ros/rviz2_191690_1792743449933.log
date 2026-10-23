@@ -1,0 +1,5 @@
+[INFO] [1792743450.297741234] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1792743450.297822777] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[INFO] [1792743450.316925671] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1792743458.562782944] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[INFO] [1792743484.902840516] [rclcpp]: signal_handler(SIGINT/SIGTERM)

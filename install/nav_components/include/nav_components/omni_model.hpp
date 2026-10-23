@@ -46,6 +46,21 @@ inline bool fresh(double now, double stamp, double timeout) {
     const double age = now - stamp;
     return std::isfinite(stamp) && age >= -kClockSkewSeconds && age <= timeout;
 }
+// Both velocity and LIO use the same source/receive clock policy.
+template<class T> struct TimestampedSampleCache {
+    T value{};
+    double stamp=-1, received=-1;
+    bool have=false;
+    bool valid(double now,double timeout) const {
+        return have&&fresh(now,stamp,timeout)&&fresh(now,received,timeout);
+    }
+    bool offer(double now,double source_stamp,const T& sample,double timeout) {
+        // Reject only this sample. Never refresh or erase a previous good sample.
+        if(!fresh(now,source_stamp,timeout))return false;
+        if(have&&now>=received&&source_stamp<=stamp)return false;
+        value=sample;stamp=source_stamp;received=now;have=true;return true;
+    }
+};
 // Prediction is a one-step ramp to the FINAL published target, then a hold.
 // Alpha=0 ignores velocity measurements after initialization, but not pose validity.
 class VelocityObserver {

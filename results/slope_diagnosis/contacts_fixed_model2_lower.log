@@ -1,0 +1,222 @@
+已选模型 2：60×60cm 底盘＋原云台（带升降）
+2026 test field: removed A1=24 A2=24 B1=50 B2=40 cap triangles including B undersides; all four 60 cm clearance sweeps clear; slopes retained
+lower (2.0, -4.306) -> (-4.6935, -2.6)
+RCUTILS_CONSOLE_STDOUT_LINE_BUFFERED is now ignored. Please set RCUTILS_LOGGING_USE_STDOUT and RCUTILS_LOGGING_BUFFERED_STREAM to control the stream and the buffering of log messages.
+[ROTATION] NAV_AUTO
+[ros_bridge] RCUTILS_CONSOLE_STDOUT_LINE_BUFFERED is now ignored. Please set RCUTILS_LOGGING_USE_STDOUT and RCUTILS_LOGGING_BUFFERED_STREAM to control the stream and the buffering of log messages.
+[ros_bridge] [INFO] [1792654090.568869419] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/wheel/odometry (gz.msgs.Odometry) -> /wheel/odometry (nav_msgs/msg/Odometry)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.573469639] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/default/model/sentry/joint_state (gz.msgs.Model) -> /joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.575667454] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/swerve/front_left_steer_joint/target_angle (std_msgs/msg/Float64) -> /model/sentry/joint/front_left_steer_joint/target_angle (gz.msgs.Double)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.576674263] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/swerve/front_right_steer_joint/target_angle (std_msgs/msg/Float64) -> /model/sentry/joint/front_right_steer_joint/target_angle (gz.msgs.Double)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.577166122] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/swerve/rear_left_steer_joint/target_angle (std_msgs/msg/Float64) -> /model/sentry/joint/rear_left_steer_joint/target_angle (gz.msgs.Double)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.577658492] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/swerve/rear_right_steer_joint/target_angle (std_msgs/msg/Float64) -> /model/sentry/joint/rear_right_steer_joint/target_angle (gz.msgs.Double)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.578139610] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/swerve/front_left_wheel_joint/target_speed (std_msgs/msg/Float64) -> /model/sentry/joint/front_left_wheel_joint/target_speed (gz.msgs.Double)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.578530039] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/swerve/front_right_wheel_joint/target_speed (std_msgs/msg/Float64) -> /model/sentry/joint/front_right_wheel_joint/target_speed (gz.msgs.Double)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.578963719] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/swerve/rear_left_wheel_joint/target_speed (std_msgs/msg/Float64) -> /model/sentry/joint/rear_left_wheel_joint/target_speed (gz.msgs.Double)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.579341464] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/swerve/rear_right_wheel_joint/target_speed (std_msgs/msg/Float64) -> /model/sentry/joint/rear_right_wheel_joint/target_speed (gz.msgs.Double)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.579701216] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.580158440] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/lift/position (std_msgs/msg/Float64) -> /lift/position (gz.msgs.Double)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.580479800] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/gimbal/cmd_vel (std_msgs/msg/Float64) -> /gimbal/cmd_vel (gz.msgs.Double)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.580833520] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/default/model/sentry/link/chassis/sensor/diagnostic_chassis_chassis_collision/contact (gz.msgs.Contacts) -> /diagnostic_contacts/chassis_chassis_collision (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.582632740] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/default/model/sentry/link/front_left_steer_link/sensor/diagnostic_front_left_steer_link_collision/contact (gz.msgs.Contacts) -> /diagnostic_contacts/front_left_steer_link_collision (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.582967285] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/default/model/sentry/link/front_left_wheel_link/sensor/diagnostic_front_left_wheel_link_collision/contact (gz.msgs.Contacts) -> /diagnostic_contacts/front_left_wheel_link_collision (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.583277144] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/default/model/sentry/link/front_right_steer_link/sensor/diagnostic_front_right_steer_link_collision/contact (gz.msgs.Contacts) -> /diagnostic_contacts/front_right_steer_link_collision (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.583581572] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/default/model/sentry/link/front_right_wheel_link/sensor/diagnostic_front_right_wheel_link_collision/contact (gz.msgs.Contacts) -> /diagnostic_contacts/front_right_wheel_link_collision (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.583908012] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/default/model/sentry/link/rear_right_steer_link/sensor/diagnostic_rear_right_steer_link_collision/contact (gz.msgs.Contacts) -> /diagnostic_contacts/rear_right_steer_link_collision (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.584203474] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/default/model/sentry/link/rear_right_wheel_link/sensor/diagnostic_rear_right_wheel_link_collision/contact (gz.msgs.Contacts) -> /diagnostic_contacts/rear_right_wheel_link_collision (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.584491842] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/default/model/sentry/link/rear_left_steer_link/sensor/diagnostic_rear_left_steer_link_collision/contact (gz.msgs.Contacts) -> /diagnostic_contacts/rear_left_steer_link_collision (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.584802101] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/default/model/sentry/link/rear_left_wheel_link/sensor/diagnostic_rear_left_wheel_link_collision/contact (gz.msgs.Contacts) -> /diagnostic_contacts/rear_left_wheel_link_collision (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[ros_bridge] [INFO] [1792654090.585080481] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/default/model/sentry/link/base_link/sensor/diagnostic_base_link_base_link_collision/contact (gz.msgs.Contacts) -> /diagnostic_contacts/base_link_base_link_collision (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+[ros_bridge] [INFO] [1792654091.773861144] [ros_gz_bridge]: Passing message from ROS std_msgs/msg/Float64 to Gazebo gz.msgs.Double (showing msg only once per type)
+[swerve] RCUTILS_CONSOLE_STDOUT_LINE_BUFFERED is now ignored. Please set RCUTILS_LOGGING_USE_STDOUT and RCUTILS_LOGGING_BUFFERED_STREAM to control the stream and the buffering of log messages.
+[swerve] [INFO] [1792654089.543510772] [swerve_sim_controller]: Swerve controller ready: 100.0 Hz, wheel radius 0.0535 m, timeout 0.200 s
+[adapter] RCUTILS_CONSOLE_STDOUT_LINE_BUFFERED is now ignored. Please set RCUTILS_LOGGING_USE_STDOUT and RCUTILS_LOGGING_BUFFERED_STREAM to control the stream and the buffering of log messages.
+[adapter] [INFO] [1792654091.800988231] [hole_gazebo_bridge]: rotation mode: WAIT_FEEDBACK
+[adapter] [INFO] [1792654091.804133895] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+[fake] RCUTILS_CONSOLE_STDOUT_LINE_BUFFERED is now ignored. Please set RCUTILS_LOGGING_USE_STDOUT and RCUTILS_LOGGING_BUFFERED_STREAM to control the stream and the buffering of log messages.
+[fake] [INFO] [1792654089.879292546] [fake_vel_transform]: Fixed fake frame; translation only, alpha=0.8, feedback_required=True.
+[fake] [WARN] [1792654089.879853373] [fake_vel_transform]: Gimbal-base feedback uses receive time; nearest LIO pose is bounded by feedback_pose_max_skew.
+[conversion] RCUTILS_CONSOLE_STDOUT_LINE_BUFFERED is now ignored. Please set RCUTILS_LOGGING_USE_STDOUT and RCUTILS_LOGGING_BUFFERED_STREAM to control the stream and the buffering of log messages.
+[markers] RCUTILS_CONSOLE_STDOUT_LINE_BUFFERED is now ignored. Please set RCUTILS_LOGGING_USE_STDOUT and RCUTILS_LOGGING_BUFFERED_STREAM to control the stream and the buffering of log messages.
+[nav_server] RCUTILS_CONSOLE_STDOUT_LINE_BUFFERED is now ignored. Please set RCUTILS_LOGGING_USE_STDOUT and RCUTILS_LOGGING_BUFFERED_STREAM to control the stream and the buffering of log messages.
+[nav_server] [INFO] [1792654097.684354982] [nav_server]: ========== NavServer 参数诊断 ==========
+[nav_server] [INFO] [1792654097.684451252] [nav_server]: control_rate: 50.0 Hz
+[nav_server] [INFO] [1792654097.684466480] [nav_server]: controller_timeout: 8.0 s
+[nav_server] [INFO] [1792654097.684472942] [nav_server]: controller_progress_threshold: 0.05 m
+[nav_server] [INFO] [1792654097.684482731] [nav_server]: recovery.max_recovery: 3
+[nav_server] [INFO] [1792654097.684488371] [nav_server]: path_check_period: 0.30 s
+[nav_server] [INFO] [1792654097.684499913] [nav_server]: path_lateral_tolerance: 1.250 m 
+[nav_server] [INFO] [1792654097.684508439] [nav_server]: path_io.enable_save_planned_path: 0
+[nav_server] [INFO] [1792654097.684516504] [nav_server]: path_io.use_prior_path: 0
+[nav_server] [INFO] [1792654097.684524659] [nav_server]: escape.trigger_costmap_threshold: 99
+[nav_server] [INFO] [1792654097.684532734] [nav_server]: escape.target_safe_esdf: 0.25 m
+[nav_server] [INFO] [1792654097.684541711] [nav_server]: escape.search_radius: 1.0 m
+[nav_server] [INFO] [1792654097.684549125] [nav_server]: escape.preferred_search_distance: 1.00 m
+[nav_server] [INFO] [1792654097.684557400] [nav_server]: escape.preferred_search_half_angle: 0.20 rad
+[nav_server] [INFO] [1792654097.684566066] [nav_server]: escape.forward_speed: 0.20 m/s
+[nav_server] [INFO] [1792654097.684574161] [nav_server]: ========================================
+[nav_server] [INFO] [1792654097.691937802] [nav_server]: LayeredMapManager initialized (map: map, odom: odom, perf_log: disabled)
+[nav_server] [INFO] [1792654097.693473710] [nav_server]: Loaded terrain regions: 8 from /home/dengjiaxi/simulation_seu/test/map/terrain.yaml
+[nav_server] [INFO] [1792654097.693502363] [nav_server]: slope: 4, low_clearance: 4
+[nav_server] [INFO] [1792654097.693519535] [nav_server]: terrain id=slope_A1 type=slope name=slope_A1 frame=map polygon: (-5.131,-3.781) (-4.256,-3.781) (-3.652,-3.026) (-5.131,-3.026)
+[nav_server] [INFO] [1792654097.693528071] [nav_server]: terrain id=hole_A1 type=low_clearance name=hole_A1 frame=map polygon: (-5.131,-3.781) (-4.256,-3.781) (-4.256,-3.531) (-5.131,-3.531)
+[nav_server] [INFO] [1792654097.693535455] [nav_server]: terrain id=slope_A2 type=slope name=slope_A2 frame=map polygon: (3.64,6.314) (5.144,6.314) (5.144,7.069) (4.244,7.069)
+[nav_server] [INFO] [1792654097.693543620] [nav_server]: terrain id=hole_A2 type=low_clearance name=hole_A2 frame=map polygon: (4.244,6.819) (5.144,6.819) (5.144,7.069) (4.244,7.069)
+[nav_server] [INFO] [1792654097.693551645] [nav_server]: terrain id=slope_B1 type=slope name=slope_B1 frame=map polygon: (0.289,-4.706) (-0.651,-4.706) (-0.651,-3.926) (0.289,-3.926)
+[nav_server] [INFO] [1792654097.693559290] [nav_server]: terrain id=hole_B1 type=low_clearance name=hole_B1 frame=map polygon: (1.009,-4.686) (0.749,-4.686) (0.749,-3.926) (1.009,-3.926)
+[nav_server] [INFO] [1792654097.693566914] [nav_server]: terrain id=slope_B2 type=slope name=slope_B2 frame=map polygon: (0.649,7.194) (-0.291,7.194) (-0.291,7.994) (0.649,7.994)
+[nav_server] [INFO] [1792654097.693574157] [nav_server]: terrain id=hole_B2 type=low_clearance name=hole_B2 frame=map polygon: (-0.751,7.234) (-0.991,7.234) (-0.991,7.974) (-0.751,7.974)
+[nav_server] [INFO] [1792654097.694944917] [nav_server]: Hole preview hole_A1: OK width=0.875 depth=0.250 angle_error=0.000 parallel_error=0.000
+[nav_server] [INFO] [1792654097.694994941] [nav_server]: Hole preview hole_A2: OK width=0.900 depth=0.250 angle_error=0.000 parallel_error=0.000
+[nav_server] [INFO] [1792654097.695045645] [nav_server]: Hole preview hole_B1: OK width=0.760 depth=0.260 angle_error=0.000 parallel_error=0.000
+[nav_server] [INFO] [1792654097.695081122] [nav_server]: Hole preview hole_B2: OK width=0.740 depth=0.240 angle_error=0.000 parallel_error=0.000
+[nav_server] [INFO] [1792654097.701495419] [nav_server]: Omni MPC NX=4 NU=2 N=75 dt=0.02 alpha=0.800 feedback_required=1
+[nav_server] [INFO] [1792654097.709977548] [nav_server]: 地图加载成功: 595x321, 分辨率: 0.050
+[nav_server] [INFO] [1792654097.710289972] [nav_server]: Hole clearance preprocessing: 180 occupied cells cleared (before=0.50 m, after=0.50 m)
+[nav_server] [INFO] [1792654097.718295662] [nav_server]: Static map loaded: 595x321 @ 0.050 m/cell, inflation_radius=0.80
+[nav_server] [INFO] [1792654097.718343170] [nav_server]: B样条优化: ESDF 回调已设置
+[nav_server] [INFO] [1792654097.718368417] [nav_server]: 静态地图加载完成
+[nav_server] [INFO] [1792654099.895581208] [nav_server]: 收到目标: (-4.69, -2.60)
+[nav_server] [INFO] [1792654099.895996634] [nav_server]: 状态: IDLE -> PLANNING
+[nav_server] [INFO] [1792654099.939911749] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/7
+[nav_server] [INFO] [1792654099.939974286] [bspline_opt]: 优化完成: 1次迭代, 0.07ms | 代价: 0.0000 -> 0.0000 (降低0.0%) | 平滑=0.000, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[PLAN] 版本=1 状态=0 洞口=[('hole_B1', '上坡'), ('hole_A1', '下坡')]
+[FSM] PREPARE / STOP 进度=0.000m 限速=0.000m/s 重试=0 退让阶段=0 原因=A reached or remaining preparation required
+[机构请求] 编号=1 目标=1(0保持/1降低/2恢复) 取消=False
+[机构反馈] 编号=1 状态=0(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[FSM] PREPARE / CONTINUE 进度=0.000m 限速=0.350m/s 重试=0 退让阶段=0 原因=A reached or remaining preparation required
+[nav_server] [INFO] [1792654100.009646939] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/48
+[nav_server] [INFO] [1792654100.009914008] [bspline_opt]: 优化完成: 7次迭代, 0.62ms | 代价: 13.9655 -> 3.7451 (降低73.2%) | 平滑=0.356, 碰撞=0.009, 窄通道=0.000, 特殊地形=0.000
+[nav_server] [INFO] [1792654100.015400713] [nav_server]: 过洞接入: hole=hole_B1 S=(1.830,-4.306) 方法=FEASIBLE_APPROACH_CONTINUOUS 平滑后备原因=none
+[nav_server] [INFO] [1792654100.015438043] [nav_server]: 过洞接入: hole=hole_A1 S=(-4.694,-4.581) 方法=FEASIBLE_APPROACH_CONTINUOUS 平滑后备原因=none
+[nav_server] [INFO] [1792654100.015829955] [nav_server]: 规划汇总: total=114.2ms astar=2.5ms outer_validation=0.3ms hole=111.1ms first_valid=36.1ms post_first=75.0ms | geometry=0.0 connectivity=2.5 candidates=0.3 seed_search=20.4 fit=4.8 curve_check=32.9 candidate_check=0.9 final_check=0.2 cache_check=0.0 ms | optimized=2 fits=4 iterations=135 cache_hits=0 cache_rejected=0 disconnected=1 stop=NO_BETTER_CANDIDATE
+[nav_server] [INFO] [1792654100.016895956] [nav_server]: 状态: PLANNING -> CONTROLLING
+[机构反馈] 编号=1 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[FSM] TRAVERSE / CONTINUE 进度=0.132m 限速=0.350m/s 重试=0 退让阶段=0 原因=moving alignment; stop upstream of E if unfinished
+[EVENT] S 通行=2615446615-0.000000:1:1 尝试=0 进度=0.132m 升降=-5.241980453824797e-15
+[ROTATION] HOLE_ALIGN
+[adapter] [INFO] [1792654101.485576946] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
+[FSM] TRAVERSE / CONTINUE 进度=0.309m 限速=0.350m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[FSM] TRAVERSE / CONTINUE 进度=0.860m 限速=0.350m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[EVENT] E 通行=2615446615-0.000000:1:1 尝试=0 进度=0.955m 升降=-1.0227381296961873e-14
+[EVENT] X 通行=2615446615-0.000000:1:1 尝试=0 进度=1.222m 升降=-1.0216503657250136e-14
+[机构反馈] 编号=1 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=1 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[FSM] TRAVERSE / CONTINUE 进度=1.889m 限速=2.000m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[FSM] TRAVERSE / CONTINUE 进度=2.386m 限速=2.000m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[FSM] TRAVERSE / CONTINUE 进度=3.127m 限速=0.400m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[FSM] RESTORE / CONTINUE 进度=3.626m 限速=0.350m/s 重试=0 退让阶段=0 原因=all traversal demands released with clearance
+[EVENT] T 通行=2615446615-0.000000:1:1 尝试=0 进度=3.626m 升降=-1.0218904311218192e-14
+[机构请求] 编号=2 目标=2(0保持/1降低/2恢复) 取消=False
+[EVENT] D 通行=2615446615-0.000000:1:1 尝试=0 进度=3.626m 升降=-1.0218904311218192e-14
+[机构反馈] 编号=2 状态=0(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[ROTATION] NAV_AUTO
+[adapter] [INFO] [1792654111.765225214] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[FSM] NORMAL / CONTINUE 进度=4.150m 限速=2.000m/s 重试=0 退让阶段=0 原因=normal posture confirmed
+[FSM] NORMAL / CONTINUE 进度=4.157m 限速=2.000m/s 重试=0 退让阶段=0 原因=ordinary path following
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[FSM] NORMAL / CONTINUE 进度=5.387m 限速=2.000m/s 重试=0 退让阶段=0 原因=ordinary path following
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[FSM] NORMAL / CONTINUE 进度=6.275m 限速=2.000m/s 重试=0 退让阶段=0 原因=ordinary path following
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=2 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[FSM] NORMAL / CONTINUE 进度=6.976m 限速=2.000m/s 重试=0 退让阶段=0 原因=ordinary path following
+[FSM] PREPARE / CONTINUE 进度=7.043m 限速=0.350m/s 重试=0 退让阶段=0 原因=A reached or remaining preparation required
+[EVENT] A 通行=2615446615-0.000000:1:2 尝试=0 进度=7.043m 升降=0.29688079579880045
+[机构请求] 编号=3 目标=1(0保持/1降低/2恢复) 取消=False
+[机构反馈] 编号=3 状态=0(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=3 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[FSM] TRAVERSE / CONTINUE 进度=7.330m 限速=1.794m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[FSM] TRAVERSE / CONTINUE 进度=7.747m 限速=0.350m/s 重试=0 退让阶段=0 原因=moving alignment; stop upstream of E if unfinished
+[EVENT] S 通行=2615446615-0.000000:1:2 尝试=0 进度=7.747m 升降=-1.0396663407992669e-14
+[ROTATION] HOLE_ALIGN
+[adapter] [INFO] [1792654121.984128879] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
+[FSM] TRAVERSE / STOP 进度=8.067m 限速=0.000m/s 重试=0 退让阶段=0 原因=emergency braking distance insufficient
+[ROTATION] HOLE_SAFETY_STOP
+[FSM] TRAVERSE / STOP 进度=8.073m 限速=0.000m/s 重试=0 退让阶段=0 原因=emergency stop; waiting for stopped and prepared
+[adapter] [INFO] [1792654122.904590134] [hole_gazebo_bridge]: rotation mode: HOLE_SAFETY_STOP
+[FSM] TRAVERSE / CONTINUE 进度=8.090m 限速=0.350m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[ROTATION] HOLE_ALIGN
+[adapter] [INFO] [1792654123.265449572] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
+[FSM] TRAVERSE / STOP 进度=8.091m 限速=0.000m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[FSM] TRAVERSE / CONTINUE 进度=8.094m 限速=0.350m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[FSM] TRAVERSE / CONTINUE 进度=8.317m 限速=0.350m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[EVENT] E 通行=2615446615-0.000000:1:2 尝试=0 进度=8.549m 升降=-1.0154295618464101e-14
+[机构反馈] 编号=3 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=3 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[机构反馈] 编号=3 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=3 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[FSM] TRAVERSE / CONTINUE 进度=8.718m 限速=0.350m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[FSM] TRAVERSE / CONTINUE 进度=8.718m 限速=0.350m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[FSM] TRAVERSE / CONTINUE 进度=8.734m 限速=0.350m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[机构反馈] 编号=3 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=3 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[FSM] TRAVERSE / CONTINUE 进度=8.736m 限速=0.350m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[FSM] TRAVERSE / CONTINUE 进度=8.736m 限速=0.350m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[机构反馈] 编号=3 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=3 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[机构反馈] 编号=3 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=3 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[FSM] TRAVERSE / CONTINUE 进度=8.736m 限速=0.350m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[机构反馈] 编号=3 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=3 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[机构反馈] 编号=3 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=3 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[FSM] TRAVERSE / CONTINUE 进度=8.739m 限速=0.350m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[机构反馈] 编号=3 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=3 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[FSM] TRAVERSE / CONTINUE 进度=8.739m 限速=0.350m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[机构反馈] 编号=3 状态=1(0执行/1完成/2失败/3取消) 已停=False 故障码=0
+[机构反馈] 编号=3 状态=1(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[FSM] TRAVERSE / CONTINUE 进度=8.742m 限速=0.350m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[FSM] TRAVERSE / CONTINUE 进度=8.743m 限速=0.350m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[FSM] TRAVERSE / CONTINUE 进度=8.744m 限速=0.350m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[FSM] TRAVERSE / CONTINUE 进度=8.744m 限速=0.350m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[FSM] TRAVERSE / CONTINUE 进度=8.744m 限速=0.350m/s 重试=0 退让阶段=0 原因=low posture confirmed
+[FSM] HOLD / STOP 进度=8.744m 限速=0.000m/s 重试=0 退让阶段=0 原因=motion blocked/controller unavailable
+[ROTATION] HOLE_SAFETY_STOP
+[adapter] [INFO] [1792654151.887218436] [hole_gazebo_bridge]: rotation mode: HOLE_SAFETY_STOP
+FAIL 诊断停止于首次HOLD: motion blocked/controller unavailable
+[PLAN] 版本=2 状态=2 洞口=[('hole_B1', '上坡'), ('hole_A1', '下坡')]
+[机构请求] 编号=0 目标=0(0保持/1降低/2恢复) 取消=True
+[机构反馈] 编号=3 状态=3(0执行/1完成/2失败/3取消) 已停=True 故障码=0
+[nav_server] [INFO] [1792654151.949919001] [nav_server]: 取消请求
+[nav_server] [INFO] [1792654151.962082513] [nav_server]: 状态: CONTROLLING -> IDLE
+[ros_bridge] [INFO] [1792654152.252322451] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[swerve] [INFO] [1792654152.252321980] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[nav_server] [INFO] [1792654152.252327791] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+本次仿真进程清理完成。
+FAIL 诊断停止于首次HOLD: motion blocked/controller unavailable

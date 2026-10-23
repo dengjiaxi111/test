@@ -1,0 +1,570 @@
+[INFO] [1792588722.791801485] [nav_server]: ========== NavServer 参数诊断 ==========
+[INFO] [1792588722.791899814] [nav_server]: control_rate: 50.0 Hz
+[INFO] [1792588722.791910115] [nav_server]: controller_timeout: 8.0 s
+[INFO] [1792588722.791914644] [nav_server]: controller_progress_threshold: 0.05 m
+[INFO] [1792588722.791920025] [nav_server]: recovery.max_recovery: 3
+[INFO] [1792588722.791924935] [nav_server]: path_check_period: 0.30 s
+[INFO] [1792588722.791930196] [nav_server]: path_lateral_tolerance: 1.250 m 
+[INFO] [1792588722.791935246] [nav_server]: path_io.enable_save_planned_path: 0
+[INFO] [1792588722.791939885] [nav_server]: path_io.use_prior_path: 0
+[INFO] [1792588722.791944394] [nav_server]: escape.trigger_costmap_threshold: 99
+[INFO] [1792588722.791948723] [nav_server]: escape.target_safe_esdf: 0.25 m
+[INFO] [1792588722.791953463] [nav_server]: escape.search_radius: 1.0 m
+[INFO] [1792588722.791957962] [nav_server]: escape.preferred_search_distance: 1.00 m
+[INFO] [1792588722.791962661] [nav_server]: escape.preferred_search_half_angle: 0.20 rad
+[INFO] [1792588722.791969325] [nav_server]: escape.forward_speed: 0.20 m/s
+[INFO] [1792588722.791974155] [nav_server]: ========================================
+[INFO] [1792588722.802606308] [nav_server]: LayeredMapManager initialized (map: map, odom: odom, perf_log: disabled)
+[INFO] [1792588722.804386497] [nav_server]: Loaded terrain regions: 8 from /home/dengjiaxi/simulation_seu/test/map/terrain.yaml
+[INFO] [1792588722.804416287] [nav_server]: slope: 4, low_clearance: 4
+[INFO] [1792588722.804433713] [nav_server]: terrain id=slope_A1 type=slope name=slope_A1 frame=map polygon: (-5.131,-3.781) (-4.256,-3.781) (-3.652,-3.026) (-5.131,-3.026)
+[INFO] [1792588722.804446438] [nav_server]: terrain id=hole_A1 type=low_clearance name=hole_A1 frame=map polygon: (-5.131,-3.781) (-4.256,-3.781) (-4.256,-3.531) (-5.131,-3.531)
+[INFO] [1792588722.804456940] [nav_server]: terrain id=slope_A2 type=slope name=slope_A2 frame=map polygon: (3.64,6.314) (5.144,6.314) (5.144,7.069) (4.244,7.069)
+[INFO] [1792588722.804467381] [nav_server]: terrain id=hole_A2 type=low_clearance name=hole_A2 frame=map polygon: (4.244,6.819) (5.144,6.819) (5.144,7.069) (4.244,7.069)
+[INFO] [1792588722.804477541] [nav_server]: terrain id=slope_B1 type=slope name=slope_B1 frame=map polygon: (0.289,-4.706) (-0.651,-4.706) (-0.651,-3.926) (0.289,-3.926)
+[INFO] [1792588722.804487942] [nav_server]: terrain id=hole_B1 type=low_clearance name=hole_B1 frame=map polygon: (1.009,-4.686) (0.749,-4.686) (0.749,-3.926) (1.009,-3.926)
+[INFO] [1792588722.804499145] [nav_server]: terrain id=slope_B2 type=slope name=slope_B2 frame=map polygon: (0.649,7.194) (-0.291,7.194) (-0.291,7.994) (0.649,7.994)
+[INFO] [1792588722.804512903] [nav_server]: terrain id=hole_B2 type=low_clearance name=hole_B2 frame=map polygon: (-0.751,7.234) (-0.991,7.234) (-0.991,7.974) (-0.751,7.974)
+[INFO] [1792588722.808465573] [nav_server]: Hole preview hole_A1: OK width=0.875 depth=0.250 angle_error=0.000 parallel_error=0.000
+[INFO] [1792588722.808568421] [nav_server]: Hole preview hole_A2: OK width=0.900 depth=0.250 angle_error=0.000 parallel_error=0.000
+[INFO] [1792588722.808641589] [nav_server]: Hole preview hole_B1: OK width=0.760 depth=0.260 angle_error=0.000 parallel_error=0.000
+[INFO] [1792588722.808707031] [nav_server]: Hole preview hole_B2: OK width=0.740 depth=0.240 angle_error=0.000 parallel_error=0.000
+[INFO] [1792588722.826617599] [nav_server]: Omni MPC NX=4 NU=2 N=75 dt=0.02 alpha=0.800 feedback_required=1
+[INFO] [1792588722.842427540] [nav_server]: 地图加载成功: 595x321, 分辨率: 0.050
+[INFO] [1792588722.842776466] [nav_server]: Hole clearance preprocessing: 180 occupied cells cleared (before=0.50 m, after=0.50 m)
+[INFO] [1792588722.851000722] [nav_server]: Static map loaded: 595x321 @ 0.050 m/cell, inflation_radius=0.80
+[INFO] [1792588722.851093289] [nav_server]: B样条优化: ESDF 回调已设置
+[INFO] [1792588722.851117428] [nav_server]: 静态地图加载完成
+[INFO] [1792588752.249809232] [nav_server]: RViz 目标: (-2.91, 5.77)
+[INFO] [1792588752.253314661] [nav_server]: 状态: IDLE -> PLANNING
+[INFO] [1792588752.261989574] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/31
+[INFO] [1792588752.262265689] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/31
+[INFO] [1792588752.262405239] [bspline_opt]: 优化完成: 7次迭代, 0.50ms | 代价: 2.2887 -> 0.3618 (降低84.2%) | 平滑=0.036, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792588752.262551393] [path_smoother]: Path smoothing: 143 pts -> 29 ctrl -> 1001 out | resample: 0.00ms, interp: 0.03ms, opt: 0.51ms, sample: 0.03ms, total: 0.68ms
+[INFO] [1792588752.263230238] [nav_server]: 规划汇总: total=7.6ms astar=4.4ms outer_validation=0.0ms hole=0.2ms first_valid=-1.0ms post_first=0.0ms | geometry=0.1 connectivity=0.0 candidates=0.0 seed_search=0.0 fit=0.0 curve_check=0.0 candidate_check=0.0 final_check=0.0 cache_check=0.0 ms | optimized=0 fits=0 iterations=0 cache_hits=0 cache_rejected=0 disconnected=0 stop=NO_PASSAGE
+[INFO] [1792588752.264961770] [nav_server]: 状态: PLANNING -> CONTROLLING
+[INFO] [1792588761.375780577] [nav_server]: 状态: CONTROLLING -> FAILED
+[INFO] [1792588761.396096629] [nav_server]: 状态: FAILED -> IDLE
+[ERROR] [1792588761.396179696] [nav_server]: 导航失败
+[INFO] [1792588764.738649336] [nav_server]: RViz 目标: (-2.30, 7.15)
+[INFO] [1792588764.738933005] [nav_server]: 状态: IDLE -> PLANNING
+[INFO] [1792588764.757759331] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=1/16
+[INFO] [1792588764.757818200] [bspline_opt]:   pt[12]: L=0.05 R=0.05 W=0.10 NARROW
+[INFO] [1792588764.757945876] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/16
+[INFO] [1792588764.758005245] [bspline_opt]: 优化完成: 7次迭代, 0.31ms | 代价: 2.8515 -> 0.4755 (降低83.3%) | 平滑=0.048, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792588764.758062670] [path_smoother]: Path smoothing: 60 pts -> 14 ctrl -> 286 out | resample: 0.00ms, interp: 0.01ms, opt: 0.32ms, sample: 0.01ms, total: 0.37ms
+[INFO] [1792588764.758786544] [nav_server]: 规划汇总: total=3.2ms astar=1.6ms outer_validation=0.0ms hole=0.1ms first_valid=-1.0ms post_first=0.0ms | geometry=0.0 connectivity=0.0 candidates=0.0 seed_search=0.0 fit=0.0 curve_check=0.0 candidate_check=0.0 final_check=0.0 cache_check=0.0 ms | optimized=0 fits=0 iterations=0 cache_hits=0 cache_rejected=0 disconnected=0 stop=NO_PASSAGE
+[INFO] [1792588764.759574185] [nav_server]: 状态: PLANNING -> CONTROLLING
+[WARN] [1792588769.037173840] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588770.036937741] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588771.056788763] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588772.076484435] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588773.096489329] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[INFO] [1792588773.975708947] [nav_server]: 状态: CONTROLLING -> FAILED
+[INFO] [1792588773.995787187] [nav_server]: 状态: FAILED -> IDLE
+[ERROR] [1792588773.995867829] [nav_server]: 导航失败
+[INFO] [1792588775.607662459] [nav_server]: RViz 目标: (-5.30, 4.18)
+[INFO] [1792588775.608045357] [nav_server]: 状态: IDLE -> PLANNING
+[INFO] [1792588775.618164619] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/18
+[INFO] [1792588775.618343788] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/18
+[INFO] [1792588775.618382807] [bspline_opt]: 优化完成: 7次迭代, 0.31ms | 代价: 1.6149 -> 0.8127 (降低49.7%) | 平滑=0.081, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792588775.618444881] [path_smoother]: Path smoothing: 66 pts -> 16 ctrl -> 396 out | resample: 0.00ms, interp: 0.01ms, opt: 0.32ms, sample: 0.01ms, total: 0.38ms
+[INFO] [1792588775.618754111] [nav_server]: 规划汇总: total=3.2ms astar=2.0ms outer_validation=0.0ms hole=0.1ms first_valid=-1.0ms post_first=0.0ms | geometry=0.0 connectivity=0.0 candidates=0.0 seed_search=0.0 fit=0.0 curve_check=0.0 candidate_check=0.0 final_check=0.0 cache_check=0.0 ms | optimized=0 fits=0 iterations=0 cache_hits=0 cache_rejected=0 disconnected=0 stop=NO_PASSAGE
+[INFO] [1792588775.619418143] [nav_server]: 状态: PLANNING -> CONTROLLING
+[WARN] [1792588775.637112444] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588776.636895106] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588777.636935250] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588778.636798208] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588779.636984898] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588780.636831552] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588781.637181973] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[INFO] [1792588782.327651278] [nav_server]: RViz 目标: (-6.14, 2.64)
+[INFO] [1792588782.327880337] [nav_server]: 状态: IDLE -> PLANNING
+[INFO] [1792588782.338124826] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/25
+[INFO] [1792588782.338344156] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/25
+[INFO] [1792588782.338383044] [bspline_opt]: 优化完成: 7次迭代, 0.39ms | 代价: 3.5178 -> 1.5629 (降低55.6%) | 平滑=0.156, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792588782.338479206] [path_smoother]: Path smoothing: 97 pts -> 23 ctrl -> 771 out | resample: 0.00ms, interp: 0.01ms, opt: 0.40ms, sample: 0.04ms, total: 0.50ms
+[INFO] [1792588782.338842053] [nav_server]: 规划汇总: total=3.2ms astar=2.0ms outer_validation=0.0ms hole=0.1ms first_valid=-1.0ms post_first=0.0ms | geometry=0.0 connectivity=0.0 candidates=0.0 seed_search=0.0 fit=0.0 curve_check=0.0 candidate_check=0.0 final_check=0.0 cache_check=0.0 ms | optimized=0 fits=0 iterations=0 cache_hits=0 cache_rejected=0 disconnected=0 stop=NO_PASSAGE
+[INFO] [1792588782.339658369] [nav_server]: 状态: PLANNING -> CONTROLLING
+[WARN] [1792588782.637101622] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588783.637010393] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588784.637123229] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588785.637165873] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588786.637191856] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588787.637893698] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588788.657150491] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588789.657076472] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[ERROR] [1792588790.355633516] [nav_server]: Controller: 控制超时 (8.0秒无进展 > 8.0秒阈值)
+[INFO] [1792588790.355707033] [nav_server]: 状态: CONTROLLING -> RECOVERY
+[INFO] [1792588790.375568909] [nav_server]: 恢复序列已启动: count=1
+[INFO] [1792588791.879148954] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/24
+[INFO] [1792588791.879342662] [bspline_opt]: 优化完成: 7次迭代, 0.38ms | 代价: 1.4902 -> 0.6285 (降低57.8%) | 平滑=0.063, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792588791.879454085] [path_smoother]: Path smoothing: 92 pts -> 22 ctrl -> 706 out | resample: 0.00ms, interp: 0.01ms, opt: 0.39ms, sample: 0.03ms, total: 0.50ms
+[INFO] [1792588791.879804587] [nav_server]: 规划汇总: total=3.7ms astar=2.1ms outer_validation=0.0ms hole=0.1ms first_valid=-1.0ms post_first=0.0ms | geometry=0.0 connectivity=0.0 candidates=0.0 seed_search=0.0 fit=0.0 curve_check=0.0 candidate_check=0.0 final_check=0.0 cache_check=0.0 ms | optimized=0 fits=0 iterations=0 cache_hits=0 cache_rejected=0 disconnected=0 stop=NO_PASSAGE
+[INFO] [1792588791.879847663] [nav_server]: 恢复验证通过: 当前位置安全且已找到新路径
+[INFO] [1792588791.880793276] [nav_server]: 状态: RECOVERY -> CONTROLLING
+[INFO] [1792588798.416422504] [nav_server]: Controller: SUCCEEDED!
+[INFO] [1792588798.416522595] [nav_server]: 状态: CONTROLLING -> SUCCEEDED
+[INFO] [1792588798.436012543] [nav_server]: 状态: SUCCEEDED -> IDLE
+[INFO] [1792588798.436098515] [nav_server]: 导航成功 (16.11s)
+[INFO] [1792588807.294579400] [nav_server]: RViz 目标: (-2.54, -4.82)
+[INFO] [1792588807.294742737] [nav_server]: 状态: IDLE -> PLANNING
+[INFO] [1792588807.351278696] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/11
+[INFO] [1792588807.351389558] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/11
+[INFO] [1792588807.351431993] [bspline_opt]: 优化完成: 7次迭代, 0.17ms | 代价: 6.6942 -> 2.0379 (降低69.6%) | 平滑=0.204, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792588807.405420707] [nav_server]: 过洞接入: hole=hole_A1 S=(-4.694,-2.838) 方法=FEASIBLE_APPROACH_CONTINUOUS 平滑后备原因=none
+[INFO] [1792588807.405985697] [nav_server]: 规划汇总: total=110.0ms astar=4.1ms outer_validation=0.3ms hole=105.3ms first_valid=52.5ms post_first=52.8ms | geometry=0.0 connectivity=1.9 candidates=0.3 seed_search=0.0 fit=7.3 curve_check=38.7 candidate_check=0.4 final_check=0.4 cache_check=0.0 ms | optimized=1 fits=2 iterations=100 cache_hits=0 cache_rejected=0 disconnected=0 stop=QUALITY_ACCEPTED
+[INFO] [1792588807.407072942] [nav_server]: 状态: PLANNING -> CONTROLLING
+[INFO] [1792588815.535889802] [nav_server]: 状态: CONTROLLING -> RECOVERY
+[INFO] [1792588817.135738333] [nav_server]: 状态: RECOVERY -> CONTROLLING
+[INFO] [1792588819.975668335] [nav_server]: 状态: CONTROLLING -> RECOVERY
+[INFO] [1792588820.515810109] [nav_server]: 状态: RECOVERY -> CONTROLLING
+[INFO] [1792588828.195909814] [nav_server]: 状态: CONTROLLING -> PLANNING
+[INFO] [1792588828.226702904] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=1/44
+[INFO] [1792588828.226762222] [bspline_opt]:   pt[5]: L=0.15 R=0.25 W=0.40 NARROW
+[INFO] [1792588828.226988895] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/44
+[INFO] [1792588828.227131250] [bspline_opt]: 优化完成: 7次迭代, 0.57ms | 代价: 12.9910 -> 2.7571 (降低78.8%) | 平滑=0.258, 碰撞=0.009, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792588828.227251831] [path_smoother]: Path smoothing: 228 pts -> 42 ctrl -> 1001 out | resample: 0.00ms, interp: 0.02ms, opt: 0.58ms, sample: 0.03ms, total: 0.72ms
+[INFO] [1792588828.227908593] [nav_server]: 规划汇总: total=12.3ms astar=10.3ms outer_validation=0.0ms hole=0.1ms first_valid=-1.0ms post_first=0.0ms | geometry=0.0 connectivity=0.0 candidates=0.0 seed_search=0.0 fit=0.0 curve_check=0.0 candidate_check=0.0 final_check=0.0 cache_check=0.0 ms | optimized=0 fits=0 iterations=0 cache_hits=0 cache_rejected=0 disconnected=0 stop=NO_PASSAGE
+[INFO] [1792588828.229001797] [nav_server]: 状态: PLANNING -> CONTROLLING
+[WARN] [1792588833.796732969] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[INFO] [1792588844.875769371] [nav_server]: 状态: CONTROLLING -> FAILED
+[INFO] [1792588844.895887326] [nav_server]: 状态: FAILED -> IDLE
+[ERROR] [1792588844.895941494] [nav_server]: 导航失败
+[INFO] [1792588851.268682318] [nav_server]: RViz 目标: (-3.14, -4.64)
+[INFO] [1792588851.268985132] [nav_server]: 状态: IDLE -> PLANNING
+[INFO] [1792588851.277514061] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/8
+[INFO] [1792588851.277577307] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/8
+[INFO] [1792588851.277594461] [bspline_opt]: 优化完成: 7次迭代, 0.10ms | 代价: 1.5634 -> 0.8077 (降低48.3%) | 平滑=0.081, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792588851.277616515] [path_smoother]: Path smoothing: 26 pts -> 6 ctrl -> 33 out | resample: 0.00ms, interp: 0.00ms, opt: 0.12ms, sample: 0.00ms, total: 0.13ms
+[INFO] [1792588851.277733829] [nav_server]: 规划汇总: total=2.1ms astar=1.5ms outer_validation=0.0ms hole=0.0ms first_valid=-1.0ms post_first=0.0ms | geometry=0.0 connectivity=0.0 candidates=0.0 seed_search=0.0 fit=0.0 curve_check=0.0 candidate_check=0.0 final_check=0.0 cache_check=0.0 ms | optimized=0 fits=0 iterations=0 cache_hits=0 cache_rejected=0 disconnected=0 stop=NO_PASSAGE
+[INFO] [1792588851.278103708] [nav_server]: 状态: PLANNING -> CONTROLLING
+[INFO] [1792588856.495699311] [nav_server]: Controller: SUCCEEDED!
+[INFO] [1792588856.495775523] [nav_server]: 状态: CONTROLLING -> SUCCEEDED
+[INFO] [1792588856.515646401] [nav_server]: 状态: SUCCEEDED -> IDLE
+[INFO] [1792588856.515700749] [nav_server]: 导航成功 (5.25s)
+[INFO] [1792588863.888790498] [nav_server]: RViz 目标: (5.68, -3.24)
+[INFO] [1792588863.889062912] [nav_server]: 状态: IDLE -> PLANNING
+[INFO] [1792588863.907538477] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/17
+[INFO] [1792588863.907695500] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/17
+[INFO] [1792588863.907721151] [bspline_opt]: 优化完成: 7次迭代, 0.28ms | 代价: 1.4907 -> 0.6896 (降低53.7%) | 平滑=0.069, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792588863.961192313] [nav_server]: 过洞接入: hole=hole_B1 S=(-1.664,-4.306) 方法=FEASIBLE_APPROACH_CONTINUOUS 平滑后备原因=none
+[INFO] [1792588863.961628233] [nav_server]: 规划汇总: total=66.0ms astar=2.7ms outer_validation=0.3ms hole=62.6ms first_valid=10.4ms post_first=52.2ms | geometry=0.0 connectivity=2.3 candidates=0.4 seed_search=0.0 fit=1.6 curve_check=5.4 candidate_check=0.3 final_check=0.2 cache_check=0.0 ms | optimized=1 fits=2 iterations=44 cache_hits=0 cache_rejected=0 disconnected=0 stop=QUALITY_ACCEPTED
+[INFO] [1792588863.962345645] [nav_server]: 状态: PLANNING -> CONTROLLING
+[WARN] [1792588863.965189621] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588864.977504265] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588865.977516626] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588866.978036962] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588867.997871347] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588868.999468203] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588870.018538082] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588871.017879762] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[ERROR] [1792588871.975712879] [nav_server]: Controller: 控制超时 (8.0秒无进展 > 8.0秒阈值)
+[INFO] [1792588871.975825344] [nav_server]: 状态: CONTROLLING -> RECOVERY
+[INFO] [1792588871.995561171] [nav_server]: 恢复序列已启动: count=1
+[INFO] [1792588873.580554383] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/17
+[INFO] [1792588873.580697773] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/17
+[INFO] [1792588873.580705238] [bspline_opt]: 优化完成: 7次迭代, 0.30ms | 代价: 1.4907 -> 0.6896 (降低53.7%) | 平滑=0.069, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792588873.634985401] [nav_server]: 过洞接入: hole=hole_B1 S=(-1.664,-4.306) 方法=FEASIBLE_APPROACH_CONTINUOUS 平滑后备原因=none
+[INFO] [1792588873.635508365] [nav_server]: 规划汇总: total=119.8ms astar=2.3ms outer_validation=0.3ms hole=116.7ms first_valid=63.7ms post_first=53.0ms | geometry=0.0 connectivity=2.8 candidates=0.3 seed_search=0.0 fit=7.6 curve_check=52.2 candidate_check=0.4 final_check=0.5 cache_check=0.0 ms | optimized=1 fits=4 iterations=292 cache_hits=0 cache_rejected=0 disconnected=0 stop=QUALITY_ACCEPTED
+[INFO] [1792588873.635556359] [nav_server]: 恢复验证通过: 当前位置安全且已找到新路径
+[INFO] [1792588873.636610033] [nav_server]: 状态: RECOVERY -> CONTROLLING
+[WARN] [1792588873.656503531] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588874.656935236] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588875.656834565] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588876.677135327] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588877.676800282] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588878.676900251] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588879.696900473] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588880.716895611] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588881.717250684] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[ERROR] [1792588882.535761711] [nav_server]: Controller: 控制超时 (8.0秒无进展 > 8.0秒阈值)
+[INFO] [1792588882.535899919] [nav_server]: 状态: CONTROLLING -> RECOVERY
+[INFO] [1792588882.555563761] [nav_server]: 恢复序列已启动: count=2
+[INFO] [1792588884.170254393] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/17
+[INFO] [1792588884.170383486] [bspline_opt]: 优化完成: 7次迭代, 0.25ms | 代价: 1.4907 -> 0.6896 (降低53.7%) | 平滑=0.069, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792588884.225105547] [nav_server]: 过洞接入: hole=hole_B1 S=(-1.664,-4.306) 方法=FEASIBLE_APPROACH_CONTINUOUS 平滑后备原因=none
+[INFO] [1792588884.225713601] [nav_server]: 规划汇总: total=110.1ms astar=2.6ms outer_validation=0.4ms hole=106.6ms first_valid=53.1ms post_first=53.5ms | geometry=0.0 connectivity=3.0 candidates=0.3 seed_search=0.0 fit=6.9 curve_check=42.1 candidate_check=0.4 final_check=0.4 cache_check=0.0 ms | optimized=1 fits=4 iterations=287 cache_hits=0 cache_rejected=0 disconnected=0 stop=QUALITY_ACCEPTED
+[INFO] [1792588884.225760332] [nav_server]: 恢复验证通过: 当前位置安全且已找到新路径
+[INFO] [1792588884.226992614] [nav_server]: 状态: RECOVERY -> CONTROLLING
+[WARN] [1792588884.257129326] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588885.257181162] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588886.257343937] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588887.256910821] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588888.277490168] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588889.277072087] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588890.277798960] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588891.297785503] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[ERROR] [1792588892.235914035] [nav_server]: Controller: 控制超时 (8.0秒无进展 > 8.0秒阈值)
+[INFO] [1792588892.236042962] [nav_server]: 状态: CONTROLLING -> RECOVERY
+[INFO] [1792588892.255555341] [nav_server]: 恢复序列已启动: count=3
+[INFO] [1792588892.275545103] [nav_server]: 状态: RECOVERY -> FAILED
+[INFO] [1792588892.295912120] [nav_server]: 状态: FAILED -> IDLE
+[ERROR] [1792588892.295987514] [nav_server]: 导航失败
+[INFO] [1792588896.503689414] [nav_server]: RViz 目标: (-5.60, -0.51)
+[INFO] [1792588896.504180046] [nav_server]: 状态: IDLE -> PLANNING
+[INFO] [1792588896.544082323] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/12
+[INFO] [1792588896.544204200] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/12
+[INFO] [1792588896.544266134] [bspline_opt]: 优化完成: 7次迭代, 0.21ms | 代价: 1.7326 -> 0.7190 (降低58.5%) | 平滑=0.072, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792588896.656127791] [nav_server]: 过洞接入: hole=hole_A1 S=(-4.694,-4.175) 方法=FEASIBLE_APPROACH_CONTINUOUS 平滑后备原因=none
+[INFO] [1792588896.656645221] [nav_server]: 规划汇总: total=141.0ms astar=2.0ms outer_validation=0.2ms hole=138.2ms first_valid=26.9ms post_first=111.3ms | geometry=0.0 connectivity=2.8 candidates=0.4 seed_search=17.3 fit=17.3 curve_check=80.2 candidate_check=0.7 final_check=0.2 cache_check=0.0 ms | optimized=2 fits=7 iterations=516 cache_hits=0 cache_rejected=0 disconnected=0 stop=QUALITY_ACCEPTED
+[INFO] [1792588896.657382260] [nav_server]: 状态: PLANNING -> CONTROLLING
+[WARN] [1792588903.997307137] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588904.997565527] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588905.996873734] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588907.016713598] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588908.016762132] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588909.016919441] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588910.036620283] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588911.037028409] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588912.036805513] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588913.056542670] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588914.057091977] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588915.057038188] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792588916.076505469] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[INFO] [1792588916.995711173] [nav_server]: 状态: CONTROLLING -> FAILED
+[INFO] [1792588917.015839431] [nav_server]: 状态: FAILED -> IDLE
+[ERROR] [1792588917.015912934] [nav_server]: 导航失败
+[INFO] [1792588944.469751847] [nav_server]: RViz 目标: (-6.24, 0.30)
+[WARN] [1792588944.469824263] [nav_server]: 坡洞占用/结构姿态尚未交接，保留当前任务与约束
+[WARN] [1792589070.528008133] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589070.528670936] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589070.529163045] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589070.709522852] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589070.709574645] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589070.709598006] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589071.471333169] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589071.471435922] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589071.471492583] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589071.771835835] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589071.771887307] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589071.771912802] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589073.794000917] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589073.794189324] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589073.794331698] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589074.776359160] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589074.776575286] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589074.776787616] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.494660794] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.494775228] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.494842709] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.576806398] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.576840829] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.576882694] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.579235594] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.579263494] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.579269074] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.587681334] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.587710616] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.587721485] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.871660903] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.871725969] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.871750293] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.892032600] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.892088319] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.892098407] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.931637165] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.931788305] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.931804384] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.091820381] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.091892090] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.091911304] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.131959362] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.131999684] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.132008640] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.133071964] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.133106375] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.133112707] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.233164620] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.233595101] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.233618984] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.313783062] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.313839423] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.313854470] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.575203795] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.575280382] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.575306208] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.619788042] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.620079554] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.620228230] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589077.319171487] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589077.319263662] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589077.319336041] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589077.430223880] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589077.430320884] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589077.430340839] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589077.758522010] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589077.758605539] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589077.758744328] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589077.918984123] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589077.919020068] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589077.919038260] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589078.670210290] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589078.670402504] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589078.670479873] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589078.695366621] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589078.695435494] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589078.695449109] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589078.738280310] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589078.738331221] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589078.738339035] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589078.741428309] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589078.741473800] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589078.741488116] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589078.832691254] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589078.832733800] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589078.832753546] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589078.853931751] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589078.853985798] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589078.854001176] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.523309551] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.524718736] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.525754695] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.531055669] [nav_server]: Omni feedback sample rejected: frame=odom child=base_link_fake age=-0.332000 limit=0.500 finite=1
+[WARN] [1792589894.531872340] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.531920690] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.531952319] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.536806070] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.536854280] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.536863908] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.537993001] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.538029980] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.538036683] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.539050150] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.539079695] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.539091828] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.541649472] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.541686842] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.541694746] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.546106233] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.546149704] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.546156016] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.548489142] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.548530268] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.548537582] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.551103992] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.551143626] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.551151350] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.558474822] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.558511740] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.558519635] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.562797423] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.562911756] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.562934278] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.564682885] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.564720054] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.564727298] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.565969993] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.566597061] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.566614623] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.569373392] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.569405973] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.569413447] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.570749976] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.570805670] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.570816049] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.571421798] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.571469336] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.571475468] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.573128587] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.573165355] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.573172288] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.575424553] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.575494945] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.575511566] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.576335310] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.576419557] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.576505687] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.577615965] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.577639349] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.577660598] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.623764284] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.623821190] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.623844293] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.860848171] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.860986218] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589894.861044025] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589895.440127932] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589895.440290084] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589895.440397354] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589895.462799853] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589895.462859714] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589895.462871236] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589895.495990528] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589895.496121431] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589895.496138513] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589895.497645530] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589895.497678281] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589895.497684353] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589896.388145816] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589896.388302498] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589896.388413765] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589896.685586933] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589896.685716104] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589896.685776146] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589896.879510274] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589896.879634034] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589896.880268095] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589896.890834658] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589896.891240634] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589896.891993166] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589898.718279971] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589898.718531790] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589898.718709982] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589899.069469081] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589899.069676467] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589899.069918969] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589899.077655651] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589899.077699593] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589899.077708059] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589899.086421150] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589899.086678049] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589899.086938374] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589899.655108063] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589899.655217187] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589899.655300382] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589899.879929167] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589899.880227543] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589899.880322901] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589899.956305116] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589899.956356442] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589899.956376219] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.010191659] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.010379820] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.010512196] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.037224190] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.037280805] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.037290153] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.039552347] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.039595578] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.039603853] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.052243200] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.052293523] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.052301468] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.057007966] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.057058360] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.057064722] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.061066958] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.061209263] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.061253816] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.068435265] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.068489366] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.068498603] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.426577329] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.426659963] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589901.426714294] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589902.193102624] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589902.193263514] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589902.193368119] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589902.204000116] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589902.204052724] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589902.204062071] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589902.462712869] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589902.462793369] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589902.462833203] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589903.790221804] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589903.790394506] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589903.790535118] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589903.871705172] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589903.871870169] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589903.871896989] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589903.913400412] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589903.913454222] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589903.913469661] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589904.314059391] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589904.314168384] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589904.314234066] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589904.315582929] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589904.315630418] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589904.315636619] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589904.381341603] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589904.381413707] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589904.381448973] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589904.431567979] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589904.431602173] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589904.431618734] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589904.721174862] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589904.721337184] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589904.721384332] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589904.873535042] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589904.873596376] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589904.873627755] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589905.688252621] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589905.688388985] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589905.688496695] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589906.589831162] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589906.589942499] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589906.590013682] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.075512155] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.075793129] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.076000575] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.118071163] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.118144280] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.118161602] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.139544313] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.139599276] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.139610366] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.158792107] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.158826240] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.158838072] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.179989122] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.180040388] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.180051077] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.189198722] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.189320188] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.189325518] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.191575330] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.191750526] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.191762769] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.193575046] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.193619038] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.193624929] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.194661059] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.194690755] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.194695043] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.196039137] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.196207952] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.196220475] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.196589813] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.196741506] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.196777724] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.209283014] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.209414649] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.209951490] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.243169142] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.243260392] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.243275130] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.259829274] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.259889086] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.259901539] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.262124070] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.262172721] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.262180014] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.265109653] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.265163503] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.265170286] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.266796376] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.266877657] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.266906271] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.268317370] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.268341174] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.268403981] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.269421146] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.269439931] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.269443889] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.269975850] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.269989505] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.269993473] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.270972517] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.270992214] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.270996171] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.595188012] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.595284612] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.595340176] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.626153549] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.626210655] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589908.626222918] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589909.682615412] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589909.682778736] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589909.682897217] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[INFO] [1792590028.142242324] [rclcpp]: signal_handler(SIGINT/SIGTERM)

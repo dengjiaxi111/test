@@ -27,6 +27,12 @@ struct Event {
 };
 struct Straight { double begin=0,end=0; Point direction; bool remaining=false; };
 struct SpeedRegion { double begin=0,end=0,limit=0; Travel kind=Travel::RESTRICTED; };
+// 坡面几何与限速分离：边界来自最终路径和坡多边形，不把E当作坡脚。
+struct SlopeSection {
+    std::string id;
+    double begin=0,end=0;
+    bool uphill=false,entry_complete=false,exit_complete=false;
+};
 struct Passage {
     std::string uid,hole_id;
     int entry_edge=-1,exit_edge=-1;
@@ -35,6 +41,7 @@ struct Passage {
     std::uint64_t requirement_revision=0;
     std::array<Event,6> events;
     std::vector<Straight> straights;
+    std::vector<Point> polygon;
 };
 struct Plan {
     std::string session,goal,frame="map",reason;
@@ -43,6 +50,7 @@ struct Plan {
     std::vector<Point> path;
     std::vector<Passage> passages;
     std::vector<SpeedRegion> speeds;
+    std::vector<SlopeSection> slopes;
     bool constraints_enabled=true;
 };
 struct Projection { double arc=0,lateral=0; Point point; };
@@ -87,6 +95,18 @@ inline Event makeEvent(EventType type,double s,const Polyline& path) {
     e.point_valid=e.range==Range::ON_PATH;if(e.point_valid)e.point=path.at(s);return e;
 }
 inline const Event& event(const Passage& p,EventType t){return p.events.at(static_cast<std::size_t>(t));}
+// 执行层提前准备点；仅调整A事件，不改变任何路径点、坡几何或规划结果。
+inline void advanceSlopePreparation(Plan& plan,double distance) {
+    const Polyline path(plan.path);
+    for(auto& passage:plan.passages) {
+        auto& a=passage.events.at(static_cast<std::size_t>(EventType::A));
+        const auto& e=event(passage,EventType::E);
+        if(a.range==Range::UNKNOWN||e.range==Range::UNKNOWN)continue;
+        const double original=a.arc;
+        for(const auto& slope:plan.slopes)if(slope.begin<e.arc&&slope.end>original)
+            if(slope.begin-distance<a.arc)a=makeEvent(EventType::A,slope.begin-distance,path);
+    }
+}
 struct StructureRequest {
     std::string session,goal;
     std::uint64_t id=0,revision=0;
@@ -114,6 +134,7 @@ struct Input {
     bool command_requested=false; double chassis_yaw=0;
     // 执行适配检查四面对准、两者实测停转及反馈时效后才置 true。
     bool entry_rotation_ready=true;
+    std::string entry_rotation_uid; // 实测对准所属通行；空值兼容纯核心调用，仅作用于首个活跃通行。
 };
 struct Visit {
     Phase phase=Phase::PENDING;
@@ -135,12 +156,21 @@ struct Output {
 // 数值均为软件示例默认值，现场速度/制动须确认；统一表供加载、校验及参数说明使用。
 #define HOLE_EXEC_DOUBLE_PARAMETERS(X) \
  X(flat_speed,0.40,"平地基础上限","m/s") \
- X(uphill_speed,0.35,"上坡基础上限","m/s") \
- X(downhill_speed,0.20,"下坡基础上限","m/s") \
- X(prepare_speed,0.15,"移动变形期间上限","m/s") \
+ X(minimum_entry_speed,0.0,"坡脚沿路径速度监测参考，不决定控制权","m/s") \
+ X(minimum_slope_speed,0.0,"坡中沿路径速度监测参考，不决定控制权","m/s") \
+ X(boost_speed,2.0,"上坡持续接管速度目标，不保证实测达到","m/s") \
+ X(entry_zone_length,0.20,"真实坡脚之后的坡底检测长度，不增加助跑区","m") \
+ X(low_speed_confirm,0.30,"历史低速确认时间，持续接管不使用","s") \
+ X(speed_recover_margin,0.10,"历史交还滞回量，持续接管不使用","m/s") \
+ X(speed_recover_confirm,0.30,"历史交还确认时间，持续接管不使用","s") \
+ X(boost_timeout,2.0,"历史补速期限，实际失速由通行无进展判定","s") \
+ X(boost_acceleration,2.0,"补速指令上升斜率，非实车保证加速度","m/s^2") \
+ X(prepare_prediction_time,1.0,"LOW动作的初始完成时间预测；放行仍依赖真实反馈","s") \
+ X(alignment_prediction_rate,0.60,"入口角度准备时间预测使用的平均角速度","rad/s") \
+ X(slope_entry_margin,0.25,"未准备完成时在真实坡脚上游停车的距离","m") \
+ X(slope_prepare_distance,0.50,"执行准备点至少提前到实际上下坡起点之前的路径距离","m") \
+ X(tunnel_timeout,15.0,"本次穿越在洞区域内的最大停留时间","s") \
  X(restore_speed,0.15,"移动恢复期间上限","m/s") \
- X(restricted_speed,0.15,"坡顶后受限区上限","m/s") \
- X(post_slope_distance,0.60,"坡顶后低速路径长度","m") \
  X(braking_deceleration,0.30,"最差坡向保证制动减速度，必须实测确认","m/s^2") \
  X(acceleration_limit,0.50,"特殊执行加速度上限","m/s^2") \
  X(control_latency,0.15,"控制与反馈链路延迟预算","s") \
@@ -161,8 +191,8 @@ struct Output {
  X(stop_ack_timeout,2.0,"旧动作停止确认最大等待","s") \
  X(stall_timeout,2.5,"有前进指令时无路径进展期限","s") \
  X(stall_progress,0.05,"有效路径进展阈值","m") \
- X(retreat_speed,0.15,"上坡失败后向下退让上限","m/s") \
- X(retreat_timeout,12.0,"单次退让期限","s") \
+ X(retreat_speed,0.50,"上坡失败后反向回S的平移速度上限","m/s") \
+ X(retreat_timeout,10.0,"单次退让最大执行时间，含停稳和校验","s") \
  X(stopped_speed,0.03,"停稳速度阈值","m/s") \
  X(settle_time,0.20,"停稳连续确认时间","s") \
  X(alignment_tolerance,0.05,"底盘四面对准误差","rad") \

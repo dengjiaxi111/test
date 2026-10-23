@@ -1,7 +1,10 @@
-case: crest
+baseline: false
+case: upper_approach
 goal:
-- 4.694
+- -2.0
 - 7.604
+has_lift: true
+model_sdf: /home/dengjiaxi/simulation_seu/test/sim/simplified_robot.sdf
 start:
 - 4.694
 - 5.0

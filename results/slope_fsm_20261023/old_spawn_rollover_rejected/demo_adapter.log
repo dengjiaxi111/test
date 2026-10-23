@@ -1,0 +1,16 @@
+RCUTILS_CONSOLE_STDOUT_LINE_BUFFERED is now ignored. Please set RCUTILS_LOGGING_USE_STDOUT and RCUTILS_LOGGING_BUFFERED_STREAM to control the stream and the buffering of log messages.
+[INFO] [1792743097.305817174] [hole_gazebo_bridge]: rotation mode: WAIT_FEEDBACK
+[INFO] [1792743097.309474759] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+[INFO] [1792743112.695281856] [hole_gazebo_bridge]: rotation mode: INVALID_ORIENTATION
+[INFO] [1792743112.735022602] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+[INFO] [1792743113.556208886] [hole_gazebo_bridge]: rotation mode: INVALID_ORIENTATION
+[INFO] [1792743113.576934459] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+[INFO] [1792743114.056226141] [hole_gazebo_bridge]: rotation mode: INVALID_ORIENTATION
+/home/dengjiaxi/simulation_seu/test/sim/sim_bridge.py:118: UserWarning: Gimbal lock detected. Setting third angle to zero since it is not possible to uniquely determine all angles.
+  rotation=Rot.from_quat([qq.x,qq.y,qq.z,qq.w]);cyaw=rotation.as_euler('xyz')[2]
+/home/dengjiaxi/simulation_seu/test/sim/rotation_control.py:22: UserWarning: Gimbal lock detected. Setting third angle to zero since it is not possible to uniquely determine all angles.
+  return chassis.inv() * Rot.from_euler('z', chassis.as_euler('xyz')[2])
+/home/dengjiaxi/simulation_seu/test/sim/rotation_control.py:36: UserWarning: Gimbal lock detected. Setting third angle to zero since it is not possible to uniquely determine all angles.
+  cyaw = chassis.as_euler('xyz')[2]
+/home/dengjiaxi/simulation_seu/test/sim/rotation_control.py:13: UserWarning: Gimbal lock detected. Setting third angle to zero since it is not possible to uniquely determine all angles.
+  _, pitch, yaw = orientation.as_euler('xyz')

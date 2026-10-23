@@ -1,0 +1,50 @@
+crest (4.694, 5.0) -> (4.694, 7.604)
+PLAN 1 0 [('hole_A2', True)]
+STATE {'t': 6.156000000000001, 'state': 0, 'decision': 0, 'reason': 'ordinary path following', 'attempt': 0, 'recovery': 0}
+STATE {'t': 7.109000000000001, 'state': 1, 'decision': 0, 'reason': 'A reached or remaining preparation required', 'attempt': 0, 'recovery': 0}
+EVENT {'uid': '97831310-0.000000:1:1', 'type': 0, 'sequence': 1, 'attempt': 0, 'arc': 0.3190125545876217, 'progress': 0.3196451953895137, 'lift': 0.2975233025069679}
+STATE {'t': 8.549000000000001, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+EVENT {'uid': '97831310-0.000000:1:1', 'type': 1, 'sequence': 2, 'attempt': 0, 'arc': 1.0190125545876219, 'progress': 1.0241003517914986, 'lift': -1.0342491920284816e-14}
+STATE {'t': 9.395000000000001, 'state': 2, 'decision': 1, 'reason': 'aligning chassis to selected face', 'attempt': 0, 'recovery': 0}
+STATE {'t': 10.108, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 10.91, 'state': 2, 'decision': 1, 'reason': 'aligning chassis to selected face', 'attempt': 0, 'recovery': 0}
+STATE {'t': 11.008000000000001, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 0, 'recovery': 0}
+STATE {'t': 13.529000000000002, 'state': 4, 'decision': 1, 'reason': 'traverse no progress', 'attempt': 0, 'recovery': 0}
+STATE {'t': 13.549000000000001, 'state': 4, 'decision': 3, 'reason': 'traverse no progress', 'attempt': 0, 'recovery': 1}
+STATE {'t': 13.569, 'state': 4, 'decision': 3, 'reason': 'slopehole dedicated retreat', 'attempt': 0, 'recovery': 1}
+STATE {'t': 13.849, 'state': 4, 'decision': 3, 'reason': 'slopehole dedicated retreat', 'attempt': 0, 'recovery': 2}
+STATE {'t': 13.869000000000002, 'state': 4, 'decision': 3, 'reason': 'slopehole dedicated retreat', 'attempt': 0, 'recovery': 3}
+STATE {'t': 16.017, 'state': 4, 'decision': 3, 'reason': 'slopehole dedicated retreat', 'attempt': 0, 'recovery': 4}
+STATE {'t': 16.391000000000002, 'state': 4, 'decision': 3, 'reason': 'slopehole dedicated retreat', 'attempt': 0, 'recovery': 5}
+STATE {'t': 16.411, 'state': 0, 'decision': 1, 'reason': '', 'attempt': 0, 'recovery': 0}
+STATE {'t': 16.431, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 1, 'recovery': 0}
+STATE {'t': 17.333000000000002, 'state': 2, 'decision': 1, 'reason': 'aligning chassis to selected face', 'attempt': 1, 'recovery': 0}
+STATE {'t': 18.677, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 1, 'recovery': 0}
+STATE {'t': 21.207, 'state': 4, 'decision': 1, 'reason': 'traverse no progress', 'attempt': 1, 'recovery': 0}
+STATE {'t': 21.227, 'state': 4, 'decision': 3, 'reason': 'traverse no progress', 'attempt': 1, 'recovery': 1}
+STATE {'t': 21.247, 'state': 4, 'decision': 3, 'reason': 'slopehole dedicated retreat', 'attempt': 1, 'recovery': 1}
+STATE {'t': 21.581000000000003, 'state': 4, 'decision': 3, 'reason': 'slopehole dedicated retreat', 'attempt': 1, 'recovery': 2}
+STATE {'t': 21.602, 'state': 4, 'decision': 3, 'reason': 'slopehole dedicated retreat', 'attempt': 1, 'recovery': 3}
+STATE {'t': 23.704, 'state': 4, 'decision': 3, 'reason': 'slopehole dedicated retreat', 'attempt': 1, 'recovery': 4}
+STATE {'t': 24.083000000000002, 'state': 4, 'decision': 3, 'reason': 'slopehole dedicated retreat', 'attempt': 1, 'recovery': 5}
+STATE {'t': 24.103, 'state': 0, 'decision': 1, 'reason': '', 'attempt': 0, 'recovery': 0}
+STATE {'t': 24.123, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 2, 'recovery': 0}
+STATE {'t': 25.022000000000002, 'state': 2, 'decision': 1, 'reason': 'aligning chassis to selected face', 'attempt': 2, 'recovery': 0}
+STATE {'t': 26.46, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 2, 'recovery': 0}
+STATE {'t': 27.634, 'state': 2, 'decision': 1, 'reason': 'aligning chassis to selected face', 'attempt': 2, 'recovery': 0}
+STATE {'t': 27.734, 'state': 2, 'decision': 0, 'reason': 'low posture confirmed', 'attempt': 2, 'recovery': 0}
+STATE {'t': 30.26, 'state': 4, 'decision': 1, 'reason': 'traverse no progress', 'attempt': 2, 'recovery': 0}
+PLAN 2 1 [('hole_A2', True)]
+STATE {'t': 35.272000000000006, 'state': 4, 'decision': 2, 'reason': 'traverse no progress', 'attempt': 2, 'recovery': 0}
+PLAN 3 0 []
+STATE {'t': 35.32, 'state': 3, 'decision': 0, 'reason': 'all traversal demands released with clearance', 'attempt': 2, 'recovery': 0}
+STATE {'t': 36.789, 'state': 0, 'decision': 0, 'reason': 'normal posture confirmed', 'attempt': 2, 'recovery': 0}
+STATE {'t': 36.809000000000005, 'state': 0, 'decision': 0, 'reason': 'ordinary path following', 'attempt': 2, 'recovery': 0}
+PLAN 4 1 []
+PLAN 5 0 []
+PLAN 6 1 []
+PLAN 7 0 []
+PLAN 8 1 []
+PLAN 9 4 []
+FAIL goal closed; preserve physical posture requirements
+FAIL goal closed; preserve physical posture requirements

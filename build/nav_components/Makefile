@@ -524,6 +524,30 @@ src/hole_route_planner.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav_server.dir/build.make CMakeFiles/nav_server.dir/src/hole_route_planner.cpp.s
 .PHONY : src/hole_route_planner.cpp.s
 
+src/hole_runtime_tuning.o: src/hole_runtime_tuning.cpp.o
+.PHONY : src/hole_runtime_tuning.o
+
+# target to build an object file
+src/hole_runtime_tuning.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav_server.dir/build.make CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.o
+.PHONY : src/hole_runtime_tuning.cpp.o
+
+src/hole_runtime_tuning.i: src/hole_runtime_tuning.cpp.i
+.PHONY : src/hole_runtime_tuning.i
+
+# target to preprocess a source file
+src/hole_runtime_tuning.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav_server.dir/build.make CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.i
+.PHONY : src/hole_runtime_tuning.cpp.i
+
+src/hole_runtime_tuning.s: src/hole_runtime_tuning.cpp.s
+.PHONY : src/hole_runtime_tuning.s
+
+# target to generate assembly for a file
+src/hole_runtime_tuning.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav_server.dir/build.make CMakeFiles/nav_server.dir/src/hole_runtime_tuning.cpp.s
+.PHONY : src/hole_runtime_tuning.cpp.s
+
 src/layered_map_manager.o: src/layered_map_manager.cpp.o
 .PHONY : src/layered_map_manager.o
 
@@ -866,6 +890,9 @@ help:
 	@echo "... src/hole_route_planner.o"
 	@echo "... src/hole_route_planner.i"
 	@echo "... src/hole_route_planner.s"
+	@echo "... src/hole_runtime_tuning.o"
+	@echo "... src/hole_runtime_tuning.i"
+	@echo "... src/hole_runtime_tuning.s"
 	@echo "... src/layered_map_manager.o"
 	@echo "... src/layered_map_manager.i"
 	@echo "... src/layered_map_manager.s"

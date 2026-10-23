@@ -1,0 +1,50 @@
+{
+  "rotation_entry": {
+    "status": "PASS",
+    "output": "PASS: 低姿态完成不代替停转许可，E上游停车边界、拒绝及有效反馈后进入"
+  },
+  "minimum_speed_takeover": {
+    "status": "PASS",
+    "output": "PASS: conditional speed takeover, signed speed, hysteresis, ineffective timeout and safety cancellation"
+  },
+  "preview_boundary": {
+    "status": "PASS",
+    "output": "before=0.35 inside=0.35"
+  },
+  "tunnel_residence": {
+    "status": "PASS",
+    "output": "PASS: actual hole residence timer, no PREPARE dwell, 15s HOLD to dedicated recovery"
+  },
+  "ordinary_progress": {
+    "status": "PASS",
+    "output": "PASS: ordinary tracking and endpoint tolerance stay with controller; hole guards remain strict"
+  },
+  "connector_progress": {
+    "status": "PASS",
+    "output": "PASS: two-hole ordinary connector permits normal tracking tolerance; S-T remains strict"
+  },
+  "projected_progress": {
+    "status": "PASS",
+    "output": "PASS: per-sample reverse projection is distinct from committed event progress"
+  },
+  "core_test": {
+    "status": "PASS",
+    "output": "PASS: arc, preview braking, moving prepare/restore, feedback identity, overlap, jump, cancel, replan"
+  },
+  "generated_config": {
+    "status": "PASS",
+    "prepare_speed_removed": true,
+    "saved_flat_speed_preserved": 3
+  },
+  "python_syntax": {
+    "status": "PASS"
+  },
+  "ros_integration": {
+    "status": "BLOCKED",
+    "reason": "UDP socket/getifaddrs Operation not permitted; action discovery timed out; no Gazebo dynamic acceptance"
+  },
+  "build": {
+    "status": "PASS",
+    "command": "bash test/scripts/bounded_build.sh nav_core nav_components"
+  }
+}

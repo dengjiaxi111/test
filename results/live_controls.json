@@ -1,0 +1,29 @@
+{
+  "tuning_valid_values": [
+    3.0,
+    10.0,
+    3.0
+  ],
+  "tuning_invalid_batch_rejected": true,
+  "automatic_world_rates_dps": [
+    52.00547813293424,
+    -52.02001612057944
+  ],
+  "passages": [
+    "hole_B2"
+  ],
+  "letters": [
+    "A",
+    "S",
+    "E",
+    "X",
+    "T",
+    "D"
+  ],
+  "rviz_subscribers": [
+    "rviz",
+    "verify_live_controls",
+    "execution_probe"
+  ],
+  "result": "PASS"
+}

@@ -9,6 +9,9 @@
 #include <chrono>
 
 namespace nav_components {
+namespace {
+constexpr int8_t kInflatedCostObstacleThreshold = 99;
+}
 
 LayeredMapManager::LayeredMapManager()
     : logger_(rclcpp::get_logger("layered_map_manager")) {}
@@ -589,7 +592,8 @@ nav_core::MapQuery LayeredMapManager::query(double x, double y) const {
     
     result.valid = true;
     int8_t val = costmap_->data[my * width_ + mx];
-    result.occupied = (val < 0 || val >= obstacle_threshold_);
+    // 膨胀代价图按规划验收的99阈值查询；原始占据图生成ESDF的阈值保持独立。
+    result.occupied = (val < 0 || val >= kInflatedCostObstacleThreshold);
     result.cost = (val >= 0) ? val / 100.0 : 1.0;
     
     // 如果有ESDF，填充距离信息

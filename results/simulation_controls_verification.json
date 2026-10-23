@@ -1,0 +1,78 @@
+{
+  "original_files_checked": 602,
+  "original_files_changed": [],
+  "nmpc_source_identical": true,
+  "model": {
+    "wheel_joints_and_collisions_unchanged": true,
+    "yaw_mount_radians": 1.6032,
+    "radar_mount_xyz_rpy": [
+      0.045,
+      0.123,
+      0,
+      -0.785,
+      0,
+      0
+    ],
+    "radar_low_world_z_bounds_m": [
+      0.17313142029463005,
+      0.2455330139120883
+    ],
+    "low_total_height_m": 0.2455330139120883,
+    "deck_top_m": 0.2,
+    "pocket_floor_m": 0.16,
+    "gun_body_m": [
+      0.4,
+      0.1,
+      0.04
+    ],
+    "chassis_outer_footprint_m": [
+      0.6,
+      0.6
+    ],
+    "chassis_mass_kg": 20.0,
+    "gimbal_mass_kg": 0.8,
+    "gimbal_inertia_kg_m2": [
+      0.0087,
+      0.0087,
+      1e-06
+    ],
+    "radar_mass_kg": 0.005,
+    "radar_collision": false
+  },
+  "live_controls": {
+    "tuning_valid_values": [
+      3.0,
+      10.0,
+      3.0
+    ],
+    "tuning_invalid_batch_rejected": true,
+    "automatic_world_rates_dps": [
+      52.00547813293424,
+      -52.02001612057944
+    ],
+    "passages": [
+      "hole_B2"
+    ],
+    "letters": [
+      "A",
+      "S",
+      "E",
+      "X",
+      "T",
+      "D"
+    ],
+    "rviz_subscribers": [
+      "rviz",
+      "verify_live_controls",
+      "execution_probe"
+    ],
+    "result": "PASS"
+  },
+  "manual_controls": {
+    "result": "PASS",
+    "keyboard_translation_m": 0.9076955612488646,
+    "explicit_save_verified": true
+  },
+  "screenshot": "test/results/rviz_letters.png",
+  "complete_terrain_passage_verified": false
+}

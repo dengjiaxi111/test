@@ -1,0 +1,1 @@
+{'result': 'PASS', 'spin_translation_m': 1.7633510382334994, 'lateral_drift_m': 0.03919296579939649, 'chassis_yaw_change_rad': 2.067231254947544, 'opposite_rate_error_rad_s': 0.0011539900063622655, 'stop_feedback': True, 'alignment_feedback': True, 'original_fake_and_new_chassiss': True}

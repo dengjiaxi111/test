@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-23",
+  "scope": [
+    "per-traversal initial entry permission",
+    "reject anomalous timestamps while retaining fresh cached feedback"
+  ],
+  "build": {
+    "command": "bash test/scripts/bounded_build.sh nav_core nav_components",
+    "exit_code": 0,
+    "installed_headers_match": true,
+    "installed_binary_newer_than_controller": true
+  },
+  "checks": [
+    {
+      "name": "rotation_entry",
+      "exit_code": 0,
+      "output": "PASS: 初次LOW/对准许可、上下坡许可保持、请求/需求/退让清理及真实过期停车\n"
+    },
+    {
+      "name": "preview_boundary",
+      "exit_code": 0,
+      "output": "before=0.35 inside=0.35\n"
+    },
+    {
+      "name": "minimum_speed_takeover",
+      "exit_code": 0,
+      "output": "PASS: conditional speed takeover, signed speed, hysteresis, ineffective timeout and safety cancellation\n"
+    },
+    {
+      "name": "tunnel_residence",
+      "exit_code": 0,
+      "output": "PASS: actual hole residence timer, no PREPARE dwell, 15s HOLD to dedicated recovery\n"
+    },
+    {
+      "name": "ordinary_progress",
+      "exit_code": 0,
+      "output": "PASS: ordinary tracking and endpoint tolerance stay with controller; hole guards remain strict\n"
+    },
+    {
+      "name": "connector_progress",
+      "exit_code": 0,
+      "output": "PASS: two-hole ordinary connector permits normal tracking tolerance; S-T remains strict\n"
+    },
+    {
+      "name": "projected_progress",
+      "exit_code": 0,
+      "output": "PASS: per-sample reverse projection is distinct from committed event progress\n"
+    },
+    {
+      "name": "test_slopehole_controller",
+      "exit_code": 0,
+      "output": "PASS: arc, preview braking, moving prepare/restore, feedback identity, overlap, jump, cancel, replan\n"
+    },
+    {
+      "name": "test_omni_core",
+      "exit_code": 0,
+      "output": "Omni model/fusion/protection tests passed\n"
+    }
+  ],
+  "regressions": [
+    "permit survives angular readiness loss past E parking boundary in both directions",
+    "entry E allowed with prior permission, denied without it",
+    "emergency stop release accepts prior permission after translation settles",
+    "same-route replan, request resend and speed tuning preserve permission",
+    "wrong traversal UID cannot acquire permission",
+    "requirement change, LOW fault/staleness, retreat, close and invalidation clear permission",
+    "future 11ms sample does not erase previous fresh feedback",
+    "duplicate/out-of-order/old/future packets do not renew cached age",
+    "source and receive expiry, first sample rejection, clock reversal and recovery"
+  ],
+  "limitations": [
+    "ROS integration and Gazebo traversal were not run in this round; sandbox ROS network access was previously blocked by EPERM",
+    "STOP-related speed takeover timer behavior and Omni solve diagnostics were intentionally left unchanged"
+  ]
+}

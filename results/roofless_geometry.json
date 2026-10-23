@@ -1,0 +1,59 @@
+{
+  "source_sha256": "aac36b435312fbc5601254d1f502f30ed78447acde86802028e35cc1c7451582",
+  "source_triangle_count": 125931,
+  "removed_cap_triangles": {
+    "A1": 24,
+    "A2": 24,
+    "B1": 50,
+    "B2": 40
+  },
+  "removed_floating_mark_triangles": {
+    "A1": 0,
+    "A2": 0
+  },
+  "total_removed": 138,
+  "minimum_removed_world_z_m": 0.6086559295654297,
+  "all_other_triangles_preserved_verbatim": true,
+  "clearance_sweeps": {
+    "A1": {
+      "sweep_bounds_xy_m": [
+        -4.995,
+        -4.394,
+        -3.78,
+        -3.52
+      ],
+      "check_above_world_z_m": 0.6,
+      "remaining_high_triangle_count": 0
+    },
+    "A2": {
+      "sweep_bounds_xy_m": [
+        4.394,
+        4.995,
+        6.81,
+        7.08
+      ],
+      "check_above_world_z_m": 0.6,
+      "remaining_high_triangle_count": 0
+    },
+    "B1": {
+      "sweep_bounds_xy_m": [
+        0.74,
+        1.02,
+        -4.606,
+        -4.006
+      ],
+      "check_above_world_z_m": 0.6,
+      "remaining_high_triangle_count": 0
+    },
+    "B2": {
+      "sweep_bounds_xy_m": [
+        -1.0,
+        -0.74,
+        7.304,
+        7.904
+      ],
+      "check_above_world_z_m": 0.6,
+      "remaining_high_triangle_count": 0
+    }
+  }
+}

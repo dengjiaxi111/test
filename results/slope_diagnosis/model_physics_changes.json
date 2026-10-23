@@ -1,0 +1,197 @@
+{
+  "verification": "PASS",
+  "scope": "Model parameter comparison only; no simulation executed for this verification.",
+  "models": [
+    {
+      "model": "test/sim/robot.sdf",
+      "before_snapshot": "test/results/slope_diagnosis/robot.sdf.before",
+      "before_sha256": "5c41fcb37a39f45417954aab2ff3c256edd31f87d9405a3b0ff64e398c9b19c8",
+      "after_sha256": "40cb83f0de0e6567e30dfc269979f5222afd4e7d08da2ef0459c298e2556f3e2",
+      "total_mass_kg": 22.13684,
+      "allowed_changes": [
+        {
+          "link": "front_left_wheel_link",
+          "field": "mu",
+          "before": 0.2,
+          "after": 0.8
+        },
+        {
+          "link": "front_left_wheel_link",
+          "field": "mu2",
+          "before": 0.2,
+          "after": 0.8
+        },
+        {
+          "link": "front_right_wheel_link",
+          "field": "mu",
+          "before": 0.2,
+          "after": 0.8
+        },
+        {
+          "link": "front_right_wheel_link",
+          "field": "mu2",
+          "before": 0.2,
+          "after": 0.8
+        },
+        {
+          "link": "rear_right_wheel_link",
+          "field": "mu",
+          "before": 0.2,
+          "after": 0.8
+        },
+        {
+          "link": "rear_right_wheel_link",
+          "field": "mu2",
+          "before": 0.2,
+          "after": 0.8
+        },
+        {
+          "link": "rear_left_wheel_link",
+          "field": "mu",
+          "before": 0.2,
+          "after": 0.8
+        },
+        {
+          "link": "rear_left_wheel_link",
+          "field": "mu2",
+          "before": 0.2,
+          "after": 0.8
+        },
+        {
+          "plugin": "seu_sentry_sim_control::SentryMotorController",
+          "field": "wheel_kp",
+          "before": 0.28,
+          "after": 1.0
+        }
+      ],
+      "all_other_xml_semantics_unchanged": true,
+      "mass_inertia_unchanged": true,
+      "wheel_joint_limits_and_geometry_unchanged": true,
+      "all_collision_geometry_unchanged": true,
+      "unchanged_motor_parameters_from_authoritative_sdf": {
+        "wheel_torque_limit_Nm": 2.0,
+        "wheel_ki": 0.08
+      }
+    },
+    {
+      "model": "test/sim/simplified_robot.sdf",
+      "before_snapshot": "test/results/slope_diagnosis/simplified_robot.sdf.before",
+      "before_sha256": "e52e944b0cc579d25eb63752fd7edce60db411cb212e8a9ac0ddcbf2d2554c0f",
+      "after_sha256": "9b3dd9e4ee532722962dd6258353f53c2bf7e14770132ba668907fc3fc5902e3",
+      "total_mass_kg": 22.13684,
+      "allowed_changes": [
+        {
+          "link": "front_left_wheel_link",
+          "field": "mu",
+          "before": 0.2,
+          "after": 0.8
+        },
+        {
+          "link": "front_left_wheel_link",
+          "field": "mu2",
+          "before": 0.2,
+          "after": 0.8
+        },
+        {
+          "link": "front_right_wheel_link",
+          "field": "mu",
+          "before": 0.2,
+          "after": 0.8
+        },
+        {
+          "link": "front_right_wheel_link",
+          "field": "mu2",
+          "before": 0.2,
+          "after": 0.8
+        },
+        {
+          "link": "rear_right_wheel_link",
+          "field": "mu",
+          "before": 0.2,
+          "after": 0.8
+        },
+        {
+          "link": "rear_right_wheel_link",
+          "field": "mu2",
+          "before": 0.2,
+          "after": 0.8
+        },
+        {
+          "link": "rear_left_wheel_link",
+          "field": "mu",
+          "before": 0.2,
+          "after": 0.8
+        },
+        {
+          "link": "rear_left_wheel_link",
+          "field": "mu2",
+          "before": 0.2,
+          "after": 0.8
+        },
+        {
+          "plugin": "seu_sentry_sim_control::SentryMotorController",
+          "field": "wheel_kp",
+          "before": 0.28,
+          "after": 1.0
+        }
+      ],
+      "all_other_xml_semantics_unchanged": true,
+      "mass_inertia_unchanged": true,
+      "wheel_joint_limits_and_geometry_unchanged": true,
+      "all_collision_geometry_unchanged": true,
+      "unchanged_motor_parameters_from_authoritative_sdf": {
+        "wheel_torque_limit_Nm": 2.0,
+        "wheel_ki": 0.08
+      }
+    }
+  ],
+  "original_model": {
+    "file": "test/sim/original_robot_ab.sdf",
+    "wheel_friction_unchanged_at_02": [
+      {
+        "link": "front_left_wheel_link",
+        "mu": 0.2,
+        "mu2": 0.2
+      },
+      {
+        "link": "front_right_wheel_link",
+        "mu": 0.2,
+        "mu2": 0.2
+      },
+      {
+        "link": "rear_right_wheel_link",
+        "mu": 0.2,
+        "mu2": 0.2
+      },
+      {
+        "link": "rear_left_wheel_link",
+        "mu": 0.2,
+        "mu2": 0.2
+      }
+    ],
+    "wheel_kp_unchanged": 0.28
+  },
+  "theoretical_notes_not_simulation_measurements": [
+    {
+      "slope": "A",
+      "angle_degrees": 14.999999999999998,
+      "grade_tan_theta": 0.2679491924311227,
+      "required_minimum_static_friction_on_ideal_uniform_slope": 0.2679491924311227,
+      "downslope_gravity_N": 56.205765103699264,
+      "mu02_ideal_traction_limit_N": 41.9525542090575,
+      "mu08_ideal_traction_limit_N": 167.81021683623,
+      "interpretation": "Theoretical static traction estimate only; does not establish Gazebo contact behavior, dynamic load distribution, motor tracking, or traversal success."
+    },
+    {
+      "slope": "B",
+      "angle_degrees": 11.420074167477821,
+      "grade_tan_theta": 0.202,
+      "required_minimum_static_friction_on_ideal_uniform_slope": 0.202,
+      "downslope_gravity_N": 42.99832387544842,
+      "mu02_ideal_traction_limit_N": 42.572597896483586,
+      "mu08_ideal_traction_limit_N": 170.29039158593434,
+      "interpretation": "Theoretical static traction estimate only; does not establish Gazebo contact behavior, dynamic load distribution, motor tracking, or traversal success."
+    }
+  ],
+  "authoritative_motor_parameter_source": "SDF plugin values, not C++ plugin fallback defaults"
+}

@@ -1,0 +1,72 @@
+[INFO] [1792589067.875322390] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1792589067.875418792] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[INFO] [1792589067.892226976] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1792589068.195336419] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[WARN] [1792589068.985736503] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589068.985861536] [rviz2]: Detected jump back in time. Resetting RViz.
+[INFO] [1792589069.043306067] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[WARN] [1792589069.447845851] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589069.447945619] [rviz2]: Detected jump back in time. Resetting RViz.
+[INFO] [1792589069.541742248] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[WARN] [1792589069.668287604] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589069.668355785] [rviz2]: Detected jump back in time. Resetting RViz.
+[INFO] [1792589069.743150478] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[WARN] [1792589070.709444673] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589070.709569145] [rviz2]: Detected jump back in time. Resetting RViz.
+[INFO] [1792589070.741791678] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[WARN] [1792589071.471423270] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589071.471508672] [rviz2]: Detected jump back in time. Resetting RViz.
+[INFO] [1792589071.541690336] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[WARN] [1792589071.771428257] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589071.771504353] [rviz2]: Detected jump back in time. Resetting RViz.
+[INFO] [1792589071.842266013] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[WARN] [1792589072.075070007] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589072.075155200] [rviz2]: Detected jump back in time. Resetting RViz.
+[INFO] [1792589072.142052170] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[WARN] [1792589073.354969443] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589073.355119692] [rviz2]: Detected jump back in time. Resetting RViz.
+[WARN] [1792589073.355364680] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589073.355413427] [rviz2]: Detected jump back in time. Resetting RViz.
+[INFO] [1792589073.441495974] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[WARN] [1792589073.793927035] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589073.794041569] [rviz2]: Detected jump back in time. Resetting RViz.
+[INFO] [1792589073.842471991] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[WARN] [1792589075.463676821] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.463840434] [rviz2]: Detected jump back in time. Resetting RViz.
+[INFO] [1792589075.541061538] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[WARN] [1792589075.576766807] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.576940578] [rviz2]: Detected jump back in time. Resetting RViz.
+[WARN] [1792589075.578797550] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.578838804] [rviz2]: Detected jump back in time. Resetting RViz.
+[WARN] [1792589075.587641843] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.587701940] [rviz2]: Detected jump back in time. Resetting RViz.
+[INFO] [1792589075.641432258] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[WARN] [1792589075.892079594] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589075.892139541] [rviz2]: Detected jump back in time. Resetting RViz.
+[INFO] [1792589075.942993071] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[WARN] [1792589076.091837392] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.091920030] [rviz2]: Detected jump back in time. Resetting RViz.
+[WARN] [1792589076.132108730] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.132150915] [rviz2]: Detected jump back in time. Resetting RViz.
+[WARN] [1792589076.133364197] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.133392898] [rviz2]: Detected jump back in time. Resetting RViz.
+[WARN] [1792589076.133929308] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.133961626] [rviz2]: Detected jump back in time. Resetting RViz.
+[INFO] [1792589076.141020680] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[WARN] [1792589076.233164721] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.233231300] [rviz2]: Detected jump back in time. Resetting RViz.
+[INFO] [1792589076.241020861] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[WARN] [1792589076.577395698] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.578972801] [rviz2]: Detected jump back in time. Resetting RViz.
+[INFO] [1792589076.641950839] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[WARN] [1792589076.815215460] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589076.815287188] [rviz2]: Detected jump back in time. Resetting RViz.
+[INFO] [1792589076.841459362] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[WARN] [1792589077.319168642] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589077.319253704] [rviz2]: Detected jump back in time. Resetting RViz.
+[INFO] [1792589077.341364644] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches
+[WARN] [1792589077.430269872] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589077.430339066] [rviz2]: Detected jump back in time. Resetting RViz.
+[WARN] [1792589077.434299778] [tf2_buffer]: Detected jump back in time. Clearing TF buffer.
+[WARN] [1792589077.434355248] [rviz2]: Detected jump back in time. Resetting RViz.
+[INFO] [1792589077.441699247] [rviz2]: Trying to create a map of size 595 x 321 using 1 swatches

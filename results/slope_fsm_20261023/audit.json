@@ -1,0 +1,344 @@
+[
+  {
+    "case": "upper_approach",
+    "run": "final_upper_1",
+    "result": "PASS",
+    "explicit_stops": 0,
+    "passages": [
+      {
+        "hole": "hole_A2",
+        "uphill": true,
+        "minimum_command_speed": 0.04694409133956417,
+        "events": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "hole": "hole_B2",
+        "uphill": false,
+        "minimum_command_speed": 0.19359841781514073,
+        "events": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "slopes": [
+      {
+        "id": "slope_A2",
+        "begin": 1.3000452020621016,
+        "end": 2.0550452020621015,
+        "uphill": true,
+        "minimum_command_speed": 1.5533244233759227,
+        "maximum_command_speed": 2.0,
+        "minimum_measured_horizontal_speed": 0.9800828226571459,
+        "maximum_measured_horizontal_speed": 1.3784216157060123
+      },
+      {
+        "id": "slope_B2",
+        "begin": 7.900616053328755,
+        "end": 8.840624244736151,
+        "uphill": false,
+        "minimum_command_speed": 1.0251337461327157,
+        "maximum_command_speed": 1.2668405768424533,
+        "minimum_measured_horizontal_speed": 1.1072637009336905,
+        "maximum_measured_horizontal_speed": 1.3343323490964474
+      }
+    ]
+  },
+  {
+    "case": "upper_approach",
+    "run": "final_upper_2",
+    "result": "PASS",
+    "explicit_stops": 0,
+    "passages": [
+      {
+        "hole": "hole_A2",
+        "uphill": true,
+        "minimum_command_speed": 0.30697102407458976,
+        "events": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "hole": "hole_B2",
+        "uphill": false,
+        "minimum_command_speed": 0.18826197983777682,
+        "events": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "slopes": [
+      {
+        "id": "slope_A2",
+        "begin": 1.3165148888686073,
+        "end": 2.0715148888686072,
+        "uphill": true,
+        "minimum_command_speed": 1.5056056801256372,
+        "maximum_command_speed": 1.9913828072454238,
+        "minimum_measured_horizontal_speed": 1.0561927128581015,
+        "maximum_measured_horizontal_speed": 1.2783524889003273
+      },
+      {
+        "id": "slope_B2",
+        "begin": 7.91708574013526,
+        "end": 8.857093931542655,
+        "uphill": false,
+        "minimum_command_speed": 1.0384291880505396,
+        "maximum_command_speed": 1.2803293849234103,
+        "minimum_measured_horizontal_speed": 1.0894618321559357,
+        "maximum_measured_horizontal_speed": 1.3600965474938396
+      }
+    ]
+  },
+  {
+    "case": "upper_approach",
+    "run": "final_upper_3",
+    "result": "PASS",
+    "explicit_stops": 0,
+    "passages": [
+      {
+        "hole": "hole_A2",
+        "uphill": true,
+        "minimum_command_speed": 0.2858046044422151,
+        "events": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "hole": "hole_B2",
+        "uphill": false,
+        "minimum_command_speed": 0.19313827816315327,
+        "events": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "slopes": [
+      {
+        "id": "slope_A2",
+        "begin": 1.3243013445876022,
+        "end": 2.079301344587602,
+        "uphill": true,
+        "minimum_command_speed": 1.5042017156899852,
+        "maximum_command_speed": 1.9993080551161422,
+        "minimum_measured_horizontal_speed": 1.0700514857858703,
+        "maximum_measured_horizontal_speed": 1.306013709553726
+      },
+      {
+        "id": "slope_B2",
+        "begin": 7.924872195854255,
+        "end": 8.864880387261652,
+        "uphill": false,
+        "minimum_command_speed": 1.0456723981343101,
+        "maximum_command_speed": 1.2340191501149995,
+        "minimum_measured_horizontal_speed": 1.101993416566016,
+        "maximum_measured_horizontal_speed": 1.312253002919504
+      }
+    ]
+  },
+  {
+    "case": "lower",
+    "run": "final_lower_1",
+    "result": "PASS",
+    "explicit_stops": 0,
+    "passages": [
+      {
+        "hole": "hole_B1",
+        "uphill": true,
+        "minimum_command_speed": 0.3045195990973768,
+        "events": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "hole": "hole_A1",
+        "uphill": false,
+        "minimum_command_speed": 0.35360929100903493,
+        "events": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "slopes": [
+      {
+        "id": "slope_B1",
+        "begin": 1.7337887266721745,
+        "end": 2.673788726672177,
+        "uphill": true,
+        "minimum_command_speed": 1.5927549820389628,
+        "maximum_command_speed": 2.0000000000000004,
+        "minimum_measured_horizontal_speed": 1.0878474638282387,
+        "maximum_measured_horizontal_speed": 1.6957231557759105
+      },
+      {
+        "id": "slope_A1",
+        "begin": 8.605081473382974,
+        "end": 9.360081473382962,
+        "uphill": false,
+        "minimum_command_speed": 1.315633657054863,
+        "maximum_command_speed": 1.5377175014301534,
+        "minimum_measured_horizontal_speed": 1.4050549403867985,
+        "maximum_measured_horizontal_speed": 1.6502458724538664
+      }
+    ]
+  },
+  {
+    "case": "lower",
+    "run": "final_lower_2",
+    "result": "PASS",
+    "explicit_stops": 0,
+    "passages": [
+      {
+        "hole": "hole_B1",
+        "uphill": true,
+        "minimum_command_speed": 0.26279254091556375,
+        "events": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "hole": "hole_A1",
+        "uphill": false,
+        "minimum_command_speed": 0.2690995322027013,
+        "events": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "slopes": [
+      {
+        "id": "slope_B1",
+        "begin": 1.7228712952911915,
+        "end": 2.6628712952911946,
+        "uphill": true,
+        "minimum_command_speed": 1.8220926275385734,
+        "maximum_command_speed": 2.0,
+        "minimum_measured_horizontal_speed": 1.1678611687759386,
+        "maximum_measured_horizontal_speed": 1.8010406871543336
+      },
+      {
+        "id": "slope_A1",
+        "begin": 8.594164042001992,
+        "end": 9.34916404200198,
+        "uphill": false,
+        "minimum_command_speed": 1.3524196088923561,
+        "maximum_command_speed": 1.5576659597283455,
+        "minimum_measured_horizontal_speed": 1.4170209407293608,
+        "maximum_measured_horizontal_speed": 1.622872859528384
+      }
+    ]
+  },
+  {
+    "case": "flat_nav",
+    "run": "final_flat_1",
+    "result": "PASS",
+    "explicit_stops": 0,
+    "passages": [],
+    "slopes": []
+  },
+  {
+    "case": "upper_approach",
+    "run": "final_default_gui",
+    "result": "PASS",
+    "explicit_stops": 0,
+    "passages": [
+      {
+        "hole": "hole_A2",
+        "uphill": true,
+        "minimum_command_speed": 0.2897681297767694,
+        "events": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "hole": "hole_B2",
+        "uphill": false,
+        "minimum_command_speed": 0.2253000193363721,
+        "events": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "slopes": [
+      {
+        "id": "slope_A2",
+        "begin": 1.3155579848313477,
+        "end": 2.0705579848313476,
+        "uphill": true,
+        "minimum_command_speed": 1.5280496336808582,
+        "maximum_command_speed": 2.0,
+        "minimum_measured_horizontal_speed": 0.9688251102018288,
+        "maximum_measured_horizontal_speed": 1.3879370616818025
+      },
+      {
+        "id": "slope_B2",
+        "begin": 7.916128836098,
+        "end": 8.856137027505396,
+        "uphill": false,
+        "minimum_command_speed": 0.9293987336003497,
+        "maximum_command_speed": 1.24931187576282,
+        "minimum_measured_horizontal_speed": 0.9692503771309261,
+        "maximum_measured_horizontal_speed": 1.3173037296538077
+      }
+    ]
+  }
+]

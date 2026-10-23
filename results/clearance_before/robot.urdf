@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="sentry_lift_test">
+  <link name="chassis">
+    <visual>
+      <origin xyz="-.285 0 -.10585" rpy="0 0 0" />
+      <geometry>
+        <box size=".03 .60 .04" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz=".285 0 -.10585" rpy="0 0 0" />
+      <geometry>
+        <box size=".03 .60 .04" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 -.285 -.10585" rpy="0 0 0" />
+      <geometry>
+        <box size=".54 .03 .04" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 .285 -.10585" rpy="0 0 0" />
+      <geometry>
+        <box size=".54 .03 .04" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -.18085" rpy="0 0 0" />
+      <geometry>
+        <box size=".60 .60 .11" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="base_footprint" />
+  <link name="front_left_steer_link">
+    <visual>
+      <origin xyz="0 0 -0.027" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.048" length="0.098" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="front_left_wheel_link">
+    <visual>
+      <origin xyz="-0.019453 0.00012233 -7.8814e-05" rpy="0 1.5707963 0" />
+      <geometry>
+        <cylinder radius="0.0535" length="0.05" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="front_right_steer_link">
+    <visual>
+      <origin xyz="0 0 -0.025" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.048" length="0.098" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="front_right_wheel_link">
+    <visual>
+      <origin xyz="-0.019538 0.00012734 -8.2044e-05" rpy="0 1.5707963 0" />
+      <geometry>
+        <cylinder radius="0.0535" length="0.05" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="rear_right_steer_link">
+    <visual>
+      <origin xyz="0 0 -0.039" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.048" length="0.098" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="rear_right_wheel_link">
+    <visual>
+      <origin xyz="-0.019684 0.00013642 -8.7894e-05" rpy="0 1.5707963 0" />
+      <geometry>
+        <cylinder radius="0.0535" length="0.05" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="rear_left_steer_link">
+    <visual>
+      <origin xyz="0 0 -0.027" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.048" length="0.098" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="rear_left_wheel_link">
+    <visual>
+      <origin xyz="-0.019684 -8.7894e-05 -0.00013642" rpy="0 1.5707963 0" />
+      <geometry>
+        <cylinder radius="0.0535" length="0.05" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="lift_carriage" />
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size=".40 .10 .04" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz=".22 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size=".06 .055 .025" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz=".252 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size=".004 .035 .014" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="livox_frame">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 3.141592653589793" />
+      <geometry>
+        <mesh filename="file:///home/dengjiaxi/simulation_seu/navigatiosim2/src/pb2025_robot_description/resource/models/mid360/meshes/mid360.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+  </link>
+  <joint name="chassis_to_base_footprint" type="fixed">
+    <parent link="chassis" />
+    <child link="base_footprint" />
+    <origin xyz="0 0 -0.28585" rpy="0 0 0" />
+  </joint>
+  <joint name="front_left_steer_joint" type="continuous">
+    <parent link="chassis" />
+    <child link="front_left_steer_link" />
+    <origin xyz="-0.159 -0.159 -0.156" rpy="0 0 2.3562" />
+    <axis xyz="0 0 1" />
+  </joint>
+  <joint name="front_left_wheel_joint" type="continuous">
+    <parent link="front_left_steer_link" />
+    <child link="front_left_wheel_link" />
+    <origin xyz="0 -0.029 -0.07635" rpy="0 0 -1.5708" />
+    <axis xyz="-1 0 0" />
+  </joint>
+  <joint name="front_right_steer_joint" type="continuous">
+    <parent link="chassis" />
+    <child link="front_right_steer_link" />
+    <origin xyz="0.159 -0.159 -0.156" rpy="0 0 -2.3562" />
+    <axis xyz="0 0 1" />
+  </joint>
+  <joint name="front_right_wheel_joint" type="continuous">
+    <parent link="front_right_steer_link" />
+    <child link="front_right_wheel_link" />
+    <origin xyz="0 -0.029 -0.07635" rpy="0 0 -1.5708" />
+    <axis xyz="-1 0 0" />
+  </joint>
+  <joint name="rear_right_steer_joint" type="continuous">
+    <parent link="chassis" />
+    <child link="rear_right_steer_link" />
+    <origin xyz="0.159 0.159 -0.16735" rpy="0 0 -0.7854" />
+    <axis xyz="0 0 1" />
+  </joint>
+  <joint name="rear_right_wheel_joint" type="continuous">
+    <parent link="rear_right_steer_link" />
+    <child link="rear_right_wheel_link" />
+    <origin xyz="0 -0.029 -0.065" rpy="0 0 -1.5707963" />
+    <axis xyz="-1 0 0" />
+  </joint>
+  <joint name="rear_left_steer_joint" type="continuous">
+    <parent link="chassis" />
+    <child link="rear_left_steer_link" />
+    <origin xyz="-0.159 0.159 -0.16735" rpy="0 0 0.7853982" />
+    <axis xyz="0 0 1" />
+  </joint>
+  <joint name="rear_left_wheel_joint" type="continuous">
+    <parent link="rear_left_steer_link" />
+    <child link="rear_left_wheel_link" />
+    <origin xyz="0 -0.029 -0.065" rpy="1.5707963 0 -1.5707963" />
+    <axis xyz="-1 0 0" />
+  </joint>
+  <joint name="lift_joint" type="prismatic">
+    <parent link="chassis" />
+    <child link="lift_carriage" />
+    <origin xyz="0 0 -0.08835" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit lower="0" upper=".3" effort="300" velocity=".25" />
+  </joint>
+  <joint name="gimbal_yaw_joint" type="continuous">
+    <parent link="lift_carriage" />
+    <child link="base_link" />
+    <origin xyz="0 0 .0165" rpy="0 0 1.6032" />
+    <axis xyz="0 0 1" />
+  </joint>
+  <joint name="radar_mount" type="fixed">
+    <parent link="base_link" />
+    <child link="livox_frame" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+</robot>

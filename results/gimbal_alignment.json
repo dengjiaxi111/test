@@ -1,0 +1,46 @@
+{
+  "result": "PASS",
+  "behavior": {
+    "gimbal_target": "nearest chassis target + k*pi/2, latched during alignment",
+    "angle_feedback": "physical world yaw including 1.6032 rad mounting rotation",
+    "angle_tolerance_rad": 0.05,
+    "rate_limit_rad_s": 0.1,
+    "settle_time_s": 0.2,
+    "lower_request": "first LOW request emitted in the same tick alignment becomes ready"
+  },
+  "checks": {
+    "python_real_control": "PASS: mounting offset, wraparound, slope, heading change and stop",
+    "core_shrink_and_entry": "PASS: no premature LOW or false action timeout; same-tick LOW; entry gate preserved",
+    "ros_adapter": "PASS: actual subscriber rejects malformed/nonfinite/stale feedback; oblique gimbal or either moving axis prevents LOW; same-tick LOW after settle",
+    "build_nav_components": "PASS",
+    "existing_rotation_geometry": "PASS",
+    "existing_rotation_ground_rate": "PASS"
+  },
+  "physical_gazebo": {
+    "result": "PASS",
+    "gimbal_relative_error_rad": 0.0071125548018305985,
+    "lift_before_m": 0.2968804853868845,
+    "lift_after_m": -1.0221849356188525e-14,
+    "spin_translation_m": 1.7772140313406135,
+    "lateral_drift_m": 0.037759067821495844,
+    "chassis_yaw_change_rad": 2.0661092390220857,
+    "opposite_rate_error_rad_s": 0.00501652150132445,
+    "stop_feedback": true,
+    "alignment_feedback": true,
+    "original_fake_and_new_chassiss": true
+  },
+  "existing_failure": {
+    "test": "src/my_navigation/nav_components/test/test_slopehole_controller.cpp:45",
+    "assertion": "moving.decision==Decision::CONTINUE&&moving.stop_arc",
+    "before_change": "FAIL at same assertion",
+    "after_change": "FAIL at same assertion",
+    "action": "unrelated logic and original test left unchanged"
+  },
+  "production_files": [
+    "sim/rotation_control.py",
+    "src/my_navigation/nav_components/src/slopehole_ros_adapter.cpp",
+    "src/my_navigation/nav_components/include/nav_components/slopehole_ros_adapter.hpp",
+    "src/my_navigation/nav_components/src/slopehole_controller.cpp"
+  ],
+  "artifacts": "/tmp/gimbal-alignment-g3as1jcu"
+}

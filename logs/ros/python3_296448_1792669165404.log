@@ -1,0 +1,16 @@
+[INFO] [1792669167.152882512] [hole_gazebo_bridge]: rotation mode: WAIT_FEEDBACK
+[INFO] [1792669167.157612665] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+[INFO] [1792669178.625190786] [hole_gazebo_bridge]: rotation mode: KEYBOARD
+[INFO] [1792669244.337783510] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+[INFO] [1792669261.782674428] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
+[INFO] [1792669262.782911100] [hole_gazebo_bridge]: rotation mode: HOLE_SAFETY_STOP
+[INFO] [1792669264.484064299] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
+[INFO] [1792669265.788716505] [hole_gazebo_bridge]: rotation mode: HOLE_SAFETY_STOP
+[INFO] [1792669266.109398218] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
+[INFO] [1792669270.008636784] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+[INFO] [1792669331.228645150] [hole_gazebo_bridge]: rotation mode: KEYBOARD
+[INFO] [1792669358.272897609] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+[INFO] [1792669378.341451977] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
+[INFO] [1792669379.282625135] [hole_gazebo_bridge]: rotation mode: HOLE_SAFETY_STOP
+[INFO] [1792669380.982810919] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
+[INFO] [1792669384.802800740] [hole_gazebo_bridge]: rotation mode: NAV_AUTO

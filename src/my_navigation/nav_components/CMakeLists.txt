@@ -15,6 +15,7 @@ find_package(rclcpp_action REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(rcl_interfaces REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(visualization_msgs REQUIRED)
 find_package(tf2 REQUIRED)
@@ -27,7 +28,7 @@ find_package(yaml-cpp REQUIRED)
 find_package(ompl REQUIRED)
 
 set(DEPS
-    rclcpp rclcpp_action geometry_msgs nav_msgs sensor_msgs std_msgs visualization_msgs tf2 tf2_ros tf2_geometry_msgs nav_interfaces nav_core robots_msgs
+    rclcpp rclcpp_action rcl_interfaces geometry_msgs nav_msgs sensor_msgs std_msgs visualization_msgs tf2 tf2_ros tf2_geometry_msgs nav_interfaces nav_core robots_msgs
 )
 
 # 头文件目录
@@ -70,6 +71,7 @@ set(NAV_SERVER_SOURCES
   src/hole_execution_config.cpp
   src/hole_plan_adapter.cpp
   src/slopehole_ros_adapter.cpp
+  src/hole_runtime_tuning.cpp
   src/simple_planner.cpp
   src/pure_pursuit.cpp
   src/backup_recovery.cpp

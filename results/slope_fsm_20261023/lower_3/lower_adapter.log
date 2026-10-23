@@ -1,0 +1,7 @@
+RCUTILS_CONSOLE_STDOUT_LINE_BUFFERED is now ignored. Please set RCUTILS_LOGGING_USE_STDOUT and RCUTILS_LOGGING_BUFFERED_STREAM to control the stream and the buffering of log messages.
+[INFO] [1792741994.454667240] [hole_gazebo_bridge]: rotation mode: WAIT_FEEDBACK
+[INFO] [1792741994.458070877] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+[INFO] [1792742002.636465296] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
+[INFO] [1792742007.024593087] [hole_gazebo_bridge]: rotation mode: NAV_AUTO
+[INFO] [1792742011.780481960] [hole_gazebo_bridge]: rotation mode: HOLE_ALIGN
+[INFO] [1792742015.041012075] [hole_gazebo_bridge]: rotation mode: NAV_AUTO

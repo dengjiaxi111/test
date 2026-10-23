@@ -1,0 +1,6 @@
+PASS: conditional speed takeover, signed speed, hysteresis, ineffective timeout and safety cancellation
+PASS: actual hole residence timer, no PREPARE dwell, 15s HOLD to dedicated recovery
+PASS: ordinary tracking and endpoint tolerance stay with controller; hole guards remain strict
+PASS: per-sample reverse projection is distinct from committed event progress
+PASS: two-hole ordinary connector permits normal tracking tolerance; S-T remains strict
+PASS: 低姿态完成不代替停转许可，E上游停车边界、拒绝及有效反馈后进入

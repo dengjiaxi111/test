@@ -1,0 +1,16 @@
+{
+  "runs": [
+    "final_upper_1",
+    "final_upper_2",
+    "final_upper_3",
+    "final_lower_1",
+    "final_lower_2",
+    "final_flat_1",
+    "final_default_gui"
+  ],
+  "same_fsm_parameters": true,
+  "nmpc_unchanged_from_baseline": true,
+  "slope_prepare_distance": 0.8,
+  "flat_speed": 2.0,
+  "boost_speed": 2.0
+}

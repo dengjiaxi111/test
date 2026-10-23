@@ -1,0 +1,124 @@
+[INFO] [1792590804.898315085] [nav_server]: ========== NavServer 参数诊断 ==========
+[INFO] [1792590804.898429445] [nav_server]: control_rate: 50.0 Hz
+[INFO] [1792590804.898465093] [nav_server]: controller_timeout: 8.0 s
+[INFO] [1792590804.898474060] [nav_server]: controller_progress_threshold: 0.05 m
+[INFO] [1792590804.898480683] [nav_server]: recovery.max_recovery: 3
+[INFO] [1792590804.898493598] [nav_server]: path_check_period: 0.30 s
+[INFO] [1792590804.898502215] [nav_server]: path_lateral_tolerance: 1.250 m 
+[INFO] [1792590804.898511162] [nav_server]: path_io.enable_save_planned_path: 0
+[INFO] [1792590804.898520490] [nav_server]: path_io.use_prior_path: 0
+[INFO] [1792590804.898526121] [nav_server]: escape.trigger_costmap_threshold: 99
+[INFO] [1792590804.898532573] [nav_server]: escape.target_safe_esdf: 0.25 m
+[INFO] [1792590804.898539086] [nav_server]: escape.search_radius: 1.0 m
+[INFO] [1792590804.898545939] [nav_server]: escape.preferred_search_distance: 1.00 m
+[INFO] [1792590804.898553042] [nav_server]: escape.preferred_search_half_angle: 0.20 rad
+[INFO] [1792590804.898560116] [nav_server]: escape.forward_speed: 0.20 m/s
+[INFO] [1792590804.898567180] [nav_server]: ========================================
+[INFO] [1792590804.906077417] [nav_server]: LayeredMapManager initialized (map: map, odom: odom, perf_log: disabled)
+[INFO] [1792590804.907781405] [nav_server]: Loaded terrain regions: 8 from /home/dengjiaxi/simulation_seu/test/map/terrain.yaml
+[INFO] [1792590804.907812224] [nav_server]: slope: 4, low_clearance: 4
+[INFO] [1792590804.907825470] [nav_server]: terrain id=slope_A1 type=slope name=slope_A1 frame=map polygon: (-5.131,-3.781) (-4.256,-3.781) (-3.652,-3.026) (-5.131,-3.026)
+[INFO] [1792590804.907834437] [nav_server]: terrain id=hole_A1 type=low_clearance name=hole_A1 frame=map polygon: (-5.131,-3.781) (-4.256,-3.781) (-4.256,-3.531) (-5.131,-3.531)
+[INFO] [1792590804.907841981] [nav_server]: terrain id=slope_A2 type=slope name=slope_A2 frame=map polygon: (3.64,6.314) (5.144,6.314) (5.144,7.069) (4.244,7.069)
+[INFO] [1792590804.907850408] [nav_server]: terrain id=hole_A2 type=low_clearance name=hole_A2 frame=map polygon: (4.244,6.819) (5.144,6.819) (5.144,7.069) (4.244,7.069)
+[INFO] [1792590804.907857351] [nav_server]: terrain id=slope_B1 type=slope name=slope_B1 frame=map polygon: (0.289,-4.706) (-0.651,-4.706) (-0.651,-3.926) (0.289,-3.926)
+[INFO] [1792590804.907865627] [nav_server]: terrain id=hole_B1 type=low_clearance name=hole_B1 frame=map polygon: (1.009,-4.686) (0.749,-4.686) (0.749,-3.926) (1.009,-3.926)
+[INFO] [1792590804.907875165] [nav_server]: terrain id=slope_B2 type=slope name=slope_B2 frame=map polygon: (0.649,7.194) (-0.291,7.194) (-0.291,7.994) (0.649,7.994)
+[INFO] [1792590804.907882239] [nav_server]: terrain id=hole_B2 type=low_clearance name=hole_B2 frame=map polygon: (-0.751,7.234) (-0.991,7.234) (-0.991,7.974) (-0.751,7.974)
+[INFO] [1792590804.909318261] [nav_server]: Hole preview hole_A1: OK width=0.875 depth=0.250 angle_error=0.000 parallel_error=0.000
+[INFO] [1792590804.909397514] [nav_server]: Hole preview hole_A2: OK width=0.900 depth=0.250 angle_error=0.000 parallel_error=0.000
+[INFO] [1792590804.909450937] [nav_server]: Hole preview hole_B1: OK width=0.760 depth=0.260 angle_error=0.000 parallel_error=0.000
+[INFO] [1792590804.909485443] [nav_server]: Hole preview hole_B2: OK width=0.740 depth=0.240 angle_error=0.000 parallel_error=0.000
+[INFO] [1792590804.916534583] [nav_server]: Omni MPC NX=4 NU=2 N=75 dt=0.02 alpha=0.800 feedback_required=1
+[INFO] [1792590804.924429480] [nav_server]: 地图加载成功: 595x321, 分辨率: 0.050
+[INFO] [1792590804.924722725] [nav_server]: Hole clearance preprocessing: 180 occupied cells cleared (before=0.50 m, after=0.50 m)
+[INFO] [1792590804.933228718] [nav_server]: Static map loaded: 595x321 @ 0.050 m/cell, inflation_radius=0.80
+[INFO] [1792590804.933495881] [nav_server]: B样条优化: ESDF 回调已设置
+[INFO] [1792590804.933544525] [nav_server]: 静态地图加载完成
+[WARN] [1792590807.145420008] [nav_server]: Omni feedback sample rejected: frame=odom child=base_link_fake age=-0.018000 limit=0.500 finite=1
+[INFO] [1792590901.468835781] [nav_server]: RViz 目标: (-3.00, 6.41)
+[INFO] [1792590901.469147087] [nav_server]: 状态: IDLE -> PLANNING
+[INFO] [1792590901.482919588] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/32
+[INFO] [1792590901.483245663] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/32
+[INFO] [1792590901.483474241] [bspline_opt]: 优化完成: 7次迭代, 0.63ms | 代价: 3.6842 -> 1.5164 (降低58.8%) | 平滑=0.152, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792590901.483613218] [path_smoother]: Path smoothing: 142 pts -> 30 ctrl -> 1001 out | resample: 0.00ms, interp: 0.01ms, opt: 0.65ms, sample: 0.04ms, total: 0.79ms
+[INFO] [1792590901.484094630] [nav_server]: 规划汇总: total=6.7ms astar=4.7ms outer_validation=0.0ms hole=0.1ms first_valid=-1.0ms post_first=0.0ms | geometry=0.0 connectivity=0.0 candidates=0.0 seed_search=0.0 fit=0.0 curve_check=0.0 candidate_check=0.0 final_check=0.0 cache_check=0.0 ms | optimized=0 fits=0 iterations=0 cache_hits=0 cache_rejected=0 disconnected=0 stop=NO_PASSAGE
+[INFO] [1792590901.485412265] [nav_server]: 状态: PLANNING -> CONTROLLING
+[INFO] [1792590910.437547886] [nav_server]: 状态: CONTROLLING -> FAILED
+[INFO] [1792590910.457625858] [nav_server]: 状态: FAILED -> IDLE
+[ERROR] [1792590910.457675914] [nav_server]: 导航失败
+[INFO] [1792590914.374719481] [nav_server]: RViz 目标: (-4.13, 4.08)
+[INFO] [1792590914.375000579] [nav_server]: 状态: IDLE -> PLANNING
+[INFO] [1792590914.379303501] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/12
+[INFO] [1792590914.379422799] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/12
+[INFO] [1792590914.379472304] [bspline_opt]: 优化完成: 7次迭代, 0.20ms | 代价: 0.3481 -> 0.1725 (降低50.4%) | 平滑=0.017, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792590914.379498554] [path_smoother]: Path smoothing: 54 pts -> 10 ctrl -> 144 out | resample: 0.00ms, interp: 0.01ms, opt: 0.21ms, sample: 0.01ms, total: 0.23ms
+[INFO] [1792590914.379641618] [nav_server]: 规划汇总: total=2.3ms astar=1.6ms outer_validation=0.0ms hole=0.1ms first_valid=-1.0ms post_first=0.0ms | geometry=0.0 connectivity=0.0 candidates=0.0 seed_search=0.0 fit=0.0 curve_check=0.0 candidate_check=0.0 final_check=0.0 cache_check=0.0 ms | optimized=0 fits=0 iterations=0 cache_hits=0 cache_rejected=0 disconnected=0 stop=NO_PASSAGE
+[INFO] [1792590914.380050712] [nav_server]: 状态: PLANNING -> CONTROLLING
+[INFO] [1792590920.557381215] [nav_server]: 状态: CONTROLLING -> FAILED
+[INFO] [1792590920.577387175] [nav_server]: 状态: FAILED -> IDLE
+[ERROR] [1792590920.577434125] [nav_server]: 导航失败
+[INFO] [1792590921.856894162] [nav_server]: RViz 目标: (-3.47, 5.61)
+[INFO] [1792590921.857250975] [nav_server]: 状态: IDLE -> PLANNING
+[INFO] [1792590921.859627596] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/12
+[INFO] [1792590921.859762685] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/12
+[INFO] [1792590921.859809514] [bspline_opt]: 优化完成: 7次迭代, 0.26ms | 代价: 0.7111 -> 0.0524 (降低92.6%) | 平滑=0.005, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792590921.859844181] [path_smoother]: Path smoothing: 45 pts -> 10 ctrl -> 130 out | resample: 0.00ms, interp: 0.01ms, opt: 0.28ms, sample: 0.00ms, total: 0.30ms
+[INFO] [1792590921.859982596] [nav_server]: 规划汇总: total=2.7ms astar=1.8ms outer_validation=0.0ms hole=0.1ms first_valid=-1.0ms post_first=0.0ms | geometry=0.0 connectivity=0.0 candidates=0.0 seed_search=0.0 fit=0.0 curve_check=0.0 candidate_check=0.0 final_check=0.0 cache_check=0.0 ms | optimized=0 fits=0 iterations=0 cache_hits=0 cache_rejected=0 disconnected=0 stop=NO_PASSAGE
+[INFO] [1792590921.860450502] [nav_server]: 状态: PLANNING -> CONTROLLING
+[WARN] [1792590924.558213870] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792590925.557788050] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792590926.557861439] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792590927.558074980] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792590928.557851669] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[INFO] [1792590929.277462003] [nav_server]: 状态: CONTROLLING -> FAILED
+[INFO] [1792590929.297485945] [nav_server]: 状态: FAILED -> IDLE
+[ERROR] [1792590929.297553384] [nav_server]: 导航失败
+[INFO] [1792590948.169165139] [nav_server]: RViz 目标: (-3.44, 6.23)
+[INFO] [1792590948.169397494] [nav_server]: 状态: IDLE -> PLANNING
+[WARN] [1792590948.179689313] [bspline_opt]: 控制点太少 (6)，无法优化
+[INFO] [1792590948.179748506] [path_smoother]: Path smoothing: 11 pts -> 4 ctrl -> 10 out | resample: 0.00ms, interp: 0.01ms, opt: 0.06ms, sample: 0.00ms, total: 0.07ms
+[INFO] [1792590948.179847355] [nav_server]: 规划汇总: total=2.4ms astar=1.7ms outer_validation=0.0ms hole=0.1ms first_valid=-1.0ms post_first=0.0ms | geometry=0.0 connectivity=0.0 candidates=0.0 seed_search=0.0 fit=0.0 curve_check=0.0 candidate_check=0.0 final_check=0.0 cache_check=0.0 ms | optimized=0 fits=0 iterations=0 cache_hits=0 cache_rejected=0 disconnected=0 stop=NO_PASSAGE
+[INFO] [1792590948.180657545] [nav_server]: 状态: PLANNING -> CONTROLLING
+[WARN] [1792590948.198446457] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792590949.198176695] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792590950.198184721] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792590951.218531609] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792590952.218336037] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792590953.218667220] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792590954.217930967] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792590955.238757424] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792590956.257823568] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[WARN] [1792590957.258745806] [nav_server]: Omni solve/constraint/map check failed; ramping to stop
+[ERROR] [1792590957.917446784] [nav_server]: Controller: 控制超时 (8.0秒无进展 > 8.0秒阈值)
+[INFO] [1792590957.917526055] [nav_server]: 状态: CONTROLLING -> RECOVERY
+[INFO] [1792590957.937344649] [nav_server]: 恢复序列已启动: count=1
+[INFO] [1792590959.479844686] [nav_server]: 规划汇总: total=2.4ms astar=1.8ms outer_validation=0.0ms hole=0.1ms first_valid=-1.0ms post_first=0.0ms | geometry=0.0 connectivity=0.0 candidates=0.0 seed_search=0.0 fit=0.0 curve_check=0.0 candidate_check=0.0 final_check=0.0 cache_check=0.0 ms | optimized=0 fits=0 iterations=0 cache_hits=0 cache_rejected=0 disconnected=0 stop=NO_PASSAGE
+[INFO] [1792590959.479920942] [nav_server]: 恢复验证通过: 当前位置安全且已找到新路径
+[INFO] [1792590959.480348289] [nav_server]: 状态: RECOVERY -> CONTROLLING
+[INFO] [1792590961.657408780] [nav_server]: Controller: SUCCEEDED!
+[INFO] [1792590961.657455319] [nav_server]: 状态: CONTROLLING -> SUCCEEDED
+[INFO] [1792590961.677490642] [nav_server]: 状态: SUCCEEDED -> IDLE
+[INFO] [1792590961.677585073] [nav_server]: 导航成功 (13.51s)
+[INFO] [1792590969.125774248] [nav_server]: RViz 目标: (-5.43, 3.69)
+[INFO] [1792590969.126066497] [nav_server]: 状态: IDLE -> PLANNING
+[INFO] [1792590969.139865077] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/15
+[INFO] [1792590969.140010004] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/15
+[INFO] [1792590969.140042015] [bspline_opt]: 优化完成: 7次迭代, 0.28ms | 代价: 1.2618 -> 0.3733 (降低70.4%) | 平滑=0.037, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792590969.140094445] [path_smoother]: Path smoothing: 53 pts -> 13 ctrl -> 223 out | resample: 0.00ms, interp: 0.01ms, opt: 0.29ms, sample: 0.01ms, total: 0.34ms
+[INFO] [1792590969.140297624] [nav_server]: 规划汇总: total=2.9ms astar=1.9ms outer_validation=0.0ms hole=0.1ms first_valid=-1.0ms post_first=0.0ms | geometry=0.0 connectivity=0.0 candidates=0.0 seed_search=0.0 fit=0.0 curve_check=0.0 candidate_check=0.0 final_check=0.0 cache_check=0.0 ms | optimized=0 fits=0 iterations=0 cache_hits=0 cache_rejected=0 disconnected=0 stop=NO_PASSAGE
+[INFO] [1792590969.140795025] [nav_server]: 状态: PLANNING -> CONTROLLING
+[INFO] [1792590976.937542387] [nav_server]: 状态: CONTROLLING -> FAILED
+[INFO] [1792590976.957372840] [nav_server]: 状态: FAILED -> IDLE
+[ERROR] [1792590976.957415492] [nav_server]: 导航失败
+[INFO] [1792590992.856708388] [nav_server]: RViz 目标: (-4.75, -0.89)
+[INFO] [1792590992.857037657] [nav_server]: 状态: IDLE -> PLANNING
+[INFO] [1792590992.860647563] [bspline_opt]: [Align] thresh=0.40, min_consec=3, entry_pts=3, segments=0, narrow_pts=0/18
+[INFO] [1792590992.860760058] [bspline_opt]: 优化完成: 7次迭代, 0.23ms | 代价: 1.5213 -> 0.3680 (降低75.8%) | 平滑=0.037, 碰撞=0.000, 窄通道=0.000, 特殊地形=0.000
+[INFO] [1792590992.860792360] [path_smoother]: Path smoothing: 80 pts -> 16 ctrl -> 353 out | resample: 0.00ms, interp: 0.01ms, opt: 0.24ms, sample: 0.01ms, total: 0.28ms
+[INFO] [1792590992.861021317] [nav_server]: 规划汇总: total=3.5ms astar=2.3ms outer_validation=0.0ms hole=0.1ms first_valid=-1.0ms post_first=0.0ms | geometry=0.0 connectivity=0.0 candidates=0.0 seed_search=0.0 fit=0.0 curve_check=0.0 candidate_check=0.0 final_check=0.0 cache_check=0.0 ms | optimized=0 fits=0 iterations=0 cache_hits=0 cache_rejected=0 disconnected=0 stop=NO_PASSAGE
+[INFO] [1792590992.861726845] [nav_server]: 状态: PLANNING -> CONTROLLING
+[INFO] [1792591001.637555671] [nav_server]: 状态: CONTROLLING -> FAILED
+[INFO] [1792591001.657624030] [nav_server]: 状态: FAILED -> IDLE
+[ERROR] [1792591001.657691028] [nav_server]: 导航失败
+[INFO] [1792591080.662408511] [rclcpp]: signal_handler(SIGINT/SIGTERM)

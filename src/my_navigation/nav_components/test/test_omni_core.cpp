@@ -4,6 +4,31 @@
 using namespace nav_components::omni;
 void near(double a,double b) { assert(std::abs(a-b)<1e-9); }
 int main() {
+    {
+        TimestampedSampleCache<Vec> cache;
+        assert(!cache.offer(100,100.011,{99,99},.15)&&!cache.valid(100,.15));
+        assert(cache.offer(100,100,{1,2},.15));
+        // Recorded pattern: future by 11 ms, just beyond the 10 ms allowance.
+        assert(!cache.offer(100.02,100.031,{99,99},.15));
+        assert(cache.valid(100.02,.15));
+        near(cache.value[0],1);near(cache.stamp,100);near(cache.received,100);
+        assert(!cache.offer(100.04,100,{99,99},.15)); // duplicate
+        assert(!cache.offer(100.05,99.99,{99,99},.15)); // out of order
+        near(cache.received,100);
+        for(double now:{100.08,100.12,100.16})
+            assert(!cache.offer(now,now+.011,{99,99},.15));
+        assert(!cache.valid(100.16,.15)); // rejected packets cannot extend life
+        assert(cache.offer(100.17,100.17,{3,4},.15));
+        assert(cache.valid(100.17,.15));near(cache.value[0],3);
+        assert(!cache.valid(99,.15)); // clock rewind cannot use future cache
+        assert(!cache.offer(100.18,99,{99,99},.15));
+        near(cache.received,100.17);
+        TimestampedSampleCache<double> pose;
+        assert(pose.offer(100,99.9,1,.15));
+        assert(!pose.valid(100.06,.15)); // source expires before receive time
+        assert(!pose.offer(100.06,std::numeric_limits<double>::quiet_NaN(),2,.15));
+        near(pose.value,1);
+    }
     for(double radius:{0.05,0.3,1.0}) {
         const auto p=[&](double angle){return Vec{radius*std::cos(angle),radius*std::sin(angle)};};
         const double k=pathCurvature(p(0),p(0.01),p(0.033));near(k,1/radius);

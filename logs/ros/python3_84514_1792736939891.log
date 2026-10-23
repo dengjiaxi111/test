@@ -1,0 +1,4 @@
+[INFO] [1792736940.015892393] [fake_vel_transform]: Fixed fake frame; translation only, alpha=0.8, feedback_required=True.
+[WARN] [1792736940.016271026] [fake_vel_transform]: Gimbal-base feedback uses receive time; nearest LIO pose is bounded by feedback_pose_max_skew.
+[WARN] [1792737001.604087234] [fake_vel_transform]: Rejected invalid/stale LIO sample; stopping.
+[WARN] [1792737001.604893775] [fake_vel_transform]: Feedback rejected: no valid LIO pose or finite velocity.

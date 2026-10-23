@@ -28,7 +28,7 @@ Visualization Manager:
   - Class: rviz_default_plugins/MarkerArray
     Name: Accepted six events
     Enabled: true
-    Marker Topic:
+    Topic:
       Value: /hole_execution_markers
       Durability Policy: Transient Local
   - Class: rviz_default_plugins/RobotModel

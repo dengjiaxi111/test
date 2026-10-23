@@ -17,6 +17,7 @@ Plan makeHoleExecutionPlan(const HoleSelectedSnapshot& snap,const TerrainRegionM
         p.requirement_revision=snap.configuration_revision^(snap.terrain_revision<<32);
         p.retreat_anchor=c.S;p.retreat_anchor_valid=c.entry_straight_complete;p.entry_direction=c.u_in;
         if(terrain)for(const auto& region:terrain->getRegions())if(region.id==p.hole_id) {
+            for(const auto& q:region.polygon)p.polygon.push_back({q.x,q.y});
             auto attr=region.attributes();if(attr["related_slope_id"])for(const auto& slope:terrain->getRegions())
                 if(slope.id==attr["related_slope_id"].as<std::string>()) {
                     auto a=slope.attributes();if(a["uphill_yaw_deg"]) {double yaw=a["uphill_yaw_deg"].as<double>()*M_PI/180.;p.uphill_entry=holeDot(c.u_in,{std::cos(yaw),std::sin(yaw)})>0.5;}
@@ -95,11 +96,12 @@ Plan makeHoleExecutionPlan(const HoleSelectedSnapshot& snap,const TerrainRegionM
             plan.passages.push_back(std::move(remaining));
         }
     }
-    // 坡面不重定义六事件，只产生速度区间；上下坡按实际路径切向与地图上坡轴判断。
+    // 坡面只产生合并几何记录，取消原上下坡/坡顶分段限速。
     if(terrain)for(const auto& region:terrain->getRegions())if(region.type=="slope") {
         const auto attrs=region.attributes();if(!attrs["uphill_yaw_deg"])throw std::runtime_error("slope lacks uphill direction");
         const double yaw=attrs["uphill_yaw_deg"].as<double>()*3.14159265358979323846/180;
         const Point up{std::cos(yaw),std::sin(yaw)};
+        std::vector<SlopeSection> sections;
         // 逐线段与多边形边精确求交，避免用稀疏采样漏过坡段。
         for(std::size_t j=1;j<path.points.size();++j) {
             const auto a=path.points[j-1],v=path.points[j]-a;const double length=holeNorm(v);
@@ -117,18 +119,30 @@ Plan makeHoleExecutionPlan(const HoleSelectedSnapshot& snap,const TerrainRegionM
                 const double align=holeDot(v,up)/length;
                 if(std::abs(align)<0.5)throw std::runtime_error("ambiguous/sideways slope traversal");
                 const double begin=path.arcs[j-1]+cuts[k-1]*length,end=path.arcs[j-1]+cuts[k]*length;
-                plan.speeds.push_back({begin,end,align>0?config.uphill_speed:config.downhill_speed,align>0?Travel::UPHILL:Travel::DOWNHILL});
+                if(!sections.empty()&&sections.back().uphill==(align>0)&&std::abs(sections.back().end-begin)<1e-6)
+                    sections.back().end=end;
+                else sections.push_back({region.id+":"+std::to_string(sections.size()),begin,end,align>0,false,false});
             }
         }
-        // 这是用户新增策略：上坡结束后低速。地图关联属性区分受限型，不按ID字母猜类型。
-        const auto relation=attrs["hole_relative_to_slope"];
-        if(true) { // 用户确认：每次到达坡顶后开始减速。
-            double end=-1;
-            for(const auto& v:plan.speeds)if(v.kind==Travel::UPHILL&&v.end>end) {
-                const Point q=path.at(std::max(v.begin,v.end-1e-6));
-                if(TerrainRegionMap::pointInPolygon(region.polygon,q.x,q.y))end=v.end;
-            }
-            if(end>=0)plan.speeds.push_back({end,end+config.post_slope_distance,config.restricted_speed,Travel::CREST});
+        for(auto section:sections) {
+            // 路径起终点位于坡中时不伪造完整坡脚/坡顶。
+            const auto boundary=[&](Point q) {
+                for(std::size_t k=0;k<region.polygon.size();++k) {
+                    const auto a=region.polygon[k],b=region.polygon[(k+1)%region.polygon.size()];
+                    if(nav_core::holeSegmentDistance(q,{a.x,a.y},{b.x,b.y})<1e-7)return true;
+                }
+                return false;
+            };
+            const double probe=std::min(1e-5,(section.end-section.begin)*0.25);
+            const Point entry=path.at(section.begin),exit=path.at(section.end);
+            // 恰好停在真实坡脚再起步也可识别；坡中截断起点不满足边界检查。
+            const Point before=section.begin>=probe?path.at(section.begin-probe):
+                entry-(path.at(section.begin+probe)-entry);
+            const Point after=section.end+probe<=path.length()?path.at(section.end+probe):
+                exit+(exit-path.at(section.end-probe));
+            section.entry_complete=boundary(entry)&&!TerrainRegionMap::pointInPolygon(region.polygon,before.x,before.y);
+            section.exit_complete=boundary(exit)&&!TerrainRegionMap::pointInPolygon(region.polygon,after.x,after.y);
+            plan.slopes.push_back(section);
         }
     }
     return plan;

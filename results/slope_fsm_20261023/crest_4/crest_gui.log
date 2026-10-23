@@ -1,0 +1,12 @@
+libEGL warning: pci id for fd 105: 10de:28e0, driver (null)
+
+pci id for fd 106: 10de:28e0, driver (null)
+pci id for fd 107: 10de:28e0, driver (null)
+libEGL warning: egl: failed to create dri2 screen
+libEGL warning: pci id for fd 105: 10de:28e0, driver (null)
+
+pci id for fd 106: 10de:28e0, driver (null)
+pci id for fd 107: 10de:28e0, driver (null)
+libEGL warning: egl: failed to create dri2 screen
+libEGL warning: pci id for fd 105: 10de:28e0, driver (null)
+

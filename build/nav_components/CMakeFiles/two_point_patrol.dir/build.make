@@ -193,8 +193,8 @@ two_point_patrol: /opt/ros/jazzy/lib/libaction_msgs__rosidl_generator_py.so
 two_point_patrol: /opt/ros/jazzy/lib/libaction_msgs__rosidl_typesupport_c.so
 two_point_patrol: /opt/ros/jazzy/lib/libaction_msgs__rosidl_generator_c.so
 two_point_patrol: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so
-two_point_patrol: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so
 two_point_patrol: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_c.so
+two_point_patrol: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so
 two_point_patrol: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_cpp.so
 two_point_patrol: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_cpp.so
 two_point_patrol: /opt/ros/jazzy/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so

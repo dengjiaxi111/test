@@ -1,0 +1,7 @@
+[nav_server] [INFO] [1792739505.690775321] [nav_server]: [DEBUG-slope] cancel=braking exceeds path healthy=1 state=2 arc=1.386 speed=0.158
+[nav_server] [INFO] [1792739507.010927840] [nav_server]: [DEBUG-slope] cancel=braking exceeds path healthy=1 state=2 arc=1.463 speed=0.056
+[nav_server] [INFO] [1792739508.030159873] [nav_server]: [DEBUG-slope] cancel=braking exceeds path healthy=1 state=2 arc=1.483 speed=0.045
+[nav_server] [INFO] [1792739509.350166861] [nav_server]: [DEBUG-slope] cancel=braking exceeds path healthy=1 state=2 arc=1.492 speed=0.078
+[nav_server] [INFO] [1792739510.370637307] [nav_server]: [DEBUG-slope] cancel=braking exceeds path healthy=1 state=2 arc=1.492 speed=0.048
+[nav_server] [INFO] [1792739511.691060711] [nav_server]: [DEBUG-slope] cancel=braking exceeds path healthy=1 state=2 arc=1.492 speed=0.006
+[nav_server] [INFO] [1792739512.990233346] [nav_server]: [DEBUG-slope] cancel=braking exceeds path healthy=1 state=2 arc=1.492 speed=0.002

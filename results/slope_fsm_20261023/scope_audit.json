@@ -1,0 +1,1022 @@
+{
+  "protected_source_count": 164,
+  "all_protected_sources_unchanged": true,
+  "files": [
+    {
+      "file": "src/robots_msgs/CMakeLists.txt",
+      "before": "a9d0be9ab89f8965e65121ea3afdca782172e8b3b47bb6d8393230a48eddb7fa",
+      "after": "a9d0be9ab89f8965e65121ea3afdca782172e8b3b47bb6d8393230a48eddb7fa",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_interfaces/CMakeLists.txt",
+      "before": "408f706042bf6941654644e3a24e7c514815c984fb6069bd44ee6da4666a3897",
+      "after": "408f706042bf6941654644e3a24e7c514815c984fb6069bd44ee6da4666a3897",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/fake_vel_transform/setup.py",
+      "before": "7486eec3e655e2ff8cec1a20e45f55016f150ca168820b907d20f118dd3036ca",
+      "after": "7486eec3e655e2ff8cec1a20e45f55016f150ca168820b907d20f118dd3036ca",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_bringup/CMakeLists.txt",
+      "before": "e89ece2f09990a1dd62faa147ca2d491a2432974c10eb224ad4a27a158355070",
+      "after": "e89ece2f09990a1dd62faa147ca2d491a2432974c10eb224ad4a27a158355070",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_core/CMakeLists.txt",
+      "before": "06cc9047e240e5b747a65125ef055cb68f0320eccef0d03627849d91354a49ab",
+      "after": "06cc9047e240e5b747a65125ef055cb68f0320eccef0d03627849d91354a49ab",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/CMakeLists.txt",
+      "before": "b07e1208384b758cc865122b270f8f26566ee8ff1ecb76b3f6ff9f8ec43f13f6",
+      "after": "b07e1208384b758cc865122b270f8f26566ee8ff1ecb76b3f6ff9f8ec43f13f6",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/fake_vel_transform/launch/fake_vel_transform.launch.py",
+      "before": "1fd9e9818165d61bb188520c2d0b661bf93858de62295c78b7e123a348d2834d",
+      "after": "1fd9e9818165d61bb188520c2d0b661bf93858de62295c78b7e123a348d2834d",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/fake_vel_transform/fake_vel_transform/config.py",
+      "before": "f45267e07a921e11055cd0893120f264e866786789014084b9331dffb467a6bc",
+      "after": "f45267e07a921e11055cd0893120f264e866786789014084b9331dffb467a6bc",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/fake_vel_transform/fake_vel_transform/node.py",
+      "before": "856b67cf45e96ac5b066a75054b481b13c4e919695d55f9974ebffde6f7fc926",
+      "after": "856b67cf45e96ac5b066a75054b481b13c4e919695d55f9974ebffde6f7fc926",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/fake_vel_transform/fake_vel_transform/__init__.py",
+      "before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/fake_vel_transform/fake_vel_transform/core.py",
+      "before": "c9188157b830e8d6890bdbcfbb4b9425068a48dd8e0abb655e69b34be2949b5c",
+      "after": "c9188157b830e8d6890bdbcfbb4b9425068a48dd8e0abb655e69b34be2949b5c",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/fake_vel_transform/test/test_bridge.py",
+      "before": "e650117506aaae09b2cdf03209eec46f764e1b7c29ff4f6ae9dcbb249925cc86",
+      "after": "e650117506aaae09b2cdf03209eec46f764e1b7c29ff4f6ae9dcbb249925cc86",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_bringup/launch/two_point_patrol.launch.py",
+      "before": "ae04e76c0cb281693f5642ee5a23ab404f683b0fbee90d632bc9a0222aea08fb",
+      "after": "ae04e76c0cb281693f5642ee5a23ab404f683b0fbee90d632bc9a0222aea08fb",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_bringup/launch/navigation.launch.py",
+      "before": "5ca753ace18c100b45553f83b7bfdfca9733df94f1f4f49f9ab601ce8e6a3596",
+      "after": "5ca753ace18c100b45553f83b7bfdfca9733df94f1f4f49f9ab601ce8e6a3596",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_bringup/launch/run.launch.py",
+      "before": "40dbe8147292e8ff85f4a841c696b101f330f69f6937a49fa08ce341872296ca",
+      "after": "40dbe8147292e8ff85f4a841c696b101f330f69f6937a49fa08ce341872296ca",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_bringup/scripts/odom_base_debug_rebaser.py",
+      "before": "c59253d134e8c172b7191ba6002e23055b47fdd32b44112249ded7cd692597a1",
+      "after": "c59253d134e8c172b7191ba6002e23055b47fdd32b44112249ded7cd692597a1",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_bringup/scripts/static_relocator.py",
+      "before": "2080ed2ad3b2d36ef70592fc210c99e46f6bd1b7a1bc91e5b28cc8c48d57fcd6",
+      "after": "2080ed2ad3b2d36ef70592fc210c99e46f6bd1b7a1bc91e5b28cc8c48d57fcd6",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_bringup/maps/test1.txt",
+      "before": "18e4d4c62fa3ea73a7b22a78cd53a8d72db2133a2181f178987d72d3a2fa4ae1",
+      "after": "18e4d4c62fa3ea73a7b22a78cd53a8d72db2133a2181f178987d72d3a2fa4ae1",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_bringup/maps/map4.yaml",
+      "before": "3b5291c2c87c0ce57629f097400bd70485eb4a9a5bc46c5de04beef29f27b6d3",
+      "after": "3b5291c2c87c0ce57629f097400bd70485eb4a9a5bc46c5de04beef29f27b6d3",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_bringup/maps/map.yaml",
+      "before": "34c639604c30c382753d8d2737231fb448d80054293a43720e5751d389419226",
+      "after": "34c639604c30c382753d8d2737231fb448d80054293a43720e5751d389419226",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_bringup/maps/map3.yaml",
+      "before": "adafa7f2e8804be7622fee1904ab67593d401c028a5575ddb561771d88539f22",
+      "after": "adafa7f2e8804be7622fee1904ab67593d401c028a5575ddb561771d88539f22",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_bringup/maps/RMUC_final.yaml",
+      "before": "77b4ef5fa29176a2b954c2c215cf7a1ed2b6ecb4b2081c9d3dacdfc04f3b71b5",
+      "after": "77b4ef5fa29176a2b954c2c215cf7a1ed2b6ecb4b2081c9d3dacdfc04f3b71b5",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_bringup/config/nav_params.yaml",
+      "before": "e125b7db39f686799a6baf243f805372e51baaf0236dc379500d5fa567a26d01",
+      "after": "e125b7db39f686799a6baf243f805372e51baaf0236dc379500d5fa567a26d01",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_bringup/test/test_planning_debug.py",
+      "before": "5cd52b98b92900f8a740a923761d40646c786d87315fa48fb61ee5fe4d074f97",
+      "after": "5cd52b98b92900f8a740a923761d40646c786d87315fa48fb61ee5fe4d074f97",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_bringup/test/test_hole_execution_protocol.py",
+      "before": "45bc2e2901f72b513f2813525d662e8427c0b7e162f0a638262c0abd27238684",
+      "after": "45bc2e2901f72b513f2813525d662e8427c0b7e162f0a638262c0abd27238684",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_core/include/nav_core/hole_geometry_markers.hpp",
+      "before": "bf45f1fe72a41b7362c14d8eaa05be83afd979959c996cad2c88ec62fdde0487",
+      "after": "bf45f1fe72a41b7362c14d8eaa05be83afd979959c996cad2c88ec62fdde0487",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_core/include/nav_core/nav_fsm.hpp",
+      "before": "8dec748ac3098a37652a582e518cb245c2ee1a89d438df8d2b4920c978bd5dde",
+      "after": "8dec748ac3098a37652a582e518cb245c2ee1a89d438df8d2b4920c978bd5dde",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_core/include/nav_core/hole_grid_collision.hpp",
+      "before": "a16381cd56332331545f86d0c95cab8bb00eb2ee1dcd54b835213ce44fc12b18",
+      "after": "a16381cd56332331545f86d0c95cab8bb00eb2ee1dcd54b835213ce44fc12b18",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_core/include/nav_core/hole_passage.hpp",
+      "before": "b7a6e3e3ca81a0923ad8855ce977ce683b96759e7563287a505b686cf35c8b0f",
+      "after": "b7a6e3e3ca81a0923ad8855ce977ce683b96759e7563287a505b686cf35c8b0f",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_core/include/nav_core/map_interface.hpp",
+      "before": "39921be5c3c25f082a35f440b5e56c224e1fac6ec7dce8f0ab6e14fa1c60ffb7",
+      "after": "39921be5c3c25f082a35f440b5e56c224e1fac6ec7dce8f0ab6e14fa1c60ffb7",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_core/include/nav_core/raster_edit.hpp",
+      "before": "76230f7996f275a6fb66f3d3f9059d355c31407aaf14516d627b1ba2ee35b2ff",
+      "after": "76230f7996f275a6fb66f3d3f9059d355c31407aaf14516d627b1ba2ee35b2ff",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_core/include/nav_core/types.hpp",
+      "before": "634ba902e857e477017ca2caca8ac5171cec81e8c360c8f9c4783429fc691c7b",
+      "after": "634ba902e857e477017ca2caca8ac5171cec81e8c360c8f9c4783429fc691c7b",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_core/include/nav_core/planner_base.hpp",
+      "before": "105d004c035bd44c9c9bafdf6c579e71481188887a2fb73891ca0209f946490e",
+      "after": "105d004c035bd44c9c9bafdf6c579e71481188887a2fb73891ca0209f946490e",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_core/include/nav_core/hole_geometry.hpp",
+      "before": "fb2b9f36686772c09d959ddd9ac9cb45c6f29ae0cbaff25d4b55b9763fb51a22",
+      "after": "fb2b9f36686772c09d959ddd9ac9cb45c6f29ae0cbaff25d4b55b9763fb51a22",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_core/include/nav_core/controller_base.hpp",
+      "before": "d78b96dabbe4823ce0dbce58462d9a7ef8fbcbe433bd5ab9c6ec950812ffbd39",
+      "after": "d78b96dabbe4823ce0dbce58462d9a7ef8fbcbe433bd5ab9c6ec950812ffbd39",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_core/include/nav_core/hole_passage_config.hpp",
+      "before": "17f82d3602b7c3ce5011e5ce4ea9f530dde0ed441cd2280b053040d1418d896e",
+      "after": "17f82d3602b7c3ce5011e5ce4ea9f530dde0ed441cd2280b053040d1418d896e",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_core/include/nav_core/recovery_base.hpp",
+      "before": "1a962fc27446fece170845d46d132ec0d046230bd035bad6769fdd53a1116fc7",
+      "after": "1a962fc27446fece170845d46d132ec0d046230bd035bad6769fdd53a1116fc7",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_core/include/nav_core/special_terrain_constraint.hpp",
+      "before": "27a582553d77f598fc8a39ee63de671a79821528a5c3a84db757e184184f968c",
+      "after": "27a582553d77f598fc8a39ee63de671a79821528a5c3a84db757e184184f968c",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_core/include/nav_core/hole_geometry_yaml.hpp",
+      "before": "cb08243dafc124f9345151fc83bfcde48c73260288e027147109fdab754121c7",
+      "after": "cb08243dafc124f9345151fc83bfcde48c73260288e027147109fdab754121c7",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/acados_solver_omni_nmpc.c",
+      "before": "cc4eff21819052354801067eb1400a0305f0efc3fd0f22dbde6c6a1d03cd4fe4",
+      "after": "cc4eff21819052354801067eb1400a0305f0efc3fd0f22dbde6c6a1d03cd4fe4",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/acados_solver_omni_nmpc.h",
+      "before": "6a0965a9e1efac64240f77a6ea8af8eb7dbb24355afd42d1826ac36f13f758d9",
+      "after": "6a0965a9e1efac64240f77a6ea8af8eb7dbb24355afd42d1826ac36f13f758d9",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/main_omni_nmpc.c",
+      "before": "4e54bde7beab38ffbc62fcd0f0cac502f93e8a7ca58ecb542555ed4cbd4a54c4",
+      "after": "4e54bde7beab38ffbc62fcd0f0cac502f93e8a7ca58ecb542555ed4cbd4a54c4",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/backup_recovery.cpp",
+      "before": "e06e0d6cd2c560ab5f9ef3698892b4a847c22377d611d310dd30bda85dd6a6d1",
+      "after": "e06e0d6cd2c560ab5f9ef3698892b4a847c22377d611d310dd30bda85dd6a6d1",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/spin_recovery.cpp",
+      "before": "b4388e7e72591cbbc5059d706fd585219d9d4e896252b796cf0f6b622dc8d5bd",
+      "after": "b4388e7e72591cbbc5059d706fd585219d9d4e896252b796cf0f6b622dc8d5bd",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/simple_planner.cpp",
+      "before": "1646a780079f4774058aab185f73b103483284773feab1a3d347fc2c8eeac305",
+      "after": "1646a780079f4774058aab185f73b103483284773feab1a3d347fc2c8eeac305",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/layered_map_manager.cpp",
+      "before": "c6450264908fe37c3843bb5e3fe3ea61d2bac0f856fc0e1fc79ff4f34d3c3faf",
+      "after": "c6450264908fe37c3843bb5e3fe3ea61d2bac0f856fc0e1fc79ff4f34d3c3faf",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/hole_plan_adapter.cpp",
+      "before": "f4841309d16d3aa90426a0135281d9986c05de7f02262cc3c36a67c42097c5b1",
+      "after": "f4841309d16d3aa90426a0135281d9986c05de7f02262cc3c36a67c42097c5b1",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/normal_navigation_segment.cpp",
+      "before": "d7381eec3c689d7a3a08943270ea0add668a50199b8b12255b9c6fd983308768",
+      "after": "d7381eec3c689d7a3a08943270ea0add668a50199b8b12255b9c6fd983308768",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/hole_runtime_tuning.cpp",
+      "before": "2ab499080fe20de0b275772db69192e0d82319b74e4cc7a18a643199996ff612",
+      "after": "2ab499080fe20de0b275772db69192e0d82319b74e4cc7a18a643199996ff612",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/terrain_region_map.cpp",
+      "before": "f2462ca307064dd1bdc62793a29056d6079edc41f070f454ddf3e7c8f4835f47",
+      "after": "f2462ca307064dd1bdc62793a29056d6079edc41f070f454ddf3e7c8f4835f47",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/nav_server.cpp",
+      "before": "dc7f2c5f1051b165e7517f2bcfcedf2d164aeb6f4286c8f027b213bc31e3acbb",
+      "after": "dc7f2c5f1051b165e7517f2bcfcedf2d164aeb6f4286c8f027b213bc31e3acbb",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/pure_pursuit.cpp",
+      "before": "6289315b88fce33da56432dd181909fc4a8722894a17145f1c17d9cb67e4bd6a",
+      "after": "6289315b88fce33da56432dd181909fc4a8722894a17145f1c17d9cb67e4bd6a",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/nmpc.cpp",
+      "before": "f3a7f29778e4170116276d8a4eea94cd51f4d90e65dc5ebdac6b7b8367215925",
+      "after": "f3a7f29778e4170116276d8a4eea94cd51f4d90e65dc5ebdac6b7b8367215925",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/hole_execution_config.cpp",
+      "before": "263fd7671c06ac0c309dd5f87501a76377a7c04145fedb896bbfae599d0da922",
+      "after": "263fd7671c06ac0c309dd5f87501a76377a7c04145fedb896bbfae599d0da922",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/recovery_manager.cpp",
+      "before": "3e0664f29e402c8e8a76b7cf0b00aa710dc54b99da47209bbbe6087fd30282d9",
+      "after": "3e0664f29e402c8e8a76b7cf0b00aa710dc54b99da47209bbbe6087fd30282d9",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/two_point_patrol_node.cpp",
+      "before": "add8f2a0a1c949a11542b2f4dc50155d23abb2ae1a6b7acacf993608f6259ccf",
+      "after": "add8f2a0a1c949a11542b2f4dc50155d23abb2ae1a6b7acacf993608f6259ccf",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/hole_route_planner.cpp",
+      "before": "c4d6a14af41b98b7123410e9c2ca7b2156cfadc058ea2983ae92c9d878210ad6",
+      "after": "c4d6a14af41b98b7123410e9c2ca7b2156cfadc058ea2983ae92c9d878210ad6",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/hole_global_planner.cpp",
+      "before": "8afdafe0ceb32d0f3394d51662f22f2fbeeb1ccae97b473491c25fb6dce91749",
+      "after": "8afdafe0ceb32d0f3394d51662f22f2fbeeb1ccae97b473491c25fb6dce91749",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/hole_connection_optimizer.cpp",
+      "before": "227eb2c22c9c2ba608e5f8df12b78ee0c90995e66fff945e203c8b5f97986221",
+      "after": "227eb2c22c9c2ba608e5f8df12b78ee0c90995e66fff945e203c8b5f97986221",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/arc_backup_recovery.cpp",
+      "before": "0d3d2df7fa0d141d1a45d0e261ef5af7017fc86358978f9d05f630d11b4a54b4",
+      "after": "0d3d2df7fa0d141d1a45d0e261ef5af7017fc86358978f9d05f630d11b4a54b4",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/hole_geometry_previewer.cpp",
+      "before": "09342e687c6ecab3387c78b4ec9b4ad234179cb861b5f9ba42d96266f829db7b",
+      "after": "09342e687c6ecab3387c78b4ec9b4ad234179cb861b5f9ba42d96266f829db7b",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/hole_connection_search.cpp",
+      "before": "19bd21b238c85af476f148caa74f32343e9a5fb8df2f6483a931db356afdff02",
+      "after": "19bd21b238c85af476f148caa74f32343e9a5fb8df2f6483a931db356afdff02",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/hole_passage_planner.cpp",
+      "before": "bbadebc7ed9c5f9e08286a7c8f475d000650b5422cbb2ce62b8cc5df34340d61",
+      "after": "bbadebc7ed9c5f9e08286a7c8f475d000650b5422cbb2ce62b8cc5df34340d61",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/hole_clearance.cpp",
+      "before": "a011248caf2d2c344809fc2bf4910eee2f0a0de3a978768b6e81ab25ca1e9fb8",
+      "after": "a011248caf2d2c344809fc2bf4910eee2f0a0de3a978768b6e81ab25ca1e9fb8",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/src/hole_feasible_approach.cpp",
+      "before": "d140b32312e0bc047caccb443f9090c761af5d80723e57fec5b99ef3f0c9a1d3",
+      "after": "d140b32312e0bc047caccb443f9090c761af5d80723e57fec5b99ef3f0c9a1d3",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/scripts/hole_structure_simulator.py",
+      "before": "50ca2d7c31480a57f7a76ca29fe89d3490d8e0924148afc7cbb5335b1b685938",
+      "after": "50ca2d7c31480a57f7a76ca29fe89d3490d8e0924148afc7cbb5335b1b685938",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/test/test_hole_clearance.cpp",
+      "before": "c8dea670dc27c61cce4c3000a18a34786fa9efa474cd1c1bdcf7448608c6e814",
+      "after": "c8dea670dc27c61cce4c3000a18a34786fa9efa474cd1c1bdcf7448608c6e814",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/test/terrain_region_map_smoke.cpp",
+      "before": "3dc17910ca48c2de9a0c82781f1194f9df8973c510a1c6d638b777c9941ad7a1",
+      "after": "3dc17910ca48c2de9a0c82781f1194f9df8973c510a1c6d638b777c9941ad7a1",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/test/test_navigation_flow.py",
+      "before": "1ea8e1fe1e60874f2097418f44a1fd13a5b80d34cb5084b42f643cfd532d50c8",
+      "after": "1ea8e1fe1e60874f2097418f44a1fd13a5b80d34cb5084b42f643cfd532d50c8",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/test/test_omni_motion.cpp",
+      "before": "58576d184a9b9a2a7cc4ab3a26bab117f297a1d6e0be93c3c9c17df304703a75",
+      "after": "58576d184a9b9a2a7cc4ab3a26bab117f297a1d6e0be93c3c9c17df304703a75",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/test/test_hole_plan_adapter.cpp",
+      "before": "19211d244aaf91de3c9821b4a2a19a367b7a9a8687fbbbff818624ea781cd1dc",
+      "after": "19211d244aaf91de3c9821b4a2a19a367b7a9a8687fbbbff818624ea781cd1dc",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/test/test_hole_route.cpp",
+      "before": "afe17a9fa3fa77119ed74761717b6bd26e2805a61292e49e9b1e3cc0b2eac0c7",
+      "after": "afe17a9fa3fa77119ed74761717b6bd26e2805a61292e49e9b1e3cc0b2eac0c7",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/test/test_hole_passage.cpp",
+      "before": "07b12a1e9356f8cccf4bf51990bf82f7112d0313f0ed847f8d99486a346ecf49",
+      "after": "07b12a1e9356f8cccf4bf51990bf82f7112d0313f0ed847f8d99486a346ecf49",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/test/test_omni_core.cpp",
+      "before": "71ba761a84dd1e276c256dc18bf494ceb91b65d05f83e3f1e09c0acc8e988629",
+      "after": "71ba761a84dd1e276c256dc18bf494ceb91b65d05f83e3f1e09c0acc8e988629",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/test/test_hole_geometry.cpp",
+      "before": "d567532679158ce3c35dd065a5b846af4cbd932ce3be531afc83a33d6e1d7a11",
+      "after": "d567532679158ce3c35dd065a5b846af4cbd932ce3be531afc83a33d6e1d7a11",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/test/test_hole_preview.cpp",
+      "before": "63b3b2928bdda169e9cd6e122e699cae680f0ff4b51a2dbc3781ffc093d16df7",
+      "after": "63b3b2928bdda169e9cd6e122e699cae680f0ff4b51a2dbc3781ffc093d16df7",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/test/test_omni_controller.cpp",
+      "before": "fe9959e6073d15d074c2f1ed6d68e1f5fcf31fa408f8845132961f56036b8ca5",
+      "after": "fe9959e6073d15d074c2f1ed6d68e1f5fcf31fa408f8845132961f56036b8ca5",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/main_sim_wheelleg_nmpc.c",
+      "before": "6033207dcf34ffe1fb6c83d87bc591411bd92d29b79193a137796bba1d1dfaee",
+      "after": "6033207dcf34ffe1fb6c83d87bc591411bd92d29b79193a137796bba1d1dfaee",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/main_wheelleg_nmpc.c",
+      "before": "7d66e3504faf32cad0edfd2be242525929dee28527549b0b96a576eb37dcc8d4",
+      "after": "7d66e3504faf32cad0edfd2be242525929dee28527549b0b96a576eb37dcc8d4",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/acados_solver_wheelleg_nmpc.c",
+      "before": "c24697617e48b642bcdc3e0623074d308698c7bc55f0d272f49bdcdbda0cbd6a",
+      "after": "c24697617e48b642bcdc3e0623074d308698c7bc55f0d272f49bdcdbda0cbd6a",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/acados_sim_solver_wheelleg_nmpc.c",
+      "before": "99736fc5b94404b5e76fd48c944a0a8c96d097ee3a2ba7b5486c13244be9b083",
+      "after": "99736fc5b94404b5e76fd48c944a0a8c96d097ee3a2ba7b5486c13244be9b083",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/acados_sim_solver_wheelleg_nmpc.h",
+      "before": "f617f3f475285e75be28fd16b7e9cabb982fad71e8b2972a701f358ff0ea3e19",
+      "after": "f617f3f475285e75be28fd16b7e9cabb982fad71e8b2972a701f358ff0ea3e19",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/acados_solver_wheelleg_nmpc.h",
+      "before": "85fe25660bab4e19dd9d938bf9827a70b071d63fbb8056fe6526a11a62783215",
+      "after": "85fe25660bab4e19dd9d938bf9827a70b071d63fbb8056fe6526a11a62783215",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/model_ocp/test_solver.py",
+      "before": "918b1e7409c727efd2e32ddabf9b4b7e6a47d6cc1de87d23a239587236648190",
+      "after": "918b1e7409c727efd2e32ddabf9b4b7e6a47d6cc1de87d23a239587236648190",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/model_ocp/export_ocp.py",
+      "before": "f971072819a8288742f64384d2517cda9f72278b45d320f85612b2c05baf5755",
+      "after": "f971072819a8288742f64384d2517cda9f72278b45d320f85612b2c05baf5755",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/model_ocp/model.py",
+      "before": "4a6b99ee2a0bbc27b7ea1e613e72689ddb8e53dbe515e889a9b8084899f372bc",
+      "after": "4a6b99ee2a0bbc27b7ea1e613e72689ddb8e53dbe515e889a9b8084899f372bc",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/model_ocp/requirements.txt",
+      "before": "b866521aa587a69286995f9b5f0e5b9feb73b8a02a92386a592e20de762c52d6",
+      "after": "b866521aa587a69286995f9b5f0e5b9feb73b8a02a92386a592e20de762c52d6",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_model/omni_nmpc_dyn_disc_phi_fun.c",
+      "before": "de06a6d607be08fcb24dc5e87cde1c500a6a1fb90bd681890c6b6f5d7441c1a7",
+      "after": "de06a6d607be08fcb24dc5e87cde1c500a6a1fb90bd681890c6b6f5d7441c1a7",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_model/omni_nmpc_dyn_disc_phi_fun_jac_hess.c",
+      "before": "5a3f1a0ddbc911c84866d1109798b267bf1c190aadf8dca38cbb76420c647492",
+      "after": "5a3f1a0ddbc911c84866d1109798b267bf1c190aadf8dca38cbb76420c647492",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_model/omni_nmpc_dyn_disc_phi_fun_jac.c",
+      "before": "f5503e3cad243dc4d66c87f2a17bfe08f88cd7291a754bd20810a2bbe5b1160a",
+      "after": "f5503e3cad243dc4d66c87f2a17bfe08f88cd7291a754bd20810a2bbe5b1160a",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_model/omni_nmpc_model.h",
+      "before": "b6c3a2ce1fea03c6012f7c2dea512b665f49bd766bcb7ca94a5ea318f3984168",
+      "after": "b6c3a2ce1fea03c6012f7c2dea512b665f49bd766bcb7ca94a5ea318f3984168",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_constraints/omni_nmpc_constr_h_e_fun.c",
+      "before": "4c34cca6f15d124217e4dfdd10401eb33adcc8326061f7ff15c112ffbb3f0a30",
+      "after": "4c34cca6f15d124217e4dfdd10401eb33adcc8326061f7ff15c112ffbb3f0a30",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_constraints/omni_nmpc_constr_h_e_fun_jac_uxt_zt.c",
+      "before": "97c525c4a7ffe943dbd18acdf8d6f713ded05b09633bf11b4f2f3096156e439c",
+      "after": "97c525c4a7ffe943dbd18acdf8d6f713ded05b09633bf11b4f2f3096156e439c",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_constraints/omni_nmpc_constr_h_0_fun_jac_uxt_zt.c",
+      "before": "1d420bfa9233f54f4dc571fafb219c7a66ec316f506aab791ec786bfe673b134",
+      "after": "1d420bfa9233f54f4dc571fafb219c7a66ec316f506aab791ec786bfe673b134",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_constraints/omni_nmpc_constraints.h",
+      "before": "f911a324a71ae695f5dfcaeff5f35c83934dff98692d72facc81e18505742db3",
+      "after": "f911a324a71ae695f5dfcaeff5f35c83934dff98692d72facc81e18505742db3",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_constraints/omni_nmpc_constr_h_e_fun_jac_uxt_zt_hess.c",
+      "before": "e69040e8df7eaea0668cb8cc164bc246b71b7f3642a663239d8186e7c444b265",
+      "after": "e69040e8df7eaea0668cb8cc164bc246b71b7f3642a663239d8186e7c444b265",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_constraints/omni_nmpc_constr_h_fun_jac_uxt_zt.c",
+      "before": "30cd661db5faedd3d5d4141bb7b3de92be63630582c7f49878ee6114484e7342",
+      "after": "30cd661db5faedd3d5d4141bb7b3de92be63630582c7f49878ee6114484e7342",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_constraints/omni_nmpc_constr_h_fun_jac_uxt_zt_hess.c",
+      "before": "7d6c3ca722a482eadf3af4769f2227fabd61c11f48fda55fd53028fa01cea99e",
+      "after": "7d6c3ca722a482eadf3af4769f2227fabd61c11f48fda55fd53028fa01cea99e",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_constraints/omni_nmpc_constr_h_fun.c",
+      "before": "09038764a2626808145e825115839daeea2e159cd92a4d27f307617c403b766f",
+      "after": "09038764a2626808145e825115839daeea2e159cd92a4d27f307617c403b766f",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_constraints/omni_nmpc_constr_h_0_fun_jac_uxt_zt_hess.c",
+      "before": "2ae248373aadd056ebd680744feee524b9813b8c63e722b86657d8d81db1a55f",
+      "after": "2ae248373aadd056ebd680744feee524b9813b8c63e722b86657d8d81db1a55f",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_constraints/omni_nmpc_constr_h_0_fun.c",
+      "before": "695380b55448b253b5c46f101a17230d2aa4ff6173af3f69b3e18b7e10dc02dd",
+      "after": "695380b55448b253b5c46f101a17230d2aa4ff6173af3f69b3e18b7e10dc02dd",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_cost/omni_nmpc_cost_ext_cost_fun_jac_hess.c",
+      "before": "d250295bfd506fd41bf4f1cf70a2f92d9441c283beec8adb94e241b946692f6c",
+      "after": "d250295bfd506fd41bf4f1cf70a2f92d9441c283beec8adb94e241b946692f6c",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_cost/omni_nmpc_cost_ext_cost_e_fun_jac_hess.c",
+      "before": "1e3d7388b9ca8200f09d2da58f9bd4f41aab1e4197784f3f5c1d73664efd367c",
+      "after": "1e3d7388b9ca8200f09d2da58f9bd4f41aab1e4197784f3f5c1d73664efd367c",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_cost/omni_nmpc_cost_ext_cost_0_fun.c",
+      "before": "ddacbade6c598edb45c1c62481bb4abd28b802b3d82d2489ffdbc86dd7fd3269",
+      "after": "ddacbade6c598edb45c1c62481bb4abd28b802b3d82d2489ffdbc86dd7fd3269",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_cost/omni_nmpc_cost_ext_cost_e_fun_jac.c",
+      "before": "49ce70bf1991cee43c38266d985c02cf9c1673dd7dc9571bc62230bbafd379d5",
+      "after": "49ce70bf1991cee43c38266d985c02cf9c1673dd7dc9571bc62230bbafd379d5",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_cost/omni_nmpc_cost.h",
+      "before": "07259dc534b82a3e18ce071862678ca3d8f71b8aeb16df25bdf158ad77c8fc35",
+      "after": "07259dc534b82a3e18ce071862678ca3d8f71b8aeb16df25bdf158ad77c8fc35",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_cost/omni_nmpc_cost_ext_cost_0_fun_jac_hess.c",
+      "before": "f1f08a13b238d95fe5350e97356c2184ecbc8d7fc6cf0bc15a656e8cb1e54705",
+      "after": "f1f08a13b238d95fe5350e97356c2184ecbc8d7fc6cf0bc15a656e8cb1e54705",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_cost/omni_nmpc_cost_ext_cost_e_fun.c",
+      "before": "a867f7586655cb3f99f27c26d9144f86369f06dbd0bd5043458586041b5c6338",
+      "after": "a867f7586655cb3f99f27c26d9144f86369f06dbd0bd5043458586041b5c6338",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_cost/omni_nmpc_cost_ext_cost_fun_jac.c",
+      "before": "c695fe63d6e32c7519c1081043aaee00f94fe79b9249288931b038dab49de31c",
+      "after": "c695fe63d6e32c7519c1081043aaee00f94fe79b9249288931b038dab49de31c",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_cost/omni_nmpc_cost_ext_cost_0_fun_jac.c",
+      "before": "6ef65ee38a6c8cfb8d35899ba583b123fedf7193d3b91ff410198ad385fe17d6",
+      "after": "6ef65ee38a6c8cfb8d35899ba583b123fedf7193d3b91ff410198ad385fe17d6",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver_omni/omni_nmpc_cost/omni_nmpc_cost_ext_cost_fun.c",
+      "before": "ad3675ddc1c4493ba777de3114606070fcd14be874ec632d7e6cf65e38981a54",
+      "after": "ad3675ddc1c4493ba777de3114606070fcd14be874ec632d7e6cf65e38981a54",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/spin_recovery.hpp",
+      "before": "abfd3778bab4f8c551a4aa34d40ef47255acec44fca6f420e9a73fc3c4a33924",
+      "after": "abfd3778bab4f8c551a4aa34d40ef47255acec44fca6f420e9a73fc3c4a33924",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/hole_execution_config.hpp",
+      "before": "1c7e29fef7c55c5530e07c243886f8294392836b9d720ed4d74771aae7461943",
+      "after": "1c7e29fef7c55c5530e07c243886f8294392836b9d720ed4d74771aae7461943",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/pure_pursuit.hpp",
+      "before": "287a33155eaec79dee42978b29b3b634327609a6c568fd707976e84841d80506",
+      "after": "287a33155eaec79dee42978b29b3b634327609a6c568fd707976e84841d80506",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/hole_plan_adapter.hpp",
+      "before": "16afdea4fed880662e54ab0b442c911a9df58444120051bb5eaf0ad57975ee19",
+      "after": "16afdea4fed880662e54ab0b442c911a9df58444120051bb5eaf0ad57975ee19",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/hole_clearance.hpp",
+      "before": "d595130b0661fc3e45e893aae914f91fd75d43b0fa4f2c8c6fa4fc7411904668",
+      "after": "d595130b0661fc3e45e893aae914f91fd75d43b0fa4f2c8c6fa4fc7411904668",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/hole_geometry_previewer.hpp",
+      "before": "0b368c9be963980f2d5747ada5d00eacb624feaa0667b4b22f24de508423328a",
+      "after": "0b368c9be963980f2d5747ada5d00eacb624feaa0667b4b22f24de508423328a",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/omni_motion.hpp",
+      "before": "ec50d1bd06a7f34a8a8735eb9081ebc1a91b3f954209183373084e3142202bed",
+      "after": "ec50d1bd06a7f34a8a8735eb9081ebc1a91b3f954209183373084e3142202bed",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/simple_planner.hpp",
+      "before": "097d4ccf8b8fc0fb5a75c4b3061ba7ed731155b8c62d8faffaff890703492b45",
+      "after": "097d4ccf8b8fc0fb5a75c4b3061ba7ed731155b8c62d8faffaff890703492b45",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/hole_selected_snapshot.hpp",
+      "before": "09e0bba31e7915785560d0d717aeef931b388e45e80a78221311d639dff92242",
+      "after": "09e0bba31e7915785560d0d717aeef931b388e45e80a78221311d639dff92242",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/layered_map_manager.hpp",
+      "before": "a51fae5aacf7ca9891959c22f9130e54237738e41271209acc8c884c190d3310",
+      "after": "a51fae5aacf7ca9891959c22f9130e54237738e41271209acc8c884c190d3310",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/arc_backup_recovery.hpp",
+      "before": "ddef274e3957d062ad47d77c0593379d2aaf7c3d219a2c9dc787aaff8637ff4b",
+      "after": "ddef274e3957d062ad47d77c0593379d2aaf7c3d219a2c9dc787aaff8637ff4b",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/esdf_map.hpp",
+      "before": "8b21f7633ba7fbba5d2a03cf4a455768c8515094ffc51ebb7861dcf006079a9f",
+      "after": "8b21f7633ba7fbba5d2a03cf4a455768c8515094ffc51ebb7861dcf006079a9f",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/recovery_manager.hpp",
+      "before": "1c07cadc5c7fdd42914b2968b14b1d80a927628917eef6294272f6a3b85c6d9b",
+      "after": "1c07cadc5c7fdd42914b2968b14b1d80a927628917eef6294272f6a3b85c6d9b",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/backup_recovery.hpp",
+      "before": "715f611ba18adb9dcff065e063dadfc3b25cd9271d26d60426ed196332ea9871",
+      "after": "715f611ba18adb9dcff065e063dadfc3b25cd9271d26d60426ed196332ea9871",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/static_map_loader.hpp",
+      "before": "7e4ff7d0540d274a817ab94b8904ae2a40e9e1c229a388351c12b896249e62ea",
+      "after": "7e4ff7d0540d274a817ab94b8904ae2a40e9e1c229a388351c12b896249e62ea",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/nmpc.hpp",
+      "before": "e016f2d103c651216f62877a15ca82f3c0a2019ee2d57b054199f6019d46eec3",
+      "after": "e016f2d103c651216f62877a15ca82f3c0a2019ee2d57b054199f6019d46eec3",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/omni_model.hpp",
+      "before": "43e896e6e4d5fb4423fcff52603334093026e4cd99fdcf35457cc4ee2501d0bf",
+      "after": "43e896e6e4d5fb4423fcff52603334093026e4cd99fdcf35457cc4ee2501d0bf",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/translation_recovery.hpp",
+      "before": "d288d5766abc96270e564fb39611f037a88587d6c6f8717734f324f717d8df62",
+      "after": "d288d5766abc96270e564fb39611f037a88587d6c6f8717734f324f717d8df62",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/map_image_io.hpp",
+      "before": "92e769fba80c5d1d21aeea540216c7f4774bce74f1b13e51f2a2468c4bd6b199",
+      "after": "92e769fba80c5d1d21aeea540216c7f4774bce74f1b13e51f2a2468c4bd6b199",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/costmap_inflater.hpp",
+      "before": "12a59b5e617dbc54929c83a1b7e6d3170906c10201bbdc74882c768d113da59e",
+      "after": "12a59b5e617dbc54929c83a1b7e6d3170906c10201bbdc74882c768d113da59e",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/terrain_region_map.hpp",
+      "before": "f342a72629c1eb4a1b5b4458c84ffe6190b450abe2c7c93a709b6550e6cf3195",
+      "after": "f342a72629c1eb4a1b5b4458c84ffe6190b450abe2c7c93a709b6550e6cf3195",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/hole_passage_planner.hpp",
+      "before": "1920d287eb3639bc8b32ed12bd6dea2c653e57d73836bfa0bc6a479ad75e15e7",
+      "after": "1920d287eb3639bc8b32ed12bd6dea2c653e57d73836bfa0bc6a479ad75e15e7",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/planner/hole_connection_search.hpp",
+      "before": "5f336e44a4024d3d6337f2e782224f9152138557746045d3620e0cd8fead1206",
+      "after": "5f336e44a4024d3d6337f2e782224f9152138557746045d3620e0cd8fead1206",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/planner/normal_navigation_segment.hpp",
+      "before": "c103c8364bfa2ac7f026891b5677a19d1c0ab99ba349b77fb76cc801ed700065",
+      "after": "c103c8364bfa2ac7f026891b5677a19d1c0ab99ba349b77fb76cc801ed700065",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/planner/hole_connection_optimizer.hpp",
+      "before": "d2d8e039617f3de9c0f6e1e631a2dcfc8a05f0aaaf4ada8a1df00c3a64e63ce0",
+      "after": "d2d8e039617f3de9c0f6e1e631a2dcfc8a05f0aaaf4ada8a1df00c3a64e63ce0",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/planner/path_smoother.hpp",
+      "before": "a5add4c0c1bb02074a7028031a877cea65e9e8187bd4832889154dd919474713",
+      "after": "a5add4c0c1bb02074a7028031a877cea65e9e8187bd4832889154dd919474713",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/planner/bspline.hpp",
+      "before": "f558f4c395b4407b04fc8504688a867bfada4abe1e2b0b4da9836a8a11af96f3",
+      "after": "f558f4c395b4407b04fc8504688a867bfada4abe1e2b0b4da9836a8a11af96f3",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/include/nav_components/planner/bspline_optimizer.hpp",
+      "before": "372d187ffef7e70930d9ec32125a4b32b5a5d4085b5a9b4a30c20d615eaa7160",
+      "after": "372d187ffef7e70930d9ec32125a4b32b5a5d4085b5a9b4a30c20d615eaa7160",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/test/data/terrain_sample.yaml",
+      "before": "dd58d4dbbbdec17aa3c5a92d121bd276929541c10f21c0bfef939c164b41b9fa",
+      "after": "dd58d4dbbbdec17aa3c5a92d121bd276929541c10f21c0bfef939c164b41b9fa",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_cost/wheelleg_nmpc_cost.h",
+      "before": "c471d2bf291e1a256a082aad7ac5d49a0a519693d98956e7d0e63e19f32f3b99",
+      "after": "c471d2bf291e1a256a082aad7ac5d49a0a519693d98956e7d0e63e19f32f3b99",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_cost/wheelleg_nmpc_cost_y_e_fun.c",
+      "before": "db37ed0b73543769c388f567a65b62c2e839503cbd778974060adb00856cf127",
+      "after": "db37ed0b73543769c388f567a65b62c2e839503cbd778974060adb00856cf127",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_cost/wheelleg_nmpc_cost_y_0_hess.c",
+      "before": "cd41b12b99b36d0fec0af38d3986e2aa8894e2f06408823d7988c7ba0add95b1",
+      "after": "cd41b12b99b36d0fec0af38d3986e2aa8894e2f06408823d7988c7ba0add95b1",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_cost/wheelleg_nmpc_cost_ext_cost_fun_jac.c",
+      "before": "58fd8856a112b6f7cc43ae9db911a06061fceb230888598ba921cc4b550119bc",
+      "after": "58fd8856a112b6f7cc43ae9db911a06061fceb230888598ba921cc4b550119bc",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_cost/wheelleg_nmpc_cost_y_e_hess.c",
+      "before": "c5628fca6e6bc75afe620563a141589e8c52ccfba87b908afb5a177170b1dee6",
+      "after": "c5628fca6e6bc75afe620563a141589e8c52ccfba87b908afb5a177170b1dee6",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_cost/wheelleg_nmpc_cost_y_e_fun_jac_ut_xt.c",
+      "before": "5765c67edbf01a4884912193dca66c2c3ecaf8de69008ef8c0a3e309c1cd3b35",
+      "after": "5765c67edbf01a4884912193dca66c2c3ecaf8de69008ef8c0a3e309c1cd3b35",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_cost/wheelleg_nmpc_cost_y_hess.c",
+      "before": "67ac7494d62b6a7227741f3d1f8faf6316299a1314104326bfd514ecf959e268",
+      "after": "67ac7494d62b6a7227741f3d1f8faf6316299a1314104326bfd514ecf959e268",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_cost/wheelleg_nmpc_cost_ext_cost_fun.c",
+      "before": "91aa11024af982e2b2aed967a429deebcc04421aaa877ac066a2b3e8cc640a13",
+      "after": "91aa11024af982e2b2aed967a429deebcc04421aaa877ac066a2b3e8cc640a13",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_cost/wheelleg_nmpc_cost_ext_cost_fun_jac_hess.c",
+      "before": "ab43cd4096bbccf8bcc36133415e0606671b5214539f792221e35ed636cb8e28",
+      "after": "ab43cd4096bbccf8bcc36133415e0606671b5214539f792221e35ed636cb8e28",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_cost/wheelleg_nmpc_cost_ext_cost_0_fun_jac_hess.c",
+      "before": "054d4b4ec91dbeb99a6578faed8e0bd1f4082dbb94c884f8784629a5994ed770",
+      "after": "054d4b4ec91dbeb99a6578faed8e0bd1f4082dbb94c884f8784629a5994ed770",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_cost/wheelleg_nmpc_cost_y_fun_jac_ut_xt.c",
+      "before": "321f149321e7fcb339838771dc472b95f34d026cf8c4d2cf351218f04327f476",
+      "after": "321f149321e7fcb339838771dc472b95f34d026cf8c4d2cf351218f04327f476",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_cost/wheelleg_nmpc_cost_y_0_fun.c",
+      "before": "0e3340bb395fb35723f344bd700303ec45911b225b4d37412b5fd651b65bece3",
+      "after": "0e3340bb395fb35723f344bd700303ec45911b225b4d37412b5fd651b65bece3",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_cost/wheelleg_nmpc_cost_ext_cost_e_fun_jac.c",
+      "before": "f3d256cdedcc52385ad7cbe917d87159d8abc40b313b879fdac367c966c7c4a2",
+      "after": "f3d256cdedcc52385ad7cbe917d87159d8abc40b313b879fdac367c966c7c4a2",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_cost/wheelleg_nmpc_cost_y_fun.c",
+      "before": "82d4fc1e2dd0385413d7f4dcc433a2b5b1e114be33c438cdf750099e5d99b94f",
+      "after": "82d4fc1e2dd0385413d7f4dcc433a2b5b1e114be33c438cdf750099e5d99b94f",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_cost/wheelleg_nmpc_cost_y_0_fun_jac_ut_xt.c",
+      "before": "16767696622c1f5af734a666ee9d440a294ccede13da758b93acc9fa6ae5e287",
+      "after": "16767696622c1f5af734a666ee9d440a294ccede13da758b93acc9fa6ae5e287",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_cost/wheelleg_nmpc_cost_ext_cost_e_fun.c",
+      "before": "3a1026943bd9feebcc2cdd751540f7de782e741bdbff410d8d9b8e52540374d2",
+      "after": "3a1026943bd9feebcc2cdd751540f7de782e741bdbff410d8d9b8e52540374d2",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_cost/wheelleg_nmpc_cost_ext_cost_e_fun_jac_hess.c",
+      "before": "dde22d8e2378c76bfd3f2f6a5d0506a36a4d13d60791853efbfe1a1159b25caf",
+      "after": "dde22d8e2378c76bfd3f2f6a5d0506a36a4d13d60791853efbfe1a1159b25caf",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_cost/wheelleg_nmpc_cost_ext_cost_0_fun_jac.c",
+      "before": "1379e33b9e2df6746791f60cfea3a1b4488354bdb03c467643a8b3a5b42e5ac0",
+      "after": "1379e33b9e2df6746791f60cfea3a1b4488354bdb03c467643a8b3a5b42e5ac0",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_cost/wheelleg_nmpc_cost_ext_cost_0_fun.c",
+      "before": "39339c10a1cbcf0b6a3abb9f8f067292702298e89faee7ddce990c8de5cd173f",
+      "after": "39339c10a1cbcf0b6a3abb9f8f067292702298e89faee7ddce990c8de5cd173f",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_model/wheelleg_nmpc_expl_ode_hess.c",
+      "before": "30289c27a3186abf5e7447bd08d94132bfd199d9902f0f0295ce7947ea3b3efe",
+      "after": "30289c27a3186abf5e7447bd08d94132bfd199d9902f0f0295ce7947ea3b3efe",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_model/wheelleg_nmpc_expl_ode_fun.c",
+      "before": "4381bdef9132baf9e0a7503b83262a7e9a2dd4b56626c0aad648d9d9ad65f1f9",
+      "after": "4381bdef9132baf9e0a7503b83262a7e9a2dd4b56626c0aad648d9d9ad65f1f9",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_model/wheelleg_nmpc_expl_vde_adj.c",
+      "before": "1dd9a119b14cd0023ba5a0c7d4888fff2665d8f1952461f63e1ddaf4ea95c314",
+      "after": "1dd9a119b14cd0023ba5a0c7d4888fff2665d8f1952461f63e1ddaf4ea95c314",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_model/wheelleg_nmpc_model.h",
+      "before": "264f8a60994ac49d07f358b43e88c18a3e7a108b7f798c461dbfad285a1efbe7",
+      "after": "264f8a60994ac49d07f358b43e88c18a3e7a108b7f798c461dbfad285a1efbe7",
+      "unchanged": true
+    },
+    {
+      "file": "src/my_navigation/nav_components/nmpc_solver/wheelleg_nmpc_model/wheelleg_nmpc_expl_vde_forw.c",
+      "before": "64d9789e0d1be872b0cd77385797b61a7472899e4aee5cef11ed756d121a2207",
+      "after": "64d9789e0d1be872b0cd77385797b61a7472899e4aee5cef11ed756d121a2207",
+      "unchanged": true
+    }
+  ],
+  "models_and_maps": [
+    {
+      "file": "sim/robot.sdf",
+      "unchanged": true,
+      "before": "277c79f1acb9062476a0da3f46982306a90098a6a159084c8b90038920ba39d3",
+      "after": "277c79f1acb9062476a0da3f46982306a90098a6a159084c8b90038920ba39d3"
+    },
+    {
+      "file": "sim/simplified_robot.sdf",
+      "unchanged": true,
+      "before": "bcbd888d30e7ff2019ee82d99607c592409bafa9a1f2e79a735522197fe69452",
+      "after": "bcbd888d30e7ff2019ee82d99607c592409bafa9a1f2e79a735522197fe69452"
+    },
+    {
+      "file": "map/terrain.yaml",
+      "unchanged": true,
+      "before": "6e5527e110fc935be7e08852597239fb605650ec40074147c2dbe0fb53a3610f",
+      "after": "6e5527e110fc935be7e08852597239fb605650ec40074147c2dbe0fb53a3610f"
+    },
+    {
+      "file": "map/hole_passages.yaml",
+      "unchanged": true,
+      "before": "6b341f873dbfcb12af9625e718602aab2f3c3769852cf87a09c2fea21df84e31",
+      "after": "6b341f873dbfcb12af9625e718602aab2f3c3769852cf87a09c2fea21df84e31"
+    },
+    {
+      "file": "map/map.yaml",
+      "unchanged": true,
+      "before": "24d50ffe66df89c0f7e5544ae6d1bcadfc79a3d08914e99083baf602b47de0eb",
+      "after": "24d50ffe66df89c0f7e5544ae6d1bcadfc79a3d08914e99083baf602b47de0eb"
+    }
+  ]
+}

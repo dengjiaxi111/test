@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-39d6c137083434195f84.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "nav_components",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "hole_connection_optimizer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hole_connection_optimizer-RelWithDebInfo-15b498fe97fd49acebda.json",
+					"name" : "hole_connection_optimizer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nav_components_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nav_components_uninstall-RelWithDebInfo-6fd9db666cbc701ce900.json",
+					"name" : "nav_components_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nav_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nav_server-RelWithDebInfo-fb222bb5d94768f953fb.json",
+					"name" : "nav_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "two_point_patrol::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-two_point_patrol-RelWithDebInfo-0c1d88a5534a0e76ff66.json",
+					"name" : "two_point_patrol",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-RelWithDebInfo-f2668dc8b4be69703ced.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/dengjiaxi/simulation_seu/test/build/nav_components",
+		"source" : "/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

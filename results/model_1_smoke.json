@@ -1,0 +1,7 @@
+{
+  "result": "PASS",
+  "model": 1,
+  "wheel_distance_m": 1.0453363651506193,
+  "low_and_normal_joint_feedback": false,
+  "unsupported_structure_request": true
+}

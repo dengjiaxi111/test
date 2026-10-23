@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "navigation_logs": true,
+  "readable_fsm": true,
+  "log_view_toggle": true,
+  "repeated_ctrl_c": true,
+  "owned_process_count": 8,
+  "remaining_pids": [],
+  "tf_clock_reversal_warnings": 0,
+  "initial_run_marker_shutdown_keyboardinterrupt_tracebacks": 1,
+  "marker_shutdown_fixed_and_separately_verified": true
+}

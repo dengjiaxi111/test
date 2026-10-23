@@ -1,0 +1,10 @@
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_ros_adapter.cpp: In member function ‘nav_core::hole_exec::MotionConstraints nav_components::SlopeHoleRosAdapter::constraints() const’:
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_ros_adapter.cpp:206:14: error: conflicting declaration ‘auto visit’
+  206 |         auto visit=core_.visits().find(p.uid);
+      |              ^~~~~
+/home/dengjiaxi/simulation_seu/test/src/my_navigation/nav_components/src/slopehole_ros_adapter.cpp:194:20: note: previous declaration as ‘const std::_Rb_tree_const_iterator<std::pair<const std::__cxx11::basic_string<char>, nav_core::hole_exec::Visit> > visit’
+  194 |         const auto visit=core_.visits().find(p.uid);
+      |                    ^~~~~
+gmake[2]: *** [CMakeFiles/nav_server.dir/build.make:132: CMakeFiles/nav_server.dir/src/slopehole_ros_adapter.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/nav_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

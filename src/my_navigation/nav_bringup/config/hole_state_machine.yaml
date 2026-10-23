@@ -7,13 +7,22 @@ hole_state_machine:
   max_replans: 2  # 本任务允许的换洞重规划次数
   max_action_retries: 2  # 每种机构动作最多额外重试2次，补发同ID不计数
   max_traversal_retries: 2  # 每次上坡通行最多额外退回S重试2次
-  flat_speed: 2.0  # 平地基础上限；单位 m/s
-  uphill_speed: 2.0  # 上坡基础上限；单位 m/s
-  downhill_speed: 0.35  # 下坡基础上限；单位 m/s
-  prepare_speed: 0.35  # 移动变形期间上限；单位 m/s
+  flat_speed: 2.0  # 普通导航统一速度上限，不再按上坡/坡顶/下坡切换；m/s
+  minimum_entry_speed: 0.0  # 入口速度监测参考；不再决定坡中控制权，m/s
+  minimum_slope_speed: 0.0  # 坡中速度监测参考；低速不直接等同无进展，m/s
+  boost_speed: 2.0  # 上坡控制器持续接管目标；离坡后交还普通导航，m/s
+  entry_zone_length: 0.2  # 真实坡脚之后前0.2m使用坡底门限，无坡前助跑区；m
+  low_speed_confirm: 0.3  # 兼容历史参数；持续上坡接管不等待低速确认，s
+  speed_recover_margin: 0.1  # 兼容历史参数；不再触发坡中交还，m/s
+  speed_recover_confirm: 0.3  # 兼容历史参数；离坡按几何交还，s
+  boost_timeout: 2.0  # 兼容历史参数；实际失速使用通行无进展期限，s
+  boost_acceleration: 2.0  # 接管速度指令上升斜率，非实车保证加速度；m/s^2
+  prepare_prediction_time: 1.0  # LOW初始完成时间预测；放行仍取实际完成反馈，s
+  alignment_prediction_rate: 0.6  # 对准时间预测使用的平均角速度，rad/s
+  slope_entry_margin: 0.25  # 未准备完成时在真实坡脚上游停车；就绪后在此开始爬升速度，m
+  slope_prepare_distance: 0.8  # 执行A至少在实际上下坡起点前0.8m；原A更早则保留，m
+  tunnel_timeout: 15.0  # 实际在洞多边形内连续停留15s即HOLD；有进展也计时，s
   restore_speed: 0.35  # 移动恢复期间上限；单位 m/s
-  restricted_speed: 0.4  # 坡顶后受限区上限；单位 m/s
-  post_slope_distance: 1.5  # 坡顶后低速路径长度；单位 m
   braking_deceleration: 1.5  # 最差坡向保证制动减速度，必须实测确认；单位 m/s^2
   acceleration_limit: 2.0  # 特殊执行加速度上限；单位 m/s^2
   control_latency: 0.1  # 控制与反馈链路延迟预算；单位 s
@@ -34,8 +43,8 @@ hole_state_machine:
   stop_ack_timeout: 2.0  # 旧动作停止确认最大等待；单位 s
   stall_timeout: 2.5  # 有前进指令时无路径进展期限；单位 s
   stall_progress: 0.05  # 有效路径进展阈值；单位 m
-  retreat_speed: 0.15  # 上坡失败后向下退让上限；单位 m/s
-  retreat_timeout: 12.0  # 单次退让期限；单位 s
+  retreat_speed: 0.5  # 北理式固定退让速度上限；接近S时制动，单位m/s
+  retreat_timeout: 10.0  # 本次退让全流程最大时长；未回到S则失败，单位s
   stopped_speed: 0.03  # 停稳速度阈值；单位 m/s
   settle_time: 0.2  # 停稳连续确认时间；单位 s
   alignment_tolerance: 0.05  # 底盘四面对准误差；单位 rad
